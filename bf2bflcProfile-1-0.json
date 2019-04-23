@@ -1,0 +1,32 @@
+{
+    "Profile": {
+        "title": "BF2/BFLC",
+        "id": "profile:bf2:bflc",
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-04-16",
+        "description": "BIBFRAME",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
+        "resourceTemplates": [
+            {
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
+                "resourceLabel": "RT BF2 Title",
+                "id": "rt:bf2:title",
+                "date": "2019-04-16",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "",
+                        "propertyURI": "",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "valueConstraint": {
+                            "valueTemplateRefs": []
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
