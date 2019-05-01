@@ -35219,24 +35219,17 @@
                     {
                         "propertyLabel": "has note on item (RDA 2.21)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40028",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/i/datatype/P40028"}
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "158",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has note on extent of item (RDA 3.22.2)",
@@ -65505,6 +65498,28 @@
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": []
+                    },
+                     {
+                        "propertyLabel": "has owner",
+                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10005"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
+                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": "157",
+                        "statusUw": "initial testing CEC 2019-05-01",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
                     }
                 ]
             }
