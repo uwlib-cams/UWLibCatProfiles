@@ -3,15 +3,15 @@
         "title": "RDA",
         "id": "profile:rda",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-04-16",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place,\n            Timespan",
+        "date": "2019-04-30",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
         "resourceTemplates": [
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "RT RDA Work",
                 "id": "rt:rda:work",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -13001,7 +13001,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "RT RDA Expression",
                 "id": "rt:rda:expression",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -24671,7 +24671,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "RT RDA Manifestation",
                 "id": "rt:rda:manifestation",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -33349,7 +33349,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "RT RDA Item",
                 "id": "rt:rda:item",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -36351,7 +36351,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "RT RDA Agent",
                 "id": "rt:rda:agent",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -59527,7 +59527,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "RT RDA Nomen",
                 "id": "rt:rda:nomen",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -63145,7 +63145,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "RT RDA Place",
                 "id": "rt:rda:place",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -64277,7 +64277,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "RT RDA Timespan",
                 "id": "rt:rda:timespan",
-                "date": "2019-04-16",
+                "date": "2019-04-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
