@@ -60,11 +60,11 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has addressee agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10070",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "propertyLabel": "has abridger agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -75,11 +75,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "168",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "qUw": "?",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has addressee collective agent",
@@ -13866,12 +13866,12 @@
                     {
                         "propertyLabel": "has identifier for expression (RDA 6.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20002",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20002"},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -13879,11 +13879,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "123",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is augmented by expression (RDA 24.5)",
@@ -14920,11 +14920,11 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has creator agent of expression (RDA 20.2)",
+                       "propertyLabel": "has creator agent of expression (RDA 20.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20053",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -14935,11 +14935,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "171",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has creator collective agent of expression",
@@ -16000,9 +16000,9 @@
                     {
                         "propertyLabel": "has script (RDA 7.13.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -16013,11 +16013,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "126",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is screenplay for motion picture expression (RDA 24.5)",
@@ -16372,14 +16372,14 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has accessibility content (RDA 7.14)",
+                       "propertyLabel": "has accessibility content (RDA 7.14)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20208",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20208"},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -16387,11 +16387,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "127",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has duration (RDA 7.22)",
@@ -17802,11 +17802,11 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has date of expression (RDA 6.10)",
+                       "propertyLabel": "has date of expression (RDA 6.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20214",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -17817,21 +17817,21 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "120",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related expression of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20205",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": [""],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20205"},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -17839,11 +17839,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "183",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "qUw": "RDA 26.1? -- useVlauesFrom- would this be a QA lookup?",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is catalogue of expression (RDA 24.5)",
@@ -18508,12 +18508,12 @@
                     {
                         "propertyLabel": "has language of expression (RDA 6.11)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20006",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/P20006"},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -18521,11 +18521,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "121",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is opera adaptation of expression (RDA 24.5)",
@@ -19102,12 +19102,12 @@
                     {
                         "propertyLabel": "has award (RDA 7.28)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20005",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20005"},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -19115,11 +19115,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "129",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is abstracts for expression (RDA 24.5)",
@@ -20092,9 +20092,9 @@
                     {
                         "propertyLabel": "has note on changes in content characteristics (RDA 7.29.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20010",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -20105,11 +20105,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "130",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is set to music as expression (RDA 24.5)",
@@ -23506,8 +23506,8 @@
                         "repeatable": "",
                         "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20001"},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -23515,15 +23515,15 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "119",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is adapted as television program expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20066",
+                    "propertyURI": "http://rdaregistry.info/Elements/e/P20066",
                         "mandatory": "",
                         "repeatable": "",
                         "type": "",
