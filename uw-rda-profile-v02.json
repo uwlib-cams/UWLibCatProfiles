@@ -3,7 +3,7 @@
         "title": "RDA",
         "id": "profile:rda",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-04-30",
+        "date": "2019-05-01",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "RT RDA Work",
                 "id": "rt:rda:work",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -1514,24 +1514,18 @@
                     {
                         "propertyLabel": "has category of work (RDA 6.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["http://id.loc.gov/authorities/genreForms", "http://id.loc.gov/vocabulary/marcgt"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10004"}
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
-                        "noteUw": "",
+                        "uwFormOrder": "10",
+                        "statusUw": "CEC 2019-05-01",
+                        "noteUw": "RDA registry scope note:'includes a class or genre'",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has intended audience of representative expression (RDA 7.7)",
@@ -2438,24 +2432,17 @@
                     {
                         "propertyLabel": "has date of work (RDA 6.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10219",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10219"}
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "11",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has dedicatee agent of work (RDA 18.5)",
@@ -7828,24 +7815,17 @@
                     {
                         "propertyLabel": "has preferred title of work (RDA 6.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10223"}
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "9",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is abstract of work (RDA 24.5)",
@@ -13001,7 +12981,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "RT RDA Expression",
                 "id": "rt:rda:expression",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -24671,7 +24651,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "RT RDA Manifestation",
                 "id": "rt:rda:manifestation",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -28880,24 +28860,17 @@
                     {
                         "propertyLabel": "has date of production (RDA 2.7.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30009",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30009"}                           
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "50",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has place of publication (RDA 2.8.2)",
@@ -29144,24 +29117,29 @@
                     {
                         "propertyLabel": "has mode of issuance (RDA 2.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/issuance", "http://rdaregistry.info/termList/ModeIssue"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30003"},
                             "defaults": [
                                 {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
+                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
+                                    "defaultLiteral": "single unit"
+                                },
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultLiteral": "single unit"
+                                    }
+                                
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "82",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "qUw": "How will two URI's in one lookup...look? CEC 2019-05-01",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has expression manifested (RDA 17.10)",
@@ -33148,24 +33126,17 @@
                     {
                         "propertyLabel": "has title proper (RDA 2.3.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30156",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                           "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30156"}
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "31",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has variant access point for manifestation",
@@ -33349,7 +33320,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "RT RDA Item",
                 "id": "rt:rda:item",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -36351,7 +36322,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "RT RDA Agent",
                 "id": "rt:rda:agent",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -59527,7 +59498,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "RT RDA Nomen",
                 "id": "rt:rda:nomen",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -63145,7 +63116,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "RT RDA Place",
                 "id": "rt:rda:place",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -64277,7 +64248,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "RT RDA Timespan",
                 "id": "rt:rda:timespan",
-                "date": "2019-04-30",
+                "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
