@@ -17830,7 +17830,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [""],
+                            "useValuesFrom": ["urn:ld4p:qa:works"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20205"},
                             "defaults": [
                                 {
@@ -18513,7 +18513,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/P20006"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -34060,11 +34060,11 @@
                     {
                         "propertyLabel": "has custodian agent (RDA 22.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40020",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -34073,11 +34073,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "176",
                         "statusUw": "",
-                        "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "noteUw": "where there is a possibility of a lookup, how are we going to handle no-returns? How can we build in additional options?",
+                        "qUw": "lookup to LCNAF +  literal for instance of no return? How to do?",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has custodian collective agent",
@@ -34962,11 +34962,11 @@
                     {
                         "propertyLabel": "has related agent of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40072",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -34975,11 +34975,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "177",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": "form order is for a deprecated property that matches this one",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related family of item",
@@ -35226,9 +35226,9 @@
                     {
                         "propertyLabel": "has note on dimensions of item (RDA 3.22.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40010",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -35239,11 +35239,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "164",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monogrpah"]
                     },
                     {
                         "propertyLabel": "has note on item (RDA 2.21)",
@@ -35270,9 +35270,9 @@
                     {
                         "propertyLabel": "has note on extent of item (RDA 3.22.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40011",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -35283,11 +35283,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "163",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monogrpahs"]
                     },
                     {
                         "propertyLabel": "has modification of item (RDA 3.22)",
@@ -35446,11 +35446,11 @@
                     {
                         "propertyLabel": "has owner agent (RDA 22.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40021",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35459,11 +35459,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "175",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "qUw": "do we want this to be a lookup to id.loc?",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has owner collective agent",
@@ -35754,9 +35754,9 @@
                     {
                         "propertyLabel": "has restriction on access to item (RDA 4.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40047",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -35767,20 +35767,22 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "165",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related item of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": [
+                                
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35789,18 +35791,18 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "183",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": "inputting a URI as a literal could have some funk to it. Not sure this is the best way.",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has immediate source of acquisition of item (RDA 2.19)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40050",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -35811,18 +35813,18 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "162",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has custodial history of item (RDA 2.18)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40026",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -35833,11 +35835,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "161",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monogrpah"]
                     },
                     {
                         "propertyLabel": "is subject item of",
