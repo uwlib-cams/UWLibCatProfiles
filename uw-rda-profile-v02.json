@@ -13847,7 +13847,7 @@
                         "propertyLabel": "has identifier for expression (RDA 6.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20002",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
@@ -14915,7 +14915,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "171",
+                        "uwFormOrder": "168",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -34036,7 +34036,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
-                              "urn:ld4p:qa:loc:names"],
+                              "urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -34939,7 +34939,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
-                            "urn:ld4p:qa:loc:names"],
+                            "urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35417,7 +35417,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
-                            "urn:ld4p:qa:loc:names"],
+                            "urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -37030,9 +37030,9 @@
                     {
                         "propertyLabel": "has date of establishment (RDA 11.4.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50037",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -37043,11 +37043,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "149",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has employee (RDA 29.5)",
@@ -39582,9 +39582,9 @@
                     {
                         "propertyLabel": "has category of family (RDA 10.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50051",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -39595,11 +39595,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "142",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monogrpah"]
                     },
                     {
                         "propertyLabel": "has category of government (RDA 11.7.1.5)",
@@ -43190,11 +43190,11 @@
                     {
                         "propertyLabel": "has preferred name of family (RDA 10.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50065",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -43203,11 +43203,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "141",
+                        "statusUw": "CEC 2019-5-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has descendant family of family (RDA 29.5)",
@@ -43300,11 +43300,11 @@
                     {
                         "propertyLabel": "has prominent member of family (RDA 10.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50060",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -43313,11 +43313,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "145",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monogrpah"]
                     },
                     {
                         "propertyLabel": "has person member of family (RDA 29.5)",
@@ -43872,9 +43872,9 @@
                     {
                         "propertyLabel": "has date of conference (RDA 11.4.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50039",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -43885,11 +43885,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "148",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is dedicatee agent of item of (RDA 18.5)",
@@ -46644,9 +46644,9 @@
                     {
                         "propertyLabel": "has profession or occupation (RDA 9.16)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50104",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -46657,11 +46657,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "140",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "qUw": "Maybe a relator lookup? http://id.loc.gov/vocabulary/relators",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is former owner agent of (RDA 18.5)",
@@ -51308,9 +51308,9 @@
                     {
                         "propertyLabel": "has date of termination (RDA 11.4.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50038",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -51321,11 +51321,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "150",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is minute taker agent of (RDA 18.5)",
@@ -52210,9 +52210,9 @@
                     {
                         "propertyLabel": "has fuller form of name (RDA 9.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50115",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -52223,11 +52223,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "135",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has note on agent",
@@ -52342,9 +52342,9 @@
                     {
                         "propertyLabel": "has number of conference (RDA 11.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50019",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -52355,11 +52355,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "153",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is onscreen participant agent of (RDA 18.5)",
@@ -53464,11 +53464,11 @@
                     {
                         "propertyLabel": "has place of conference (RDA 11.3.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50024",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:geonames"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -53477,11 +53477,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "147",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has place of residence (RDA 9.11)",
@@ -57688,9 +57688,9 @@
                     {
                         "propertyLabel": "has address of person (RDA 9.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50114",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -57701,11 +57701,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "137",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": "Includes an email or other online address.",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has identifier for person (RDA 9.18)",
@@ -57732,9 +57732,9 @@
                     {
                         "propertyLabel": "has term of rank, honour, or office (RDA 9.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50110",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -57745,20 +57745,20 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "134",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has preferred name of person (RDA 9.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50117",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -57767,11 +57767,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "131",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has name of person (RDA 9.2)",
@@ -57820,9 +57820,9 @@
                     {
                         "propertyLabel": "has field of activity of person (RDA 9.15)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50100",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -57833,11 +57833,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "139",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": []
+                        "qUw": "Maybe a relator lookup? http://id.loc.gov/vocabulary/relators",
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has variant name of person (RDA 9.2.3)",
@@ -58348,11 +58348,12 @@
                     {
                         "propertyLabel": "has address of corporate body (RDA 11.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50036",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:geonames",
+                            "urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -58361,11 +58362,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "155",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is appellee corporate body of (RDA 18.5)",
@@ -58546,9 +58547,9 @@
                     {
                         "propertyLabel": "has period of activity of corporate body (RDA 11.4.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50236",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -58559,20 +58560,20 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "151",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has preferred name of corporate body (RDA 11.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50041",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -58581,11 +58582,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "146",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has name of corporate body (RDA 11.2)",
