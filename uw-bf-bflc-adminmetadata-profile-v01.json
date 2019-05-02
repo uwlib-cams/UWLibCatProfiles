@@ -1,0 +1,168 @@
+{
+    "Profile": {
+        "title": "profile BF2 Admin Metadata",
+        "id": "profile:bf2:bflc:AdminMetadata",
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-05-01",
+        "description": "BF2 BFLC AdminMetadata",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
+        "resourceTemplates": [
+            {
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+                "resourceLabel": "RT BF2 BFLC Admin Metadata",
+                "id": "rt:bf2:AdminMetadata",
+                "date": "2019-05-01",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Your cataloger ID (UW netid)",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerID",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "uwFormOrder": "1",
+                        "statusUw": "test CEC 2019-05-01",
+                        "noteUw": "",
+                        "qUw": "will netid be sufficient? or should it be the employee ID?",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "Record status",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata:Status"]
+                        },
+                        "uwFormOrder": "2",
+                        "statusUw": "test CEC 2019-05-01",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "Encoding level",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/menclvl"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/menclvl/f",
+                                    "defaultLiteral": "full"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": "3",
+                        "statusUw": "CEC 2019-05-01",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "Description conventions",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/descriptionConventions"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/rda",
+                                    "defaultLiteral": "Resource Description and Access"
+                                },
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/isbd",
+                                    "defaultLiteral": "ISBD: International Standard Bibliographic Description"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": "4",
+                        "statusUw": "CEC 2019-05-01",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "",
+                        "propertyURI": "",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [""],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        },
+                        "uwFormOrder": "",
+                        "statusUw": "",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "",
+                        "propertyURI": "",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [""],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        },
+                        "uwFormOrder": "",
+                        "statusUw": "",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
+                "resourceLabel": "RT BF2 BFLC Admin Metadata Status",
+                "id": "rt:bf2:AdminMetadata:Status",
+                "date": "2019-05-01",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Code",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/code",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "n"}
+                            ]
+                        },
+                        "uwFormOrder": "2",
+                        "statusUw": "test CEC 2019-05-01",
+                        "noteUw": "",
+                        "qUw": "is it necessary to break it up in this way? why don't we just skip the class and make property status have a literal value?",
+                        "usedInProfile": ["monograph"]
+                    }
+                ]
+            }
+        ]
+    }
+}
