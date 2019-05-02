@@ -76,7 +76,7 @@
                             ]
                         },
                         "uwFormOrder": "168",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "?",
                         "usedInProfile": ["monograph"]
@@ -13860,7 +13860,7 @@
                             ]
                         },
                         "uwFormOrder": "123",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -14916,7 +14916,7 @@
                             ]
                         },
                         "uwFormOrder": "171",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -15994,7 +15994,7 @@
                             ]
                         },
                         "uwFormOrder": "126",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -16368,7 +16368,7 @@
                             ]
                         },
                         "uwFormOrder": "127",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -17798,7 +17798,7 @@
                             ]
                         },
                         "uwFormOrder": "120",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -18502,7 +18502,7 @@
                             ]
                         },
                         "uwFormOrder": "121",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -19096,7 +19096,7 @@
                             ]
                         },
                         "uwFormOrder": "129",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -20086,7 +20086,7 @@
                             ]
                         },
                         "uwFormOrder": "130",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -34035,7 +34035,8 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html"],
+                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
+                              "urn:ld4p:qa:loc:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -34045,7 +34046,7 @@
                             ]
                         },
                         "uwFormOrder": "176",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "where there is a possibility of a lookup, how are we going to handle no-returns? How can we build in additional options?",
                         "qUw": "lookup to LCNAF +  literal for instance of no return? How to do?",
                         "usedInProfile": ["monograph"]
@@ -34937,7 +34938,8 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html"],
+                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
+                            "urn:ld4p:qa:loc:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35414,7 +35416,8 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html"],
+                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
+                            "urn:ld4p:qa:loc:names"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35424,7 +35427,7 @@
                             ]
                         },
                         "uwFormOrder": "175",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "do we want this to be a lookup to id.loc?",
                         "usedInProfile": ["monograph"]
@@ -35739,7 +35742,6 @@
                     },
                     {
                         "propertyLabel": "has related item of item",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
@@ -35778,7 +35780,7 @@
                             ]
                         },
                         "uwFormOrder": "162",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
