@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json",
   "type": "object",
   "title": "Sinopia Resource Template Schema",
   "version": "0.1.0",
@@ -41,8 +41,9 @@
       "type": "string",
       "format": "date",
       "title": "Date",
-      "description": "Date associated with the resource template.",
+      "description": "Date (YYYY-MM-DD) associated with the resource template.",
       "minLength": 4,
+      "pattern" : "^[0-9][0-9][0-9][0-9]\\-[0-9][0-9]\\-[0-9][0-9]$",
       "example": [
         "2017-05-20"
       ]
@@ -59,7 +60,7 @@
       ]
     },
     "propertyTemplates": {
-      "$ref": "https://ld4p.github.io/sinopia/schemas/0.1.0/property-templates-array.json"
+      "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProperty-templates-array.json"
     },
     "remark": {
       "type": "string",

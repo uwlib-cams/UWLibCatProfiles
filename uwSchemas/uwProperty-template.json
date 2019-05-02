@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ld4p.github.io/sinopia/schemas/0.1.0/property-template.json",
+  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProperty-template.json",
   "title": "Sinopia Property Template Schema",
   "description": "Property template for property associated with the entity described by a resource template.",
   "version": "0.1.0",
@@ -13,8 +13,7 @@
   "additionalProperties": false,
   "properties": {
     "mandatory": {
-      "type": ["boolean", "string"],
-      "enum": ["true", "false"],
+      "type": "boolean",
       "title": "Mandatory",
       "description": "Indication that a value for the property is required. If unspecified, defaults to false.",
       "default": false
@@ -54,8 +53,7 @@
       ]
     },
     "repeatable": {
-      "type": ["boolean","string"],
-      "enum": ["true", "false"],
+      "type": "boolean",
       "title": "Repeatable",
       "description": "Indication that the property is repeatable. If unspecified, defaults to true.",
       "default": true
