@@ -1,0 +1,517 @@
+{
+    "Profile": {
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-05-02",
+        "description": "RDA profile for describing monographs",
+        "id": "profile:monograph",
+        "title": "WAU profile RDA monograph",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
+        "resourceTemplates": [
+            {
+                "id": "rt:rda:work:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
+                "resourceLabel": "RT RDA Work for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has abridger agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/genreForms",
+                                "http://id.loc.gov/vocabulary/marcgt"
+                            ],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10004"}
+                        }
+                    },
+                    {
+                        "propertyLabel": "has date of work (RDA 6.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10219",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10219"}
+                        }
+                    },
+                    {
+                        "propertyLabel": "has preferred title of work (RDA 6.2.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10223"}
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "rt:rda:expression:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
+                "resourceLabel": "RT RDA Expression for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has identifier for expression (RDA 6.13)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20002",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20002"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has creator agent of expression (RDA 20.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20053",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has script (RDA 7.13.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has accessibility content (RDA 7.14)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20208",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20208"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has date of expression (RDA 6.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20214",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related expression of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20205",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20205"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has language of expression (RDA 6.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has award (RDA 7.28)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20005",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20005"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has note on changes in content characteristics (RDA 7.29.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20010",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has content type (RDA 6.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20001"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "rt:rda:manifestation:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
+                "resourceLabel": "RT RDA Manifestation for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has date of production (RDA 2.7.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30009",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30009"}
+                        }
+                    },
+                    {
+                        "propertyLabel": "has mode of issuance (RDA 2.13)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/issuance",
+                                "http://rdaregistry.info/termList/ModeIssue"
+                            ],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30003"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
+                                    "defaultLiteral": "single unit"
+                                },
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultLiteral": "single unit"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has title proper (RDA 2.3.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30156",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30156"}
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "rt:rda:item:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
+                "resourceLabel": "RT RDA Item for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has custodian agent (RDA 22.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40020",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names.html",
+                                "urn:ld4p:qa:loc:names"
+                            ],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related agent of item",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40072",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names.html",
+                                "urn:ld4p:qa:loc:names"
+                            ],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has note on item (RDA 2.21)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40028",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/i/datatype/P40028"}
+                        }
+                    },
+                    {
+                        "propertyLabel": "has owner agent (RDA 22.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40021",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names.html",
+                                "urn:ld4p:qa:loc:names"
+                            ],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has restriction on access to item (RDA 4.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40047",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related item of item",
+                        "propertyURI": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has immediate source of acquisition of item (RDA 2.19)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40050",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "rt:rda:agent:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10002",
+                "resourceLabel": "RT RDA Agent for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": []
+            },
+            {
+                "id": "rt:rda:nomen:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
+                "resourceLabel": "RT RDA Nomen for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": []
+            },
+            {
+                "id": "rt:rda:place:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
+                "resourceLabel": "RT RDA Place for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": []
+            },
+            {
+                "id": "rt:rda:timespan:monograph",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
+                "resourceLabel": "RT RDA Timespan for monographs",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-05-01",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has owner",
+                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10005"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
+                                    "defaultLiteral": "University of Washington Libraries,\n                                        Manuscripts, Special Collections, University\n                                        Archives"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
