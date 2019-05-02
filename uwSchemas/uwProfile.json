@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
+  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfile.json",
   "type": "object",
   "title": "Sinopia Profile Schema",
   "description": "Profile, or array of Resource Templates with some top-level metadata.",
@@ -48,8 +48,9 @@
           "type": "string",
           "format": "date",
           "title": "Date",
-          "description": "Date associated with the profile",
+          "description": "Date (YYYY-MM-DD) associated with the profile",
           "minLength": 4,
+          "pattern" : "^[0-9][0-9][0-9][0-9]\\-[0-9][0-9]\\-[0-9][0-9]$",
           "example": [
             "2017-05-20"
           ]
@@ -83,7 +84,7 @@
           ]
         },
         "resourceTemplates": {
-          "$ref": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-templates-array.json"
+          "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-templates-array.json"
         },
         "schema": {
           "const": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
