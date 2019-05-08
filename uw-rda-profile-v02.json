@@ -14904,9 +14904,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20053",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:gettyaat:Agents",
+                          "urn:ld4p:qa:names"  ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -23482,11 +23483,12 @@
                     {
                         "propertyLabel": "has content type (RDA 6.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType",
+                            "https://id.loc.gov/vocabulary/contentTypes"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20001"},
                             "defaults": [
                                 {
@@ -23496,7 +23498,7 @@
                             ]
                         },
                         "uwFormOrder": "119",
-                        "statusUw": "",
+                        "statusUw": "CEC 2019/05/08",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]

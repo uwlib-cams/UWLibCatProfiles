@@ -5,7 +5,7 @@
         "description": "RDA profile for describing monographs",
         "id": "profile:monograph",
         "title": "WAU profile RDA monograph",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
                 "id": "rt:rda:work:monograph",
@@ -13,7 +13,7 @@
                 "resourceLabel": "RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
