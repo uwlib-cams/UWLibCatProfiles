@@ -76,8 +76,8 @@
                             ]
                         },
                         "uwFormOrder": "n/a",
-                        "statusUw": "CEC 2019-05-01",
-                        "noteUw": "",
+                        "statusUw": "CEC 2019-05-09",
+                        "noteUw": "Does this belong in the expression RT? We need to figure out what to do about relator terms.",
                         "qUw": "There are hundreds of relator properties, should we keep them as is or group them under one lookup?",
                         "usedInProfile": ["monograph"]
                     },
@@ -1519,7 +1519,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/authorities/genreForms", "http://id.loc.gov/vocabulary/marcgt"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10004"}
+                            "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "10",
                         "statusUw": "CEC 2019-05-01",
@@ -2436,7 +2436,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10219"}
+                            "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "11",
                         "statusUw": "CEC 2019-05-01",
@@ -7819,7 +7819,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/w/datatype/datatype/P10223"}
+                            "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "9",
                         "statusUw": "CEC 2019-05-01",
@@ -13851,7 +13851,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20002"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -16360,7 +16360,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20208"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -17812,7 +17812,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [""],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20205"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -19088,7 +19088,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20005"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -23489,7 +23489,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType",
                             "https://id.loc.gov/vocabulary/contentTypes"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/e/datatype/P20001"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "",
@@ -28866,7 +28866,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30009"}                           
+                            "valueDataType": {"dataTypeURI": ""}                           
                         },
                         "uwFormOrder": "50",
                         "statusUw": "CEC 2019-05-01",
@@ -29124,7 +29124,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/issuance", "http://rdaregistry.info/termList/ModeIssue"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30003"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
@@ -33132,7 +33132,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                           "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/m/datatype/P30156"}
+                           "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "31",
                         "statusUw": "CEC 2019-05-01",
@@ -35227,7 +35227,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/i/datatype/P40028"}
+                            "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "158",
                         "statusUw": "CEC 2019-05-01",
@@ -65515,7 +65515,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10005"},
+                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
