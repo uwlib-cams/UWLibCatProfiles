@@ -16,6 +16,21 @@
                 "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Administrative Metadata for Work",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
                         "propertyLabel": "has academic supervisor",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10407",
                         "mandatory": "",
@@ -1518,7 +1533,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/genreForms", "http://id.loc.gov/vocabulary/marcgt"],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/genreForms",
+                                "http://id.loc.gov/vocabulary/marcgt"
+                            ],
                             "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "10",
@@ -12986,6 +13004,21 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Administrative Metadata for Expression",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
                         "mandatory": "",
@@ -14900,14 +14933,16 @@
                         "usedInProfile": []
                     },
                     {
-                       "propertyLabel": "has creator agent of expression (RDA 20.2)",
+                        "propertyLabel": "has creator agent of expression (RDA 20.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20053",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:gettyaat:Agents",
-                          "urn:ld4p:qa:names"  ],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:gettyaat:Agents",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -16353,7 +16388,7 @@
                         "usedInProfile": []
                     },
                     {
-                       "propertyLabel": "has accessibility content (RDA 7.14)",
+                        "propertyLabel": "has accessibility content (RDA 7.14)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20208",
                         "mandatory": "false",
                         "repeatable": "false",
@@ -17783,7 +17818,7 @@
                         "usedInProfile": []
                     },
                     {
-                       "propertyLabel": "has date of expression (RDA 6.10)",
+                        "propertyLabel": "has date of expression (RDA 6.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20214",
                         "mandatory": "false",
                         "repeatable": "false",
@@ -23487,8 +23522,10 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType",
-                            "https://id.loc.gov/vocabulary/contentTypes"],
+                            "useValuesFrom": [
+                                "http://rdaregistry.info/termList/RDAContentType",
+                                "https://id.loc.gov/vocabulary/contentTypes"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -23505,7 +23542,7 @@
                     },
                     {
                         "propertyLabel": "is adapted as television program expression (RDA 24.5)",
-                    "propertyURI": "http://rdaregistry.info/Elements/e/P20066",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20066",
                         "mandatory": "",
                         "repeatable": "",
                         "type": "",
@@ -24657,6 +24694,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
+                     {
+                        "propertyLabel": "Administrative Metadata for Manifestation",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
                     {
                         "propertyLabel": "has access point for manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30276",
@@ -28866,7 +28918,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": ""}                           
+                            "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "50",
                         "statusUw": "CEC 2019-05-01",
@@ -29123,7 +29175,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/issuance", "http://rdaregistry.info/termList/ModeIssue"],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/issuance",
+                                "http://rdaregistry.info/termList/ModeIssue"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -29133,8 +29188,7 @@
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
                                     "defaultLiteral": "single unit"
-                                    }
-                                
+                                }
                             ]
                         },
                         "uwFormOrder": "82",
@@ -33132,7 +33186,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                           "valueDataType": {"dataTypeURI": ""}
+                            "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "31",
                         "statusUw": "CEC 2019-05-01",
@@ -33326,6 +33380,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
+                     {
+                        "propertyLabel": "Administrative Metadata for Item",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
                     {
                         "propertyLabel": "has access point for item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40080",
@@ -34037,8 +34106,10 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
-                              "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names.html",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -34940,8 +35011,10 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
-                            "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names.html",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35418,8 +35491,10 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/authorities/names.html",
-                            "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names.html",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35748,9 +35823,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -36325,7 +36398,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                    {
+                     {
+                        "propertyLabel": "Administrative Metadata for Agent",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
                         "propertyLabel": "is abridger agent of (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50157",
                         "mandatory": "",
@@ -53470,8 +53557,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:geonames",
-                            "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:geonames",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -58355,8 +58444,10 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:geonames",
-                            "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:geonames",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -59503,6 +59594,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
+                     {
+                        "propertyLabel": "Administrative Metadata for Nomen",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
                     {
                         "propertyLabel": "is abbreviated title of",
                         "propertyURI": "http://rdaregistry.info/Elements/n/P80057",
@@ -63121,6 +63227,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
+                     {
+                        "propertyLabel": "Administrative Metadata for Place",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
                     {
                         "propertyLabel": "has access point for place",
                         "propertyURI": "http://rdaregistry.info/Elements/p/P70018",
@@ -64253,6 +64374,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
+                     {
+                        "propertyLabel": "Administrative Metadata for Timespan",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                        },
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "test CEC 2019-05-09",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"]
+                    },
                     {
                         "propertyLabel": "has access point for timespan",
                         "propertyURI": "http://rdaregistry.info/Elements/t/P70015",
@@ -65507,7 +65643,7 @@
                         "qUw": "",
                         "usedInProfile": []
                     },
-                     {
+                    {
                         "propertyLabel": "has owner",
                         "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
                         "mandatory": "true",
