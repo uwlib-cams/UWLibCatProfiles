@@ -36413,6 +36413,7 @@
                         "qUw": "",
                         "usedInProfile": ["monograph"]
                     },
+                    {
                         "propertyLabel": "is abridger agent of (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50157",
                         "mandatory": "",
