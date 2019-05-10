@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "uwResource-template.json",
   "type": "object",
-  "title": "Sinopia Resource Template Schema",
-  "version": "0.1.0",
+  "title": "UW Resource Template Schema, adapted from Sinopia schema 0.1.0",
+  "version": "X",
   "description": "A Resource Template construct (or hash) describes one of the various Sinopia entities (Works, Instances, Agent, etc.) associated with a given entity type and set of properties asserted against the entity.",
   "required": [
     "author",

@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "uwProfiles-array.json",
-  "title": "Profile Array Schema (i.e. Multiple Profiles) (by Sinopia)",
-  "version": "0.1.0",
+  "title": "UW Profile Array Schema (i.e. Multiple Profiles; adapted from Sinopia schema 0.1.0)",
+  "version": "X",
   "type": "array",
   "items": {
     "$ref": "uwProfile.json"
