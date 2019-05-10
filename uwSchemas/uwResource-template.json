@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json",
+  "$id": "uwResource-template.json",
   "type": "object",
   "title": "Sinopia Resource Template Schema",
   "version": "0.1.0",
@@ -11,8 +11,7 @@
     "id",
     "propertyTemplates",
     "resourceLabel",
-    "resourceURI",
-    "schema"
+    "resourceURI"
   ],
   "additionalProperties": false,
   "properties": {
@@ -60,7 +59,7 @@
       ]
     },
     "propertyTemplates": {
-      "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProperty-templates-array.json"
+      "$ref": "uwProperty-templates-array.json"
     },
     "remark": {
       "type": "string",

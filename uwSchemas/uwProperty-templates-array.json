@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProperty-templates-array.json",
+  "$id": "uwProperty-templates-array.json",
   "title": "Sinopia Property Template Array Schema (i.e. Multiple Property Templates)",
   "version": "0.1.0",
   "type": "array",
   "items": {
-    "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProperty-template.json"
+    "$ref": "uwProperty-template.json"
   },
   "minItems": 1
 }

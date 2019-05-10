@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfile.json",
+  "$id": "uwProfile.json",
   "type": "object",
   "title": "Sinopia Profile Schema",
   "description": "Profile, or array of Resource Templates with some top-level metadata.",
@@ -18,7 +18,6 @@
         "description",
         "id",
         "resourceTemplates",
-        "schema",
         "title"
       ],
       "additionalProperties": false,
@@ -84,7 +83,7 @@
           ]
         },
         "resourceTemplates": {
-          "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-templates-array.json"
+          "$ref": "uwResource-templates-array.json"
         },
         "schema": {
           "const": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",

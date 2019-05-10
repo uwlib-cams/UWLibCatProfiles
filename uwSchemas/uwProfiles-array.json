@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfiles-array.json",
+  "$id": "uwProfiles-array.json",
   "title": "Profile Array Schema (i.e. Multiple Profiles) (by Sinopia)",
   "version": "0.1.0",
   "type": "array",
   "items": {
-    "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfile.json"
+    "$ref": "uwProfile.json"
   }
 }

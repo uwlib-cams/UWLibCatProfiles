@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProperty-template.json",
+  "$id": "uwProperty-template.json",
   "title": "Sinopia Property Template Schema",
   "description": "Property template for property associated with the entity described by a resource template.",
   "version": "0.1.0",
@@ -12,8 +12,24 @@
   ],
   "additionalProperties": false,
   "properties": {
+    "uwFormOrder": {
+        
+    },
+    "statusUw": {
+        
+    },
+    "noteUw": {
+        
+    },
+    "qUw": {
+        
+    },
+    "usedInProfile": {
+        
+    },
     "mandatory": {
-      "type": "boolean",
+      "type": ["boolean", "string"],
+      "enum": ["true", "false"],
       "title": "Mandatory",
       "description": "Indication that a value for the property is required. If unspecified, defaults to false.",
       "default": false
@@ -53,7 +69,8 @@
       ]
     },
     "repeatable": {
-      "type": "boolean",
+      "type": ["boolean","string"],
+      "enum": ["true", "false"],
       "title": "Repeatable",
       "description": "Indication that the property is repeatable. If unspecified, defaults to true.",
       "default": true
