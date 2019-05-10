@@ -5,6 +5,7 @@
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-05-01",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
+        "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfile.json",
         "resourceTemplates": [
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
@@ -12,6 +13,7 @@
                 "id": "rt:rda:work",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -25,7 +27,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": "",
-                        "qUw": "",
+                        "qUw": "is this sufficient for admin metadata?",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -1537,8 +1539,8 @@
                             ],
                             "valueDataType": {"dataTypeURI": ""}
                         },
-                        "uwFormOrder": "10",
-                        "statusUw": "CEC 2019-05-01",
+                        "uwFormOrder": "12",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "RDA registry scope note:'includes a class or genre'",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -2451,11 +2453,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": ""}
-                        },
-                        "uwFormOrder": "11",
-                        "statusUw": "CEC 2019-05-01",
+                        "uwFormOrder": "13",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -6975,7 +6974,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10218",
                         "mandatory": "",
                         "repeatable": "",
-                        "type": "",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -6986,7 +6985,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "14",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
@@ -7834,10 +7833,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": ""}
-                        },
-                        "uwFormOrder": "9",
+                        "uwFormOrder": "11",
                         "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
@@ -12999,6 +12995,7 @@
                 "id": "rt:rda:expression",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -13877,20 +13874,10 @@
                         "propertyLabel": "has identifier for expression (RDA 6.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20002",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
                         "uwFormOrder": "123",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -14948,7 +14935,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "168",
+                        "uwFormOrder": "163",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -16016,18 +16003,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "126",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "124",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -16390,18 +16367,8 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "127",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "125",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -17424,17 +17391,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "128",
+                        "uwFormOrder": "126",
                         "statusUw": "CEC 2019-05-03",
                         "noteUw": "",
                         "qUw": "",
@@ -17830,7 +17787,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "120",
+                        "uwFormOrder": "121",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -17842,17 +17799,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [""],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "180",
+                        "uwFormOrder": "174",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "Lookup would be idea, but given the lack of bf:expressions, it may be better for literal URI input",
@@ -18534,7 +18481,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "121",
+                        "uwFormOrder": "122",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -19118,18 +19065,8 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "129",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "127",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -20108,18 +20045,8 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "130",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "128",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -23531,7 +23458,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "119",
+                        "uwFormOrder": "120",
                         "statusUw": "CEC 2019/05/08",
                         "noteUw": "",
                         "qUw": "",
@@ -24689,8 +24616,9 @@
                 "id": "rt:rda:manifestation",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                     {
+                    {
                         "propertyLabel": "Administrative Metadata for Manifestation",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -28916,7 +28844,7 @@
                         "valueConstraint": {
                             "valueDataType": {"dataTypeURI": ""}
                         },
-                        "uwFormOrder": "50",
+                        "uwFormOrder": "51",
                         "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
@@ -29187,7 +29115,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "82",
+                        "uwFormOrder": "83",
                         "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "How will two URI's in one lookup...look? CEC 2019-05-01",
@@ -33184,7 +33112,7 @@
                         "valueConstraint": {
                             "valueDataType": {"dataTypeURI": ""}
                         },
-                        "uwFormOrder": "31",
+                        "uwFormOrder": "32",
                         "statusUw": "CEC 2019-05-01",
                         "noteUw": "",
                         "qUw": "",
@@ -33374,8 +33302,9 @@
                 "id": "rt:rda:item",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                     {
+                    {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -34105,15 +34034,9 @@
                                 "http://id.loc.gov/authorities/names.html",
                                 "urn:ld4p:qa:names"
                             ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": ""}
                         },
-                        "uwFormOrder": "175",
+                        "uwFormOrder": "169",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "where there is a possibility of a lookup, how are we going to handle no-returns? How can we build in additional options?",
                         "qUw": "lookup to LCNAF +  literal for instance of no return? How to do?",
@@ -35018,7 +34941,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "176",
+                        "uwFormOrder": "170",
                         "statusUw": "CEC 2019-05-03",
                         "noteUw": "form order is for a deprecated property that matches this one",
                         "qUw": "",
@@ -35282,7 +35205,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "163",
+                        "uwFormOrder": "158",
                         "statusUw": "CEC 2019-05-03",
                         "noteUw": "",
                         "qUw": "",
@@ -35294,11 +35217,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {"dataTypeURI": ""}
-                        },
-                        "uwFormOrder": "158",
-                        "statusUw": "CEC 2019-05-01",
+                        "uwFormOrder": "153",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -35309,17 +35229,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "162",
+                        "uwFormOrder": "157",
                         "statusUw": "CEC 2019-05-03",
                         "noteUw": "",
                         "qUw": "",
@@ -35490,15 +35400,9 @@
                                 "http://id.loc.gov/authorities/names.html",
                                 "urn:ld4p:qa:names"
                             ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": ""}
                         },
-                        "uwFormOrder": "174",
+                        "uwFormOrder": "168",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "do we want this to be a lookup to id.loc?",
@@ -35806,7 +35710,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "164",
+                        "uwFormOrder": "159",
                         "statusUw": "CEC 2019-05-03",
                         "noteUw": "",
                         "qUw": "problematic as this seems to represent more than one subfield??",
@@ -35827,10 +35731,10 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "182",
+                        "uwFormOrder": "176",
                         "statusUw": "CEC 2019-05-03",
                         "noteUw": "related item of item P40046",
-                        "qUw": "",
+                        "qUw": "where did property URI go?",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -35849,7 +35753,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "161",
+                        "uwFormOrder": "156",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -35871,8 +35775,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "160",
-                        "statusUw": "CEC 2019-05-03",
+                        "uwFormOrder": "155",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monogrpah"]
@@ -36391,8 +36295,9 @@
                 "id": "rt:rda:agent",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                     {
+                    {
                         "propertyLabel": "Administrative Metadata for Agent",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -37117,17 +37022,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "149",
+                        "uwFormOrder": "145",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -39679,8 +39574,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "141",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "138",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monogrpah"]
@@ -43287,8 +43182,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "140",
-                        "statusUw": "CEC 2019-5-02",
+                        "uwFormOrder": "136",
+                        "statusUw": "CEC 2019-5-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -43397,7 +43292,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "144",
+                        "uwFormOrder": "141",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -43959,17 +43854,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "148",
+                        "uwFormOrder": "144",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -51395,17 +51280,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "150",
+                        "uwFormOrder": "146",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -52307,10 +52182,10 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "134",
+                        "uwFormOrder": "132",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
-                        "qUw": "",
+                        "qUw": "this one, and other labels for people: should it be a literal?",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -52429,17 +52304,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "153",
+                        "uwFormOrder": "149",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -53564,7 +53429,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "146",
+                        "uwFormOrder": "143",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -57778,18 +57643,8 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "136",
-                        "statusUw": "CEC 2019-05-03",
+                        "uwFormOrder": "133",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "Includes an email or other online address.",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -57822,18 +57677,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "133",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "131",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -57846,16 +57691,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "valueDataType": {"dataTypeURI": ""}
                         },
-                        "uwFormOrder": "131",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "129",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -57920,10 +57759,10 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "138",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "136",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
-                        "qUw": "Maybe a relator lookup? http://id.loc.gov/vocabulary/relators",
+                        "qUw": "Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -58451,7 +58290,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "155",
+                        "uwFormOrder": "150",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -58639,18 +58478,8 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": "151",
-                        "statusUw": "CEC 2019-05-02",
+                        "uwFormOrder": "147",
+                        "statusUw": "CEC 2019-05-10",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -58671,7 +58500,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "145",
+                        "uwFormOrder": "142",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
                         "qUw": "",
@@ -59587,8 +59416,9 @@
                 "id": "rt:rda:nomen",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                     {
+                    {
                         "propertyLabel": "Administrative Metadata for Nomen",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -63219,8 +63049,9 @@
                 "id": "rt:rda:place",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                     {
+                    {
                         "propertyLabel": "Administrative Metadata for Place",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -64365,8 +64196,9 @@
                 "id": "rt:rda:timespan",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
-                     {
+                    {
                         "propertyLabel": "Administrative Metadata for Timespan",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
