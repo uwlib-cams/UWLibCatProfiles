@@ -5,7 +5,7 @@
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-05-01",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
-        "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfile.json",
+        "schema": "",
         "resourceTemplates": [
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
@@ -13,7 +13,7 @@
                 "id": "rt:rda:work",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -12995,7 +12995,7 @@
                 "id": "rt:rda:expression",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -24616,7 +24616,7 @@
                 "id": "rt:rda:manifestation",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -33302,7 +33302,7 @@
                 "id": "rt:rda:item",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -36295,7 +36295,7 @@
                 "id": "rt:rda:agent",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Agent",
@@ -59416,7 +59416,7 @@
                 "id": "rt:rda:nomen",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Nomen",
@@ -63049,7 +63049,7 @@
                 "id": "rt:rda:place",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Place",
@@ -64196,7 +64196,7 @@
                 "id": "rt:rda:timespan",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Timespan",
