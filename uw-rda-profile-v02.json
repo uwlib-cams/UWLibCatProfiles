@@ -1534,13 +1534,13 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/authorities/genreForms",
+                                "urn:ld4p:qa:genres",
                                 "http://id.loc.gov/vocabulary/marcgt"
                             ],
                             "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "12",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "RDA registry scope note:'includes a class or genre'",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -14924,7 +14924,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:gettyaat:Agents",
+                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -16002,9 +16002,19 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mscript"],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        },
                         "uwFormOrder": "124",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -17775,7 +17785,7 @@
                         "propertyLabel": "has date of expression (RDA 6.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20214",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
@@ -17788,7 +17798,7 @@
                             ]
                         },
                         "uwFormOrder": "121",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -17797,12 +17807,12 @@
                         "propertyLabel": "has related expression of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20205",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "174",
-                        "statusUw": "",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
-                        "qUw": "Lookup would be idea, but given the lack of bf:expressions, it may be better for literal URI input",
+                        "qUw": "Lookup would be ideal, but given the lack of bf:expressions, it may be better for literal URI input",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -18468,8 +18478,8 @@
                     {
                         "propertyLabel": "has language of expression (RDA 6.11)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20006",
-                        "mandatory": "false",
-                        "repeatable": "false",
+                        "mandatory": "true",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
@@ -18482,7 +18492,7 @@
                             ]
                         },
                         "uwFormOrder": "122",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -23443,7 +23453,7 @@
                         "propertyLabel": "has content type (RDA 6.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -23459,7 +23469,7 @@
                             ]
                         },
                         "uwFormOrder": "120",
-                        "statusUw": "CEC 2019/05/08",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -29234,9 +29244,9 @@
                     {
                         "propertyLabel": "has related item of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -29248,10 +29258,10 @@
                             ]
                         },
                         "uwFormOrder": "",
-                        "statusUw": "",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has media type (RDA 3.2)",
@@ -34027,17 +34037,20 @@
                         "propertyLabel": "has custodian agent (RDA 22.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40020",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names.html",
-                                "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""}
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
+                                }
+                            ]
                         },
                         "uwFormOrder": "169",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "where there is a possibility of a lookup, how are we going to handle no-returns? How can we build in additional options?",
                         "qUw": "lookup to LCNAF +  literal for instance of no return? How to do?",
                         "usedInProfile": ["monograph"]
@@ -34926,12 +34939,11 @@
                         "propertyLabel": "has related agent of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40072",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names.html",
-                                "urn:ld4p:qa:names"
+                              "urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
@@ -34942,7 +34954,7 @@
                             ]
                         },
                         "uwFormOrder": "170",
-                        "statusUw": "CEC 2019-05-03",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "form order is for a deprecated property that matches this one",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -35392,18 +35404,21 @@
                     {
                         "propertyLabel": "has owner agent (RDA 22.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40021",
-                        "mandatory": "false",
-                        "repeatable": "false",
+                        "mandatory": "true",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names.html",
-                                "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""}
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
+                                }
+                            ]
                         },
                         "uwFormOrder": "168",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "do we want this to be a lookup to id.loc?",
                         "usedInProfile": ["monograph"]
@@ -35741,7 +35756,7 @@
                         "propertyLabel": "has immediate source of acquisition of item (RDA 2.19)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40050",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
@@ -35764,9 +35779,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40026",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35776,7 +35791,7 @@
                             ]
                         },
                         "uwFormOrder": "155",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monogrpah"]
@@ -39562,10 +39577,10 @@
                         "propertyLabel": "has category of family (RDA 10.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50051",
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
+                        "repeatable": "false",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -43169,11 +43184,11 @@
                     {
                         "propertyLabel": "has preferred name of family (RDA 10.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50065",
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -43183,7 +43198,7 @@
                             ]
                         },
                         "uwFormOrder": "136",
-                        "statusUw": "CEC 2019-5-10",
+                        "statusUw": "AM 2019-5-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -43283,7 +43298,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -43293,7 +43311,7 @@
                             ]
                         },
                         "uwFormOrder": "141",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monogrpah"]
@@ -46615,9 +46633,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50104",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:demographics"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -46627,7 +46648,7 @@
                             ]
                         },
                         "uwFormOrder": "139",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "Maybe a relator lookup? http://id.loc.gov/vocabulary/relators",
                         "usedInProfile": ["monograph"]
@@ -53415,11 +53436,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50024",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:geonames",
-                                "urn:ld4p:qa:names"
+                                
                             ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
@@ -53430,7 +53450,7 @@
                             ]
                         },
                         "uwFormOrder": "143",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -57641,10 +57661,10 @@
                         "propertyLabel": "has address of person (RDA 9.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50114",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "133",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "Am 2019-05-13",
                         "noteUw": "Includes an email or other online address.",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -57686,7 +57706,7 @@
                     {
                         "propertyLabel": "has preferred name of person (RDA 9.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50117",
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
@@ -57748,9 +57768,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50100",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -57760,7 +57780,7 @@
                             ]
                         },
                         "uwFormOrder": "136",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative",
                         "usedInProfile": ["monograph"]
@@ -58275,7 +58295,7 @@
                         "propertyLabel": "has address of corporate body (RDA 11.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50036",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -58293,7 +58313,7 @@
                         "uwFormOrder": "150",
                         "statusUw": "CEC 2019-05-02",
                         "noteUw": "",
-                        "qUw": "",
+                        "qUw": "is this repeatable?",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -58487,11 +58507,11 @@
                     {
                         "propertyLabel": "has preferred name of corporate body (RDA 11.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50041",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -58501,7 +58521,7 @@
                             ]
                         },
                         "uwFormOrder": "142",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
