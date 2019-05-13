@@ -25504,9 +25504,9 @@
                     {
                         "propertyLabel": "has variant title of manifestation (RDA 2.3.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30128",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -25517,11 +25517,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "36",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has collotyper agent (RDA 18.5)",
@@ -29948,8 +29948,8 @@
                     {
                         "propertyLabel": "has other title information (RDA 2.3.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30142",
-                        "mandatory": "",
-                        "repeatable": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
                         "type": "",
                         "valueConstraint": {
                             "useValuesFrom": [],
@@ -29961,11 +29961,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "35",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has material",
@@ -31026,9 +31026,9 @@
                     {
                         "propertyLabel": "has parallel other title information (RDA 2.3.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30151",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -31039,11 +31039,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "35",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has parallel name of producer (RDA 2.7.5)",
@@ -31224,9 +31224,9 @@
                     {
                         "propertyLabel": "has parallel title proper (RDA 2.3.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30203",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
@@ -31237,11 +31237,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "33",
+                        "statusUw": "AM 2019-05-13",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has part manifestation (RDA 24.5)",
