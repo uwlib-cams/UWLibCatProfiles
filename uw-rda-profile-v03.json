@@ -34953,7 +34953,7 @@
                             ]
                         },
                         "uwFormOrder": "176",
-                        "statusUw": "CEC 2019-05-03",
+                        "statusUw": "AM 2019-05-14",
                         "noteUw": "related item of item P40046",
                         "qUw": "where did property URI go?",
                         "usedInProfile": ["monograph"],
@@ -42249,7 +42249,7 @@
                         },
                         "uwFormOrder": "141",
                         "statusUw": "AM 2019-05-13",
-                        "noteUw": "",
+                        "noteUw": "Alexis test note, delete",
                         "qUw": "",
                         "usedInProfile": ["monogrpah"],
                         "remark": "http://access.rdatoolkit.org/10.6.html"
