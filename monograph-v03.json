@@ -375,7 +375,7 @@
                     },
                     {
                         "propertyLabel": "has related item of item",
-                        "propertyURI": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",

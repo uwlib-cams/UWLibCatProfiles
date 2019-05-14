@@ -13,7 +13,7 @@
                 "id": "rt:rda:work",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json\"",
+                "schema": "https://github.cohas rem/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json\"",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -34939,6 +34939,7 @@
                     },
                     {
                         "propertyLabel": "has related item of item",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
