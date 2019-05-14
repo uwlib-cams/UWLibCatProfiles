@@ -22,7 +22,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -88,7 +87,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -160,7 +158,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">literal</j:string>
-                  <j:string key="remark"/>
                </j:map>
                <j:map>
                   <j:string key="propertyLabel">has language of expression (RDA 6.11)</j:string>
@@ -221,7 +218,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -274,7 +270,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">literal</j:string>
-                  <j:string key="remark"/>
                </j:map>
                <j:map>
                   <j:string key="propertyLabel">has other title information (RDA 2.3.4)</j:string>
@@ -324,7 +319,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -356,7 +350,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">lookup</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -431,7 +424,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -601,7 +593,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -624,7 +615,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -647,7 +637,6 @@
                   <j:string key="mandatory">false</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">resource</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
                         <string>rt:bf2:AdminMetadata</string>
@@ -660,7 +649,6 @@
                   <j:string key="mandatory">true</j:string>
                   <j:string key="repeatable">true</j:string>
                   <j:string key="type">lookup</j:string>
-                  <j:string key="remark"/>
                   <j:map key="valueConstraint">
                      <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
                         <string>http://id.loc.gov/vocabulary/organizations</string>
