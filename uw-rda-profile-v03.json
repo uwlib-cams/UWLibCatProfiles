@@ -12709,7 +12709,7 @@
                         },
                         "uwFormOrder": "undetermined",
                         "statusUw": "test CEC 2019-05-09",
-                        "noteUw": "Crystal stinks",
+                        "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
                     },
@@ -42249,7 +42249,7 @@
                         },
                         "uwFormOrder": "141",
                         "statusUw": "AM 2019-05-13",
-                        "noteUw": "git test 12",
+                        "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monogrpah"],
                         "remark": "http://access.rdatoolkit.org/10.6.html"
