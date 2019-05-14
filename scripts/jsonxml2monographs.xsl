@@ -2,11 +2,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns="http://www.w3.org/2005/xpath-functions" 
     xmlns:j="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="j" version="3.0">
-    <!-- still to do:
-         (1) either pipline the three transforms or turn into one.
-         (2) re-output source doc profile:rda with additional info as needed.
-         (3) Suppress keys with no value.
-    -->
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
@@ -60,7 +55,6 @@
     <xsl:template match="j:array[@key = 'propertyTemplates']">
         <xsl:for-each select="j:map">
             <xsl:if test="j:array[@key = 'usedInProfile']/j:string = 'monograph'">
-                <!-- properties need repair -->
                 <j:map>
                     <j:string key="propertyLabel">
                         <xsl:value-of select="normalize-space(j:string[@key = 'propertyLabel'])"/>
@@ -80,8 +74,6 @@
                     <j:string key="remark">
                         <xsl:value-of select="j:string[@key = 'remark']"/>
                     </j:string>
-                    <!-- needs to be output from RDA registry; not in version o2 of our RDA profile -->
-                  <!--  <xsl:copy-of select="j:map[@key = 'valueConstraint']"/>-->
                     <xsl:if test="j:map[@key='valueConstraint']/descendant::text()">
                     <j:map key="valueConstraint">
                         <xsl:apply-templates select="j:map[@key = 'valueConstraint']"/>
@@ -105,5 +97,4 @@
             <xsl:copy-of select="j:array[@key='defaults']"></xsl:copy-of>
         </xsl:if>
     </xsl:template>
-
 </xsl:stylesheet>

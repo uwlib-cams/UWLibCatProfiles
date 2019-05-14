@@ -18,7 +18,6 @@
     <xsl:variable name="p" select="document('../rda/p.xml')"/>
     <xsl:variable name="t" select="document('../rda/t.xml')"/>
     <xsl:variable name="c" select="document('../rda/c.xml')"/>
-
     <xsl:template match="/">
         <j:map>
             <j:map key="Profile">
@@ -190,5 +189,4 @@
             </j:map>
         </xsl:if>
     </xsl:template>
-
 </xsl:stylesheet>
