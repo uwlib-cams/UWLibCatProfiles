@@ -29307,10 +29307,10 @@
                     },
                     {
                         "propertyLabel": "has note on title (RDA 2.17.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30063",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30063",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29320,19 +29320,19 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "86",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     },
                     {
                         "propertyLabel": "has note on copyright date (RDA 2.17.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30059",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29342,19 +29342,19 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "94",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.10.html"
                     },
                     {
                         "propertyLabel": "has note on manufacture statement (RDA 2.17.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30053",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29364,11 +29364,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "93",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.9.html"
                     },
                     {
@@ -29418,9 +29418,9 @@
                     {
                         "propertyLabel": "has note on publication statement (RDA 2.17.7)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30055",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29430,11 +29430,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "91",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.7.html"
                     },
                     {
@@ -29550,9 +29550,9 @@
                     {
                         "propertyLabel": "has note on production statement (RDA 2.17.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30054",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29562,11 +29562,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "90",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.6.html"
                     },
                     {
@@ -29593,10 +29593,10 @@
                     },
                     {
                         "propertyLabel": "has note on edition statement (RDA 2.17.4)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30064",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30064",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29606,19 +29606,19 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "88",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.4.html"
                     },
                     {
                         "propertyLabel": "has note on statement of responsibility (RDA 2.17.3)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30057",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30057",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29628,19 +29628,19 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "87",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.3.html"
                     },
                     {
                         "propertyLabel": "has note on distribution statement (RDA 2.17.8)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30052",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29650,11 +29650,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "92",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.8.html"
                     },
                     {
@@ -29681,7 +29681,7 @@
                     },
                     {
                         "propertyLabel": "has identifier for manifestation (RDA 2.15)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30004",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30004",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
@@ -29695,7 +29695,7 @@
                             ]
                         },
                         "uwFormOrder": "84",
-                        "statusUw": "AM 2019-05-15",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": [],
@@ -30141,9 +30141,9 @@
                     {
                         "propertyLabel": "has note on numbering of sequence (RDA 2.17.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30062",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -30153,11 +30153,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "89",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.5.html"
                     },
                     {
