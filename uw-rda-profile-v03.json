@@ -3,17 +3,17 @@
         "title": "RDA",
         "id": "profile:rda",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-05-01",
+        "date": "2019-05-15",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
-        "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwProfile.json",
+        "schema": "",
         "resourceTemplates": [
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "RT RDA Work",
                 "id": "rt:rda:work",
-                "date": "2019-05-01",
+                "date": "2019-05-15",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.cohas rem/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json\"",
+                "schema": "",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -22,12 +22,16 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"],
+                            "valueDataType": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
                         },
                         "uwFormOrder": "undetermined",
-                        "statusUw": "test CEC 2019-05-09",
+                        "statusUw": "",
                         "noteUw": "",
-                        "qUw": "is this sufficient for admin metadata?",
+                        "qUw": [
+                            "is this sufficient for admin metadata?(CEC)",
+                            "Did we decide 'undetermined' was the best way to put admin metadata at the top? Should form order be '0'?"
+                        ],
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -1485,13 +1489,12 @@
                             "useValuesFrom": [
                                 "urn:ld4p:qa:genres",
                                 "http://id.loc.gov/vocabulary/marcgt"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""}
+                            ]
                         },
                         "uwFormOrder": "12",
-                        "statusUw": "AM 2019-05-13",
-                        "noteUw": "RDA registry scope note:'includes a class or genre'",
-                        "qUw": "",
+                        "statusUw": "",
+                        "noteUw": "No RDA Object property (CEC)",
+                        "qUw": "When the value is a lookup or resource, and there is no object property in RDA, should we go with the parent property? (CEC)",
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
@@ -2366,12 +2369,12 @@
                     },
                     {
                         "propertyLabel": "has date of work (RDA 6.4)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10219",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/datatype/P10219",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "13",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
@@ -6457,8 +6460,8 @@
                     {
                         "propertyLabel": "has identifier for work (RDA 6.8)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10002",
-                        "mandatory": "",
-                        "repeatable": "",
+                        "mandatory": "true",
+                        "repeatable": "true",
                         "type": "",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -6472,7 +6475,7 @@
                         "uwFormOrder": "",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
+                        "qUw": "We need a way to 'mint uri' here, but we don't have a lookup or understanding of how URI minting happens in Sinopia. Revisit after we can look at the MVP? (CEC)",
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/6.8.html"
                     },
@@ -6786,24 +6789,26 @@
                     },
                     {
                         "propertyLabel": "has place of origin of work (RDA 6.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10218",
-                        "mandatory": "",
-                        "repeatable": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/object/P10218",
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:names:place",
+                                "urn:ld4p:qa:geonames",
+                                "http://id.loc.gov/vocabulary/countries",
+                                "http://id.loc.gov/vocabulary/geographicAreas",
+                                "http://www.geonames.org"
+                            ],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
                         "uwFormOrder": "14",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": [],
+                        "qUw": "What happens if we use a data type that isn't implemented yet? Used 'Place' class here for fun(CEC)",
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     },
                     {
@@ -7643,12 +7648,12 @@
                     },
                     {
                         "propertyLabel": "has preferred title of work (RDA 6.2.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/datatype/P10223",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "11",
-                        "statusUw": "CEC 2019-05-01",
+                        "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
@@ -11570,23 +11575,25 @@
                     {
                         "propertyLabel": "has nature of content (RDA 7.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType/"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
+                                {"defaultLiteral": "text"},
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1014"},
+                                {"defaultLiteral": "still image"}
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "16",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": ["Asked about how type-ahead works, what's up with RDA vocabularies in Sinopia on 2019-05-15. May need to wait for MVP (CEC)",
+                        "Use this version of the property for monographs only. Has defaults for monographs"
+                        ],
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.2.html"
                     },
                     {
