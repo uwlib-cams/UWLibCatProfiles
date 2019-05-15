@@ -2367,7 +2367,7 @@
                     },
                     {
                         "propertyLabel": "has date of work (RDA 6.4)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/datatype/P10219",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10219",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
@@ -6787,7 +6787,7 @@
                     },
                     {
                         "propertyLabel": "has place of origin of work (RDA 6.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/object/P10218",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10218",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -7646,7 +7646,7 @@
                     },
                     {
                         "propertyLabel": "has preferred title of work (RDA 6.2.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/datatype/P10223",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
@@ -12701,6 +12701,10 @@
                 "id": "rt:rda:expression",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -24065,6 +24069,10 @@
                 "id": "rt:rda:manifestation",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -32591,6 +32599,10 @@
                 "id": "rt:rda:item",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -35501,6 +35513,10 @@
                 "id": "rt:rda:agent",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Agent",
@@ -57843,6 +57859,10 @@
                 "id": "rt:rda:nomen",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Nomen",
@@ -61311,6 +61331,10 @@
                 "id": "rt:rda:place",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Place",
@@ -62410,6 +62434,10 @@
                 "id": "rt:rda:timespan",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
+<<<<<<< HEAD
+=======
+                "schema": "",
+>>>>>>> 2160ee029b83f850dfbf15fb1b6b385497e52f65
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Timespan",
