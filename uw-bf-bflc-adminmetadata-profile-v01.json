@@ -1,17 +1,17 @@
 {
     "Profile": {
-        "title": "profile BF2 Admin Metadata",
+        "title": "profile BF2 BFLC Admin Metadata",
         "id": "profile:bf2:bflc:AdminMetadata",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-05-09",
-        "description": "BF2 BFLC AdminMetadata",
+        "date": "2019-05-15",
+        "description": "Metadata for RDA Resources",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json",
         "resourceTemplates": [
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "RT BF2 BFLC Admin Metadata",
                 "id": "rt:bf2:AdminMetadata",
-                "date": "2019-05-09",
+                "date": "2019-05-15",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -19,12 +19,12 @@
                         "propertyLabel": "Your cataloger ID (UW netid)",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerID",
                         "mandatory": "true",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": "1",
-                        "statusUw": "test CEC 2019-05-01",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "",
-                        "qUw": "will netid be sufficient? or should it be the employee ID?",
+                        "qUw": "",
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -58,8 +58,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "3",
-                        "statusUw": "CEC 2019-05-01",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -84,8 +84,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "4",
-                        "statusUw": "CEC 2019-05-01",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -94,10 +94,12 @@
                         "propertyLabel": "Source of cataloging",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
                         "mandatory": "true",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations",
+                                                "urn:ld4p:qa:names:organization",
+                                                "urn:ld4p:qa:subjects:organization"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"},
                             "defaults": [
                                 {
@@ -106,9 +108,9 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "5",
-                        "statusUw": "CEC 2019-05-09",
-                        "noteUw": "Not repeatable because we're only using this profile for original cataloging. Presumably will be repeatable for copy cat workflow",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
+                        "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
                     },
@@ -128,8 +130,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": "6",
-                        "statusUw": "CEC 2019-05-09",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -141,8 +143,8 @@
                         "repeatable": "false",
                         "type": "literal",
                         
-                        "uwFormOrder": "7",
-                        "statusUw": "CEC 2019-05-09",
+                        "uwFormOrder": "",
+                        "statusUw": "",
                         "noteUw": "date or date and time on which metadata first created",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -154,8 +156,8 @@
                         "repeatable": "false",
                         "type": "literal",
                         
-                        "uwFormOrder": "8",
-                        "statusUw": "CEC 2019-05-09",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "date or date and time on which metadata last changed",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -164,14 +166,14 @@
                         "propertyLabel": "Description authentication",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/marcauthen"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication"}
                         },
-                        "uwFormOrder": "9",
-                        "statusUw": "CEC 2019-05-09",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"]
@@ -182,7 +184,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "RT BF2 BFLC Admin Metadata Status",
                 "id": "rt:bf2:AdminMetadata:Status",
-                "date": "2019-05-01",
+                "date": "2019-05-15",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
                 "propertyTemplates": [
@@ -197,10 +199,10 @@
                                 {"defaultLiteral": "n"}
                             ]
                         },
-                        "uwFormOrder": "2",
-                        "statusUw": "test CEC 2019-05-01",
+                        "uwFormOrder": "undetermined",
+                        "statusUw": "",
                         "noteUw": "",
-                        "qUw": "is it necessary to break it up in this way? why don't we just skip the class and make property status have a literal value?",
+                        "qUw": "",
                         "usedInProfile": ["monograph"]
                     }
                 ]
