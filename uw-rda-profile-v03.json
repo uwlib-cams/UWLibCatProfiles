@@ -28437,8 +28437,8 @@
                     {
                         "propertyLabel": "has mode of issuance (RDA 2.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
-                        "mandatory": "false",
-                        "repeatable": "true",
+                        "mandatory": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -28458,7 +28458,7 @@
                             ]
                         },
                         "uwFormOrder": "83",
-                        "statusUw": "CEC 2019-05-01",
+                        "statusUw": "CEC 2019-05-15",
                         "noteUw": "",
                         "qUw": "How will two URI's in one lookup...look? CEC 2019-05-01",
                         "usedInProfile": ["monograph"],
@@ -29381,7 +29381,7 @@
                         },
                         "uwFormOrder": "",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": "test breakit",
                         "qUw": "",
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/3.21.html"
@@ -29675,9 +29675,9 @@
                     {
                         "propertyLabel": "has identifier for manifestation (RDA 2.15)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30004",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29687,8 +29687,8 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "84",
+                        "statusUw": "AM 2019-05-15",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": [],
