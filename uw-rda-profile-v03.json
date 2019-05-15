@@ -29388,11 +29388,7 @@
                         },
                         "uwFormOrder": "",
                         "statusUw": "",
-<<<<<<< HEAD
-                        "noteUw": "test breakit",
-=======
-                        "noteUw": "Crystal stinks",
->>>>>>> e0805572bf40a52cb69dd1775c419daaa38d4354
+                        "noteUw": "",
                         "qUw": "",
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/3.21.html"
