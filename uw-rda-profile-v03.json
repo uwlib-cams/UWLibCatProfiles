@@ -28601,23 +28601,44 @@
                     {
                         "propertyLabel": "has media type (RDA 3.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType/"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "98",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/3.2.html"
+                    },{
+                        "propertyLabel": "has media type (RDA 3.2)(Input if lookup fails)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType/"],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
+                        },
+                        "uwFormOrder": "98",
+                        "statusUw": "",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/3.2.html"
                     },
                     {
@@ -29436,9 +29457,9 @@
                     {
                         "propertyLabel": "has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30050",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29448,19 +29469,19 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "96",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.13.html"
                     },
                     {
                         "propertyLabel": "has note on identifier for manifestation (RDA 2.17.14)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30260",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29470,11 +29491,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "97",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.14.html"
                     },
                     {
@@ -29568,9 +29589,9 @@
                     {
                         "propertyLabel": "has note on series statement (RDA 2.17.11)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30058",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -29580,11 +29601,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "95",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.17.11.html"
                     },
                     {
