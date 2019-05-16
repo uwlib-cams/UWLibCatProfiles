@@ -24,8 +24,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Record status",
@@ -39,8 +38,7 @@
                         "uwFormOrder": "2",
                         "statusUw": "test CEC 2019-05-01",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Encoding level",
@@ -61,8 +59,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Description conventions",
@@ -87,8 +84,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Source of cataloging",
@@ -97,9 +93,11 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations",
-                                                "urn:ld4p:qa:names:organization",
-                                                "urn:ld4p:qa:subjects:organization"],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations",
+                                "urn:ld4p:qa:names:organization",
+                                "urn:ld4p:qa:subjects:organization"
+                            ],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"},
                             "defaults": [
                                 {
@@ -111,8 +109,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Description language",
@@ -133,8 +130,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Data creation date",
@@ -142,12 +138,10 @@
                         "mandatory": "true",
                         "repeatable": "false",
                         "type": "literal",
-                        
                         "uwFormOrder": "",
                         "statusUw": "",
                         "noteUw": "date or date and time on which metadata first created",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
                     {
                         "propertyLabel": "Data change date",
@@ -155,14 +149,12 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "date or date and time on which metadata last changed",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     },
-                     {
+                    {
                         "propertyLabel": "Description authentication",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
                         "mandatory": "false",
@@ -175,8 +167,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     }
                 ]
             },
@@ -202,8 +193,7 @@
                         "uwFormOrder": "undetermined",
                         "statusUw": "",
                         "noteUw": "",
-                        "qUw": "",
-                        "usedInProfile": ["monograph"]
+                        "qUw": ""
                     }
                 ]
             }

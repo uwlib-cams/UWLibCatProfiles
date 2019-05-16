@@ -1478,7 +1478,7 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyLabel": "has category of work (RDA 6.3)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1491,31 +1491,63 @@
                         },
                         "uwFormOrder": "12",
                         "statusUw": "",
-                        "noteUw": "No RDA Object property (CEC)",
-                        "qUw": "When the value is a lookup or resource, and there is no object property in RDA, should we go with the parent property? (CEC)",
+                        "noteUw": "revisit marc genre terms. may need a type-ahead situation",
+                        "qUw": "",
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
                     {
-                        "propertyLabel": "has intended audience of representative expression (RDA 7.7)",
+                        "propertyLabel": "has category of work (RDA 6.3)(Record URI (if available) or authorized access point if lookup fails)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:genres",
+                                "http://id.loc.gov/vocabulary/marcgt"
+                            ]
+                        },
+                        "uwFormOrder": "12.1",
+                        "statusUw": "",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/6.3.html"
+                    },
+                    {
+                        "propertyLabel": "has intended audience of representative expression (RDA 7.7)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10217",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:demographics", "urn:ld4p:qa:subjects", "urn:ld4p:qa:dbpedia"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "18",
                         "statusUw": "",
                         "noteUw": "",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/7.7.html"
+                    },
+                    {
+                        "propertyLabel": "has intended audience of representative expression (RDA 7.7)(Record URI (if available) or authorized access point if lookup fails)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10217",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "18.1",
+                        "statusUw": "",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.7.html"
                     },
                     {
@@ -6786,7 +6818,7 @@
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
-                        "propertyLabel": "has place of origin of work (RDA 6.5)",
+                        "propertyLabel": "has place of origin of work (RDA 6.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10218",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -6804,7 +6836,20 @@
                         },
                         "uwFormOrder": "14",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": "loc.gov vocabularies need re-evaluation, will need type-ahead",
+                        "qUw": "What happens if we use a data type that isn't implemented yet? Used 'Place' class here for fun(CEC)",
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/6.5.html"
+                    },
+                    {
+                        "propertyLabel": "has place of origin of work (RDA 6.5)(Record URI (if available) or authorized access point if lookup fails)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10218",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "14.1",
+                        "statusUw": "",
+                        "noteUw": "loc.gov vocabularies need re-evaluation, will need type-ahead",
                         "qUw": "What happens if we use a data type that isn't implemented yet? Used 'Place' class here for fun(CEC)",
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/6.5.html"
@@ -11549,31 +11594,38 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has coverage of content (RDA 7.3)",
+                        "propertyLabel": "has coverage of content (RDA 7.3)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/geographicAreas"]
                         },
-                        "uwFormOrder": "",
+                        "uwFormOrder": "17",
                         "statusUw": "",
-                        "noteUw": "",
+                        "noteUw": "needs type-ahead formatting",
                         "qUw": "",
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
                     {
-                        "propertyLabel": "has nature of content (RDA 7.2)",
+                        "propertyLabel": "has coverage of content (RDA 7.3)(Record URI or (if available) or authorized access point if lookup fails)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "17.1",
+                        "statusUw": "",
+                        "noteUw": "",
+                        "qUw": "",
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/7.3.html"
+                    },
+                    {
+                        "propertyLabel": "has nature of content (RDA 7.2)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
-                        "mandatory": "true",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
@@ -11587,9 +11639,23 @@
                         },
                         "uwFormOrder": "16",
                         "statusUw": "",
-                        "noteUw": ["Asked about how type-ahead works, what's up with RDA vocabularies in Sinopia on 2019-05-15. May need to wait for MVP (CEC)",
+                        "noteUw": ["Need to format as type-ahead (CEC)",
                         "Use this version of the property for monographs only. Has defaults for monographs"
                         ],
+                        "qUw": "",
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/7.2.html"
+                    },
+                    {
+                        "propertyLabel": "has nature of content (RDA 7.2)(Record URI (if available) or authorized access point if lookup fails)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        },
+                        "uwFormOrder": "16.1",
+                        "statusUw": "",
+                        "noteUw": ["Use this version of the property for monographs only. Has defaults for monographs"],
                         "qUw": "",
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.2.html"
