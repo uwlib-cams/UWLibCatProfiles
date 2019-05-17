@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-property-template.json",
+  "$id": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-property-template.json",
   "title": "UW Property Template Schema, based on Sinopia Property Template Schema v0.0.9",
   "description": "Property template for property associated with the entity described by a resource template.",
   "version": "0.0.9",
@@ -19,14 +19,15 @@
     },
     "statusUw": {
         "type": "string",
-        "pattern": "^*[0-9]{{4}}-[0-9]{{2}}-[0-9]{{2}}*$",
+        "pattern": "^*[0-9{{4}}]-[0-9{{2}}]-[0-9{{2}}]*$",
         "$comment": "Status indication must contain YYYY-MM-DD and should contain initials of individual marking status as complete, etc."
     }, 
     "usedInProfile": {
         "type": "array",
         "contains": {
          "type": "string",
-         "enum": ["monograph"],
+         "enum": ["monograph"]
+         },
          "$comment": "Add additional strings to enumeration as additional format-specific profiles need to be created"
         },
     "noteUw": {
@@ -36,7 +37,7 @@
         }
     },
     "qUw": {
-         "type": "array",
+        "type": "array",
         "contains": {
             "type": "string"
         }  
