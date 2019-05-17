@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
   "type": "object",
-  "title": "Sinopia Resource Template Schema",
+  "title": "UW Resource Template Schema, based on Sinopia Resource Template Schema v0.0.9",
   "version": "0.0.9",
   "description": "A Resource Template construct (or hash) describes one of the various Sinopia entities (Works, Instances, Agent, etc.) associated with a given entity type and set of properties asserted against the entity.",
   "required": [
@@ -56,7 +56,7 @@
       ]
     },
     "propertyTemplates": {
-      "$ref": "https://ld4p.github.io/sinopia/schemas/0.0.9/property-templates-array.json"
+      "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-property-templates-array.json"
     },
     "remark": {
       "type": "string",
@@ -92,13 +92,10 @@
       ]
     },
     "schema": {
-      "const": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+      "const": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
       "title": "URL for Resource Template's JSON schema",
       "description": "The resource template adheres to the JSON schema at this URL",
-      "minLength": 8,
-      "example": [
-        "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
-      ]
+      "minLength": 8
     },
     "source": {
       "type": "string",

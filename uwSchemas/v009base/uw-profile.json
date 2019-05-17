@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-profile.json",
   "type": "object",
-  "title": "Sinopia Profile Schema",
+  "title": "UW Profile Schema, based on Sinopia Profile Schema v0.0.9",
   "description": "Profile, or array of Resource Templates with some top-level metadata.",
   "version": "0.0.9",
   "required": [ "Profile" ],
@@ -81,16 +81,13 @@
           ]
         },
         "resourceTemplates": {
-          "$ref": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-templates-array.json"
+          "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-templates-array.json"
         },
         "schema": {
-          "const": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+          "const": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-profile.json",
           "title": "URL for Profile's JSON schema",
           "description": "The profile adheres to the JSON schema at this URL",
-          "minLength": 8,
-          "example": [
-            "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
-          ]
+          "minLength": 8
         },
         "source": {
           "type": "string",
