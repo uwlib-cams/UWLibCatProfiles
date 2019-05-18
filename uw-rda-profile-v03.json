@@ -5,7 +5,7 @@
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-05-15",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
-        "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-profile.json",
+        "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
@@ -13,7 +13,7 @@
                 "id": "rt:rda:work",
                 "date": "2019-05-15",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -23,9 +23,9 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"],
-                            "valueDataType": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [
@@ -12768,7 +12768,7 @@
                 "id": "rt:rda:expression",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -12779,7 +12779,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
@@ -24133,7 +24133,7 @@
                 "id": "rt:rda:manifestation",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -24144,7 +24144,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
@@ -32660,7 +32660,7 @@
                 "id": "rt:rda:item",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -32671,7 +32671,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
@@ -35571,7 +35571,7 @@
                 "id": "rt:rda:agent",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Agent",
@@ -35582,7 +35582,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
@@ -57914,7 +57914,7 @@
                 "id": "rt:rda:nomen",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Nomen",
@@ -57925,7 +57925,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
@@ -61383,7 +61383,7 @@
                 "id": "rt:rda:place",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Place",
@@ -61394,7 +61394,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
@@ -62483,7 +62483,7 @@
                 "id": "rt:rda:timespan",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Timespan",
@@ -62494,7 +62494,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         },
-                        "uwFormOrder": "undetermined",
+                        "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
