@@ -22999,7 +22999,33 @@
                             ]
                         },
                         "uwFormOrder": "120",
-                        "statusUw": "AM 2019-05-13",
+                        "statusUw": "attention",
+                        "noteUw": "",
+                        "qUw": "do we want to include the id.loc content types above?",
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/6.9.html"
+                    },
+                    {
+                        "propertyLabel": "has content type (RDA 6.9)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://rdaregistry.info/termList/RDAContentType",
+                                "https://id.loc.gov/vocabulary/contentTypes"
+                            ],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
+                                }
+                            ]
+                        },
+                        "uwFormOrder": "120",
+                        "statusUw": "done",
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
@@ -28713,7 +28739,7 @@
                         "uwFormOrder": "83",
                         "statusUw": "CEC 2019-05-15",
                         "noteUw": "",
-                        "qUw": ["How will two URI's in one lookup...look? CEC 2019-05-01","When we use this for other formats, will we create a copy of the property with new defaults under form number 83.1 (AM)"],
+                        "qUw": "How will two URI's in one lookup...look? CEC 2019-05-01",
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.13.html"
                     },
