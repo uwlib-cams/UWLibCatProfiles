@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+  "$id": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
   "type": "object",
   "title": "UW Resource Template Schema, based on Sinopia Resource Template Schema v0.0.9",
   "version": "0.0.9",
@@ -56,7 +56,7 @@
       ]
     },
     "propertyTemplates": {
-      "$ref": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-property-templates-array.json"
+      "$ref": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-property-templates-array.json"
     },
     "remark": {
       "type": "string",
@@ -92,7 +92,7 @@
       ]
     },
     "schema": {
-      "const": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/v009base/uw-resource-template.json",
+      "const": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
       "title": "URL for Resource Template's JSON schema",
       "description": "The resource template adheres to the JSON schema at this URL",
       "minLength": 8
