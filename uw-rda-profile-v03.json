@@ -1707,23 +1707,17 @@
                     {
                         "propertyLabel": "has colour content of representative expression",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": "",
-                        "statusUw": "",
+                        "statusUw": "27",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has commissioning body agent (RDA 18.5)",
@@ -2178,7 +2172,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -7158,7 +7155,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/millus/"]
-                            },
+                        },
                         "uwFormOrder": "26",
                         "statusUw": "",
                         "noteUw": [],
@@ -8674,25 +8671,16 @@
                         "remark": "http://access.rdatoolkit.org/24.7 24.8 29.6 29.7.html"
                     },
                     {
-                        "propertyLabel": "has note on work",
+                        "propertyLabel": "has note on work (RDA 5.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10330",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "29",
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is opera adaptation of work (RDA 24.5)",
@@ -10328,8 +10316,12 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:names", "urn:ld4p:qa:names:geocoordinates", "http://id.loc.gov/vocabulary/countries"]
-                            },
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:names:geocoordinates",
+                                "http://id.loc.gov/vocabulary/countries"
+                            ]
+                        },
                         "uwFormOrder": "25",
                         "statusUw": "",
                         "noteUw": [],
@@ -11410,7 +11402,11 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names", "urn:ld4p:qa:subjects" ],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:subjects"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -14666,8 +14662,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -15730,7 +15725,8 @@
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.13.2.html"
-                    },{
+                    },
+                    {
                         "propertyLabel": "has script (RDA 7.13.2)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
@@ -23078,7 +23074,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                           "valueTemplateRefs": [],
+                            "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
@@ -24653,7 +24649,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "108.1",
                         "statusUw": "done",
                         "noteUw": "",
@@ -26707,7 +26702,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -27882,7 +27880,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "106.1",
                         "statusUw": "done",
                         "noteUw": "",
@@ -28057,7 +28054,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "105.1",
                         "statusUw": "done",
                         "noteUw": "",
@@ -28839,9 +28835,7 @@
                         "repeatable": "false",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                               
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -29034,7 +29028,7 @@
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
-                       "remark": "http://access.rdatoolkit.org/3.2.html"
+                        "remark": "http://access.rdatoolkit.org/3.2.html"
                     },
                     {
                         "propertyLabel": "has last alphanumeric designation of alternative sequence (RDA 2.6.8)",
@@ -29576,7 +29570,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -29589,7 +29586,8 @@
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/21.5.html"
-                    },{
+                    },
+                    {
                         "propertyLabel": "has manufacturer agent (RDA 21.5)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30082",
                         "mandatory": "false",
@@ -29753,7 +29751,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "86",
                         "statusUw": "done",
                         "noteUw": "",
@@ -29776,7 +29773,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "94",
                         "statusUw": "done",
                         "noteUw": "",
@@ -29804,7 +29800,6 @@
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
-
                         "remark": "http://access.rdatoolkit.org/2.17.9.html"
                     },
                     {
@@ -29871,7 +29866,6 @@
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
-
                         "remark": "http://access.rdatoolkit.org/2.17.7.html"
                     },
                     {
@@ -29933,7 +29927,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "112",
                         "statusUw": "done",
                         "noteUw": "",
@@ -29978,7 +29971,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "111",
                         "statusUw": "done",
                         "noteUw": "",
@@ -30001,7 +29993,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "90",
                         "statusUw": "done",
                         "noteUw": "",
@@ -30068,7 +30059,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "87",
                         "statusUw": "done",
                         "noteUw": "",
@@ -30507,7 +30497,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "101",
                         "statusUw": "done",
                         "noteUw": "",
@@ -30597,7 +30586,6 @@
                         },
                         "uwFormOrder": "89",
                         "statusUw": "done",
-
                         "noteUw": "",
                         "qUw": "",
                         "usedInProfile": ["monograph"],
@@ -31561,7 +31549,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -31689,7 +31680,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names"
+                            ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -32629,7 +32623,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "100.1",
                         "statusUw": "done",
                         "noteUw": "",
@@ -32872,7 +32865,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "107.1",
                         "statusUw": "done",
                         "noteUw": "",
@@ -32917,7 +32909,6 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-
                         "uwFormOrder": "114",
                         "statusUw": "done",
                         "noteUw": "",
@@ -34752,9 +34743,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -35027,10 +35016,10 @@
                         "propertyLabel": "has note on item (RDA 2.21)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40028",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": "153",
-                        "statusUw": "attention",
+                        "uwFormOrder": "152.1",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -42895,8 +42884,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -46146,8 +46134,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -57454,8 +57441,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                            ],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -64372,7 +64358,8 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
-                    },{
+                    },
+                    {
                         "propertyLabel": "has owner(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
                         "mandatory": "false",
