@@ -35890,28 +35890,13 @@
                 ]
             },
             {
-                "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10002",
                 "resourceLabel": "RT RDA Agent",
                 "id": "rt:rda:agent",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                    {
-                        "propertyLabel": "Administrative Metadata for Agent",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
-                        },
-                        "uwFormOrder": 0,
-                        "statusUw": "test CEC 2019-05-09",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": ["monograph"]
-                    },
                     {
                         "propertyLabel": "is abridger agent of (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50157",
@@ -56707,7 +56692,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": ["Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/9.15.html"
                     },
                     {
@@ -56730,7 +56715,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": ["Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/9.15.html"
                     },
                     {
