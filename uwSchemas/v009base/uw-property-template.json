@@ -19,7 +19,7 @@
     },
     "statusUw": {
         "type": "string",
-        "pattern": "^*[0-9{{4}}]-[0-9{{2}}]-[0-9{{2}}]*$",
+        "pattern": "^.*([0-9]{4})-([0-9]{2})-([0-9]{2}).*$",
         "$comment": "Status indication must contain YYYY-MM-DD and should contain initials of individual marking status as complete, etc."
     }, 
     "usedInProfile": {
