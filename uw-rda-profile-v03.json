@@ -36730,10 +36730,10 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": "145",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.4.3.html"
                     },
                     {
@@ -39197,10 +39197,10 @@
                             ]
                         },
                         "uwFormOrder": "138",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/10.3.html"
                     },
                     {
@@ -39220,10 +39220,10 @@
                             ]
                         },
                         "uwFormOrder": "138.1",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/10.3.html"
                     },
                     {
@@ -42688,10 +42688,10 @@
                             ]
                         },
                         "uwFormOrder": "137",
-                        "statusUw": "AM 2019-5-13",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/10.2.2.html"
                     },
                     {
@@ -42802,10 +42802,10 @@
                             ]
                         },
                         "uwFormOrder": "141",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/10.6.html"
                     },
                     {
@@ -42825,10 +42825,10 @@
                             ]
                         },
                         "uwFormOrder": "141.1",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/10.6.html"
                     },
                     {
@@ -43371,10 +43371,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "144",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.4.2.html"
                     },
                     {
@@ -46052,10 +46052,10 @@
                             ]
                         },
                         "uwFormOrder": "136",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.16.html"
                     },
                     {
@@ -46075,10 +46075,10 @@
                             ]
                         },
                         "uwFormOrder": "136.1",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.16.html"
                     },
                     {
@@ -50564,10 +50564,10 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": "146",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.4.4.html"
                     },
                     {
@@ -51436,10 +51436,10 @@
                             ]
                         },
                         "uwFormOrder": "132",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["this one, and other labels for people: should it be a literal?"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.5.html"
                     },
                     {
@@ -51459,10 +51459,10 @@
                             ]
                         },
                         "uwFormOrder": "132.1",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["this one, and other labels for people: should it be a literal?"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.5.html"
                     },
                     {
@@ -51577,10 +51577,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "149",
-                        "statusUw": "CEC 2019-05-02",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.6.html"
                     },
                     {
@@ -52661,10 +52661,10 @@
                             ]
                         },
                         "uwFormOrder": "143",
-                        "statusUw": "AM 2019-05-13",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.3.2.html"
                     },
                     {
@@ -56720,10 +56720,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "133",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.12.html"
                     },
                     {
@@ -56755,10 +56755,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "131",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.4.html"
                     },
                     {
@@ -56772,10 +56772,10 @@
                             "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": "129",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.2.2.html"
                     },
                     {
@@ -56839,10 +56839,10 @@
                             ]
                         },
                         "uwFormOrder": "135",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.15.html"
                     },
                     {
@@ -56862,10 +56862,10 @@
                             ]
                         },
                         "uwFormOrder": "135.1",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/9.15.html"
                     },
                     {
@@ -57382,10 +57382,10 @@
                             ]
                         },
                         "uwFormOrder": "150",
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.9.html"
                     },
                     {
@@ -57571,10 +57571,10 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": "147",
-                        "statusUw": "CEC 2019-05-10",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.4.5.html"
                     },
                     {
@@ -57593,10 +57593,10 @@
                             ]
                         },
                         "uwFormOrder": "142",
-                        "statusUw": "AM 2019-05-13",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [""],
                         "remark": "http://access.rdatoolkit.org/11.2.2.html"
                     },
                     {
