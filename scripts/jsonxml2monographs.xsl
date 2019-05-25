@@ -2,84 +2,121 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns="http://www.w3.org/2005/xpath-functions" 
     xmlns:j="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="j" version="3.0">
+    <!-- Removing prefixes from literal output elements;
+        retaining prefixes in XPaths 
+        (Why are we doing this again @gerontakos? To beautify output XML? To beautify output XML! 
+        Was that the only reason?) -->
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
-        <j:map xmlns="http://www.w3.org/2005/xpath-functions">
+        <map xmlns="http://www.w3.org/2005/xpath-functions">
             <xsl:apply-templates select="j:map/j:map[@key = 'Profile']"/>
-        </j:map>
+        </map>
     </xsl:template>
     <xsl:template match="j:map[@key = 'Profile']">
-        <j:map key="Profile">
-            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
-            <j:string key="date">2019-05-14</j:string>
-            <j:string key="description">RDA profile for describing monographs</j:string>
-            <j:string key="id">profile:monograph</j:string>
-            <j:string key="title">WAU profile RDA monograph</j:string>
-            <j:string key="schema"
-                >https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json</j:string>
-            <j:array key="resourceTemplates">
+        <map key="Profile">
+            <!-- Pulling profile properties from the profile -->
+            <string key="author">
+                <xsl:value-of select="j:string[@key = 'author']"/>
+            </string>
+            <string key="date">
+                <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
+            </string>
+            <string key="description">
+                <xsl:value-of select="concat(j:string[@key = 'description'], ' for monographs')"/>
+            </string>
+            <string key="id">
+                <xsl:value-of select="concat(j:string[@key = 'id'], ':monograph')"/>
+            </string>
+            <!-- What should format-specific title be?
+                It may be preferable to change title in UW RDA Profile to create desired title for output to format-specific profile, as opposed to concatenation here  -->
+            <string key="title">
+                <xsl:value-of select="concat('WAU Profile ', j:string[@key = 'title'], ' Monograph')"/>
+            </string>
+            <!-- Hard-coded schema value here
+                *Conformance requirements may change in future* -->
+            <string key="schema"
+                >https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json</string>
+            <array key="resourceTemplates">
                 <xsl:apply-templates select="j:array[@key = 'resourceTemplates']"/>
-            </j:array>
-        </j:map>
+            </array>
+        </map>
     </xsl:template>
     <xsl:template match="j:array[@key = 'resourceTemplates']">
-        <xsl:for-each select="j:map">
-            <j:map>
-                <j:string key="id">
+        <!-- Specifying each RT to push through to monographs profile below
+            *NOTE* agent is currently not pushed through, it still has multiple URIs in UW RDA Profile
+            (Even though I thought we fixed that; is it "The Day GitHub Melted"!?!? -->
+        <xsl:for-each select="j:map[
+            contains(j:string[@key = 'id'], 'work') or
+            contains(j:string[@key = 'id'], 'expression') or
+            contains(j:string[@key = 'id'], 'manifestation') or
+            contains(j:string[@key = 'id'], 'item') or
+            contains(j:string[@key = 'id'], 'nomen') or
+            contains(j:string[@key = 'id'], 'place') or
+            contains(j:string[@key = 'id'], 'timespan')
+            ]">
+            <map>
+                <string key="id">
                     <xsl:value-of select="concat(j:string[@key = 'id'], ':monograph')"/>
-                </j:string>
-                <j:string key="resourceURI">
+                </string>
+                <string key="resourceURI">
                     <xsl:value-of select="j:string[@key = 'resourceURI']"/>
-                </j:string>
-                <j:string key="resourceLabel">
+                </string>
+                <string key="resourceLabel">
                     <xsl:value-of
                         select="concat(normalize-space(j:string[@key = 'resourceLabel']), ' for monographs')"
                     />
-                </j:string>
-                <j:string key="author">
+                </string>
+                <string key="author">
                     <xsl:value-of select="normalize-space(j:string[@key = 'author'])"/>
-                </j:string>
-                <j:string key="date">
+                </string>
+                <string key="date">
                     <xsl:value-of select="j:string[@key = 'date']"/>
-                </j:string>
-                <j:string key="schema">
-                    <xsl:value-of select="j:string[@key = 'schema']"/>
-                </j:string>
-                <j:array key="propertyTemplates">
+                </string>
+                <!-- Hard-coded schema value here
+                *Conformance requirements may change in future* -->
+                <string key="schema">https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json</string>
+                <array key="propertyTemplates">
                     <xsl:apply-templates select="j:array[@key = 'propertyTemplates']"/>
-                </j:array>
-            </j:map>
+                </array>
+            </map>
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="j:array[@key = 'propertyTemplates']">
         <xsl:for-each select="j:map">
+            <!-- Sorting PTs within each RT by uwForm order values
+                NOTE: 
+                Empty values first, 
+                0 (decided-upon value for undetermined) second, 
+                everything else next -->
+            <xsl:sort select="j:number[@key = 'uwFormOrder']" data-type="number"/>
             <xsl:if test="j:array[@key = 'usedInProfile']/j:string = 'monograph'">
-                <j:map>
-                    <j:string key="propertyLabel">
+                <map>
+                    <string key="uwFormOrderValue"><xsl:value-of select="j:number[@key = 'uwFormOrder']"/></string>
+                    <string key="propertyLabel">
                         <xsl:value-of select="normalize-space(j:string[@key = 'propertyLabel'])"/>
-                    </j:string>
-                    <j:string key="propertyURI">
+                    </string>
+                    <string key="propertyURI">
                         <xsl:value-of select="j:string[@key = 'propertyURI']"/>
-                    </j:string>
-                    <j:string key="mandatory">
+                    </string>
+                    <string key="mandatory">
                         <xsl:value-of select="j:string[@key = 'mandatory']"/>
-                    </j:string>
-                    <j:string key="repeatable">
+                    </string>
+                    <string key="repeatable">
                         <xsl:value-of select="j:string[@key = 'repeatable']"/>
-                    </j:string>
-                    <j:string key="type">
+                    </string>
+                    <string key="type">
                         <xsl:value-of select="j:string[@key = 'type']"/>
-                    </j:string>
-                    <j:string key="remark">
+                    </string>
+                    <string key="remark">
                         <xsl:value-of select="j:string[@key = 'remark']"/>
-                    </j:string>
+                    </string>
                     <xsl:if test="j:map[@key='valueConstraint']/descendant::text()">
-                    <j:map key="valueConstraint">
+                    <map key="valueConstraint">
                         <xsl:apply-templates select="j:map[@key = 'valueConstraint']"/>
-                    </j:map>
+                    </map>
                     </xsl:if>
-                </j:map>
+                </map>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
