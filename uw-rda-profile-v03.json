@@ -792,25 +792,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has audio producer agent (RDA 18.5)",
+                        "propertyLabel": "has audio producer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10304",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "226",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has audio producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10304",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "226.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3681,47 +3688,59 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has plaintiff person (RDA 18.5)",
+                        "propertyLabel": "has plaintiff person (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "222",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has plaintiff corporate body (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10010",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "propertyLabel": "has plaintiff person (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "222.1",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has plaintiff corporate body (RDA 18.5)(Lookup)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10010",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": "223",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has plaintiff corporate body (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10010",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "223.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3995,25 +4014,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has film producer agent (RDA 18.5)",
+                        "propertyLabel": "has film producer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10073",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "227",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has film producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10073",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "227.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9564,25 +9590,32 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has producer agent (RDA 18.5)",
+                        "propertyLabel": "has producer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10064",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "225",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10064",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "225.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9670,25 +9703,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has production company (RDA 18.5)",
+                        "propertyLabel": "has production company (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10008",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "230",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has production company (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10008",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "230.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10004,25 +10044,32 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has radio producer agent (RDA 18.5)",
+                        "propertyLabel": "has radio producer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10074",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "228",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has radio producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10074",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "228.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10528,25 +10575,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has researcher agent (RDA 18.5)",
+                        "propertyLabel": "has researcher agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10293",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "231",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has researcher agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10293",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "231.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10677,21 +10731,29 @@
                         "remark": "http://access.rdatoolkit.org/24.6.html"
                     },
                     {
-                        "propertyLabel": "has participant in treaty (RDA 18.5)",
+                        "propertyLabel": "has participant in treaty (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names",
-                                "urn:ld4p:qa:names:geocoordinates",
-                                "http://id.loc.gov/vocabulary/countries"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "25",
-                        "statusUw": "",
+                        "uwFormOrder": "221",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has participant in treaty (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "221.1",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -12173,25 +12235,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has television producer agent (RDA 18.5)",
+                        "propertyLabel": "has television producer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10075",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "229",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has television producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10075",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "229.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
