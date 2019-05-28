@@ -93,9 +93,10 @@
                             ]
                         },
                         "uwFormOrder": "234",
-                        "statusUw": "done",
+                        "statusUw": "attention",
                         "noteUw": ["Does this belong in the expression RT? We need to figure out what to do about relator terms."],
-                        "qUw": ["There are hundreds of relator properties, should we keep them as is or group them under one lookup?"],
+                        "qUw": ["There are hundreds of relator properties, should we keep them as is or group them under one lookup?"
+                        "I don't know how we could group a bunch of properties under one lookup. Is this resolved after discussion on 2019-05-23?"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -116,8 +117,9 @@
                             ]
                         },
                         "uwFormOrder": "234.1",
-                        "statusUw": "done",
-                        "noteUw": ["Does this belong in the expression RT? We need to figure out what to do about relator terms."],
+                        "statusUw": "attention",
+                        "noteUw": ["Does this belong in the expression RT? We need to figure out what to do about relator terms."
+                        "Yes, belongs in expression RT."],
                         "qUw": ["There are hundreds of relator properties, should we keep them as is or group them under one lookup?"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -347,10 +349,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]},                        
                         "uwFormOrder": "203",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -360,32 +362,39 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "203.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has appellee person (RDA 18.5)",
+                        "propertyLabel": "has appellee person (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10035",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "192",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has appellee person (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10035",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "192.1",
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -398,10 +407,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "202",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -411,32 +420,39 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "202.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has appellee corporate body (RDA 18.5)",
+                        "propertyLabel": "has appellee corporate body (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10005",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "193",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has appellee corporate body (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10005",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "193.1",
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1492,10 +1508,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "195",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1505,10 +1521,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "195.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1852,10 +1868,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "196",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1865,10 +1881,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "196.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2191,10 +2207,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
                         "uwFormOrder": "197",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2204,10 +2220,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "197.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2593,10 +2609,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "199",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2606,10 +2622,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "199.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2706,10 +2722,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "200",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2719,10 +2735,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "200.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3058,10 +3074,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "205",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3071,10 +3087,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "205.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3087,10 +3103,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "204",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3100,10 +3116,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "204.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3129,10 +3145,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "207",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3142,10 +3158,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "207.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3593,25 +3609,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has appellant person (RDA 18.5)",
+                        "propertyLabel": "has appellant person (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10042",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "191",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has appellant person (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10042",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "191.1",
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3692,8 +3715,8 @@
                         "uwFormOrder": "208",
                         "statusUw": "attention 2019-05-23",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["Will we use?"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3705,8 +3728,8 @@
                         "uwFormOrder": "208.1",
                         "statusUw": "attention 2019-05-23",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["will we use?"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4879,10 +4902,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "198",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4892,10 +4915,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "198.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9622,10 +9645,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "185",
-                        "statusUw": "done",
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["Will we ever use this?"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9635,10 +9658,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "185.1",
-                        "statusUw": "done",
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["will we ever use this?"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9777,10 +9800,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "209",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9790,10 +9813,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "uwFormOrder": "209.1",
-                        "statusUw": "attention 2019-05-23",
+                        "statusUw": "done 2019-05-23",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10324,10 +10347,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": "186",
-                        "statusUw": "done",
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["Will we ever use this?"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10337,10 +10360,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": "186.1",
-                        "statusUw": "done",
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["Will we ever use this?"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12215,25 +12238,32 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has degree supervisor (RDA 18.5)",
+                        "propertyLabel": "has degree supervisor (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10041",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "206",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has degree supervisor (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10041",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "206.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13447,7 +13477,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13469,7 +13499,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13914,7 +13944,7 @@
                             ]
                         },
                         "uwFormOrder": "238",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -13935,7 +13965,7 @@
                             ]
                         },
                         "uwFormOrder": "238.1",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -15935,7 +15965,7 @@
                             ]
                         },
                         "uwFormOrder": "250",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -15957,7 +15987,7 @@
                             ]
                         },
                         "uwFormOrder": "250.1",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -15979,7 +16009,7 @@
                             ]
                         },
                         "uwFormOrder": "249",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
@@ -16000,7 +16030,7 @@
                             ]
                         },
                         "uwFormOrder": "249.1",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
@@ -17086,25 +17116,35 @@
                         "remark": "http://access.rdatoolkit.org/7.11.html"
                     },
                     {
-                        "propertyLabel": "has instructor agent (RDA 18.5)",
+                        "propertyLabel": "has instructor agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20015",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "278",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has instructor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20015",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": "278.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -20315,7 +20355,7 @@
                             ]
                         },
                         "uwFormOrder": "254",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -20337,7 +20377,7 @@
                             ]
                         },
                         "uwFormOrder": "254.1",
-                        "statusUw": "attention",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -22145,25 +22185,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has presenter agent (RDA 18.5)",
+                        "propertyLabel": "has presenter agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20054",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "279",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has presenter agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20054",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "279.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -22272,25 +22319,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has production designer agent (RDA 18.5)",
+                        "propertyLabel": "has production designer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20056",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "280",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has production designer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20056",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "280.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -22572,6 +22626,35 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
+                        "propertyLabel": "has illustrator (RDA 18.5)(Lookup)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20051",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": "251",
+                        "statusUW": "attention",
+                        "noteUw": ["It looks like they're turning illustrations into their own entities, separate from expressions but related. The version of RDA we're using currently doesn't make this distinction (according to current RDA toolkit). So, we should use the deprecated property here and consult Adam to double-check"],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has illustrator (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20051",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "251.1",
+                        "statusUW": "attention",
+                        "noteUw": ["It looks like they're turning illustrations into their own entities, separate from expressions but related. The version of RDA we're using currently doesn't make this distinction (according to current RDA toolkit). So, we should use the deprecated property here and consult Adam to double-check"],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
                         "propertyLabel": "has recording engineer agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20050",
                         "mandatory": "",
@@ -22678,25 +22761,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has recordist agent (RDA 18.5)",
+                        "propertyLabel": "has recordist agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20052",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "281",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has recordist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20052",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "281.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -22868,22 +22958,29 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has restorationist agent of expression (RDA 18.5)",
+                        "propertyLabel": "has restorationist agent of expression (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20289",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "282",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has restorationist agent of expression (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20289",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "282.1",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -23272,25 +23369,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has software developer agent (RDA 18.5)",
+                        "propertyLabel": "has software developer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20280",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "283",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has software developer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20280",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "283.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -23378,22 +23482,29 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has sound designer agent (RDA 18.5)",
+                        "propertyLabel": "has sound designer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20276",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "284",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has sound designer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20276",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "284.1",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -23484,25 +23595,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has speaker agent (RDA 18.5)",
+                        "propertyLabel": "has speaker agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20024",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "276",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has speaker agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20024",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "276.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -23824,25 +23942,37 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has storyteller agent (RDA 18.5)",
+                        "propertyLabel": "has storyteller agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20023",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "277",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has storyteller agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20023",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            ]
+                        },
+                        "uwFormOrder": "277.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
