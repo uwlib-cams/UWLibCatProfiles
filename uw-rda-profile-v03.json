@@ -23708,22 +23708,30 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has special effects provider agent (RDA 18.5)",
+                        "propertyLabel": "has special effects provider agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20258",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                             ]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "285",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has special effects provider agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20258",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "285.1",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -23836,25 +23844,32 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has stage director agent (RDA 18.5)",
+                        "propertyLabel": "has stage director agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20031",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "286",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has stage director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20031",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "286.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -33276,25 +33291,32 @@
                         "remark": "http://access.rdatoolkit.org/3.18.3.4.html"
                     },
                     {
-                        "propertyLabel": "has surveyor agent (RDA 18.5)",
+                        "propertyLabel": "has surveyor agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30312",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": "",
-                        "statusUw": "",
+                        "uwFormOrder": "287",
+                        "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has surveyor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30312",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": "287.1",
+                        "statusUw": "done 2019-05-28",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
