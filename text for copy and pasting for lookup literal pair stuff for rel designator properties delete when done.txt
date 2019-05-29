@@ -1,0 +1,3 @@
+If lookup fails: record URI if available or authorized access point
+
+"urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"
