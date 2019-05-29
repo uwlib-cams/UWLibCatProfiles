@@ -2,10 +2,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns="http://www.w3.org/2005/xpath-functions" 
     xmlns:j="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="j" version="3.0">
-    <!-- Removing prefixes from literal output elements;
-        retaining prefixes in XPaths 
-        (Why are we doing this again @gerontakos? To beautify output XML? To beautify output XML! 
-        Was that the only reason?) -->
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
@@ -31,7 +27,7 @@
             <!-- What should format-specific title be?
                 It may be preferable to change title in UW RDA Profile to create desired title for output to format-specific profile, as opposed to concatenation here  -->
             <string key="title">
-                <xsl:value-of select="concat('WAU Profile ', j:string[@key = 'title'], ' Monograph')"/>
+                <xsl:value-of select="concat(j:string[@key = 'title'], ' for describing monographs')"/>
             </string>
             <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
@@ -45,16 +41,9 @@
     <xsl:template match="j:array[@key = 'resourceTemplates']">
         <!-- Specifying each RT to push through to monographs profile below
             *NOTE* agent is currently not pushed through, it still has multiple URIs in UW RDA Profile
-            (Even though I thought we fixed that; is it "The Day GitHub Melted"!?!? -->
-        <xsl:for-each select="j:map[
-            contains(j:string[@key = 'id'], 'work') or
-            contains(j:string[@key = 'id'], 'expression') or
-            contains(j:string[@key = 'id'], 'manifestation') or
-            contains(j:string[@key = 'id'], 'item') or
-            contains(j:string[@key = 'id'], 'nomen') or
-            contains(j:string[@key = 'id'], 'place') or
-            contains(j:string[@key = 'id'], 'timespan')
-            ]">
+            (Even though I thought we fixed that; is it "The Day GitHub Melted"!?!?)
+            Also nomen and place are suppressesed-->
+        <xsl:for-each select="j:map[matches(j:string[@key='id'],'work|expression|manifestation|item|timespan')]">
             <map>
                 <string key="id">
                     <xsl:value-of select="concat(j:string[@key = 'id'], ':monograph')"/>
@@ -92,7 +81,8 @@
             <xsl:sort select="j:number[@key = 'uwFormOrder']" data-type="number"/>
             <xsl:if test="j:array[@key = 'usedInProfile']/j:string = 'monograph'">
                 <map>
-                    <string key="uwFormOrderValue"><xsl:value-of select="j:number[@key = 'uwFormOrder']"/></string>
+                    <!-- activate uwFormOrder below only to check accuracy of sort; otherwise suppress in this transform using comment -->
+                    <!-- <string key="uwFormOrderValue"><xsl:value-of select="j:number[@key = 'uwFormOrder']"/></string> -->
                     <string key="propertyLabel">
                         <xsl:value-of select="normalize-space(j:string[@key = 'propertyLabel'])"/>
                     </string>
