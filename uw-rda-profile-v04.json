@@ -3,7 +3,7 @@
         "title": "RDA",
         "id": "profile:rda",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-05-15",
+        "date": "2019-05-29",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -20469,25 +20469,32 @@
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
-                        "propertyLabel": "has letterer agent (RDA 18.5)",
+                        "propertyLabel": "has letterer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20259",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 299.5,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has letterer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20259",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 299.6,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -23414,25 +23421,31 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has reviser agent",
+                        "propertyLabel": "has reviser agent (Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20327",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 299.7,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "has reviser agent (If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20327",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 299.8,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has reviser collective agent",
@@ -24895,25 +24908,32 @@
                         "remark": "http://access.rdatoolkit.org/7.25.5.html"
                     },
                     {
-                        "propertyLabel": "has transcriber agent (RDA 18.5)",
+                        "propertyLabel": "has transcriber agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20034",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 288,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has transcriber agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20034",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 288.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -25001,25 +25021,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has translator agent (RDA 18.5)",
+                        "propertyLabel": "has translator agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20037",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 289,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has translator agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20037",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 289.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -25360,22 +25387,275 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has visual effects provider agent (RDA 18.5)",
+                      "propertyLabel": "has writer of supplementary textual content (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20046",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 291,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of supplementary textual content (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20046",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 291.1,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of added commentary (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20044",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 292,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of added commentary (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20044",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 292.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of added text (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20030",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 293,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of added text (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20030",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 293.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of added lyrics (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20068",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 294,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of added lyrics (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20068",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 294.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of afterword (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20237",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 295,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of afterword (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20237",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 295.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of foreword (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20275",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 296,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of foreword (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20275",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 296.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of introduction (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20045",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 297,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of introduction (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20045",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 297.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of postface (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20238",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 298,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of postface (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20238",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 298.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of preface (RDA 18.5)(Lookup)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20041",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                      },
+                      "uwFormOrder": 299,
+                      "statusUw": "done",
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                      "propertyLabel": "has writer of preface (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20041",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "literal",
+                      "uwFormOrder": 299.1,
+                      "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
+                      "statusUw": "done",
+                      "usedInProfile": ["monograph"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                    },
+                    {
+                        "propertyLabel": "has visual effects provider agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20257",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 290,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has visual effects provider agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20257",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": 290.1,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -26241,25 +26521,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has book designer agent (RDA 18.5)",
+                        "propertyLabel": "has book designer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30069",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 306,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has book designer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30069",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 306.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26347,25 +26634,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has braille embosser agent (RDA 18.5)",
+                        "propertyLabel": "has braille embosser agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30071",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 307,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has braille embosser agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30071",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 307.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26453,22 +26747,29 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has broadcaster agent (RDA 18.5)",
+                        "propertyLabel": "has broadcaster agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30067",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 302,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has broadcaster agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30067",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 302.1,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -26559,25 +26860,32 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has caster agent (RDA 18.5)",
+                        "propertyLabel": "has caster agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30073",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 308,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has caster agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30073",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 308.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26721,25 +27029,32 @@
                         "remark": "http://access.rdatoolkit.org/2.3.6.html"
                     },
                     {
-                        "propertyLabel": "has collotyper agent (RDA 18.5)",
+                        "propertyLabel": "has collotyper agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30077",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 309,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has collotyper agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30077",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 309.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -28569,25 +28884,32 @@
                         "remark": "http://access.rdatoolkit.org/3.7.2.html"
                     },
                     {
-                        "propertyLabel": "has engraver agent (RDA 18.5)",
+                        "propertyLabel": "has engraver agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30070",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 310,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has engraver agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30070",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 310.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -28697,25 +29019,32 @@
                         "remark": "http://access.rdatoolkit.org/3.20.html"
                     },
                     {
-                        "propertyLabel": "has etcher agent (RDA 18.5)",
+                        "propertyLabel": "has etcher agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30076",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 311,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has etcher agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30076",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 311.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -29073,22 +29402,29 @@
                         "remark": "http://access.rdatoolkit.org/3.16.7.html"
                     },
                     {
-                        "propertyLabel": "has film distributor agent (RDA 18.5)",
+                        "propertyLabel": "has film distributor agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30068",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 304,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                     {
+                        "propertyLabel": "has film distributor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30068",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 304.1,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -30448,25 +30784,32 @@
                         "remark": "http://access.rdatoolkit.org/3.16.4.4.html"
                     },
                     {
-                        "propertyLabel": "has lithographer agent (RDA 18.5)",
+                        "propertyLabel": "has lithographer agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30074",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 312,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has lithographer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30074",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 312.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -31726,25 +32069,32 @@
                         "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
-                        "propertyLabel": "has papermaker agent (RDA 18.5)",
+                        "propertyLabel": "has papermaker agent (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30215",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 313,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has papermaker agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30215",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 313.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
