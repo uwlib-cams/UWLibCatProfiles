@@ -15579,7 +15579,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        },
                         "uwFormOrder": 233.1,
                         "statusUw": "done",
                         "noteUw": [],
@@ -15696,7 +15695,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        },
                         "uwFormOrder": 267.1,
                         "statusUw": "done",
                         "noteUw": [],
@@ -17671,7 +17669,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -17693,7 +17691,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -17781,25 +17779,31 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has intended audience of expression",
+                        "propertyLabel": "has intended audience of expression (Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20322",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:subjects", "urn:ld4p:qa:demographics", "urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 18.5,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
+                    },
+                     {
+                        "propertyLabel": "has intended audience of expression (If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20322",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 18.6,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has interactivity mode",
@@ -18266,9 +18270,9 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": 126,
-                        "statusUw": "done",
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
+                        "qUw": ["Is this meant to be a relationship between an expression and a URI for supplementary content, or a note about supplementary content? We currently have it set up as a note but that might not be right."],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
@@ -18652,15 +18656,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
                         "uwFormOrder": 121,
                         "statusUw": "done",
                         "noteUw": [],
@@ -18675,9 +18670,10 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 174,
-                        "statusUw": "AM 2019-05-13",
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["Lookup would be ideal, but given the lack of bf:expressions, it may be better for literal URI input"],
+                        "qUw": ["Lookup would be ideal, but given the lack of bf:expressions, it may be better for literal URI input",
+                        "Not even sure how lookup works for things there are bf classes for. We need to figure this one out, because we're going to need to link these things together and using literals as URI's is not ideal as AM points out"],
                         "usedInProfile": ["monograph"]
                     },
                     {
@@ -19962,7 +19958,7 @@
                         "propertyLabel": "has award (RDA 7.28)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20005",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 127,
                         "statusUw": "done",
@@ -20126,25 +20122,31 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has related agent of expression",
+                        "propertyLabel": "has related agent of expression (Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20301",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 129,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
+                    },
+                    {
+                        "propertyLabel": "has related agent of expression (If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20301",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 129.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related family of expression",
@@ -20960,7 +20962,7 @@
                         "propertyLabel": "has note on changes in content characteristics (RDA 7.29.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20010",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 128,
                         "statusUw": "done",
@@ -21447,7 +21449,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -21469,7 +21471,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
