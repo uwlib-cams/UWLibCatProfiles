@@ -3777,6 +3777,7 @@
                     {
                         "propertyLabel": "has plaintiff person (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
+                        "mandatory":"false",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
