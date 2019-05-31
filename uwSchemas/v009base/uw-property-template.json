@@ -207,7 +207,7 @@
     },
     {
       "if": {
-        "properties": {
+        "properties": { 
             "uwFormOrder": { "const": -1 }
         }
       },
@@ -259,15 +259,15 @@
     "empty-PTs": {
           "properties": {
             "mandatory": {
-              "not": { "enum": ["true", "false"] },
+              "not": { "const": ["true", "false"] },
               "const": ""
             },
             "repeatable": {
-              "not": { "enum": ["true", "false"] },
+              "not": { "const": ["true", "false"] },
               "const": ""
             },
             "type": {
-              "not": { "enum": ["literal", "lookup", "resource"] },
+              "not": { "const": ["literal", "lookup", "resource"] },
               "const": ""
             }
           }
