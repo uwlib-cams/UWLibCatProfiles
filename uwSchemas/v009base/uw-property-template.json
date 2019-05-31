@@ -206,17 +206,17 @@
       }
     },
     {
-            "if": {
-                "properties": {
-                    "uwFormOrder": {
-                        "const": -1
-                    }
-                }
-            },
-            "then": {
-                "$ref": "#/definitions/empty-PTs"
-            }
+      "if": {
+        "properties": {
+            "uwFormOrder": { "const": -1 }
         }
+      },
+      "then": {
+        "allOf": [
+          { "$ref": "#/definitions/empty-PTs" }
+        ]
+      }
+    }
   ],
   "definitions": {
     "requires-valueConstraint-useValuesFrom": {
@@ -259,18 +259,18 @@
     "empty-PTs": {
           "properties": {
             "mandatory": {
-              "not": { "required": ["true", "false"] },
+              "not": { "enum": ["true", "false"] },
               "const": ""
             },
             "repeatable": {
-              "not": { "required": ["true", "false"] },
+              "not": { "enum": ["true", "false"] },
               "const": ""
             },
             "type": {
-              "not": { "required": ["literal", "lookup", "resource"] },
+              "not": { "enum": ["literal", "lookup", "resource"] },
               "const": ""
             }
           }
-        }
+    }
   }
 }
