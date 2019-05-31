@@ -259,15 +259,15 @@
     "empty-PTs": {
           "properties": {
             "mandatory": {
-              "not": { "enum": ["true", "false"] },
+              "not": { "required": ["true", "false"] },
               "const": ""
             },
             "repeatable": {
-              "not": { "enum": ["true", "false"] },
+              "not": { "required": ["true", "false"] },
               "const": ""
             },
             "type": {
-              "not": { "enum": ["literal", "lookup", "resource"] },
+              "not": { "required": ["literal", "lookup", "resource"] },
               "const": ""
             }
           }
