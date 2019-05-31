@@ -36,7 +36,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10407",
                         "mandatory": "",
                         "repeatable": "",
-                        "type": "",
+                        "type": "",  
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
