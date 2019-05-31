@@ -204,7 +204,19 @@
           { "$ref": "#/definitions/requires-valueConstraint-valueTemplateRefs" }
         ]
       }
-    }
+    },
+    {
+            "if": {
+                "properties": {
+                    "uwFormOrder": {
+                        "const": -1
+                    }
+                }
+            },
+            "then": {
+                "$ref": "#/definitions/empty-PTs"
+            }
+        }
   ],
   "definitions": {
     "requires-valueConstraint-useValuesFrom": {
@@ -243,6 +255,19 @@
           ]
         }
       }
-    }
+    },
+    "empty-PTs": {
+          "properties": {
+            "mandatory": {
+              "const": ""
+            },
+            "repeatable": {
+              "const": ""
+            },
+            "type": {
+              "const": ""
+            }
+          }
+        }
   }
 }
