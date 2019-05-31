@@ -3796,6 +3796,7 @@
                     {
                         "propertyLabel": "has plaintiff person (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
+                         "mandatory":"false",
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 222.1,
