@@ -474,7 +474,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -486,7 +486,7 @@
                         },
                         "uwFormOrder": 75,
                         "statusUw": "attention",
-                        "noteUw": [],
+                        "noteUw": ["We need to decide how these will be handled."],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -496,7 +496,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -7722,8 +7722,8 @@
                     {
                         "propertyLabel": "has related work of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10198",
-                        "mandatory": "",
-                        "repeatable": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "",
                         "valueConstraint": {
                             "valueTemplateRefs": [],

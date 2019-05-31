@@ -1658,7 +1658,16 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.6.html"
-                    }
+                    },{
+                        "propertyLabel": "has related work of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10198",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:rda:work:monograph"]
+                            
+                    }}
                 ]
             },
             {
@@ -3190,11 +3199,7 @@
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
                             "defaults": [
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"
-                                    
-                                }
-                               
+                                {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"}
                             ]
                         }
                     },
@@ -3875,7 +3880,7 @@
                         "propertyLabel": "has owner(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "remark": "",
                         "valueConstraint": {
@@ -3892,7 +3897,7 @@
                         "propertyLabel": "has owner(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "remark": "",
                         "valueConstraint": {
