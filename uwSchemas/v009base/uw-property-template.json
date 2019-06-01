@@ -267,31 +267,12 @@
         "no-PT-constraints": {
             "properties": {
                 "mandatory": {
-                    "not": {
-                        "const": [
-                            "true",
-                            "false"
-                        ]
-                    },
                     "const": ""
                 },
                 "repeatable": {
-                    "not": {
-                        "const": [
-                            "true",
-                            "false"
-                        ]
-                    },
                     "const": ""
                 },
                 "type": {
-                    "not": {
-                        "const": [
-                            "literal",
-                            "lookup",
-                            "resource"
-                        ]
-                    },
                     "const": ""
                 }
             }
@@ -314,9 +295,7 @@
         {
             "if": {
                 "properties": {
-                    "uwFormOrder": {
-                        "not": {"const": -1}
-                    }
+                    "uwFormOrder": { "not": {"const": -1} }
                 }
             },
             "then": {
