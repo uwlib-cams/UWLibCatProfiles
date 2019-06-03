@@ -3836,7 +3836,7 @@
                         "valueConstraint": {
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]

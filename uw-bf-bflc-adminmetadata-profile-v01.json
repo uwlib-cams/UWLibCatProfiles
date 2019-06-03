@@ -20,11 +20,8 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerID",
                         "mandatory": "true",
                         "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 1,
-                        "statusUw": "done",
-                        "noteUw": "",
-                        "qUw": ""
+                        "type": "literal"
+                       
                     },
                     {
                         "propertyLabel": "Record status",
@@ -34,11 +31,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata:Status"]
-                        },
-                        "uwFormOrder": 5,
-                        "statusUw": "done",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     },
                     {
                         "propertyLabel": "Encoding level",
@@ -55,11 +48,7 @@
                                     "defaultLiteral": "full"
                                 }
                             ]
-                        },
-                        "uwFormOrder": 6,
-                        "statusUw": "",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     },
                     {
                         "propertyLabel": "Description conventions",
@@ -80,11 +69,7 @@
                                     "defaultLiteral": "ISBD: International Standard Bibliographic Description"
                                 }
                             ]
-                        },
-                        "uwFormOrder": 7,
-                        "statusUw": "",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     },
                     {
                         "propertyLabel": "Source of cataloging",
@@ -105,11 +90,7 @@
                                     "defaultLiteral": "WAU"
                                 }
                             ]
-                        },
-                        "uwFormOrder": 8,
-                        "statusUw": "",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     },
                     {
                         "propertyLabel": "Description language",
@@ -126,11 +107,7 @@
                                     "defaultLiteral": "English"
                                 }
                             ]
-                        },
-                        "uwFormOrder": 9,
-                        "statusUw": "",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     },
                     {
                         "propertyLabel": "Data creation date",
@@ -148,11 +125,7 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "literal",
-                        "uwFormOrder": 3,
-                        "statusUw": "",
-                        "noteUw": "date or date and time on which metadata last changed",
-                        "qUw": ""
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "Description authentication",
@@ -163,11 +136,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["http://id.loc.gov/vocabulary/marcauthen"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication"}
-                        },
-                        "uwFormOrder": 4,
-                        "statusUw": "",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     }
                 ]
             },
@@ -189,11 +158,7 @@
                             "defaults": [
                                 {"defaultLiteral": "n"}
                             ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": "",
-                        "qUw": ""
+                        }
                     }
                 ]
             }
