@@ -1658,7 +1658,8 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.6.html"
-                    },{
+                    },
+                    {
                         "propertyLabel": "has related work of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10198",
                         "mandatory": "false",
@@ -1666,8 +1667,38 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:rda:work:monograph"]
-                            
-                    }}
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related expression of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:rda:expression:monograph"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related manifestation of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10309",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:rda:manifestation:monograph"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related item of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10310",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:rda:item:monograph"]
+                        }
+                    }
                 ]
             },
             {
@@ -2803,6 +2834,17 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has related work of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20298",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "remark": "http://rdaregistry.info/Elements/w/P10198",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:rda:work:monograph"]
+                        }
                     }
                 ]
             },
