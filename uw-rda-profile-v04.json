@@ -1,7 +1,7 @@
 {
     "Profile": {
-        "title": "RDA",
-        "id": "profile:rda",
+        "title": "WAU Profile RDA",
+        "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-06-05",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
@@ -9,8 +9,8 @@
         "resourceTemplates": [
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "RT RDA Work",
-                "id": "rt:rda:work",
+                "resourceLabel": "WAU RT RDA Work",
+                "id": "WAU:RT:RDA:Work",
                 "date": "2019-06-04",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -22,7 +22,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         },
                         "uwFormOrder": 0,
@@ -8127,7 +8127,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:expression"],
+                            "valueTemplateRefs": ["WAU:RT:RDA:Expression"],
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
@@ -13443,8 +13443,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "RT RDA Expression",
-                "id": "rt:rda:expression",
+                "resourceLabel": "WAU RT RDA Expression",
+                "id": "WAU:RT:RDA:Expression",
                 "date": "2019-05-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -13456,7 +13456,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -19125,7 +19125,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:manifestation"],
+                            "valueTemplateRefs": ["WAU:RT:RDA:Manifestation"],
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
@@ -26098,8 +26098,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "RT RDA Manifestation",
-                "id": "rt:rda:manifestation",
+                "resourceLabel": "WAU RT RDA Manifestation",
+                "id": "WAU:RT:RDA:Manifestation",
                 "date": "2019-05-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -26111,7 +26111,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -31798,7 +31798,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:item"],
+                            "valueTemplateRefs": ["WAU:RT:RDA:Item"],
                             "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ["http://rdaregistry.info/Elements/c/C10003", "http://rdaregistry.info/Elements/c/C10003"]},
                             "defaults": [
@@ -34306,8 +34306,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "RT RDA Item",
-                "id": "rt:rda:item",
+                "resourceLabel": "WAU RT RDA Item",
+                "id": "WAU:RT:RDA:Item",
                 "date": "2019-05-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -34319,7 +34319,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -37276,8 +37276,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
-                "resourceLabel": "RT RDA Agent",
-                "id": "rt:rda:agent",
+                "resourceLabel": "WAU RT RDA Agent",
+                "id": "WAU:RT:RDA:Agent",
                 "date": "2019-05-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -37289,7 +37289,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -59611,8 +59611,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
-                "resourceLabel": "RT RDA Nomen",
-                "id": "rt:rda:nomen",
+                "resourceLabel": "WAU RT RDA Nomen",
+                "id": "WAU:RT:RDA:Nomen",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -59624,7 +59624,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -63080,8 +63080,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
-                "resourceLabel": "RT RDA Place",
-                "id": "rt:rda:place",
+                "resourceLabel": "WAU RT RDA Place",
+                "id": "WAU:RT:RDA:Place",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -63093,7 +63093,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -64180,8 +64180,8 @@
             },
             {
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
-                "resourceLabel": "RT RDA Timespan",
-                "id": "rt:rda:timespan",
+                "resourceLabel": "WAU RT RDA Timespan",
+                "id": "WAU:RT:RDA:Timespan",
                 "date": "2019-05-01",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
@@ -64193,7 +64193,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
