@@ -1,17 +1,17 @@
 {
     "Profile": {
-        "title": "profile BF2 BFLC Admin Metadata",
-        "id": "profile:bf2:bflc:AdminMetadata",
+        "title": "WAU profile BF2 BFLC",
+        "id": "WAU:profile:BF2:BFLC",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-05-30",
-        "description": "Metadata for RDA Resources",
+        "date": "2019-06-05",
+        "description": "BIBFRAME metadata for RDA Resources",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
-                "resourceLabel": "RT BF2 BFLC Admin Metadata",
-                "id": "rt:bf2:AdminMetadata",
-                "date": "2019-05-30",
+                "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
+                "id": "WAU:RT:BF2:BFLC:AdminMetadata",
+                "date": "2019-06-05",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -30,7 +30,7 @@
                         "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata:Status"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:Status"]
                         }
                     },
                     {
@@ -142,8 +142,8 @@
             },
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
-                "resourceLabel": "RT BF2 BFLC Admin Metadata Status",
-                "id": "rt:bf2:AdminMetadata:Status",
+                "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
+                "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
                 "date": "2019-05-30",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
