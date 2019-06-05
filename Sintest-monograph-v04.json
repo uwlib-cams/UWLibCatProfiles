@@ -119,10 +119,14 @@
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType/"],
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
-                                {"defaultLiteral": "text"},
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1014"},
-                                {"defaultLiteral": "still image"}
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020",
+                                    "defaultLiteral": "text"
+                                },
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1014",
+                                    "defaultLiteral": "still image"
+                                }
                             ]
                         }
                     },
@@ -1660,43 +1664,13 @@
                         "remark": "http://access.rdatoolkit.org/24.6.html"
                     },
                     {
-                        "propertyLabel": "has related work of work",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10198",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:work:monograph"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has related expression of work",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
+                       "propertyLabel": "has expression of work (RDA 17.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:rda:expression:monograph"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has related manifestation of work",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10309",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:manifestation:monograph"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has related item of work",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10310",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:item:monograph"]
                         }
                     }
                 ]
@@ -2834,17 +2808,23 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
-                        "propertyLabel": "has related work of expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20298",
+                    },{
+                        "propertyLabel": "has manifestation of expression (RDA 17.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "remark": "http://rdaregistry.info/Elements/w/P10198",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:work:monograph"]
-                        }
+                            "valueTemplateRefs": ["rt:rda:manifestation:monograph"],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
+                        },
+                       
+                        "remark": "http://access.rdatoolkit.org/17.9.html"
                     }
                 ]
             },
@@ -2856,14 +2836,7 @@
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
-                    {
-                        "propertyLabel": "has related item of manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "remark": ""
-                    },
+                    
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -3236,12 +3209,19 @@
                         "propertyLabel": "has mode of issuance (RDA 2.13)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"}
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
+                                    "defaultLiteral": "single unit"
+                                },
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultLiteral": "single unit"
+                                }
                             ]
                         }
                     },
@@ -3817,7 +3797,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/22.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mcolor"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
@@ -3836,7 +3816,7 @@
                         "valueConstraint": {
                             "defaults": [
                                 {
-                                    
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
