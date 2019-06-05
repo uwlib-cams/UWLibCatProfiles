@@ -3,7 +3,7 @@
         "title": "RDA",
         "id": "profile:rda",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-05-29",
+        "date": "2019-06-05",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "RT RDA Work",
                 "id": "rt:rda:work",
-                "date": "2019-05-29",
+                "date": "2019-06-04",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -31,6 +31,7 @@
                         "qUw": [],
                         "usedInProfile": ["monograph"]
                     },
+
                     {
                         "propertyLabel": "has academic supervisor",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10407",
@@ -53,25 +54,16 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has access point for work",
+                        "propertyLabel": "has access point for work (RDA 6.1.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10328",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 10.4,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)(Lookup)",
@@ -1022,23 +1014,14 @@
                     {
                         "propertyLabel": "has authorized access point for work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10331",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "uwFormOrder": 10.41,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has authorized access point for work group",
@@ -8140,23 +8123,19 @@
                     {
                         "propertyLabel": "has expression of work (RDA 17.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
+                            "valueTemplateRefs": ["rt:rda:expression"],
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 747,
+                        "statusUw": "attention",
+                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored."],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
                     },
                     {
@@ -13601,23 +13580,14 @@
                     {
                         "propertyLabel": "has access point for expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20310",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 10.401,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has actor agent (RDA 18.5)(Lookup)",
@@ -14428,23 +14398,14 @@
                     {
                         "propertyLabel": "has authorized access point for expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20313",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 10.4011,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has identifier for expression (RDA 6.13)",
@@ -19160,23 +19121,19 @@
                     {
                         "propertyLabel": "has manifestation of expression (RDA 17.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
+                            "valueTemplateRefs": ["rt:rda:manifestation"],
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 748,
+                        "statusUw": "attention",
+                        "noteUw": ["We need to add a lookup to the manifestation RT that will look for manifestations somewhere. Wherever they get stored."],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/17.9.html"
                     },
                     {
@@ -26165,20 +26122,11 @@
                     {
                         "propertyLabel": "has access point for manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30276",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 10.402,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
@@ -26332,23 +26280,14 @@
                     {
                         "propertyLabel": "has authorized access point for manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30294",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "uwFormOrder": 10.4021,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has groove characteristic (RDA 3.16.5)",
@@ -31855,23 +31794,23 @@
                     {
                         "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
+                            "valueTemplateRefs": ["rt:rda:item"],
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "valueDataType": {"dataTypeURI": ["http://rdaregistry.info/Elements/c/C10003", "http://rdaregistry.info/Elements/c/C10003"]},
                             "defaults": [
                                 {"defaultURI": ""},
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 749,
+                        "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [],
+                        "qUw": ["Can we put two dataTypeURI's in?", "As with works, expressions, and manifestations, we will need to put in a lookup to find already-cataloged entities. We need a place to point those lookups though."],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/17.11.html"
                     },
                     {
