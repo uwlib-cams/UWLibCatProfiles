@@ -3605,9 +3605,9 @@
                             ]
                         },
                         "uwFormOrder": 184,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
-                        "qUw": ["Will anyone ever use this?"],
+                        "qUw": [""],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -3618,9 +3618,9 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 184.1,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
-                        "qUw": ["Will anyone ever use this?"],
+                        "qUw": ["?"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
