@@ -114,7 +114,14 @@
         <xsl:if test="j:array[@key='valueTemplateRefs']/descendant::text()">
             <xsl:for-each select="j:array[@key='valueTemplateRefs']">
                 <array key="valueTemplateRefs">
-                    <string><xsl:value-of select="concat(j:string, ':monograph')"/></string>
+                    <xsl:choose>
+                        <xsl:when test="matches(j:string, 'AdminMetadata')">
+                            <string><xsl:value-of select="j:string"/></string>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <string><xsl:value-of select="concat(j:string, ':monograph')"/></string>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </array>
             </xsl:for-each>
         </xsl:if>
