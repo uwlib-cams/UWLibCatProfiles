@@ -13,7 +13,7 @@
                 "id": "WAU:RT:RDA:Work",
                 "date": "2019-06-04",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -12287,7 +12287,7 @@
                         "remark": "http://access.rdatoolkit.org/7.2.html"
                     },
                     {
-                        "propertyLabel": "has nature of content (RDA 7.2)(Record URI (if available) or authorized access point if lookup fails)",
+                        "propertyLabel": "has nature of content (RDA 7.2)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
                         "mandatory": "false",
                         "repeatable": "true",

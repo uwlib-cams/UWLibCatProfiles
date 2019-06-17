@@ -16,6 +16,17 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "Lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["dummy"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has colour content of representative expression",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
@@ -1664,7 +1675,7 @@
                         "remark": "http://access.rdatoolkit.org/24.6.html"
                     },
                     {
-                       "propertyLabel": "has expression of work (RDA 17.5)",
+                        "propertyLabel": "has expression of work (RDA 17.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1683,6 +1694,17 @@
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
+                    {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "Lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["dummy"]
+                        }
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -2808,22 +2830,16 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },{
+                    },
+                    {
                         "propertyLabel": "has manifestation of expression (RDA 17.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:manifestation:monograph"],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "valueTemplateRefs": ["rt:rda:manifestation:monograph"]
                         },
-                       
                         "remark": "http://access.rdatoolkit.org/17.9.html"
                     }
                 ]
@@ -2836,7 +2852,17 @@
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
-                    
+                    {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "Lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["dummy"]
+                        }
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -3711,6 +3737,17 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/21.5.html"
+                    },
+                    {
+                        "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["rt:rda:item:monograph"]
+                        },
+                        "remark": "http://access.rdatoolkit.org/17.11.html"
                     }
                 ]
             },
@@ -3722,6 +3759,17 @@
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
+                    {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "Lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["dummy"]
+                        }
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
