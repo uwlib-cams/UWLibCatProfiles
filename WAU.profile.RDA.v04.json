@@ -1885,7 +1885,7 @@
                         },
                         "uwFormOrder": 27,
                         "statusUw": "attention",
-                        "noteUw": ["How does Sinopia handle RDA Registry lookups? Check on this one."],
+                        "noteUw": ["How does Sinopia handle RDA Registry lookups? Check on this one.","CEC tested in Sinopia dev 2019-06-19 and the property shows up but the lookup doesn't. Alternate literal doesn't make it into monographs profile"],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
                     },
