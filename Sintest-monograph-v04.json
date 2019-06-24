@@ -3945,39 +3945,6 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
                         }
-                    },
-                    {
-                        "propertyLabel": "has owner(Lookup)",
-                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has owner(If lookup fails: record URI if available or authorized access point)",
-                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "remark": "",
-                        "valueConstraint": {
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
-                            ]
-                        }
                     }
                 ]
             }

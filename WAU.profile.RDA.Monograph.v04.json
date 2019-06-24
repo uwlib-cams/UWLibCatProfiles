@@ -232,7 +232,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -240,7 +240,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
