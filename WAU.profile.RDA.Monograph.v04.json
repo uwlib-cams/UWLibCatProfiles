@@ -1434,7 +1434,7 @@
                     {
                         "propertyLabel": "has plaintiff person (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
-                        "mandatory": "",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
@@ -1448,7 +1448,7 @@
                     {
                         "propertyLabel": "has plaintiff person (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
-                        "mandatory": "",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/18.5.html"
