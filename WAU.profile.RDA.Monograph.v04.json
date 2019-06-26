@@ -34,7 +34,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
@@ -1677,7 +1677,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
@@ -2821,7 +2821,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
@@ -3706,7 +3706,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
@@ -3871,7 +3871,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {

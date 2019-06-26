@@ -22,7 +22,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         },
                         "uwFormOrder": 0,
@@ -13456,7 +13456,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -26111,7 +26111,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -34319,7 +34319,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -37289,7 +37289,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -59624,7 +59624,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -63093,7 +63093,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -64193,7 +64193,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
