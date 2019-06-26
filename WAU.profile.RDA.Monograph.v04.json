@@ -8,9 +8,9 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
-                "id": "rt:rda:work:monograph",
+                "id": "WAU:RT:RDA:WORK:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "RT RDA Work for monographs",
+                "resourceLabel": "WAU RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-15",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
@@ -1662,9 +1662,9 @@
                 ]
             },
             {
-                "id": "rt:rda:expression:monograph",
+                "id": "WAU:RT:RDA:EXPRESSION:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "RT RDA Expression for monographs",
+                "resourceLabel": "WAU RT RDA Expression for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
@@ -2798,9 +2798,9 @@
                 ]
             },
             {
-                "id": "rt:rda:manifestation:monograph",
+                "id": "WAU:RT:RDA:MANIFESTATION:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "RT RDA Manifestation for monographs",
+                "resourceLabel": "WAU RT RDA Manifestation for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
@@ -3691,9 +3691,9 @@
                 ]
             },
             {
-                "id": "rt:rda:item:monograph",
+                "id": "WAU:RT:RDA:ITEM:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "RT RDA Item for monographs",
+                "resourceLabel": "WAU RT RDA Item for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
@@ -3856,9 +3856,9 @@
                 ]
             },
             {
-                "id": "rt:rda:timespan:monograph",
+                "id": "WAU:RT:RDA:TIMESPAN:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
-                "resourceLabel": "RT RDA Timespan for monographs",
+                "resourceLabel": "WAU RT RDA Timespan for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
