@@ -1670,6 +1670,16 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        }
+                    },
+                    {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -2806,12 +2816,14 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "has related item of manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "remark": ""
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        }
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -3698,6 +3710,16 @@
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
+                    {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        }
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
