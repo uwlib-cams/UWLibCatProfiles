@@ -66,13 +66,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/6.3.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:genres",
-                                "http://id.loc.gov/vocabulary/marcgt"
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/6.3.html"
+                        
                     },
                     {
                         "propertyLabel": "has date of work (RDA 6.4)",
