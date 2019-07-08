@@ -24384,12 +24384,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
-                        },
+                       
+                       
                         "uwFormOrder": 277.1,
                         "statusUw": "done 2019-05-28",
                         "noteUw": [],

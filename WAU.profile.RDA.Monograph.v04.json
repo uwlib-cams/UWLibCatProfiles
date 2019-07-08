@@ -2654,13 +2654,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                        
                     },
                     {
                         "propertyLabel": "has instructor agent (RDA 18.5)(Lookup)",
