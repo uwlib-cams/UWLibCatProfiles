@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-06-05",
+        "date": "2019-07-16",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,26 +11,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-06-04",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                               ""
-                            ]},
-                        "uwFormOrder": 0,
-                        "statusUw": "attention - lookup target is empty",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": ["monograph"]
-                        },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -101,7 +85,7 @@
                             ]
                         },
                         "uwFormOrder": 234,
-                        "statusUw": "done 2019-05-29",
+                        "statusUw": "done 2019-07-16",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -407,7 +391,7 @@
                         },
                         "uwFormOrder": 75,
                         "statusUw": "attention",
-                        "noteUw": ["We need to decide how these will be handled."],
+                        "noteUw": ["We need to decide how these will be handled.", "This needs to be a work lookup within Sinopia. The feature is being developed now according to Michelle F. on 2019-07-16"],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -429,7 +413,7 @@
                         },
                         "uwFormOrder": 76,
                         "statusUw": "attention",
-                        "noteUw": [],
+                        "noteUw": ["Lookup to a work in Sinopia, under development as of 2019-07-16"],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -1658,7 +1642,7 @@
                         },
                         "uwFormOrder": 27,
                         "statusUw": "attention",
-                        "noteUw": ["How does Sinopia handle RDA Registry lookups? Check on this one.","CEC tested in Sinopia dev 2019-06-19 and the property shows up but the lookup doesn't. Alternate literal doesn't make it into monographs profile"],
+                        "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
                     },
@@ -6318,22 +6302,13 @@
                     {
                         "propertyLabel": "has identifier for work (RDA 6.8)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10002",
-                        "mandatory": "true",
+                        "mandatory": "false",
                         "repeatable": "true",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
+                        "type": "literal",
                         "uwFormOrder": -1,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["We need a way to 'mint uri' here, but we don't have a lookup or understanding of how URI minting happens in Sinopia. Revisit after we can look at the MVP? (CEC)"],
+                        "qUw": ["Need to be able to assign a source (CEC)"],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/6.8.html"
                     },
@@ -6635,19 +6610,14 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:names",
                                 "urn:ld4p:qa:names:place",
-                                "urn:ld4p:qa:geonames",
-                                "http://id.loc.gov/vocabulary/countries",
-                                "http://id.loc.gov/vocabulary/geographicAreas",
-                                "http://www.geonames.org"
-                            ],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                                "urn:ld4p:qa:geonames"
+                            ]
                         },
                         "uwFormOrder": 14,
-                        "statusUw": "attention",
-                        "noteUw": ["loc.gov vocabularies need re-evaluation, will need type-ahead"],
-                        "qUw": ["What happens if we use a data type that isn't implemented yet? Used 'Place' class here for fun(CEC)"],
+                        "statusUw": "done",
+                        "noteUw": [""],
+                        "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     },
@@ -7013,8 +6983,8 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "attention 7/5/19",
-                        "noteUw": [],
+                        "statusUw": "attention",
+                        "noteUw": ["Under development currently as of 2019-07-16. We will know where to point this lookup soon."],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
                     },
@@ -7427,7 +7397,7 @@
                         },
                         "uwFormOrder": 747,
                         "statusUw": "attention",
-                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored."],
+                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet."],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
@@ -11163,7 +11133,7 @@
                         "uwFormOrder": 683,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": [],
+                        "qUw": ["do our own MADS profile? Just use LC's subject resource templates here?"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -12457,26 +12427,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-05-29",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [""]
-                        },
-                        "uwFormOrder": 0,
-                        "statusUw": "attention - no lookup target specified.",
-                        "noteUw": ["is this the appropriate PT for an expression lookup?"],
-                        "qUw": [],
-                        "usedInProfile": ["monograph"],
-                        "remark": ""
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -16778,7 +16732,7 @@
                         "uwFormOrder": 126,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["Is this meant to be a relationship between an expression and a URI for supplementary content, or a note about supplementary content? We currently have it set up as a note but that might not be right."],
+                        "qUw": ["Is this meant to be a relationship between an expression and a URI for supplementary content, or a note about supplementary content? We currently have it set up as a note but that might not be right.", "A URI/electronic location for the supplementary content"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
@@ -23898,7 +23852,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-05-29",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -28022,7 +27976,7 @@
                         "uwFormOrder": 83,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["How will two URI's in one lookup...look? CEC 2019-05-01",
+                        "qUw": ["How will two URI's in one lookup...look? CEC 2019-07-16",
                         "Multiple defaults a problem?"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/2.13.html"
@@ -31708,7 +31662,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-05-29",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -34514,7 +34468,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-05-29",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -56827,7 +56781,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-05-01",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -60296,7 +60250,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-05-01",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -61396,7 +61350,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-05-01",
+                "date": "2019-07-16",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
