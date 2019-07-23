@@ -26,10 +26,10 @@
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         },
                         "uwFormOrder": 0,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
 
                     {
@@ -63,7 +63,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)(Lookup)",
@@ -882,7 +882,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has authorized access point for work group",
@@ -1457,7 +1457,7 @@
                         "statusUw": "attention",
                         "noteUw": ["revisit marc genre terms. may need a type-ahead situation"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
                     {
@@ -1483,7 +1483,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.7.html"
                     },
                     {
@@ -1644,7 +1644,7 @@
                         "statusUw": "attention",
                         "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has commissioning body agent (RDA 18.5)(Lookup)",
@@ -2314,7 +2314,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.4.html"
                     },
                     {
@@ -2800,7 +2800,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.9.4.html"
                     },
                     {
@@ -3019,7 +3019,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.9.html"
                     },
                     {
@@ -6305,11 +6305,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 15,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["Need to be able to assign a source (CEC)"],
-                        "usedInProfile": [],
+                        "qUw": ["Need to be able to assign a source (CEC)", "Will be able to mint in Sinopia. In development. Don't know how to format lookup yet/where to point it"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.8.html"
                     },
                     {
@@ -6542,7 +6542,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.2.html"
                     },
                     {
@@ -6555,7 +6555,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.2.3.html"
                     },
                     {
@@ -6610,15 +6610,14 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:names:place",
-                                "urn:ld4p:qa:geonames"
+                                "urn:ld4p:qa:names:place", "urn:ld4p:qa:subjects:place", "urn:ld4p:qa:geonames"
                             ]
                         },
                         "uwFormOrder": 14,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     },
                     {
@@ -7456,7 +7455,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.2.2.html"
                     },
                     {
@@ -8436,7 +8435,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "is opera adaptation of work (RDA 24.5)",
@@ -10054,7 +10053,7 @@
                         "statusUw": "done 2019-05-28",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -11318,7 +11317,7 @@
                         "statusUw": "",
                         "noteUw": ["needs type-ahead formatting", "Need temporal coverage from somewhere too"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
                     {
@@ -11344,6 +11343,29 @@
                         ],
                         "qUw": ["Multiple defaults not working in Sinopia as of 2019-05. Check again when MVP comes out and adjust accordingly"],
                         "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/7.2.html"
+                    },
+                    {
+                        "propertyLabel": "has nature of content (RDA 7.2)(Lookup)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType/"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1023"},
+                                {"defaultLiteral": "two-dimensional moving image"}
+                            ]
+                        },
+                        "uwFormOrder": 16,
+                        "statusUw": "attention",
+                        "noteUw": [
+                            "Need to format as type-ahead (CEC)",
+                            "Use this version of the property for moving images only. Has defaults for moving images"
+                        ],
+                        "qUw": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.2.html"
                     },
                     {
@@ -12048,7 +12070,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.9.2.html"
                     },
                     {
@@ -12444,7 +12466,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)(Lookup)",
@@ -12556,7 +12578,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has actor agent (RDA 18.5)(Lookup)",
@@ -13264,7 +13286,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has identifier for expression (RDA 6.13)",
@@ -16307,7 +16329,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has interactivity mode",
@@ -22512,7 +22534,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.17.html"
                     },
                     {
@@ -22598,7 +22620,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/7.10.html"
                     },
                     {
@@ -23885,7 +23907,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has access point for manifestation",
@@ -23897,7 +23919,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has base material (RDA 3.6)(Lookup)",
@@ -24029,7 +24051,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has groove characteristic (RDA 3.16.5)",
@@ -28767,7 +28789,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.3.4.html"
                     },
                     {
@@ -29768,7 +29790,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.3.3.html"
                     },
                     {
@@ -31478,7 +31500,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.3.2.html"
                     },
                     {
@@ -31695,7 +31717,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has access point for item",
@@ -56798,7 +56820,7 @@
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "is abbreviated title of",
@@ -60267,7 +60289,7 @@
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has access point for place",
@@ -61367,7 +61389,7 @@
                         "statusUw": "test CEC 2019-05-09",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has access point for timespan",
@@ -62586,7 +62608,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     }
                 ]
             }
