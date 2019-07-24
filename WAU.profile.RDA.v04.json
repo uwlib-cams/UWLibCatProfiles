@@ -393,7 +393,7 @@
                         "statusUw": "attention",
                         "noteUw": ["We need to decide how these will be handled.", "This needs to be a work lookup within Sinopia. The feature is being developed now according to Michelle F. on 2019-07-16"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -415,7 +415,7 @@
                         "statusUw": "attention",
                         "noteUw": ["Lookup to a work in Sinopia, under development as of 2019-07-16"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -4544,7 +4544,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has issue (RDA 24.5)",
@@ -24738,7 +24738,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.3.6.html"
                     },
                     {
@@ -25906,7 +25906,7 @@
                         "statusUw": "done",
                         "noteUw": ["Put in literal to save catalogers time. If it doesn't work or is more trouble than it's worth we should take it out."],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.11.html"
                     },
                     {
@@ -26498,7 +26498,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.7.3.html"
                     },
                     {
@@ -26511,7 +26511,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.7.4.html"
                     },
                     {
@@ -26908,45 +26908,34 @@
                     {
                         "propertyLabel": "has file size (RDA 3.19.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30183",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 109.92,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.19.4.html"
                     },
                     {
                         "propertyLabel": "has file type (RDA 3.19.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/fileType/1006"},
+                                {"defaultLiteral": "video file"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 109.9,
+                        "statusUw": "done",
+                        "noteUw": ["default for video files"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.19.2.html"
                     },
                     {
@@ -26974,45 +26963,34 @@
                     {
                         "propertyLabel": "has resolution (RDA 3.19.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30159",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 109.93,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.19.5.html"
                     },
                     {
                         "propertyLabel": "has type of recording (RDA 3.16.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/typeRec"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/typeRec/1002"},
+                                {"defaultLiteral": "digital"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 109.2,
+                        "statusUw": "done",
+                        "noteUw": ["Has default for digital"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.16.2.html"
                     },
                     {
@@ -27302,7 +27280,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.10.html"
                     },
                     {
@@ -27379,7 +27357,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.10.2.html"
                     },
                     {
@@ -27392,7 +27370,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.10.6.html"
                     },
                     {
@@ -27433,6 +27411,26 @@
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/3.9.html"
                     },
+                     {
+                        "propertyLabel": "has production method (RDA 3.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAproductionMethod/1017"},
+                                {"defaultLiteral": "stamping"}
+                            ]
+                        },
+                        "uwFormOrder": 105,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["dvdVideo"],
+                        "remark": "http://access.rdatoolkit.org/3.9.html"
+                    },
                     {
                         "propertyLabel": "has parallel place of manufacture (RDA 2.10.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30090",
@@ -27443,7 +27441,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": ["How will this value be attached to the other parallel place of manufacture? Labels for one property vs. parallel field"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.10.3.html"
                     },
                     {
@@ -27456,7 +27454,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.10.4.html"
                     },
                     {
@@ -27484,23 +27482,14 @@
                     {
                         "propertyLabel": "has details of sound characteristic (RDA 3.16.1.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30245",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 109.1,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.16.1.4.html"
                     },
                     {
@@ -27554,13 +27543,37 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"]
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "defaults": [
+                                {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
+                                {"defaultLiteral": "volume"}
+                            ]
                         },
                         "uwFormOrder": 99,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/3.3.html"
+                    },
+                    {
+                        "propertyLabel": "has carrier type (RDA 3.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1060"},
+                                {"defaultLiteral": "videodisc"}
+                            ]
+                        },
+                        "uwFormOrder": 99,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
                     },
                     {
@@ -27833,7 +27846,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.7.2.html"
                     },
                     {
@@ -27846,7 +27859,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.7.6.html"
                     },
                     {
@@ -27859,7 +27872,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.8.2.html"
                     },
                     {
@@ -27872,7 +27885,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.8.6.html"
                     },
                     {
@@ -27907,7 +27920,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.2.html"
                     },
                     {
@@ -27920,7 +27933,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.6.html"
                     },
                     {
@@ -27933,7 +27946,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.7.html"
                     },
                     {
@@ -27946,7 +27959,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.8.3.html"
                     },
                     {
@@ -27959,7 +27972,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.3.html"
                     },
                     {
@@ -27994,7 +28007,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.8.4.html"
                     },
                     {
@@ -28047,7 +28060,7 @@
                         "noteUw": [],
                         "qUw": ["How will two URI's in one lookup...look? CEC 2019-07-16",
                         "Multiple defaults a problem?"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.13.html"
                     },
                     {
@@ -28075,23 +28088,19 @@
                     {
                         "propertyLabel": "has encoding format (RDA 3.19.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30096",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultLiteral": "DVD video"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 109.91,
+                        "statusUw": "done",
+                        "noteUw": ["default for DVD videos"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.19.3.html"
                     },
                     {
@@ -28188,13 +28197,37 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"]
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
+                                {"defaultLiteral": "unmediated"}
+                            ]
                         },
                         "uwFormOrder": 98,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
+                        "remark": "http://access.rdatoolkit.org/3.2.html"
+                    },
+                    {
+                        "propertyLabel": "has media type (RDA 3.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1008"},
+                                {"defaultLiteral": "video"}
+                            ]
+                        },
+                        "uwFormOrder": 98,
+                        "statusUw": "",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.2.html"
                     },
                     {
@@ -28870,7 +28903,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     },
                     {
@@ -28883,7 +28916,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.10.html"
                     },
                     {
@@ -28896,7 +28929,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.9.html"
                     },
                     {
@@ -28944,7 +28977,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.7.html"
                     },
                     {
@@ -28957,7 +28990,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.13.html"
                     },
                     {
@@ -28970,7 +29003,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.14.html"
                     },
                     {
@@ -28996,7 +29029,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.html"
                     },
                     {
@@ -29022,7 +29055,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.6.html"
                     },
                     {
@@ -29035,7 +29068,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.11.html"
                     },
                     {
@@ -29048,7 +29081,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.4.html"
                     },
                     {
@@ -29061,7 +29094,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.3.html"
                     },
                     {
@@ -29074,7 +29107,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.8.html"
                     },
                     {
@@ -29109,7 +29142,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.15.html"
                     },
                     {
@@ -29475,6 +29508,24 @@
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/3.5.html"
                     },
+                     {
+                        "propertyLabel": "has dimensions (RDA 3.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30169",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "4 3/4 in."}
+                            ]
+                        },
+                        "uwFormOrder": 101,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["dvdVideo"],
+                        "remark": "http://access.rdatoolkit.org/3.5.html"
+                    },
                     {
                         "propertyLabel": "has details of emulsion on microfilm and microfiche (RDA 3.7.2.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30223",
@@ -29550,7 +29601,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.17.5.html"
                     },
                     {
@@ -29585,7 +29636,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
@@ -29698,7 +29749,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.3.html"
                     },
                     {
@@ -29711,7 +29762,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.3.5.html"
                     },
                     {
@@ -29724,7 +29775,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.7.5.html"
                     },
                     {
@@ -29737,7 +29788,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.10.5.html"
                     },
                     {
@@ -29750,7 +29801,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.8.5.html"
                     },
                     {
@@ -29763,7 +29814,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.9.html"
                     },
                     {
@@ -29776,7 +29827,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.5.html"
                     },
                     {
@@ -29789,7 +29840,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.7.html"
                     },
                     {
@@ -29802,7 +29853,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.4.3.html"
                     },
                     {
@@ -30008,23 +30059,21 @@
                     {
                         "propertyLabel": "has configuration of playback channels (RDA 3.16.8)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30184",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/configPlayback"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/configPlayback/1002"},
+                                {"defaultLiteral": "stereo"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 109.4,
+                        "statusUw": "done",
+                        "noteUw": ["has default for stereo"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.16.8.html"
                     },
                     {
@@ -30139,23 +30188,17 @@
                     {
                         "propertyLabel": "has presentation format (RDA 3.17.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30163",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["http://rdaregistry.info/termList/presFormat"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 109.6,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.17.2.html"
                     },
                     {
@@ -30589,23 +30632,21 @@
                     {
                         "propertyLabel": "has regional encoding (RDA 3.19.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30006",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDARegionalEncoding"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/RDARegionalEncoding/1002"},
+                                {"defaultLiteral": "region 1"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 109.94,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.19.6.html"
                     },
                     {
@@ -30783,23 +30824,21 @@
                     {
                         "propertyLabel": "has recording medium (RDA 3.16.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30206",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/recMedium"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/recMedium/1003"},
+                                {"defaultLiteral": "optical"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 109.3,
+                        "statusUw": "done",
+                        "noteUw": ["has default for optical"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.16.3.html"
                     },
                     {
@@ -30944,7 +30983,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.4.html"
                     },
                     {
@@ -30957,7 +30996,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.5.html"
                     },
                     {
@@ -30984,23 +31023,20 @@
                     {
                         "propertyLabel": "has special playback characteristic (RDA 3.16.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/specPlayback"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 109.41,
+                        "statusUw": "done",
+                        "noteUw": ["has default for DVDs"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.16.9.html"
                     },
                     {
@@ -31035,29 +31071,27 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": ["Another question about relating these to one another. What if there are multiple named revisions of the same edition with multiple statements of responsibility attached?"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.8.html"
                     },
                     {
                         "propertyLabel": "has broadcast standard (RDA 3.18.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30123",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["http://rdaregistry.info/termList/broadcastStand"],
                             "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
+                                {"defaultURI": "http://rdaregistry.info/termList/broadcastStand/1002"},
+                                {"defaultLiteral": "NTSC"}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 109.8,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.18.3.html"
                     },
                     {
@@ -31239,7 +31273,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.5.4.html"
                     },
                     {
@@ -31252,7 +31286,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.6.html"
                     },
                     {
@@ -31265,7 +31299,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.4.2.html"
                     },
                     {
@@ -31331,7 +31365,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": ["Presents an interesting question...we need a lookup for the type of extent and also a number to indicate how many. Should we just use a literal here?"],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.4.html"
                     },
                     {
@@ -31344,7 +31378,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.9.2.html"
                     },
                     {
@@ -31357,7 +31391,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.9.6.html"
                     },
                     {
@@ -31392,7 +31426,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.9.3.html"
                     },
                     {
@@ -31405,7 +31439,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.9.4.html"
                     },
                     {
@@ -31484,7 +31518,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/2.12.2.html"
                     },
                     {
@@ -31500,7 +31534,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.11.html"
                     },
                     {
@@ -31574,23 +31608,14 @@
                     {
                         "propertyLabel": "has projection speed (RDA 3.17.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30200",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 109.5,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.17.3.html"
                     },
                     {
@@ -31618,23 +31643,17 @@
                     {
                         "propertyLabel": "has video format (RDA 3.18.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30104",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["http://rdaregistry.info/termList/videoFormat"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 109.7,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.18.2.html"
                     },
                     {
