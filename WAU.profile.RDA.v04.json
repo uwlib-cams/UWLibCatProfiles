@@ -73,22 +73,14 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
+                                "urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"
                             ]
                         },
                         "uwFormOrder": 234,
-                        "statusUw": "done 2019-07-16",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -107,7 +99,7 @@
                         "statusUW": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has addressee collective agent",
@@ -311,7 +303,7 @@
                             ]
                         },
                         "uwFormOrder": 203,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -349,7 +341,7 @@
                             ]
                         },
                         "uwFormOrder": 202,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -700,10 +692,10 @@
                             ]
                         },
                         "uwFormOrder": 226,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -981,7 +973,7 @@
                             ]
                         },
                         "uwFormOrder": 217,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -1354,7 +1346,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1699,10 +1691,10 @@
                             ]
                         },
                         "uwFormOrder": 196,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1805,7 +1797,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1908,7 +1900,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2008,10 +2000,10 @@
                             ]
                         },
                         "uwFormOrder": 197,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2370,10 +2362,10 @@
                             ]
                         },
                         "uwFormOrder": 199,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2473,10 +2465,10 @@
                             ]
                         },
                         "uwFormOrder": 200,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2705,7 +2697,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2805,10 +2797,10 @@
                             ]
                         },
                         "uwFormOrder": 205,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2824,10 +2816,10 @@
                             ]
                         },
                         "uwFormOrder": 204,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2856,7 +2848,7 @@
                             ]
                         },
                         "uwFormOrder": 207,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -2875,10 +2867,10 @@
                             ]
                         },
                         "uwFormOrder": 211,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3096,10 +3088,10 @@
                             ]
                         },
                         "uwFormOrder": 212,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3224,7 +3216,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [""],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3347,7 +3339,7 @@
                             ]
                         },
                         "uwFormOrder": 222,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -3366,7 +3358,7 @@
                             ]
                         },
                         "uwFormOrder": 223,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -3385,10 +3377,10 @@
                             ]
                         },
                         "uwFormOrder": 208,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3535,7 +3527,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3635,10 +3627,10 @@
                             ]
                         },
                         "uwFormOrder": 227,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3804,7 +3796,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -3947,10 +3939,10 @@
                             ]
                         },
                         "uwFormOrder": 214,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4094,10 +4086,10 @@
                             ]
                         },
                         "uwFormOrder": 215,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4203,7 +4195,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4306,7 +4298,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4509,7 +4501,7 @@
                             ]
                         },
                         "uwFormOrder": 198,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -4603,10 +4595,10 @@
                             ]
                         },
                         "uwFormOrder": 216,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4794,7 +4786,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related family of work",
@@ -5894,10 +5886,10 @@
                             ]
                         },
                         "uwFormOrder": 219,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -8578,10 +8570,10 @@
                             ]
                         },
                         "uwFormOrder": 220,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -8591,7 +8583,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 220.1,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8873,7 +8865,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9038,10 +9030,10 @@
                             ]
                         },
                         "uwFormOrder": 225,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9141,10 +9133,10 @@
                             ]
                         },
                         "uwFormOrder": 230,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9305,10 +9297,10 @@
                             ]
                         },
                         "uwFormOrder": 209,
-                        "statusUw": "done 2019-05-23",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9452,10 +9444,10 @@
                             ]
                         },
                         "uwFormOrder": 228,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9832,7 +9824,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -9953,10 +9945,10 @@
                             ]
                         },
                         "uwFormOrder": 231,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10090,7 +10082,7 @@
                             ]
                         },
                         "uwFormOrder": 221,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo"],
@@ -10739,7 +10731,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -11386,10 +11378,10 @@
                             ]
                         },
                         "uwFormOrder": 210,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -11489,10 +11481,10 @@
                             ]
                         },
                         "uwFormOrder": 229,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -11614,10 +11606,10 @@
                             ]
                         },
                         "uwFormOrder": 206,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12592,22 +12584,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 261,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12765,22 +12751,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 235,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12895,22 +12875,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 236,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13004,22 +12978,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 237,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13179,22 +13147,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 238,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13356,22 +13318,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 240,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13465,22 +13421,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 265,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13574,22 +13524,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 242,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13683,22 +13627,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 263,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -13792,22 +13730,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 264,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14111,22 +14043,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 244,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14229,7 +14155,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14331,7 +14257,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/20.2.html"
                     },
                     {
@@ -14434,7 +14360,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14571,22 +14497,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 246,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14811,22 +14731,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 248,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14920,22 +14834,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
-                        },
+                            },
                         "uwFormOrder": 250,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14945,22 +14853,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 249,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has editor collective agent of moving image work",
@@ -15627,22 +15529,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 268,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -15979,7 +15875,7 @@
                             ]
                         },
                         "uwFormOrder": 278,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -16076,22 +15972,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 266,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -16185,22 +16075,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 269,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -16330,22 +16214,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 252,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -16439,22 +16317,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 253,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -19055,22 +18927,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
-                        },
+                            },
                         "uwFormOrder": 254,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -19164,22 +19030,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 255,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -19636,22 +19496,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 270,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -19745,22 +19599,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 258,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -20072,22 +19920,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 259,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -20531,22 +20373,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 260,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -20679,7 +20515,7 @@
                             ]
                         },
                         "uwFormOrder": 279,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -20803,7 +20639,7 @@
                             ]
                         },
                         "uwFormOrder": 280,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -21206,7 +21042,7 @@
                             ]
                         },
                         "uwFormOrder": 281,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -21393,7 +21229,7 @@
                             ]
                         },
                         "uwFormOrder": 282,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -21763,7 +21599,7 @@
                             ]
                         },
                         "uwFormOrder": 283,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -21866,7 +21702,7 @@
                             ]
                         },
                         "uwFormOrder": 284,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -21969,7 +21805,7 @@
                             ]
                         },
                         "uwFormOrder": 276,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -22072,7 +21908,7 @@
                             ]
                         },
                         "uwFormOrder": 285,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -22197,7 +22033,7 @@
                             ]
                         },
                         "uwFormOrder": 286,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -22300,7 +22136,7 @@
                             ]
                         },
                         "uwFormOrder": 277,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -23529,22 +23365,16 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
                             ]
                         },
                         "uwFormOrder": 262,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -31029,7 +30859,7 @@
                             ]
                         },
                         "uwFormOrder": 287,
-                        "statusUw": "done 2019-05-28",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
