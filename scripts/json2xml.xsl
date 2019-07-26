@@ -4,7 +4,7 @@
     <xsl:output method="xml"/>
     
     <!-- change document name in select attribute value template below to target profile, current version -->
-    <xsl:param name="j" select="unparsed-text('https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/WAU.profile.RDA.v04.json')"/>
+    <xsl:param name="j" select="unparsed-text('https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/WAU.profile.RDA.json')"/>
 
     <xsl:template match="/">
         <xsl:copy-of select="json-to-xml($j)"/>
