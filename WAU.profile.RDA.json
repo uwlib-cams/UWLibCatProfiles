@@ -27396,9 +27396,9 @@
                     {
                         "propertyLabel": "has related expression of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -27408,8 +27408,8 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 336.7,
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
@@ -27880,7 +27880,7 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336.8,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": ["how will URI-to-URI relationships work in Sinopia?"],
