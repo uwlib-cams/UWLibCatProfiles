@@ -957,14 +957,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "has organizer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
                         "propertyLabel": "has participant in treaty (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
                         "mandatory": "false",

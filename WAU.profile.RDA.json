@@ -4866,11 +4866,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336.5,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related collective agent of work",
@@ -7013,11 +7013,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336,
                         "statusUw": "attention",
                         "noteUw": ["Under development currently as of 2019-07-16. We will know where to point this lookup soon."],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "is catalogue of work (RDA 24.5)",
@@ -7430,7 +7430,7 @@
                         "statusUw": "attention",
                         "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet."],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
                     },
                     {
@@ -8574,19 +8574,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo"],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
-                        "propertyLabel": "has organizer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 220.1,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -15629,7 +15616,7 @@
                         "propertyLabel": "has accessibility content (RDA 7.14)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20208",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 125,
                         "statusUw": "done",
@@ -18533,11 +18520,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336.6,
                         "statusUw": "attention 7/5/19",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related work of expression",
