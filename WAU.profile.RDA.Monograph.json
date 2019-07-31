@@ -16,6 +16,16 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related expression of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
                         "mandatory": "false",
@@ -1142,6 +1152,16 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related manifestation of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20299",
                         "mandatory": "false",
@@ -1981,11 +2001,21 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related expression of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": ""
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has related item of manifestation",
@@ -1993,13 +2023,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup"
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -2953,11 +2976,7 @@
                         "remark": "http://access.rdatoolkit.org/17.11.html",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:RDA:Item:monograph"],
-                            "valueDataType": {
-                                "dataTypeURI": 
-                                    "http://rdaregistry.info/Elements/c/C10003"
-                                
-                            }
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         }
                     }
                 ]
@@ -2974,8 +2993,11 @@
                         "propertyLabel": "Lookup",
                         "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup"
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Item",

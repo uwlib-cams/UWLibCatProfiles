@@ -15,6 +15,22 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                {
+                        "propertyLabel": "Lookup for existing Work",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                        },
+                        "uwFormOrder": 0.1,
+                        "statusUw": "attention",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo"]
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -12438,6 +12454,22 @@
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup for existing Expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
+                        },
+                        "uwFormOrder": 0.2,
+                        "statusUw": "attention",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo"]
+                    },
+                    {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "false",
@@ -23648,21 +23680,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                {
-                        "propertyLabel": "Lookup",
+                                {
+                        "propertyLabel": "Lookup for existing Manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [""]
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
-                        "uwFormOrder": 0,
-                        "statusUw": "attention - no lookup target specified.",
-                        "noteUw": ["is this the appropriate PT for an entity lookup?"],
+                        "uwFormOrder": 0.3,
+                        "statusUw": "attention",
+                        "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
-                        "remark": ""
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -31442,20 +31474,20 @@
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                 {
-                        "propertyLabel": "Lookup",
+                        "propertyLabel": "Lookup for existing Item",
                         "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [""]
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         },
-                        "uwFormOrder": 0,
-                        "statusUw": "attention - no lookup target specified.",
-                        "noteUw": ["is this the appropriate PT for an item lookup?"],
+                        "uwFormOrder": 0.4,
+                        "statusUw": "attention",
+                        "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
-                        "remark": ""
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
