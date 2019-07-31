@@ -926,7 +926,7 @@
                     },
                     {
                         "propertyLabel": "has jurisdiction governed (RDA 18.5)",
-                        "propertyURI": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10018",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
