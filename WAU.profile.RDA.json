@@ -29069,7 +29069,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:RDA:Item"],
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ["http://rdaregistry.info/Elements/c/C10003", "http://rdaregistry.info/Elements/c/C10003"]},
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"},
                             "defaults": [
                                 {"defaultURI": ""},
                                 {"defaultLiteral": ""}

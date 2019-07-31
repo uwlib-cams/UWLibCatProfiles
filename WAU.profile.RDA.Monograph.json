@@ -2954,10 +2954,9 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:RDA:Item:monograph"],
                             "valueDataType": {
-                                "dataTypeURI": [
-                                    "http://rdaregistry.info/Elements/c/C10003",
+                                "dataTypeURI": 
                                     "http://rdaregistry.info/Elements/c/C10003"
-                                ]
+                                
                             }
                         }
                     }
