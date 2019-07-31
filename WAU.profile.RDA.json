@@ -25654,7 +25654,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "defaults": [
-                                {"defaultLiteral": "©"}
+                                
                             ]
                         },
                         "uwFormOrder": 66,

@@ -2329,7 +2329,7 @@
                         "remark": "http://access.rdatoolkit.org/2.11.html",
                         "valueConstraint": {
                             "defaults": [
-                                {"defaultLiteral": "©"}
+                                
                             ]
                         }
                     },
