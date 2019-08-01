@@ -1300,7 +1300,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/TacNotation"]
                         }
                     },
                     {
