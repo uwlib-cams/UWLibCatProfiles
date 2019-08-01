@@ -146,7 +146,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/geographicAreas"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
                         }
                     },
                     {
@@ -196,7 +196,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         }
                     },
                     {
@@ -206,7 +206,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         }
                     },
                     {
@@ -1270,7 +1270,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.11.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
                         }
                     },
                     {
@@ -1289,7 +1289,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mscript"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
                         }
                     },
                     {
@@ -2328,9 +2328,7 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.11.html",
                         "valueConstraint": {
-                            "defaults": [
-                                
-                            ]
+                            "defaults": []
                         }
                     },
                     {
@@ -2398,7 +2396,7 @@
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/issuance",
+                                "https://id.loc.gov/vocabulary/issuance",
                                 "http://rdaregistry.info/termList/ModeIssue"
                             ],
                             "defaults": [
@@ -2407,7 +2405,7 @@
                                     "defaultLiteral": "single unit"
                                 },
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
                                     "defaultLiteral": "single unit"
                                 }
                             ]
@@ -3072,7 +3070,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/22.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
@@ -3145,7 +3143,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/22.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
@@ -3310,7 +3308,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
