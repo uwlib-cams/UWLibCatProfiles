@@ -6961,7 +6961,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
                         },
                         "uwFormOrder": 26,
                         "statusUw": "",
@@ -11346,7 +11346,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/geographicAreas"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
                         },
                         "uwFormOrder": 17,
                         "statusUw": "",
@@ -15290,7 +15290,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mscript"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
                             },
                         "uwFormOrder": 124,
                         "statusUw": "done",
@@ -17683,7 +17683,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -27777,7 +27777,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/issuance",
+                                "https://id.loc.gov/vocabulary/issuance",
                                 "http://rdaregistry.info/termList/ModeIssue"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -27787,7 +27787,7 @@
                                     "defaultLiteral": "single unit"
                                 },
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
                                     "defaultLiteral": "single unit"
                                 }
                             ]
@@ -32166,11 +32166,11 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -33434,11 +33434,11 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -54979,7 +54979,7 @@
                         "uwFormOrder": 135,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
+                        "qUw": ["Maybe a relator lookup? https://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/9.15.html"
                     },
@@ -62380,10 +62380,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
