@@ -16,6 +16,16 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related expression of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
                         "mandatory": "false",
@@ -136,7 +146,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/geographicAreas"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
                         }
                     },
                     {
@@ -186,7 +196,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         }
                     },
                     {
@@ -196,7 +206,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         }
                     },
                     {
@@ -916,7 +926,7 @@
                     },
                     {
                         "propertyLabel": "has jurisdiction governed (RDA 18.5)",
-                        "propertyURI": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10018",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -955,14 +965,6 @@
                                 "urn:ld4p:qa:names"
                             ]
                         }
-                    },
-                    {
-                        "propertyLabel": "has organizer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "has participant in treaty (RDA 18.5)",
@@ -1150,6 +1152,16 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related manifestation of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20299",
                         "mandatory": "false",
@@ -1258,7 +1270,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.11.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
                         }
                     },
                     {
@@ -1277,7 +1289,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mscript"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
                         }
                     },
                     {
@@ -1288,7 +1300,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/TacNotation"]
                         }
                     },
                     {
@@ -1989,11 +2001,21 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related expression of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": ""
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has related item of manifestation",
@@ -2001,13 +2023,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup"
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -2313,9 +2328,7 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.11.html",
                         "valueConstraint": {
-                            "defaults": [
-                                {"defaultLiteral": "©"}
-                            ]
+                            "defaults": []
                         }
                     },
                     {
@@ -2383,7 +2396,7 @@
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/issuance",
+                                "https://id.loc.gov/vocabulary/issuance",
                                 "http://rdaregistry.info/termList/ModeIssue"
                             ],
                             "defaults": [
@@ -2392,7 +2405,7 @@
                                     "defaultLiteral": "single unit"
                                 },
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
                                     "defaultLiteral": "single unit"
                                 }
                             ]
@@ -2961,12 +2974,7 @@
                         "remark": "http://access.rdatoolkit.org/17.11.html",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:RDA:Item:monograph"],
-                            "valueDataType": {
-                                "dataTypeURI": [
-                                    "http://rdaregistry.info/Elements/c/C10003",
-                                    "http://rdaregistry.info/Elements/c/C10003"
-                                ]
-                            }
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         }
                     }
                 ]
@@ -2983,8 +2991,11 @@
                         "propertyLabel": "Lookup",
                         "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup"
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"]
+                        }
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -3059,7 +3070,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/22.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
@@ -3132,7 +3143,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/22.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
@@ -3297,7 +3308,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",

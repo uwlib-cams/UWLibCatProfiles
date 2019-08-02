@@ -15,6 +15,22 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                {
+                        "propertyLabel": "Lookup for existing Work",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                        },
+                        "uwFormOrder": 0.1,
+                        "statusUw": "attention",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo"]
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -4509,7 +4525,7 @@
                     },
                     {
                       "propertyLabel": "has jurisdiction governed (RDA 18.5)",
-                      "propertyURI:": "http://rdaregistry.info/Elements/w/P10018 ",
+                      "propertyURI": "http://rdaregistry.info/Elements/w/P10018",
                       "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4866,11 +4882,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336.5,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related collective agent of work",
@@ -6945,7 +6961,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
                         },
                         "uwFormOrder": 26,
                         "statusUw": "",
@@ -7013,11 +7029,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336,
                         "statusUw": "attention",
                         "noteUw": ["Under development currently as of 2019-07-16. We will know where to point this lookup soon."],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "is catalogue of work (RDA 24.5)",
@@ -7430,7 +7446,7 @@
                         "statusUw": "attention",
                         "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet."],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
                     },
                     {
@@ -8574,19 +8590,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo"],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
-                        "propertyLabel": "has organizer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 220.1,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -11343,7 +11346,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/geographicAreas"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
                         },
                         "uwFormOrder": 17,
                         "statusUw": "",
@@ -12450,6 +12453,22 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                    {
+                        "propertyLabel": "Lookup for existing Expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
+                        },
+                        "uwFormOrder": 0.2,
+                        "statusUw": "attention",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo"]
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -15271,7 +15290,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mscript"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
                             },
                         "uwFormOrder": 124,
                         "statusUw": "done",
@@ -15629,7 +15648,7 @@
                         "propertyLabel": "has accessibility content (RDA 7.14)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20208",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 125,
                         "statusUw": "done",
@@ -17664,7 +17683,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -18533,11 +18552,11 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336.6,
                         "statusUw": "attention 7/5/19",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related work of expression",
@@ -23661,21 +23680,21 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                {
-                        "propertyLabel": "Lookup",
+                                {
+                        "propertyLabel": "Lookup for existing Manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [""]
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
-                        "uwFormOrder": 0,
-                        "statusUw": "attention - no lookup target specified.",
-                        "noteUw": ["is this the appropriate PT for an entity lookup?"],
+                        "uwFormOrder": 0.3,
+                        "statusUw": "attention",
+                        "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
-                        "remark": ""
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -25635,7 +25654,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "defaults": [
-                                {"defaultLiteral": "©"}
+                                
                             ]
                         },
                         "uwFormOrder": 66,
@@ -27409,9 +27428,9 @@
                     {
                         "propertyLabel": "has related expression of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -27421,8 +27440,8 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 336.7,
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
@@ -27758,7 +27777,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/issuance",
+                                "https://id.loc.gov/vocabulary/issuance",
                                 "http://rdaregistry.info/termList/ModeIssue"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -27768,7 +27787,7 @@
                                     "defaultLiteral": "single unit"
                                 },
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
                                     "defaultLiteral": "single unit"
                                 }
                             ]
@@ -27893,7 +27912,7 @@
                                 {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 336.8,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": ["how will URI-to-URI relationships work in Sinopia?"],
@@ -29082,7 +29101,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:RDA:Item"],
                             "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ["http://rdaregistry.info/Elements/c/C10003", "http://rdaregistry.info/Elements/c/C10003"]},
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"},
                             "defaults": [
                                 {"defaultURI": ""},
                                 {"defaultLiteral": ""}
@@ -31455,20 +31474,20 @@
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                 {
-                        "propertyLabel": "Lookup",
+                        "propertyLabel": "Lookup for existing Item",
                         "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [""]
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         },
-                        "uwFormOrder": 0,
-                        "statusUw": "attention - no lookup target specified.",
-                        "noteUw": ["is this the appropriate PT for an item lookup?"],
+                        "uwFormOrder": 0.4,
+                        "statusUw": "attention",
+                        "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
-                        "remark": ""
+                        "usedInProfile": ["monograph", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -32147,11 +32166,11 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -33415,11 +33434,11 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -54960,7 +54979,7 @@
                         "uwFormOrder": 135,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["Maybe a relator lookup? http://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
+                        "qUw": ["Maybe a relator lookup? https://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/9.15.html"
                     },
@@ -62361,10 +62380,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
