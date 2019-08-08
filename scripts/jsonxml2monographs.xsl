@@ -131,13 +131,39 @@
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">
-            <xsl:copy-of select="j:array[@key = 'useValuesFrom']"/>
+            <!-- don't want useValuesFrom, defaultURI values for literal props in the mono profile /
+                BUT keeping them in RDA profile pending addition of RDA QA and change to lookup props /
+                @gerontakos is there a better way to do this here and below? -->
+            <xsl:choose>
+                <xsl:when test="../j:string[@key = 'type'] != 'literal'">
+                    <xsl:copy-of select="j:array[@key = 'useValuesFrom']"/>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
         </xsl:if>
         <xsl:if test="j:map[@key = 'valueDataType']/descendant::text()">
             <xsl:copy-of select="j:map[@key = 'valueDataType']"/>
         </xsl:if>
         <xsl:if test="j:array[@key = 'defaults']/descendant::text()">
-            <xsl:copy-of select="j:array[@key = 'defaults']"/>
+            <!-- see comment above -->
+            <xsl:choose>
+                <xsl:when test="../j:string[@key = 'type'] != 'literal'">
+                    <xsl:copy-of select="j:array[@key = 'defaults']"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:for-each select="j:array[@key = 'defaults']">
+                        <j:array key="defaults">
+                            <xsl:for-each select="j:map">
+                                <j:map>
+                                    <j:string key="defaultLiteral">
+                                        <xsl:value-of select="j:string[@key = 'defaultLiteral']"/>
+                                    </j:string>
+                                </j:map>
+                            </xsl:for-each>
+                        </j:array>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
