@@ -1665,12 +1665,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27,
-                        "statusUw": "attention",
+                        "statusUw": "attention RDA",
                         "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
                         "qUw": [""],
                         "usedInProfile": ["monograph"]
@@ -22307,12 +22307,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27.5,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -23728,13 +23728,13 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
                         },
                         "uwFormOrder": 102,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -23767,12 +23767,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
                             },
                         "uwFormOrder": 103,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -23948,12 +23948,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30199",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
                         },
                         "uwFormOrder": 109,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -23986,12 +23986,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30197",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/bookFormat"]
                             },
                         "uwFormOrder": 108,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -26609,12 +26609,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30186",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
                         },
                         "uwFormOrder": 104,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -27009,12 +27009,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30191",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
                         },
                         "uwFormOrder": 106,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo"],
@@ -27137,12 +27137,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
                         },
                         "uwFormOrder": 105,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -27278,7 +27278,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
@@ -27287,7 +27287,7 @@
                             ]
                         },
                         "uwFormOrder": 99,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -30744,7 +30744,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/specPlayback"],
                             "defaults": [
@@ -30752,7 +30752,7 @@
                             ]
                         },
                         "uwFormOrder": 109.41,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": ["has default for DVDs"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -31070,7 +31070,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30182",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"],
@@ -31081,7 +31081,7 @@
                             ]
                         },
                         "uwFormOrder": 100,
-                        "statusUw": "attention",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": ["Presents an interesting question...we need a lookup for the type of extent and also a number to indicate how many. Should we just use a literal here?"],
                         "usedInProfile": ["monograph", "dvdVideo"],
@@ -31245,12 +31245,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30155",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
                         },
                         "uwFormOrder": 107,
-                        "statusUw": "done",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo"],
