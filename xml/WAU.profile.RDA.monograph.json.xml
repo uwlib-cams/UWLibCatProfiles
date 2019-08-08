@@ -206,12 +206,8 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/w/P10348</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAColourContent/</string>
-                     </array>
-                  </map>
+                  <string key="type">literal</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has note on work (RDA 5.9)</string>
@@ -1241,13 +1237,9 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/e/P20224</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/7.17.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAColourContent/</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has content type (RDA 6.9)</string>
@@ -2570,20 +2562,17 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30001</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.3.html</string>
                   <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDACarrierType</string>
-                     </array>
-                     <array key="defaults">
-                        <map>
-                           <string key="defaultURI">http://www.rdaregistry.info/termList/RDACarrierType/1008</string>
-                        </map>
-                        <map>
-                           <string key="defaultLiteral">volume</string>
-                        </map>
-                     </array>
+                     <j:array xmlns:j="http://www.w3.org/2005/xpath-functions" key="defaults">
+                        <j:map>
+                           <j:string key="defaultLiteral"/>
+                        </j:map>
+                        <j:map>
+                           <j:string key="defaultLiteral">volume</j:string>
+                        </j:map>
+                     </j:array>
                   </map>
                </map>
                <map>
@@ -2591,13 +2580,9 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30182</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.4.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDACarrierEU</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has dimensions (RDA 3.5)</string>
@@ -2612,104 +2597,72 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30208</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.6.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAMaterial</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has applied material (RDA 3.7)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30084</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.7.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAMaterial</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has mount (RDA 3.8)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30186</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.8.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAMaterial</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has production method (RDA 3.9)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30187</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.9.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAproductionMethod</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has generation (RDA 3.10)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30191</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.10.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/RDAGeneration</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has layout (RDA 3.11)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30155</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.11.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/layout</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has bibliographic format (RDA 3.12)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30197</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.12.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/bookFormat</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has font size (RDA 3.13)</string>
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30199</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">lookup</string>
+                  <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.13.html</string>
-                  <map key="valueConstraint">
-                     <array key="useValuesFrom">
-                        <string>http://www.rdaregistry.info/termList/fontSize</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has note on extent of manifestation (RDA 3.21.2)</string>

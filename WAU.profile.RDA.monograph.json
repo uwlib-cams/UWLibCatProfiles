@@ -191,10 +191,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
-                        }
+                        "type": "literal",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has note on work (RDA 5.9)",
@@ -1214,11 +1212,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/7.17.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has content type (RDA 6.9)",
@@ -2515,12 +2511,11 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
-                                {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
+                                {"defaultLiteral": ""},
                                 {"defaultLiteral": "volume"}
                             ]
                         }
@@ -2530,11 +2525,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30182",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.4.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has dimensions (RDA 3.5)",
@@ -2549,88 +2542,72 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.6.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has applied material (RDA 3.7)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.7.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has mount (RDA 3.8)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30186",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.8.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has production method (RDA 3.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.9.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has generation (RDA 3.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30191",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.10.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has layout (RDA 3.11)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30155",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.11.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has bibliographic format (RDA 3.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30197",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.12.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/bookFormat"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has font size (RDA 3.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30199",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.13.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has note on extent of manifestation (RDA 3.21.2)",
