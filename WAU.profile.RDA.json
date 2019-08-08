@@ -29,7 +29,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -45,7 +45,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
 
                     {
@@ -79,7 +79,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
@@ -890,7 +890,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has authorized access point for work group",
@@ -6590,7 +6590,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/6.2.html"
                     },
                     {
@@ -7503,7 +7503,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/6.2.2.html"
                     },
                     {
@@ -12467,7 +12467,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -12482,7 +12482,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
@@ -12594,7 +12594,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has actor agent (RDA 18.5)",
@@ -13272,7 +13272,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has identifier for expression (RDA 6.13)",
@@ -23694,7 +23694,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -23709,7 +23709,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has access point for manifestation",
@@ -23721,7 +23721,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has base material (RDA 3.6)",
@@ -23853,7 +23853,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has groove characteristic (RDA 3.16.5)",
@@ -31487,7 +31487,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -31502,7 +31502,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
                     {
                         "propertyLabel": "has access point for item",
