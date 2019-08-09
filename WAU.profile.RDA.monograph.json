@@ -33,7 +33,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "useValuesFrom": ["urn:ld4p:sinopia"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         }
                     },
@@ -1167,7 +1167,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "useValuesFrom": ["urn:ld4p:sinopia"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
                         }
                     },
@@ -2012,7 +2012,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "useValuesFrom": ["urn:ld4p:sinopia"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         }
                     },
@@ -2967,7 +2967,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "useValuesFrom": ["urn:ld4p:sinopia"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         }
                     },
