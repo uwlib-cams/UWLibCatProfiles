@@ -18,14 +18,13 @@
             <string key="date">
                 <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
             </string>
+            <!-- Description not accurate for format-specific profiles as not all RTs are pushed through to them -->
             <string key="description">
                 <xsl:value-of select="concat(j:string[@key = 'description'], ' for DVD videos')"/>
             </string>
             <string key="id">
                 <xsl:value-of select="concat(j:string[@key = 'id'], ':dvdVideo')"/>
             </string>
-            <!-- What should format-specific title be?
-                It may be preferable to change title in UW RDA Profile to create desired title for output to format-specific profile, as opposed to concatenation here  -->
             <string key="title">
                 <xsl:value-of
                     select="concat(j:string[@key = 'title'], ' for describing DVD videos')"/>
@@ -39,7 +38,7 @@
         </map>
     </xsl:template>
     <xsl:template match="j:array[@key = 'resourceTemplates']">
-        <!-- Specify each RT to push through to monographs profile below -->
+        <!-- Specify each RT to push through to dvdVideo profile below -->
         <xsl:for-each
             select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item|Timespan')]">
             <map>
@@ -59,7 +58,6 @@
                 </string>
                 <string key="date">
                     <xsl:value-of select="j:string[@key = 'date']"/>
-                    <!-- Bring in value from last-edited RT? -->
                 </string>
                 <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
