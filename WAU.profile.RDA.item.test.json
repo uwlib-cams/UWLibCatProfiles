@@ -358,7 +358,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"},
                             "defaults": [
                                 {
