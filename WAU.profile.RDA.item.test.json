@@ -1,18 +1,18 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-08-08",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
-        "id": "WAU:profile:RDA:monograph",
+        "date": "2019-08-19",
+        "description": "RDA item test",
+        "id": "WAU:profile:RDA:monograph:test",
         "title": "WAU Profile RDA for describing monographs",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
-                "id": "WAU:RT:RDA:Item:monograph",
+                "id": "WAU:RT:RDA:Item:Test",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item for monographs",
+                "resourceLabel": "WAU RT RDA Item test",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-07-16",
+                "date": "2019-08-19",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
