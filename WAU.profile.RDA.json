@@ -25688,6 +25688,15 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": "©"}
+                            ]
+                        },
                         "uwFormOrder": 66,
                         "statusUw": "done",
                         "noteUw": [],
