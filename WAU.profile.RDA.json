@@ -27,7 +27,7 @@
                         },
                         "uwFormOrder": 0.1,
                         "statusUw": "attention",
-                        "noteUw": [],
+                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 8/23"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"]
                     },
@@ -7486,8 +7486,8 @@
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
                         "uwFormOrder": 747,
-                        "statusUw": "attention",
-                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet."],
+                        "statusUw": "attention WEMI",
+                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet.", "This won't work like we thought it would. Suggest removal AKM 8/23"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
@@ -17515,7 +17515,7 @@
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
                         "uwFormOrder": 748,
-                        "statusUw": "attention",
+                        "statusUw": "attention WEMI",
                         "noteUw": ["We need to add a lookup to the manifestation RT that will look for manifestations somewhere. Wherever they get stored."],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"],
@@ -29226,7 +29226,7 @@
                             ]
                         },
                         "uwFormOrder": 749,
-                        "statusUw": "attention",
+                        "statusUw": "attention WEMI",
                         "noteUw": [],
                         "qUw": ["Can we put two dataTypeURI's in?", "As with works, expressions, and manifestations, we will need to put in a lookup to find already-cataloged entities. We need a place to point those lookups though."],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"],
