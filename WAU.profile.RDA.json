@@ -29,7 +29,7 @@
                         "statusUw": "attention",
                         "noteUw": ["This won't work like we thought it would. Suggest removal AKM 8/23"],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -12510,7 +12510,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -23730,7 +23730,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -31596,7 +31596,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
