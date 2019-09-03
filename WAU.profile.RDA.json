@@ -7492,15 +7492,17 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:RDA:Expression"],
-                            "useValuesFrom": [],
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
                         "uwFormOrder": 747,
                         "statusUw": "attention WEMI",
-                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet.", "This won't work like we thought it would. Suggest removal AKM 8/23"],
+                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", 
+                        "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet.", 
+                        "Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
@@ -12521,7 +12523,7 @@
                         },
                         "uwFormOrder": 0.2,
                         "statusUw": "attention",
-                        "noteUw": [],
+                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 9/3"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
@@ -17521,15 +17523,15 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:RDA:Manifestation"],
-                            "useValuesFrom": [],
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
                         "uwFormOrder": 748,
                         "statusUw": "attention WEMI",
-                        "noteUw": ["We need to add a lookup to the manifestation RT that will look for manifestations somewhere. Wherever they get stored."],
+                        "noteUw": ["We need to add a lookup to the manifestation RT that will look for manifestations somewhere. Wherever they get stored.","Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/17.9.html"
@@ -23741,7 +23743,7 @@
                         },
                         "uwFormOrder": 0.3,
                         "statusUw": "attention",
-                        "noteUw": [],
+                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 9/3"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
@@ -29228,10 +29230,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:RDA:Item"],
-                            "useValuesFrom": [],
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -29240,7 +29242,7 @@
                         },
                         "uwFormOrder": 749,
                         "statusUw": "attention WEMI",
-                        "noteUw": [],
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
                         "qUw": ["Can we put two dataTypeURI's in?", "As with works, expressions, and manifestations, we will need to put in a lookup to find already-cataloged entities. We need a place to point those lookups though."],
                         "usedInProfile": ["monograph", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/17.11.html"
@@ -31607,7 +31609,7 @@
                         },
                         "uwFormOrder": 0.4,
                         "statusUw": "attention",
-                        "noteUw": [],
+                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 9/3"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
