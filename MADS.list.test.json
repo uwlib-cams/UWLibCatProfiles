@@ -1,0 +1,220 @@
+{
+    "Profile": {
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-08-19",
+        "description": "MADS test",
+        "id": "WAU:profile:MADS:test",
+        "title": "WAU Profile MADS test",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+        "resourceTemplates": [
+            {
+                "resourceURI": "http://rdaregistry.info/Elements/w/P10256",
+                "resourceLabel": "WAU RT MADS RDF Subject Test",
+                "id": "WAU:RT:MADSRDF:SUBJECT",
+                "date": "2019-08-19",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has subject (RDA 23.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "remark": "http://access.rdatoolkit.org/23.5.html",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "WAU:RT:MADSRDF:COMPLEXSUBJECT",
+                                "WAU:RT:MADSRDF:TOPIC"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
+                "resourceLabel": "WAU RT MADS RDF Complex Subject",
+                "id": "WAU:RT:MADSRDF:COMPLEXSUBJECT",
+                "date": "2019-08-19",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Component List",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:LIST"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Label",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
+                "resourceLabel": "WAU RT MADS RDF Subject",
+                "id": "WAU:RT:MADSRDF:SIMPLESUBJECT",
+                "date": "2019-08-19",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    
+                    {
+                        "propertyLabel": "Uncontrolled Label",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects", "urn:ld4p:qa:genres"]
+                        }
+                        
+                    },
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects", "urn:ld4p:qa:genres"]
+                        }
+                        
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Topic",
+                "resourceLabel": "WAU RT MADS RDF Topic",
+                "id": "WAU:RT:MADSRDF:TOPIC",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Subject search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                        "remark": "",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "resourceLabel": "WAU RT MADS RDF Geographic",
+                "id": "WAU:RT:MADSRDF:GEOGRAPHIC",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Bibframe Geographic Coverage",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
+                        "remark": "For uncontrolled entries",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
+                "resourceLabel": "WAU RT MADS RDF Temporal",
+                "id": "WAU:RT:MADSRDF:TEMPORAL",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Bibframe Temporal Coverage",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/temporalCoverage",
+                        "remark": "For uncontrolled entries",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "valueConstraint": {}
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+                "resourceLabel": "WAU RT RDF List",
+                "id": "WAU:RT:RDF:LIST",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:genres"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Add another subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:LIST"]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
