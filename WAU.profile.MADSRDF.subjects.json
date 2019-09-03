@@ -25,7 +25,9 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "WAU:RT:MADSRDF:COMPLEXSUBJECT",
-                                "WAU:RT:MADSRDF:TOPIC"
+                                "WAU:RT:MADSRDF:TOPIC",
+                                "WAU:RT:MADSRDF:GEOGRAPHIC",
+                                "WAU:RT:MADSRDF:TEMPORAL"
                             ]
                         }
                     }
@@ -59,6 +61,33 @@
                 ]
             },
             {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic",
+                "resourceLabel": "WAU RT MADS RDF Hierarchical Geographic",
+                "id": "WAU:RT:MADSRDF:HIERARCHICALGEOGRAPHIC",
+                "date": "2019-08-19",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Component List",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:LIST:HIERARCHICALGEOGRAPHIC"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Label",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    }
+                ]
+            },
+            {
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
                 "resourceLabel": "WAU RT MADS RDF Subject",
                 "id": "WAU:RT:MADSRDF:SIMPLESUBJECT",
@@ -66,28 +95,25 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
-                    
-                    {
-                        "propertyLabel": "Uncontrolled Label",
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:subjects", "urn:ld4p:qa:genres"]
-                        }
-                        
-                    },
                     {
                         "propertyLabel": "Authoritative Label",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "mandatory": "false",
                         "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Subject Search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:subjects", "urn:ld4p:qa:genres"]
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:genres"
+                            ]
                         }
-                        
                     }
                 ]
             },
@@ -104,15 +130,11 @@
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
-                        }
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "Subject search",
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                        "remark": "",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -135,15 +157,11 @@
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
-                        }
+                        "type": "literal"
                     },
                     {
-                        "propertyLabel": "Bibframe Geographic Coverage",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
-                        "remark": "For uncontrolled entries",
+                        "propertyLabel": "Subject search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -166,19 +184,17 @@
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "mandatory": "false",
                         "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Subject search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:subjects"]
                         }
-                    },
-                    {
-                        "propertyLabel": "Bibframe Temporal Coverage",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/temporalCoverage",
-                        "remark": "For uncontrolled entries",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "valueConstraint": {}
                     }
                 ]
             },
@@ -211,6 +227,40 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:RDF:LIST"]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+                "resourceLabel": "WAU RT RDF List",
+                "id": "WAU:RT:RDF:LIST:HIERARCHICALGEOGRAPHIC",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "MADS:Geographic",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:places",
+                                "urn:ld4p:qa:geonames",
+                                "urn:ld4p:qa:places"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Add another MADS:Geographic",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:LIST:HIERARCHICALGEOGRAPHIC"]
                         }
                     }
                 ]
