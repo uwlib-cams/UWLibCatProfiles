@@ -21,6 +21,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
@@ -87,6 +88,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"
@@ -105,6 +107,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -312,6 +315,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -331,6 +335,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -350,6 +355,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -369,6 +375,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -474,6 +481,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -577,6 +585,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -701,6 +710,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -804,6 +814,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -982,6 +993,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1001,6 +1013,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1104,6 +1117,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1249,6 +1263,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1352,6 +1367,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1455,6 +1471,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:genres"
@@ -1473,6 +1490,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:genres"
@@ -1495,6 +1513,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:genres"
@@ -1517,6 +1536,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:genres"
@@ -1539,6 +1559,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
@@ -1565,6 +1586,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1744,6 +1766,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1847,6 +1870,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1950,6 +1974,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2053,6 +2078,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2177,6 +2203,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2415,6 +2442,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2518,6 +2546,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2747,6 +2776,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2850,6 +2880,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2869,6 +2900,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2890,6 +2922,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2922,6 +2955,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2941,6 +2975,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3162,6 +3197,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3287,6 +3323,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3369,6 +3406,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3388,6 +3426,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
@@ -3413,6 +3452,7 @@
                         "mandatory":"false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3432,6 +3472,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3451,6 +3492,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3598,6 +3640,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3701,6 +3744,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3870,6 +3914,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -4013,6 +4058,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4160,6 +4206,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4266,6 +4313,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4369,6 +4417,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4472,6 +4521,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4575,6 +4625,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4594,6 +4645,7 @@
                       "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4669,6 +4721,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -4860,6 +4913,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -5515,6 +5569,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -5681,6 +5736,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -5806,6 +5862,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -5951,6 +6008,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -6712,6 +6770,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:place", "urn:ld4p:qa:subjects:place", "urn:ld4p:qa:geonames"
@@ -7016,6 +7075,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
                         },
@@ -7493,6 +7553,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
@@ -8637,6 +8698,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -8916,6 +8978,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9084,6 +9147,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9187,6 +9251,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9206,6 +9271,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9351,6 +9417,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9498,6 +9565,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9645,6 +9713,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9875,6 +9944,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -9999,6 +10069,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -10136,6 +10207,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -10218,6 +10290,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -10342,6 +10415,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -10785,6 +10859,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -11208,6 +11283,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
@@ -11403,6 +11479,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
                         },
@@ -11432,6 +11509,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -11535,6 +11613,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -11660,6 +11739,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -11853,6 +11933,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -12159,6 +12240,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -12517,6 +12599,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
@@ -12548,6 +12631,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -12660,6 +12744,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -12827,6 +12912,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -12951,6 +13037,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13054,6 +13141,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13223,6 +13311,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13394,6 +13483,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13497,6 +13587,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13600,6 +13691,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13703,6 +13795,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -13806,6 +13899,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14119,6 +14213,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14222,6 +14317,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14325,6 +14421,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                         "useValuesFrom": [ "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
@@ -14427,6 +14524,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14573,6 +14671,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14676,6 +14775,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
@@ -14807,6 +14907,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14910,6 +15011,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -14929,6 +15031,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -15347,6 +15450,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
                             },
@@ -15605,6 +15709,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -15945,6 +16050,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -16048,6 +16154,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -16151,6 +16258,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -16254,6 +16362,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:subjects", "urn:ld4p:qa:demographics", "urn:ld4p:qa:dbpedia"]
                         },
@@ -16290,6 +16399,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -16393,6 +16503,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -17524,6 +17635,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
@@ -17740,6 +17852,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
                         },
@@ -18495,6 +18608,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -18830,6 +18944,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -18996,6 +19111,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -19099,6 +19215,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -19350,6 +19467,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
@@ -19565,6 +19683,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -19668,6 +19787,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -19771,6 +19891,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
@@ -19880,6 +20001,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -19983,6 +20105,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20086,6 +20209,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20277,6 +20401,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20424,6 +20549,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20560,6 +20686,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20684,6 +20811,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20787,6 +20915,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -20956,6 +21085,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21081,6 +21211,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21268,6 +21399,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21371,6 +21503,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -21470,6 +21603,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:place"]
                         },
@@ -21529,6 +21663,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21632,6 +21767,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21735,6 +21871,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21838,6 +21975,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -21941,6 +22079,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -22066,6 +22205,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -22169,6 +22309,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -22731,6 +22872,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -22831,6 +22973,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -23169,6 +23312,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23184,6 +23328,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23199,6 +23344,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23214,6 +23360,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23229,6 +23376,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23244,6 +23392,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23259,6 +23408,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23274,6 +23424,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23289,6 +23440,7 @@
                       "mandatory": "false",
                       "repeatable": "true",
                       "type": "lookup",
+                        "subtype": "context",
                       "valueConstraint": {
                           "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                       },
@@ -23304,6 +23456,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -23404,6 +23557,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -23737,6 +23891,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
@@ -24097,6 +24252,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -24197,6 +24353,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -24297,6 +24454,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -24397,6 +24555,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -24553,6 +24712,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -24826,6 +24986,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
@@ -26048,6 +26209,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -26365,6 +26527,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -26478,6 +26641,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -26834,6 +26998,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -27449,6 +27614,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -28238,6 +28404,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -28632,6 +28799,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -29231,6 +29399,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
@@ -29506,6 +29675,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -29823,6 +29993,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -30090,6 +30261,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -30190,6 +30362,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -30290,6 +30463,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -30393,6 +30567,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -30974,6 +31149,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -31603,6 +31779,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
@@ -31655,6 +31832,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -31713,6 +31891,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -31729,6 +31908,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32083,6 +32263,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32289,6 +32470,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": ""},
@@ -32396,6 +32578,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32496,6 +32679,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32512,6 +32696,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32633,6 +32818,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32819,6 +33005,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -32919,6 +33106,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -33019,6 +33207,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -33119,6 +33308,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -33557,6 +33747,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "valueDataType": {"dataTypeURI": ""},
@@ -34114,6 +34305,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -34214,6 +34406,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
                         },
@@ -37557,6 +37750,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:subjects"],
                             "valueDataType": {"dataTypeURI": ""},
@@ -41136,6 +41330,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -44363,6 +44558,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
@@ -55097,6 +55293,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:subjects"]
                         },
@@ -62503,6 +62700,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
