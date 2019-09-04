@@ -1,10 +1,10 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-08-19",
+        "date": "2019-09-03",
         "description": "RDA item test",
-        "id": "WAU:profile:RDA:monograph:test",
-        "title": "WAU Profile RDA for describing items",
+        "id": "WAU:profile:RDA:item:test",
+        "title": "WAU Profile RDA item test",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
@@ -12,8 +12,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item test",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-08-19",
+                "date": "2019-09-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "qUw": "If this test becomes what we want to use, we'll need to remove the Item RT from the main RDA profile or turn this profile into that RT",
+                "noteUw": "If used we'll need statusUw etc.",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -38,7 +40,7 @@
                         "propertyLabel": "has custodial history of item (RDA 2.18)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40026",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.18.html"
                     },
@@ -46,7 +48,7 @@
                         "propertyLabel": "has immediate source of acquisition of item (RDA 2.19)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40050",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.19.html"
                     },
@@ -79,7 +81,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal"
+                        "type": "literal",
+                        "noteUw": "this would ideally be a lookup where we could search for other items."
                     },
                     {
                         "propertyLabel": "has owner agent (RDA 22.2)",
@@ -327,6 +330,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
+                        "noteUw": "has domain of BF items!",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
