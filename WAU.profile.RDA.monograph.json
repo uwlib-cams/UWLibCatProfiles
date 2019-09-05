@@ -1188,11 +1188,17 @@
                         "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
+<<<<<<< HEAD
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names",
                                 "urn:ld4p:qa:subjects",
                                 "urn:ld4p:qa:mesh",
                                 "urn:ld4p:qa:dbpedia"
+=======
+                            "valueTemplateRefs": [
+                                "WAU:RT:MADSRDF:complexSubject",
+                                "WAU:RT:MADSRDF:simpleSubject"
+>>>>>>> e36e80b1ecefc6f25f4f5f40377aa772d6b70207
                             ]
                         }
                     },
