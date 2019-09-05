@@ -1111,7 +1111,8 @@
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "WAU:RT:MADSRDF:COMPLEXSUBJECT"
+                                "WAU:RT:MADSRDF:complexSubject",
+                                "WAU:RT:MADSRDF:simpleSubject"
                             ]
                         }
                     },
