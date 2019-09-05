@@ -2,7 +2,7 @@
 <map xmlns="http://www.w3.org/2005/xpath-functions">
    <map key="Profile">
       <string key="author">Crystal Clements (cec23@uw.edu)</string>
-      <string key="date">2019-08-08</string>
+      <string key="date">2019-09-05</string>
       <string key="description">RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs</string>
       <string key="id">WAU:profile:RDA:monograph</string>
       <string key="title">WAU Profile RDA for describing monographs</string>
@@ -37,6 +37,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">false</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>http://mlvlp04.loc.gov:8230/resources/works</string>
@@ -90,6 +91,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/6.3.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -111,6 +113,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/6.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -142,6 +145,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/7.3.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -155,6 +159,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/7.7.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -194,6 +199,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/24.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -207,7 +213,6 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has note on work (RDA 5.9)</string>
@@ -245,6 +250,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -259,6 +265,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/19.2.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -273,6 +280,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -287,6 +295,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -301,6 +310,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -315,6 +325,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -329,6 +340,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -343,6 +355,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -357,6 +370,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -371,6 +385,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -385,6 +400,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -399,6 +415,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -413,6 +430,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -427,6 +445,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -441,6 +460,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -455,6 +475,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -469,6 +490,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -483,6 +505,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -497,6 +520,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -511,6 +535,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -525,6 +550,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -539,6 +565,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -553,6 +580,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -567,6 +595,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -581,6 +610,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -595,6 +625,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -608,6 +639,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -622,6 +654,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -636,6 +669,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -650,6 +684,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -664,6 +699,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -678,6 +714,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -692,6 +729,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -706,6 +744,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -720,6 +759,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -734,6 +774,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -748,6 +789,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -762,6 +804,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -776,6 +819,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -790,6 +834,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -804,6 +849,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -818,6 +864,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -832,6 +879,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -846,6 +894,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -860,6 +909,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -874,6 +924,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -888,6 +939,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -902,6 +954,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -916,6 +969,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -930,6 +984,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -944,6 +999,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -958,6 +1014,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -972,6 +1029,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -986,6 +1044,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1000,6 +1059,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1014,6 +1074,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1028,6 +1089,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1042,6 +1104,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1056,6 +1119,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1070,6 +1134,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -1083,6 +1148,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1097,6 +1163,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1133,6 +1200,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/23.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1148,11 +1216,12 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/w/P10078</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">resource</string>
+                  <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/17.5.html</string>
                   <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:RDA:Expression:monograph</string>
+                     <array key="useValuesFrom">
+                        <string>urn:ld4p:qa:sharevde_stanford_work_ld4l_cache</string>
                      </array>
                      <map key="valueDataType">
                         <string key="dataTypeURI">http://rdaregistry.info/Elements/c/C10001</string>
@@ -1187,6 +1256,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">false</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>http://mlvlp04.loc.gov:8230/resources/works</string>
@@ -1216,6 +1286,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:subjects</string>
@@ -1239,7 +1310,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/7.17.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has content type (RDA 6.9)</string>
@@ -1248,16 +1318,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/6.9.html</string>
-                  <map key="valueConstraint">
-                     <j:array xmlns:j="http://www.w3.org/2005/xpath-functions" key="defaults">
-                        <j:map>
-                           <j:string key="defaultLiteral"/>
-                        </j:map>
-                        <j:map>
-                           <j:string key="defaultLiteral">text</j:string>
-                        </j:map>
-                     </j:array>
-                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has date of expression (RDA 6.10)</string>
@@ -1287,6 +1347,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/6.11.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1308,6 +1369,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/7.13.2.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1322,7 +1384,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/7.13.4.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has details of form of tactile notation (RDA 7.13.4.4)</string>
@@ -1385,6 +1446,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -1405,6 +1467,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/20.2.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1419,6 +1482,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1433,6 +1497,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1447,6 +1512,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1461,6 +1527,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1475,6 +1542,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1489,6 +1557,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1503,6 +1572,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1517,6 +1587,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1531,6 +1602,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1545,6 +1617,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -1558,6 +1631,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1572,6 +1646,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1586,6 +1661,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1600,6 +1676,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1614,6 +1691,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1628,6 +1706,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1642,6 +1721,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1656,6 +1736,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1670,6 +1751,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1684,6 +1766,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1698,6 +1781,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1712,6 +1796,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1726,6 +1811,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1740,6 +1826,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1754,6 +1841,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1768,6 +1856,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1782,6 +1871,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1796,6 +1886,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1810,6 +1901,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1824,6 +1916,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1838,6 +1931,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1852,6 +1946,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1866,6 +1961,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1880,6 +1976,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1894,6 +1991,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1908,6 +2006,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1922,6 +2021,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1936,6 +2036,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1950,6 +2051,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1964,6 +2066,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1978,6 +2081,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -1992,6 +2096,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -2011,11 +2116,12 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/e/P20059</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">resource</string>
+                  <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/17.9.html</string>
                   <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:RDA:Manifestation:monograph</string>
+                     <array key="useValuesFrom">
+                        <string>urn:ld4p:qa:sharevde_stanford_work_ld4l_cache</string>
                      </array>
                      <map key="valueDataType">
                         <string key="dataTypeURI">http://rdaregistry.info/Elements/c/C10007</string>
@@ -2050,6 +2156,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">false</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>http://mlvlp04.loc.gov:8230/resources/works</string>
@@ -2416,16 +2523,6 @@
                   <string key="repeatable">false</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/2.13.html</string>
-                  <map key="valueConstraint">
-                     <j:array xmlns:j="http://www.w3.org/2005/xpath-functions" key="defaults">
-                        <j:map>
-                           <j:string key="defaultLiteral">single unit</j:string>
-                        </j:map>
-                        <j:map>
-                           <j:string key="defaultLiteral">single unit</j:string>
-                        </j:map>
-                     </j:array>
-                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has identifier for manifestation (RDA 2.15)</string>
@@ -2546,16 +2643,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.2.html</string>
-                  <map key="valueConstraint">
-                     <j:array xmlns:j="http://www.w3.org/2005/xpath-functions" key="defaults">
-                        <j:map>
-                           <j:string key="defaultLiteral"/>
-                        </j:map>
-                        <j:map>
-                           <j:string key="defaultLiteral">unmediated</j:string>
-                        </j:map>
-                     </j:array>
-                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has carrier type (RDA 3.3)</string>
@@ -2564,16 +2651,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.3.html</string>
-                  <map key="valueConstraint">
-                     <j:array xmlns:j="http://www.w3.org/2005/xpath-functions" key="defaults">
-                        <j:map>
-                           <j:string key="defaultLiteral"/>
-                        </j:map>
-                        <j:map>
-                           <j:string key="defaultLiteral">volume</j:string>
-                        </j:map>
-                     </j:array>
-                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has extent of manifestation (RDA 3.4)</string>
@@ -2582,7 +2659,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.4.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has dimensions (RDA 3.5)</string>
@@ -2599,7 +2675,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.6.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has applied material (RDA 3.7)</string>
@@ -2608,7 +2683,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.7.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has mount (RDA 3.8)</string>
@@ -2617,7 +2691,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.8.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has production method (RDA 3.9)</string>
@@ -2626,7 +2699,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.9.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has generation (RDA 3.10)</string>
@@ -2635,7 +2707,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.10.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has layout (RDA 3.11)</string>
@@ -2644,7 +2715,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.11.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has bibliographic format (RDA 3.12)</string>
@@ -2653,7 +2723,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.12.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has font size (RDA 3.13)</string>
@@ -2662,7 +2731,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.13.html</string>
-                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has note on extent of manifestation (RDA 3.21.2)</string>
@@ -2701,6 +2769,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -2714,6 +2783,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -2751,6 +2821,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2765,6 +2836,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/21.2.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2779,6 +2851,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/21.3.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2793,6 +2866,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/21.4.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2807,6 +2881,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/21.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2821,6 +2896,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2835,6 +2911,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2849,6 +2926,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2863,6 +2941,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2877,6 +2956,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2891,6 +2971,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2905,6 +2986,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2919,6 +3001,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2933,6 +3016,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2947,6 +3031,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2961,6 +3046,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -2988,11 +3074,12 @@
                   <string key="propertyURI">http://rdaregistry.info/Elements/m/P30103</string>
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
-                  <string key="type">resource</string>
+                  <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/17.11.html</string>
                   <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:RDA:Item:monograph</string>
+                     <array key="useValuesFrom">
+                        <string>urn:ld4p:qa:sharevde_stanford_work_ld4l_cache</string>
                      </array>
                      <map key="valueDataType">
                         <string key="dataTypeURI">http://rdaregistry.info/Elements/c/C10003</string>
@@ -3027,6 +3114,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">false</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>http://mlvlp04.loc.gov:8230/resources/works</string>
@@ -3097,6 +3185,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/22.2.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3116,6 +3205,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3130,6 +3220,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3144,6 +3235,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3158,6 +3250,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3172,6 +3265,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/22.3.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3191,6 +3285,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>urn:ld4p:qa:dbpedia</string>
@@ -3204,6 +3299,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3218,6 +3314,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3232,6 +3329,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3246,6 +3344,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3260,6 +3359,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3274,6 +3374,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3288,6 +3389,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3302,6 +3404,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3316,6 +3419,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <string key="remark">http://access.rdatoolkit.org/18.5.html</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
@@ -3340,6 +3444,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">lookup</string>
+                  <string key="subtype">context</string>
                   <map key="valueConstraint">
                      <array key="useValuesFrom">
                         <string>https://id.loc.gov/vocabulary/organizations</string>
