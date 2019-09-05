@@ -5,7 +5,7 @@
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
         "id": "WAU:profile:RDA:monograph",
         "title": "WAU Profile RDA for describing monographs",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
                 "id": "WAU:RT:RDA:Work:monograph",
@@ -13,7 +13,7 @@
                 "resourceLabel": "WAU RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -1188,17 +1188,11 @@
                         "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-<<<<<<< HEAD
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names",
                                 "urn:ld4p:qa:subjects",
                                 "urn:ld4p:qa:mesh",
                                 "urn:ld4p:qa:dbpedia"
-=======
-                            "valueTemplateRefs": [
-                                "WAU:RT:MADSRDF:complexSubject",
-                                "WAU:RT:MADSRDF:simpleSubject"
->>>>>>> e36e80b1ecefc6f25f4f5f40377aa772d6b70207
                             ]
                         }
                     },
@@ -1223,7 +1217,7 @@
                 "resourceLabel": "WAU RT RDA Expression for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -2109,7 +2103,7 @@
                 "resourceLabel": "WAU RT RDA Manifestation for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -3057,7 +3051,7 @@
                 "resourceLabel": "WAU RT RDA Item for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -3389,7 +3383,7 @@
                 "resourceLabel": "WAU RT RDA Timespan for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "has owner",
