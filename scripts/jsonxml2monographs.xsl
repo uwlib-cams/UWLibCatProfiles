@@ -95,15 +95,28 @@
                     <string key="type">
                         <xsl:value-of select="j:string[@key = 'type']"/>
                     </string>
+                    <xsl:if test="j:string[@key = 'subtype']/text()">
+                        <string key="subtype">
+                            <xsl:value-of select="j:string[@key = 'subtype']"/>
+                        </string>
+                    </xsl:if>
                     <xsl:if test="j:string[@key = 'remark']/text()">
                         <string key="remark">
                             <xsl:value-of select="j:string[@key = 'remark']"/>
                         </string>
                     </xsl:if>
+                    <!-- 2019-09-05: No value constraints for literal properties!?!?
+                    Need to determine workaround for other formats; we have formats that need defaults
+                    for literal props -->
                     <xsl:if test="j:map[@key = 'valueConstraint']/descendant::text()">
-                        <map key="valueConstraint">
-                            <xsl:apply-templates select="j:map[@key = 'valueConstraint']"/>
-                        </map>
+                        <xsl:choose>
+                            <xsl:when test="j:string[@key = 'type'] != 'literal'">
+                                <map key="valueConstraint">
+                                    <xsl:apply-templates select="j:map[@key = 'valueConstraint']"/>
+                                </map>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
                     </xsl:if>
                 </map>
             </xsl:if>
@@ -129,9 +142,6 @@
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">
-            <!-- don't want useValuesFrom, defaultURI values for literal props in the mono profile /
-                BUT keeping them in RDA profile pending addition of RDA QA and change to lookup props /
-                @gerontakos is there a better way to do this here and below? -->
             <xsl:choose>
                 <xsl:when test="../j:string[@key = 'type'] != 'literal'">
                     <xsl:copy-of select="j:array[@key = 'useValuesFrom']"/>
@@ -143,25 +153,7 @@
             <xsl:copy-of select="j:map[@key = 'valueDataType']"/>
         </xsl:if>
         <xsl:if test="j:array[@key = 'defaults']/descendant::text()">
-            <!-- see comment above -->
-            <xsl:choose>
-                <xsl:when test="../j:string[@key = 'type'] != 'literal'">
-                    <xsl:copy-of select="j:array[@key = 'defaults']"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:for-each select="j:array[@key = 'defaults']">
-                        <j:array key="defaults">
-                            <xsl:for-each select="j:map">
-                                <j:map>
-                                    <j:string key="defaultLiteral">
-                                        <xsl:value-of select="j:string[@key = 'defaultLiteral']"/>
-                                    </j:string>
-                                </j:map>
-                            </xsl:for-each>
-                        </j:array>
-                    </xsl:for-each>
-                </xsl:otherwise>
-            </xsl:choose>
+            <xsl:copy-of select="j:array[@key = 'defaults']"/>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

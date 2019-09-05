@@ -1,11 +1,11 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-08-08",
+        "date": "2019-09-05",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
         "id": "WAU:profile:RDA:monograph",
         "title": "WAU Profile RDA for describing monographs",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
         "resourceTemplates": [
             {
                 "id": "WAU:RT:RDA:Work:monograph",
@@ -13,7 +13,7 @@
                 "resourceLabel": "WAU RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -26,7 +26,18 @@
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
-                    
+                    {
+                        "propertyLabel": "Lookup for existing Work",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                        }
+                    },
                     {
                         "propertyLabel": "has access point for work (RDA 6.1.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10328",
@@ -71,6 +82,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/6.3.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:genres"]
@@ -90,6 +102,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/6.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -121,6 +134,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
@@ -132,6 +146,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.7.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -171,6 +186,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
@@ -181,8 +197,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "valueConstraint": {}
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has note on work (RDA 5.9)",
@@ -220,6 +235,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -234,6 +250,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/19.2.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -248,6 +265,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -262,6 +280,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -276,6 +295,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -290,6 +310,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -304,6 +325,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -318,6 +340,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -332,6 +355,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -346,6 +370,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -360,6 +385,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -374,6 +400,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -388,6 +415,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -402,6 +430,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -416,6 +445,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -430,6 +460,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -444,6 +475,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -458,6 +490,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -472,6 +505,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -486,6 +520,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -500,6 +535,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -514,6 +550,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -528,6 +565,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -542,6 +580,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -556,6 +595,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -570,6 +610,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -583,6 +624,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -597,6 +639,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -611,6 +654,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -625,6 +669,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -639,6 +684,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -653,6 +699,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -667,6 +714,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -681,6 +729,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -695,6 +744,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -709,6 +759,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -723,6 +774,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -737,6 +789,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -751,6 +804,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -765,6 +819,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -779,6 +834,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -793,6 +849,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -807,6 +864,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -821,6 +879,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -835,6 +894,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -849,6 +909,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -863,6 +924,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -877,6 +939,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -891,6 +954,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -905,6 +969,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -919,6 +984,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -933,6 +999,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -947,6 +1014,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -961,6 +1029,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -975,6 +1044,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -989,6 +1059,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1003,6 +1074,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1017,6 +1089,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1031,6 +1104,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1045,6 +1119,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1058,6 +1133,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1072,6 +1148,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1107,11 +1184,15 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "WAU:RT:MADSRDF:COMPLEXSUBJECT"
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:mesh",
+                                "urn:ld4p:qa:dbpedia"
                             ]
                         }
                     },
@@ -1120,11 +1201,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "remark": "http://access.rdatoolkit.org/17.5.html",
                         "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         }
                     }
                 ]
@@ -1135,7 +1217,7 @@
                 "resourceLabel": "WAU RT RDA Expression for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -1147,7 +1229,18 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
-                    
+                    {
+                        "propertyLabel": "Lookup for existing Expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
+                        }
+                    },
                     {
                         "propertyLabel": "has access point for expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20310",
@@ -1168,6 +1261,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
@@ -1190,8 +1284,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.17.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/7.17.html"
                     },
                     {
                         "propertyLabel": "has content type (RDA 6.9)",
@@ -1199,13 +1292,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/6.9.html",
-                        "valueConstraint": {
-                            "defaults": [
-                                {"defaultLiteral": ""},
-                                {"defaultLiteral": "text"}
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/6.9.html"
                     },
                     {
                         "propertyLabel": "has date of expression (RDA 6.10)",
@@ -1235,6 +1322,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/6.11.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
@@ -1254,6 +1342,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
@@ -1265,8 +1354,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.13.4.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/7.13.4.html"
                     },
                     {
                         "propertyLabel": "has details of form of tactile notation (RDA 7.13.4.4)",
@@ -1329,6 +1417,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1349,6 +1438,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/20.2.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1363,6 +1453,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1377,6 +1468,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1391,6 +1483,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1405,6 +1498,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1419,6 +1513,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1433,6 +1528,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1447,6 +1543,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1461,6 +1558,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1475,6 +1573,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1489,6 +1588,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1502,6 +1602,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1516,6 +1617,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1530,6 +1632,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1544,6 +1647,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1558,6 +1662,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1572,6 +1677,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1586,6 +1692,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1600,6 +1707,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1614,6 +1722,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1628,6 +1737,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1642,6 +1752,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1656,6 +1767,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1670,6 +1782,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1684,6 +1797,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1698,6 +1812,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1712,6 +1827,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1726,6 +1842,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1740,6 +1857,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1754,6 +1872,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1768,6 +1887,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1782,6 +1902,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1796,6 +1917,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1810,6 +1932,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1824,6 +1947,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1838,6 +1962,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1852,6 +1977,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1866,6 +1992,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1880,6 +2007,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1894,6 +2022,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1908,6 +2037,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1922,6 +2052,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -1936,6 +2067,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -1955,8 +2087,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "remark": "http://access.rdatoolkit.org/17.9.html",
                         "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.9.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
@@ -1970,7 +2103,7 @@
                 "resourceLabel": "WAU RT RDA Manifestation for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -1982,7 +2115,18 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
-                    
+                    {
+                        "propertyLabel": "Lookup for existing Manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
+                        }
+                    },
                     {
                         "propertyLabel": "has access point for manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30276",
@@ -2275,11 +2419,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "defaults": [
-                                {"defaultLiteral": "©"}
-                            ]
-                        },
                         "remark": "http://access.rdatoolkit.org/2.11.html"
                     },
                     {
@@ -2344,13 +2483,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/2.13.html",
-                        "valueConstraint": {
-                            "defaults": [
-                                {"defaultLiteral": "single unit"},
-                                {"defaultLiteral": "single unit"}
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/2.13.html"
                     },
                     {
                         "propertyLabel": "has identifier for manifestation (RDA 2.15)",
@@ -2470,13 +2603,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.2.html",
-                        "valueConstraint": {
-                            "defaults": [
-                                {"defaultLiteral": ""},
-                                {"defaultLiteral": "unmediated"}
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/3.2.html"
                     },
                     {
                         "propertyLabel": "has carrier type (RDA 3.3)",
@@ -2484,13 +2611,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.3.html",
-                        "valueConstraint": {
-                            "defaults": [
-                                {"defaultLiteral": ""},
-                                {"defaultLiteral": "volume"}
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/3.3.html"
                     },
                     {
                         "propertyLabel": "has extent of manifestation (RDA 3.4)",
@@ -2498,8 +2619,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.4.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.4.html"
                     },
                     {
                         "propertyLabel": "has dimensions (RDA 3.5)",
@@ -2515,8 +2635,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.6.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.6.html"
                     },
                     {
                         "propertyLabel": "has applied material (RDA 3.7)",
@@ -2524,8 +2643,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.7.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.7.html"
                     },
                     {
                         "propertyLabel": "has mount (RDA 3.8)",
@@ -2533,8 +2651,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.8.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.8.html"
                     },
                     {
                         "propertyLabel": "has production method (RDA 3.9)",
@@ -2542,8 +2659,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.9.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.9.html"
                     },
                     {
                         "propertyLabel": "has generation (RDA 3.10)",
@@ -2551,8 +2667,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.10.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.10.html"
                     },
                     {
                         "propertyLabel": "has layout (RDA 3.11)",
@@ -2560,8 +2675,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.11.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.11.html"
                     },
                     {
                         "propertyLabel": "has bibliographic format (RDA 3.12)",
@@ -2569,8 +2683,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.12.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.12.html"
                     },
                     {
                         "propertyLabel": "has font size (RDA 3.13)",
@@ -2578,8 +2691,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.13.html",
-                        "valueConstraint": {}
+                        "remark": "http://access.rdatoolkit.org/3.13.html"
                     },
                     {
                         "propertyLabel": "has note on extent of manifestation (RDA 3.21.2)",
@@ -2618,6 +2730,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2631,6 +2744,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -2668,6 +2782,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2682,6 +2797,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.2.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2696,6 +2812,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.3.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2710,6 +2827,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.4.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2724,6 +2842,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2738,6 +2857,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2752,6 +2872,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2766,6 +2887,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2780,6 +2902,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2794,6 +2917,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2808,6 +2932,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2822,6 +2947,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2836,6 +2962,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2850,6 +2977,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2864,6 +2992,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2878,6 +3007,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -2905,8 +3035,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "remark": "http://access.rdatoolkit.org/17.11.html",
                         "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.11.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
@@ -2920,7 +3051,7 @@
                 "resourceLabel": "WAU RT RDA Item for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -2932,7 +3063,18 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
-                    
+                    {
+                        "propertyLabel": "Lookup for existing Item",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
+                        }
+                    },
                     {
                         "propertyLabel": "has note on item (RDA 2.21)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40028",
@@ -2994,6 +3136,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/22.2.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
@@ -3011,6 +3154,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3025,6 +3169,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3039,6 +3184,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3053,6 +3199,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3067,6 +3214,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/22.3.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
@@ -3084,6 +3232,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:dbpedia",
@@ -3097,6 +3246,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3111,6 +3261,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3125,6 +3276,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3139,6 +3291,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3153,6 +3306,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3167,6 +3321,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3181,6 +3336,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3195,6 +3351,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3209,6 +3366,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -3225,7 +3383,7 @@
                 "resourceLabel": "WAU RT RDA Timespan for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "has owner",
@@ -3233,6 +3391,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
