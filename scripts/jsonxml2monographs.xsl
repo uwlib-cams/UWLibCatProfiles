@@ -149,6 +149,7 @@
         <xsl:if test="j:map[@key = 'valueDataType']/descendant::text()">
             <xsl:copy-of select="j:map[@key = 'valueDataType']"/>
         </xsl:if>
+        <!-- NEED TO BRING DEFAULT URI, LITERALS IN INDIVIDUALLY IF TEXT -->
         <xsl:if test="j:array[@key = 'defaults']/descendant::text()">
             <xsl:copy-of select="j:array[@key = 'defaults']"/>
         </xsl:if>

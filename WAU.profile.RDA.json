@@ -32473,7 +32473,7 @@
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -33750,7 +33750,7 @@
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
