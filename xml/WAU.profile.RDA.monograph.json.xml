@@ -2,7 +2,7 @@
 <map xmlns="http://www.w3.org/2005/xpath-functions">
    <map key="Profile">
       <string key="author">Crystal Clements (cec23@uw.edu)</string>
-      <string key="date">2019-09-05</string>
+      <string key="date">2019-09-06</string>
       <string key="description">RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs</string>
       <string key="id">WAU:profile:RDA:monograph</string>
       <string key="title">WAU Profile RDA for describing monographs</string>
@@ -23,9 +23,6 @@
                   <string key="repeatable">true</string>
                   <string key="type">resource</string>
                   <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:BF2:BFLC:AdminMetadata</string>
-                     </array>
                      <map key="valueDataType">
                         <string key="dataTypeURI">http://id.loc.gov/ontologies/bibframe/AdminMetadata</string>
                      </map>
@@ -213,6 +210,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has note on work (RDA 5.9)</string>
@@ -1244,11 +1242,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">resource</string>
-                  <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:BF2:BFLC:AdminMetadata</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">Lookup for existing Expression</string>
@@ -1310,6 +1304,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/7.17.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has content type (RDA 6.9)</string>
@@ -1318,6 +1313,16 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/6.9.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI">http://rdaregistry.info/termList/RDAContentType/1020</string>
+                        </map>
+                        <map>
+                           <string key="defaultLiteral">text</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has date of expression (RDA 6.10)</string>
@@ -1384,6 +1389,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/7.13.4.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has details of form of tactile notation (RDA 7.13.4.4)</string>
@@ -2144,11 +2150,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">resource</string>
-                  <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:BF2:BFLC:AdminMetadata</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">Lookup for existing Manifestation</string>
@@ -2459,6 +2461,16 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/2.11.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI"/>
+                        </map>
+                        <map>
+                           <string key="defaultLiteral">©</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has title of series (RDA 2.12.2)</string>
@@ -2523,6 +2535,18 @@
                   <string key="repeatable">false</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/2.13.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI">http://rdaregistry.info/termList/ModeIssue/1001</string>
+                           <string key="defaultLiteral">single unit</string>
+                        </map>
+                        <map>
+                           <string key="defaultURI">https://id.loc.gov/vocabulary/issuance/mono</string>
+                           <string key="defaultLiteral">single unit</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has identifier for manifestation (RDA 2.15)</string>
@@ -2643,6 +2667,16 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.2.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI">http://rdaregistry.info/termList/RDAMediaType/1007</string>
+                        </map>
+                        <map>
+                           <string key="defaultLiteral">unmediated</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has carrier type (RDA 3.3)</string>
@@ -2651,6 +2685,16 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.3.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI">http://www.rdaregistry.info/termList/RDACarrierType/1008</string>
+                        </map>
+                        <map>
+                           <string key="defaultLiteral">volume</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has extent of manifestation (RDA 3.4)</string>
@@ -2659,6 +2703,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.4.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has dimensions (RDA 3.5)</string>
@@ -2675,6 +2720,16 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.6.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI">http://rdaregistry.info/termList/RDAMaterial/1025</string>
+                        </map>
+                        <map>
+                           <string key="defaultLiteral">paper</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has applied material (RDA 3.7)</string>
@@ -2683,6 +2738,16 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.7.html</string>
+                  <map key="valueConstraint">
+                     <array key="defaults">
+                        <map>
+                           <string key="defaultURI">http://rdaregistry.info/termList/RDAMaterial/1017</string>
+                        </map>
+                        <map>
+                           <string key="defaultLiteral">Ink</string>
+                        </map>
+                     </array>
+                  </map>
                </map>
                <map>
                   <string key="propertyLabel">has mount (RDA 3.8)</string>
@@ -2691,6 +2756,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.8.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has production method (RDA 3.9)</string>
@@ -2699,6 +2765,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.9.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has generation (RDA 3.10)</string>
@@ -2707,6 +2774,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.10.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has layout (RDA 3.11)</string>
@@ -2715,6 +2783,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.11.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has bibliographic format (RDA 3.12)</string>
@@ -2723,6 +2792,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.12.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has font size (RDA 3.13)</string>
@@ -2731,6 +2801,7 @@
                   <string key="repeatable">true</string>
                   <string key="type">literal</string>
                   <string key="remark">http://access.rdatoolkit.org/3.13.html</string>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">has note on extent of manifestation (RDA 3.21.2)</string>
@@ -3102,11 +3173,7 @@
                   <string key="mandatory">false</string>
                   <string key="repeatable">true</string>
                   <string key="type">resource</string>
-                  <map key="valueConstraint">
-                     <array key="valueTemplateRefs">
-                        <string>WAU:RT:BF2:BFLC:AdminMetadata</string>
-                     </array>
-                  </map>
+                  <map key="valueConstraint"/>
                </map>
                <map>
                   <string key="propertyLabel">Lookup for existing Item</string>

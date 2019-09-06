@@ -31,7 +31,7 @@
             </string>
             <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
-            <string key="schema">https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json</string>
+            <string key="schema">https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json</string>
             <array key="resourceTemplates">
                 <xsl:apply-templates select="j:array[@key = 'resourceTemplates']"/>
             </array>
@@ -62,7 +62,7 @@
                 <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
                 <string key="schema"
-                    >https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json</string>
+                    >https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json</string>
                 <array key="propertyTemplates">
                     <xsl:apply-templates select="j:array[@key = 'propertyTemplates']"/>
                 </array>
@@ -105,18 +105,10 @@
                             <xsl:value-of select="j:string[@key = 'remark']"/>
                         </string>
                     </xsl:if>
-                    <!-- 2019-09-05: No value constraints for literal properties!?!?
-                    Need to determine workaround for other formats; we have formats that need defaults
-                    for literal props -->
                     <xsl:if test="j:map[@key = 'valueConstraint']/descendant::text()">
-                        <xsl:choose>
-                            <xsl:when test="j:string[@key = 'type'] != 'literal'">
-                                <map key="valueConstraint">
-                                    <xsl:apply-templates select="j:map[@key = 'valueConstraint']"/>
-                                </map>
-                            </xsl:when>
-                            <xsl:otherwise/>
-                        </xsl:choose>
+                        <map key="valueConstraint">
+                            <xsl:apply-templates select="j:map[@key = 'valueConstraint']"/>
+                        </map>
                     </xsl:if>
                 </map>
             </xsl:if>
@@ -125,20 +117,25 @@
     <xsl:template match="j:map[@key = 'valueConstraint']">
         <xsl:if test="j:array[@key = 'valueTemplateRefs']/descendant::text()">
             <xsl:for-each select="j:array[@key = 'valueTemplateRefs']">
-                <array key="valueTemplateRefs">
-                    <xsl:choose>
-                        <xsl:when test="matches(j:string, 'AdminMetadata')">
-                            <string>
-                                <xsl:value-of select="j:string"/>
-                            </string>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <string>
-                                <xsl:value-of select="concat(j:string, ':monograph')"/>
-                            </string>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </array>
+                <xsl:choose>
+                    <xsl:when test="../j:string[@key= 'type'] != 'literal'">
+                        <array key="valueTemplateRefs">
+                            <xsl:choose>
+                                <xsl:when test="matches(j:string, 'AdminMetadata')">
+                                    <string>
+                                        <xsl:value-of select="j:string"/>
+                                    </string>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <string>
+                                        <xsl:value-of select="concat(j:string, ':monograph')"/>
+                                    </string>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </array>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">

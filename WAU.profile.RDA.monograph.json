@@ -1,11 +1,11 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-05",
+        "date": "2019-09-06",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
         "id": "WAU:profile:RDA:monograph",
         "title": "WAU Profile RDA for describing monographs",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
         "resourceTemplates": [
             {
                 "id": "WAU:RT:RDA:Work:monograph",
@@ -13,7 +13,7 @@
                 "resourceLabel": "WAU RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -22,7 +22,6 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
@@ -197,7 +196,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal"
+                        "type": "literal",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has note on work (RDA 5.9)",
@@ -1217,7 +1217,7 @@
                 "resourceLabel": "WAU RT RDA Expression for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -1225,9 +1225,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "Lookup for existing Expression",
@@ -1284,7 +1282,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.17.html"
+                        "remark": "http://access.rdatoolkit.org/7.17.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has content type (RDA 6.9)",
@@ -1292,7 +1291,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/6.9.html"
+                        "remark": "http://access.rdatoolkit.org/6.9.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
+                                {"defaultLiteral": "text"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has date of expression (RDA 6.10)",
@@ -1354,7 +1359,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.13.4.html"
+                        "remark": "http://access.rdatoolkit.org/7.13.4.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has details of form of tactile notation (RDA 7.13.4.4)",
@@ -2103,7 +2109,7 @@
                 "resourceLabel": "WAU RT RDA Manifestation for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -2111,9 +2117,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "Lookup for existing Manifestation",
@@ -2419,7 +2423,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/2.11.html"
+                        "remark": "http://access.rdatoolkit.org/2.11.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": "©"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has title of series (RDA 2.12.2)",
@@ -2483,7 +2493,19 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/2.13.html"
+                        "remark": "http://access.rdatoolkit.org/2.13.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
+                                    "defaultLiteral": "single unit"
+                                },
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
+                                    "defaultLiteral": "single unit"
+                                }
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has identifier for manifestation (RDA 2.15)",
@@ -2603,7 +2625,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.2.html"
+                        "remark": "http://access.rdatoolkit.org/3.2.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
+                                {"defaultLiteral": "unmediated"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has carrier type (RDA 3.3)",
@@ -2611,7 +2639,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.3.html"
+                        "remark": "http://access.rdatoolkit.org/3.3.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
+                                {"defaultLiteral": "volume"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has extent of manifestation (RDA 3.4)",
@@ -2619,7 +2653,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.4.html"
+                        "remark": "http://access.rdatoolkit.org/3.4.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has dimensions (RDA 3.5)",
@@ -2635,7 +2670,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.6.html"
+                        "remark": "http://access.rdatoolkit.org/3.6.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
+                                {"defaultLiteral": "paper"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has applied material (RDA 3.7)",
@@ -2643,7 +2684,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.7.html"
+                        "remark": "http://access.rdatoolkit.org/3.7.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
+                                {"defaultLiteral": "Ink"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has mount (RDA 3.8)",
@@ -2651,7 +2698,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.8.html"
+                        "remark": "http://access.rdatoolkit.org/3.8.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has production method (RDA 3.9)",
@@ -2659,7 +2707,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.9.html"
+                        "remark": "http://access.rdatoolkit.org/3.9.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has generation (RDA 3.10)",
@@ -2667,7 +2716,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.10.html"
+                        "remark": "http://access.rdatoolkit.org/3.10.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has layout (RDA 3.11)",
@@ -2675,7 +2725,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.11.html"
+                        "remark": "http://access.rdatoolkit.org/3.11.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has bibliographic format (RDA 3.12)",
@@ -2683,7 +2734,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.12.html"
+                        "remark": "http://access.rdatoolkit.org/3.12.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has font size (RDA 3.13)",
@@ -2691,7 +2743,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.13.html"
+                        "remark": "http://access.rdatoolkit.org/3.13.html",
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "has note on extent of manifestation (RDA 3.21.2)",
@@ -3051,7 +3104,7 @@
                 "resourceLabel": "WAU RT RDA Item for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -3059,9 +3112,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        }
+                        "valueConstraint": {}
                     },
                     {
                         "propertyLabel": "Lookup for existing Item",
@@ -3383,7 +3434,7 @@
                 "resourceLabel": "WAU RT RDA Timespan for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "has owner",
