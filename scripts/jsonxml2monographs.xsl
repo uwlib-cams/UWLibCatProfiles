@@ -115,10 +115,10 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="j:map[@key = 'valueConstraint']">
-        <xsl:if test="j:array[@key = 'valueTemplateRefs']/descendant::text()">
+        <xsl:if test="j:array[@key = 'valueTemplateRefs']/j:string/text()">
             <xsl:for-each select="j:array[@key = 'valueTemplateRefs']">
                 <xsl:choose>
-                    <xsl:when test="../j:string[@key= 'type'] != 'literal'">
+                    <xsl:when test="../../j:string[@key = 'type'] != 'literal'">
                         <array key="valueTemplateRefs">
                             <xsl:choose>
                                 <xsl:when test="matches(j:string, 'AdminMetadata')">
@@ -149,9 +149,21 @@
         <xsl:if test="j:map[@key = 'valueDataType']/descendant::text()">
             <xsl:copy-of select="j:map[@key = 'valueDataType']"/>
         </xsl:if>
-        <!-- NEED TO BRING DEFAULT URI, LITERALS IN INDIVIDUALLY IF TEXT -->
-        <xsl:if test="j:array[@key = 'defaults']/descendant::text()">
-            <xsl:copy-of select="j:array[@key = 'defaults']"/>
-        </xsl:if>
+        <xsl:for-each select="j:array[@key = 'defaults']">
+            <xsl:if test="descendant::text()">
+                <array key="defaults">
+                    <xsl:if test="j:map/j:string[@key = 'defaultURI']/text()">
+                        <map>
+                            <xsl:copy-of select="j:map/j:string[@key = 'defaultURI']"/>
+                        </map>
+                    </xsl:if>
+                    <xsl:if test="j:map/j:string[@key = 'defaultLiteral']/text()">
+                        <map>
+                            <xsl:copy-of select="j:map/j:string[@key = 'defaultLiteral']"/>
+                        </map>
+                    </xsl:if>
+                </array>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>

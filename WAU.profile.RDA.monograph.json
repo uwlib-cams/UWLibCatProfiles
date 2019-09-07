@@ -22,6 +22,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
@@ -1225,7 +1226,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "valueConstraint": {}
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                        }
                     },
                     {
                         "propertyLabel": "Lookup for existing Expression",
@@ -2117,7 +2120,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "valueConstraint": {}
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                        }
                     },
                     {
                         "propertyLabel": "Lookup for existing Manifestation",
@@ -2426,7 +2431,6 @@
                         "remark": "http://access.rdatoolkit.org/2.11.html",
                         "valueConstraint": {
                             "defaults": [
-                                {"defaultURI": ""},
                                 {"defaultLiteral": "©"}
                             ]
                         }
@@ -2496,14 +2500,8 @@
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
                             "defaults": [
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
-                                    "defaultLiteral": "single unit"
-                                },
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
-                                    "defaultLiteral": "single unit"
-                                }
+                                {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
+                                {"defaultLiteral": "single unit"}
                             ]
                         }
                     },
@@ -3112,7 +3110,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "valueConstraint": {}
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                        }
                     },
                     {
                         "propertyLabel": "Lookup for existing Item",
@@ -3192,10 +3192,8 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
+                                {"defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar"},
+                                {"defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"}
                             ]
                         }
                     },
@@ -3270,10 +3268,8 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
+                                {"defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar"},
+                                {"defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"}
                             ]
                         }
                     },
@@ -3446,10 +3442,8 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
+                                {"defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar"},
+                                {"defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"}
                             ]
                         }
                     }
