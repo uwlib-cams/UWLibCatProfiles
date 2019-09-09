@@ -1692,25 +1692,6 @@
                         "usedInProfile": ["monograph"]
                     },
                     {
-                        "propertyLabel": "has colour content of representative expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
-                            "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003"},
-                                {"defaultLiteral": "polychrome"}
-                            ]
-                        },
-                        "uwFormOrder": 27,
-                        "statusUw": "attention RDA",
-                        "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
-                        "qUw": [""],
-                        "usedInProfile": ["dvdVideo"]
-                    },
-                    {
                         "propertyLabel": "has commissioning body agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10287",
                         "mandatory": "false",
@@ -26711,8 +26692,7 @@
                             "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1002"},
-                                {"defaultLiteral": "text file"},
-                                {"defaultLiteral": "PDF"}
+                                {"defaultLiteral": ["text file", "PDF"]}
                             ]
                         },
                         "uwFormOrder": 109.9,
