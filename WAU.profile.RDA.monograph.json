@@ -2496,9 +2496,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "literal",
+                        "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
                                 {"defaultLiteral": "single unit"}
@@ -2622,9 +2623,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.2.html",
                         "valueConstraint": {
+                         "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
                                 {"defaultLiteral": "unmediated"}
@@ -2636,9 +2638,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
                             "defaults": [
                                 {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
                                 {"defaultLiteral": "volume"}
@@ -2667,9 +2670,11 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.6.html",
                         "valueConstraint": {
+                                                    "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
                                 {"defaultLiteral": "paper"}
@@ -2681,9 +2686,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.7.html",
                         "valueConstraint": {
+                        "useValuesFrom":["https://id.loc.gov/vocabulary/mmaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
                                 {"defaultLiteral": "Ink"}
