@@ -1689,7 +1689,7 @@
                         "statusUw": "attention RDA",
                         "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
                         "qUw": [""],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has commissioning body agent (RDA 18.5)",
