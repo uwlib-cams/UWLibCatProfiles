@@ -11335,7 +11335,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:place"]
                         },
                         "uwFormOrder": 17,
                         "statusUw": "",
