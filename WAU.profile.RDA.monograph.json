@@ -26,18 +26,7 @@
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
-                    {
-                        "propertyLabel": "Lookup for existing Work",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
-                        }
-                    },
+                    
                     {
                         "propertyLabel": "has access point for work (RDA 6.1.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10328",
@@ -1185,15 +1174,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names",
-                                "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:mesh",
-                                "urn:ld4p:qa:dbpedia"
+                            "valueTemplateRefs": [
+                                "WAU:RT:MADSRDF:complexSubject",
+                                "WAU:RT:MADSRDF:simpleSubject"
                             ]
                         }
                     },
@@ -1230,18 +1216,7 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
-                    {
-                        "propertyLabel": "Lookup for existing Expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
-                        }
-                    },
+                    
                     {
                         "propertyLabel": "has access point for expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20310",
@@ -2124,18 +2099,7 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
-                    {
-                        "propertyLabel": "Lookup for existing Manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
-                        }
-                    },
+                    
                     {
                         "propertyLabel": "has access point for manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30276",
@@ -2626,7 +2590,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.2.html",
                         "valueConstraint": {
-                         "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
                                 {"defaultLiteral": "unmediated"}
@@ -2641,7 +2605,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
-                        "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
                             "defaults": [
                                 {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
                                 {"defaultLiteral": "volume"}
@@ -2673,8 +2637,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.6.html",
                         "valueConstraint": {
-                                                    "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
-
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
                                 {"defaultLiteral": "paper"}
@@ -2689,7 +2652,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.7.html",
                         "valueConstraint": {
-                        "useValuesFrom":["https://id.loc.gov/vocabulary/mmaterial"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
                                 {"defaultLiteral": "Ink"}
@@ -3120,18 +3083,7 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
-                    {
-                        "propertyLabel": "Lookup for existing Item",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
-                        }
-                    },
+                  
                     {
                         "propertyLabel": "has note on item (RDA 2.21)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40028",
