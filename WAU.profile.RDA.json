@@ -61204,23 +61204,7 @@
                 "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
-                "propertyTemplates": [
-                    {
-                        "propertyLabel": "Administrative Metadata for Timespan",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        },
-                        "uwFormOrder": 0,
-                        "statusUw": "test CEC 2019-05-09",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": []
-                    },
-                    {
+                "propertyTemplates": [{
                         "propertyLabel": "has access point for timespan",
                         "propertyURI": "http://rdaregistry.info/Elements/t/P70015",
                         "mandatory": "",
@@ -62433,11 +62417,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 157,
+                        "uwFormOrder": -1,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
+                        "usedInProfile": []
                     }
                 ]
             }
