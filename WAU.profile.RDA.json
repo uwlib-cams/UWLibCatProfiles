@@ -7453,7 +7453,7 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
                         "uwFormOrder": 747,
@@ -7706,7 +7706,7 @@
                         "type": "",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -17457,7 +17457,7 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
                         "uwFormOrder": 748,
@@ -23716,9 +23716,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
                                 {"defaultLiteral": "paper"}
@@ -23726,7 +23726,7 @@
                         },
                         "uwFormOrder": 102,
                         "statusUw": "attention RDA",
-                        "noteUw": [],
+                        "noteUw": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.6.html"
@@ -23758,9 +23758,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
                                 {"defaultLiteral": "Ink"}
@@ -23768,7 +23768,7 @@
                             },
                         "uwFormOrder": 103,
                         "statusUw": "attention RDA",
-                        "noteUw": [],
+                        "noteUw": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.7.html"
@@ -27322,9 +27322,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
                             "defaults": [
                                 {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
                                 {"defaultLiteral": "volume"}
@@ -27332,7 +27332,7 @@
                         },
                         "uwFormOrder": 99,
                         "statusUw": "attention RDA",
-                        "noteUw": [],
+                        "noteUw": ["http://www.rdaregistry.info/termList/RDACarrierType"],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
@@ -27886,10 +27886,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://rdaregistry.info/termList/ModeIssue"
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"
+                                
                             ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
@@ -27901,7 +27901,7 @@
                         },
                         "uwFormOrder": 83,
                         "statusUw": "attention RDA",
-                        "noteUw": [],
+                        "noteUw": ["http://rdaregistry.info/termList/ModeIssue"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/2.13.html"
@@ -28029,9 +28029,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
                                 {"defaultLiteral": "unmediated"}
@@ -28039,7 +28039,7 @@
                         },
                         "uwFormOrder": 98,
                         "statusUw": "attention RDA",
-                        "noteUw": [],
+                        "noteUw": ["http://www.rdaregistry.info/termList/RDAMediaType"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.2.html"
