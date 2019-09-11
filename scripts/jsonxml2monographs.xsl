@@ -2,7 +2,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns="http://www.w3.org/2005/xpath-functions" xmlns:j="http://www.w3.org/2005/xpath-functions"
     exclude-result-prefixes="j" version="3.0">
-    <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
         <map xmlns="http://www.w3.org/2005/xpath-functions">
@@ -40,7 +39,7 @@
     <xsl:template match="j:array[@key = 'resourceTemplates']">
         <!-- Specify each RT to push through to monographs profile below -->
         <xsl:for-each
-            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item|Timespan')]">
+            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')]">
             <map>
                 <string key="id">
                     <xsl:value-of select="concat(j:string[@key = 'id'], ':monograph')"/>
@@ -116,27 +115,7 @@
     </xsl:template>
     <xsl:template match="j:map[@key = 'valueConstraint']">
         <xsl:if test="j:array[@key = 'valueTemplateRefs']/j:string/text()">
-            <xsl:for-each select="j:array[@key = 'valueTemplateRefs']">
-                <xsl:choose>
-                    <xsl:when test="../../j:string[@key = 'type'] != 'literal'">
-                        <array key="valueTemplateRefs">
-                            <xsl:choose>
-                                <xsl:when test="matches(j:string, 'AdminMetadata')">
-                                    <string>
-                                        <xsl:value-of select="j:string"/>
-                                    </string>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <string>
-                                        <xsl:value-of select="concat(j:string, ':monograph')"/>
-                                    </string>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </array>
-                    </xsl:when>
-                    <xsl:otherwise/>
-                </xsl:choose>
-            </xsl:for-each>
+            <xsl:apply-templates select="j:array[@key = 'valueTemplateRefs']"/>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">
             <xsl:choose>
@@ -162,6 +141,27 @@
                             <xsl:copy-of select="j:map/j:string[@key = 'defaultLiteral']"/>
                         </map>
                     </xsl:if>
+                </array>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template match="j:array[@key = 'valueTemplateRefs']">
+        <xsl:for-each select=".">
+            <xsl:if test="../../j:string[@key = 'type'] != 'literal'">
+                <array key="valueTemplateRefs">
+                    <xsl:for-each select="j:string">
+                        <string>
+                            <xsl:choose>
+                                <xsl:when
+                                    test="matches(., 'AdminMetadata|complexSubject|simpleSubject')">
+                                    <xsl:value-of select="."/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="concat(., ':monograph')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </string>
+                    </xsl:for-each>
                 </array>
             </xsl:if>
         </xsl:for-each>
