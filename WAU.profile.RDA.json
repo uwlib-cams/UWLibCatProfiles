@@ -1681,13 +1681,13 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27,
-                        "statusUw": "attention RDA",
-                        "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
+                        "statusUw": "done",
+                        "noteUw": [""],
                         "qUw": [""],
                         "usedInProfile": []
                     },
@@ -19200,7 +19200,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20228",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["http://rdaregistry.info/termList/scale"]
@@ -22245,7 +22245,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
@@ -22261,7 +22261,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
                             "defaults": [
@@ -22325,7 +22325,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20061",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
                         },
@@ -22367,7 +22367,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
@@ -22387,7 +22387,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
@@ -22407,7 +22407,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
@@ -22968,7 +22968,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20290",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/AspectRatio"]
                         },
@@ -23904,7 +23904,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30199",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
                         },
@@ -23942,7 +23942,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30197",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/bookFormat"]
                             },
@@ -26577,7 +26577,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30186",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
                         },
@@ -26628,7 +26628,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
                             "defaults": [
@@ -26648,7 +26648,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
                             "defaults": [
@@ -26668,7 +26668,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/fileType"]
                         },
@@ -26719,7 +26719,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
                         "mandatory": "true",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/typeRec"],
                             "defaults": [
@@ -27014,7 +27014,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30191",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
                         },
@@ -27142,7 +27142,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
                         },
@@ -27158,7 +27158,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"],
                             "defaults": [
@@ -27303,7 +27303,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
@@ -27323,7 +27323,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
@@ -27343,7 +27343,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
@@ -27992,7 +27992,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
@@ -28012,7 +28012,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
@@ -29853,7 +29853,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30184",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/configPlayback"],
                             "defaults": [
@@ -29895,7 +29895,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30196",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAPolarity"]
                         },
@@ -29976,7 +29976,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30163",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/presFormat"]
                         },
@@ -30422,7 +30422,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30006",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDARegionalEncoding"],
                             "defaults": [
@@ -30605,7 +30605,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30206",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/recMedium"],
                             "defaults": [
@@ -30795,7 +30795,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/specPlayback"],
                             "defaults": [
@@ -30849,7 +30849,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30123",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/broadcastStand"],
                             "defaults": [
@@ -31121,7 +31121,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30182",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"],
@@ -31287,7 +31287,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30155",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
                         },
@@ -31406,7 +31406,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30104",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/videoFormat"]
                         },
