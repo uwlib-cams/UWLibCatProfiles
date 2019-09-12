@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-11",
+        "date": "2019-09-12",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for maps",
         "id": "WAU:profile:RDA:map",
         "title": "WAU Profile RDA for describing maps",
@@ -586,7 +586,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.17.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         }
                     },
                     {
@@ -597,7 +597,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1002"},
                                 {"defaultLiteral": "cartographic image"}
@@ -666,7 +666,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/TacNotation"]
                         }
                     },
                     {
@@ -685,7 +685,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mrelief"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mrelief"]
                         }
                     },
                     {
@@ -697,7 +697,7 @@
                         "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.26.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mprojection"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mprojection"]
                         }
                     },
                     {
@@ -731,7 +731,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.25.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/scale"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/scale"]
                         }
                     },
                     {
@@ -1305,7 +1305,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1048"},
                                 {"defaultLiteral": "sheet"}
@@ -1320,7 +1320,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierEU"]
                         }
                     },
                     {
@@ -1369,7 +1369,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.8.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMaterial"]
                         }
                     },
                     {
@@ -1380,7 +1380,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"]
                         }
                     },
                     {
@@ -1391,7 +1391,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.10.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAGeneration"]
                         }
                     },
                     {
@@ -1402,7 +1402,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.11.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/layout"]
                         }
                     },
                     {
@@ -1413,7 +1413,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.13.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/fontSize"]
                         }
                     },
                     {
@@ -1424,7 +1424,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.14.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAPolarity"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAPolarity"]
                         }
                     },
                     {
@@ -1435,7 +1435,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.19.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"]
                         }
                     },
                     {

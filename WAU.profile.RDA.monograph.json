@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-11",
+        "date": "2019-09-12",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
         "id": "WAU:profile:RDA:monograph",
         "title": "WAU Profile RDA for describing monographs",
@@ -1050,7 +1050,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.17.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         }
                     },
                     {
@@ -1061,7 +1061,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
                                 {"defaultLiteral": "text"}
@@ -1130,7 +1130,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/TacNotation"]
                         }
                     },
                     {
@@ -2280,7 +2280,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierEU"]
                         }
                     },
                     {
@@ -2329,7 +2329,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.8.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMaterial"]
                         }
                     },
                     {
@@ -2340,7 +2340,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"]
                         }
                     },
                     {
@@ -2351,7 +2351,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.10.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAGeneration"]
                         }
                     },
                     {
@@ -2362,7 +2362,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.11.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/layout"]
                         }
                     },
                     {
@@ -2373,7 +2373,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.12.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/bookFormat"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/bookFormat"]
                         }
                     },
                     {
@@ -2384,7 +2384,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.13.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/fontSize"]
                         }
                     },
                     {

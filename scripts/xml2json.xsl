@@ -5,7 +5,7 @@
     
     <!-- BEFORE USING THIS TRANSFORM, 
         *CONFIRM OUTPUT FILE LOCATION TO AVOID OVERWRITING
-        A DIFFERENT FORMAT-SPECIFIC PROFILE -->
+        A DIFFERENT FORMAT-SPECIFIC JSON PROFILE -->
     
     <xsl:template match="/">
         <xsl:value-of select="xml-to-json(.)"/>

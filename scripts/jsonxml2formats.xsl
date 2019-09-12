@@ -4,8 +4,12 @@
     exclude-result-prefixes="j" version="3.0">
     <xsl:strip-space elements="*"/>
     
+    <!-- BEFORE USING THIS TRANSFORM, 
+        *CONFIRM OUTPUT FILE LOCATION TO AVOID OVERWRITING
+        A DIFFERENT FORMAT-SPECIFIC JSON-IN-XML PROFILE -->
+    
     <!-- Variables here to facilitate use for all formats /
-        *Edit formatID and formatTitle for each format to output -->
+        *EDIT FOR EACH format to output -->
     <xsl:variable name="formatID" select="':map'"/>
     <xsl:variable name="formatTitle" select="' for describing maps'"/>
     <xsl:variable name="formatLabel" select="' for maps'"/>
@@ -25,7 +29,6 @@
             <string key="date">
                 <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
             </string>
-            <!-- Description not accurate for format-specific profiles as not all RTs are pushed through to them -->
             <string key="description">
                 <xsl:value-of select="concat(j:string[@key = 'description'], $formatLabel)"/>
             </string>
