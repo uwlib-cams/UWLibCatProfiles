@@ -1,0 +1,1882 @@
+{
+    "Profile": {
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-09-11",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for maps",
+        "id": "WAU:profile:RDA:map",
+        "title": "WAU Profile RDA for describing maps",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
+        "resourceTemplates": [
+            {
+                "id": "WAU:RT:RDA:Work:map",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
+                "resourceLabel": "WAU RT RDA Work for maps",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Administrative Metadata for Work",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
+                        }
+                    },
+                    {
+                        "propertyLabel": "has access point for work (RDA 6.1.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10328",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has authorized access point for work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10331",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has title of work (RDA 6.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10088",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.2.html"
+                    },
+                    {
+                        "propertyLabel": "has preferred title of work (RDA 6.2.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.2.2.html"
+                    },
+                    {
+                        "propertyLabel": "has variant title of work (RDA 6.2.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10086",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.2.3.html"
+                    },
+                    {
+                        "propertyLabel": "has key title",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10367",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/6.3.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:genres"],
+                            "defaults": [
+                                {"defaultURI": "http://id.loc.gov/authorities/genreForms/gf2011026387"},
+                                {"defaultLiteral": "Maps"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has date of work (RDA 6.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10219",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.4.html"
+                    },
+                    {
+                        "propertyLabel": "has place of origin of work (RDA 6.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10218",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/6.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:place",
+                                "urn:ld4p:qa:subjects:place",
+                                "urn:ld4p:qa:geonames"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has identifier for work (RDA 6.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10002",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.8.html"
+                    },
+                    {
+                        "propertyLabel": "has nature of content (RDA 7.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.2.html"
+                    },
+                    {
+                        "propertyLabel": "has coverage of content (RDA 7.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/7.3.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:place"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has coordinates of cartographic content (RDA 7.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10024",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.4.html"
+                    },
+                    {
+                        "propertyLabel": "has dissertation or thesis information (RDA 7.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10209",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.9.html"
+                    },
+                    {
+                        "propertyLabel": "has academic degree (RDA 7.9.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10077",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.9.2.html"
+                    },
+                    {
+                        "propertyLabel": "has year degree granted (RDA 7.9.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10215",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.9.4.html"
+                    },
+                    {
+                        "propertyLabel": "has illustrations work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10093",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has note on work (RDA 5.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10330",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has ISSN",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10366",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has subseries (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/24.5.html"
+                    },
+                    {
+                        "propertyLabel": "is subseries of (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/24.5.html"
+                    },
+                    {
+                        "propertyLabel": "has creator agent of work (RDA 19.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10065",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/19.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has cartographer agent of work (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10052",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has compiler agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10055",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has commissioning body agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10287",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has consultant agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10071",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has dedicatee agent of work (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10069",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has dedicator agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10048",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has degree committee member (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10284",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has degree granting institution (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has degree supervisor (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10041",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has director agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10066",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has founding agent of work (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10299",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has honouree agent of work (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10049",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has hosting institution (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10007",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has issuing body agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10046",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has organizer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has participant in treaty (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has producer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10064",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has researcher agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10293",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related agent of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10311",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has sponsoring agent of work (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10067",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has numbering of part (RDA 24.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10012",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/24.6.html"
+                    },
+                    {
+                        "propertyLabel": "has related work of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10198",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has related expression of work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has subject (RDA 23.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "remark": "http://access.rdatoolkit.org/23.5.html",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "WAU:RT:MADSRDF:complexSubject",
+                                "WAU:RT:MADSRDF:simpleSubject"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has expression of work (RDA 17.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "WAU:RT:RDA:Expression:map",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
+                "resourceLabel": "WAU RT RDA Expression for maps",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Administrative Metadata for Expression",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has access point for expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20310",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has authorized access point for expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20313",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has intended audience of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20322",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:demographics",
+                                "urn:ld4p:qa:dbpedia"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has summarization of content (RDA 7.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20069",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.10.html"
+                    },
+                    {
+                        "propertyLabel": "has details of cartographic content (RDA 7.27)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20210",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.27.html"
+                    },
+                    {
+                        "propertyLabel": "has colour content (RDA 7.17)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/7.17.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has content type (RDA 6.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/6.9.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1002"},
+                                {"defaultLiteral": "cartographic image"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has date of expression (RDA 6.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20214",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.10.html"
+                    },
+                    {
+                        "propertyLabel": "has title of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20312",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has variant title of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20316",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has language of expression (RDA 6.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/6.11.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has identifier for expression (RDA 6.13)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20002",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.13.html"
+                    },
+                    {
+                        "propertyLabel": "has script (RDA 7.13.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has form of tactile notation (RDA 7.13.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20061",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/7.13.4.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has details of form of tactile notation (RDA 7.13.4.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20265",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.13.4.4.html"
+                    },
+                    {
+                        "propertyLabel": "has relief type",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20318",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mrelief"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has projection of cartographic content (RDA 7.26)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20216",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/7.26.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mprojection"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has preferred title of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20315",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has accessibility content (RDA 7.14)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20208",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.14.html"
+                    },
+                    {
+                        "propertyLabel": "has supplementary content (RDA 7.16)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20206",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.16.html"
+                    },
+                    {
+                        "propertyLabel": "has scale (RDA 7.25)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20228",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/7.25.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/scale"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has note on expression (RDA 7.29)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20071",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.29.html"
+                    },
+                    {
+                        "propertyLabel": "has related agent of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20301",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has creator agent of expression (RDA 20.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20053",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/20.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has colourist agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20283",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has illustrator (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20051",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has translator agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20037",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has writer of supplementary textual content (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20046",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has writer of added text (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20030",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has letterer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20259",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has reviser agent",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20327",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related manifestation of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20299",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has manifestation of expression (RDA 17.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.9.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "WAU:RT:RDA:Manifestation:map",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
+                "resourceLabel": "WAU RT RDA Manifestation for maps",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Administrative Metadata for Manifestation",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has access point for manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30276",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has authorized access point for manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30294",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has title proper (RDA 2.3.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30156",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.3.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel title proper (RDA 2.3.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30203",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.3.3.html"
+                    },
+                    {
+                        "propertyLabel": "has other title information (RDA 2.3.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30142",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.3.4.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel other title information (RDA 2.3.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30151",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.3.5.html"
+                    },
+                    {
+                        "propertyLabel": "has variant title of manifestation (RDA 2.3.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30128",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.3.6.html"
+                    },
+                    {
+                        "propertyLabel": "has abbreviated title (RDA 2.3.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30131",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.3.10.html"
+                    },
+                    {
+                        "propertyLabel": "has statement of responsibility relating to title proper (RDA 2.4.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30105",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.4.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel statement of responsibility relating to title proper (RDA 2.4.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30116",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.4.3.html"
+                    },
+                    {
+                        "propertyLabel": "has designation of edition (RDA 2.5.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30133",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel designation of edition (RDA 2.5.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30013",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.3.html"
+                    },
+                    {
+                        "propertyLabel": "has statement of responsibility relating to edition (RDA 2.5.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30121",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.4.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel statement of responsibility relating to edition (RDA 2.5.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30115",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.5.html"
+                    },
+                    {
+                        "propertyLabel": "has designation of named revision of edition (RDA 2.5.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30132",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.6.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel designation of named revision of edition (RDA 2.5.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30012",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.7.html"
+                    },
+                    {
+                        "propertyLabel": "has statement of responsibility relating to named revision of edition (RDA 2.5.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30118",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.8.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel statement of responsibility relating to named revision of edition (RDA 2.5.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30112",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.5.9.html"
+                    },
+                    {
+                        "propertyLabel": "has place of production (RDA 2.7.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30086",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.7.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel place of production (RDA 2.7.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30091",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.7.3.html"
+                    },
+                    {
+                        "propertyLabel": "has name of producer (RDA 2.7.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30174",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.7.4.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel name of producer (RDA 2.7.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30094",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.7.5.html"
+                    },
+                    {
+                        "propertyLabel": "has date of production (RDA 2.7.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30009",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.7.6.html"
+                    },
+                    {
+                        "propertyLabel": "has place of publication (RDA 2.8.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30088",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel place of publication (RDA 2.8.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30092",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.3.html"
+                    },
+                    {
+                        "propertyLabel": "has name of publisher (RDA 2.8.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30176",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.4.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel name of publisher (RDA 2.8.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30095",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.5.html"
+                    },
+                    {
+                        "propertyLabel": "has date of publication (RDA 2.8.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30011",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.6.html"
+                    },
+                    {
+                        "propertyLabel": "has place of distribution (RDA 2.9.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30085",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.9.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel place of distribution (RDA 2.9.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30089",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.9.3.html"
+                    },
+                    {
+                        "propertyLabel": "has name of distributor (RDA 2.9.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30173",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.9.4.html"
+                    },
+                    {
+                        "propertyLabel": "has date of distribution (RDA 2.9.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30008",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.9.6.html"
+                    },
+                    {
+                        "propertyLabel": "has place of manufacture (RDA 2.10.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30087",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.10.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel place of manufacture (RDA 2.10.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30090",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.10.3.html"
+                    },
+                    {
+                        "propertyLabel": "has name of manufacturer (RDA 2.10.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30175",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.10.4.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel name of manufacturer (RDA 2.10.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30049",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.10.5.html"
+                    },
+                    {
+                        "propertyLabel": "has date of manufacture (RDA 2.10.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30010",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.10.6.html"
+                    },
+                    {
+                        "propertyLabel": "has copyright date (RDA 2.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30007",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.11.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "©"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has title of series (RDA 2.12.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30157",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.2.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel title of series (RDA 2.12.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30204",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.3.html"
+                    },
+                    {
+                        "propertyLabel": "has other title information of series (RDA 2.12.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30143",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.4.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel other title information of series (RDA 2.12.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30152",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.5.html"
+                    },
+                    {
+                        "propertyLabel": "has statement of responsibility relating to series (RDA 2.12.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30119",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.6.html"
+                    },
+                    {
+                        "propertyLabel": "has parallel statement of responsibility relating to series (RDA 2.12.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30113",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.7.html"
+                    },
+                    {
+                        "propertyLabel": "has numbering within sequence (RDA 2.12.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30014",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.9.html"
+                    },
+                    {
+                        "propertyLabel": "has mode of issuance (RDA 2.13)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/2.13.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
+                                {"defaultLiteral": "single unit"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has identifier for manifestation (RDA 2.15)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30004",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                    },
+                    {
+                        "propertyLabel": "has note on manifestation (RDA 2.17)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30137",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.17.html"
+                    },
+                    {
+                        "propertyLabel": "has media type (RDA 3.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
+                                {"defaultLiteral": "unmediated"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has carrier type (RDA 3.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.3.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1048"},
+                                {"defaultLiteral": "sheet"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has extent of manifestation (RDA 3.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30182",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.4.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has dimensions (RDA 3.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30169",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.5.html"
+                    },
+                    {
+                        "propertyLabel": "has base material (RDA 3.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.6.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
+                                {"defaultLiteral": "paper"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has applied material (RDA 3.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.7.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+                            "defaults": [
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
+                                {"defaultLiteral": "Ink"}
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has mount (RDA 3.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30186",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.8.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has production method (RDA 3.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.9.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has generation (RDA 3.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30191",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.10.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has layout (RDA 3.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30155",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.11.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has font size (RDA 3.13)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30199",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.13.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has polarity (RDA 3.14)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30196",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.14.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAPolarity"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has file type (RDA 3.19.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.19.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has digital representation of cartographic content (RDA 3.19.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30102",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.19.8.html"
+                    },
+                    {
+                        "propertyLabel": "has details of digital representation of cartographic content (RDA 3.19.8.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30222",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.19.8.4.html"
+                    },
+                    {
+                        "propertyLabel": "has equipment or system requirement (RDA 3.20)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30162",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.20.html"
+                    },
+                    {
+                        "propertyLabel": "has related agent of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30267",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has term of availability (RDA 4.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30160",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/4.2.html"
+                    },
+                    {
+                        "propertyLabel": "has contact information (RDA 4.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30141",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/4.3.html"
+                    },
+                    {
+                        "propertyLabel": "has restriction on use of manifestation (RDA 4.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30146",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/4.5.html"
+                    },
+                    {
+                        "propertyLabel": "has uniform resource locator (RDA 4.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30154",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/4.6.html"
+                    },
+                    {
+                        "propertyLabel": "has surveyor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30312",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has producer agent of unpublished manifestation (RDA 21.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30081",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/21.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has publisher agent (RDA 21.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30083",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/21.3.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has distributor agent (RDA 21.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30080",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/21.4.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has manufacturer agent (RDA 21.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30082",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/21.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has braille embosser agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30071",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has engraver agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30070",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has etcher agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30076",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has lithographer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30074",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has papermaker agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30215",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has platemaker agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30075",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has printer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30078",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related expression of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has related item of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.11.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "WAU:RT:RDA:Item:map",
+                "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
+                "resourceLabel": "WAU RT RDA Item for maps",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Administrative Metadata for Item",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has note on item (RDA 2.21)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40028",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.21.html"
+                    },
+                    {
+                        "propertyLabel": "has custodial history of item (RDA 2.18)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40026",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.18.html"
+                    },
+                    {
+                        "propertyLabel": "has immediate source of acquisition of item (RDA 2.19)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40050",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.19.html"
+                    },
+                    {
+                        "propertyLabel": "has depositor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has former owner agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40019",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has donor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40007",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has seller agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40008",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related agent of item (RDA 22.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40072",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has annotator (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40015",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has autographer (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40016",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has binder agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40013",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has dedicatee agent of item (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40025",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has honouree agent of item (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40022",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has illuminator agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40012",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has inscriber (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40014",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has restorationist agent of item (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40024",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
