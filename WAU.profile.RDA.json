@@ -1683,7 +1683,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27,
                         "statusUw": "done",
@@ -19203,7 +19203,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["http://rdaregistry.info/termList/scale"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/scale"]
                         },
                         "uwFormOrder": 126.5,
                         "statusUw": "attention RDA",
@@ -21118,7 +21118,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mrelief"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mrelief"]
                         },
                         "uwFormOrder": 124.42,
                         "statusUw": "done",
@@ -22247,7 +22247,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27.5,
                         "statusUw": "attention RDA",
@@ -22263,7 +22263,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003"},
                                 {"defaultLiteral": "polychrome"}
@@ -22327,7 +22327,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/TacNotation"]
                         },
                         "uwFormOrder": 124.2,
                         "statusUw": "attention RDA",
@@ -22369,7 +22369,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
                                 {"defaultLiteral": "text"}
@@ -22389,7 +22389,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1023"},
                                 {"defaultLiteral": "two-dimensional moving image"}
@@ -22409,7 +22409,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1002"},
                                 {"defaultLiteral": "cartographic image"}
@@ -22518,7 +22518,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mprojection"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mprojection"]
                         },
                         "uwFormOrder": 124.43,
                         "statusUw": "done",
@@ -22970,7 +22970,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/AspectRatio"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/AspectRatio"]
                         },
                         "uwFormOrder": 126.2,
                         "statusUw": "attention RDA",
@@ -23906,7 +23906,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/fontSize"]
                         },
                         "uwFormOrder": 109,
                         "statusUw": "attention RDA",
@@ -23944,7 +23944,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/bookFormat"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/bookFormat"]
                             },
                         "uwFormOrder": 108,
                         "statusUw": "attention RDA",
@@ -26579,7 +26579,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMaterial"]
                         },
                         "uwFormOrder": 104,
                         "statusUw": "attention RDA",
@@ -26630,7 +26630,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1006"},
                                 {"defaultLiteral": "video file"}
@@ -26650,7 +26650,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1002"},
                                 {"defaultLiteral": ["text file", "PDF"]}
@@ -26670,7 +26670,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"]
                         },
                         "uwFormOrder": 109.9,
                         "statusUw": "attention RDA",
@@ -26721,7 +26721,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/typeRec"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/typeRec"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/typeRec/1002"},
                                 {"defaultLiteral": "digital"}
@@ -27016,7 +27016,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAGeneration"]
                         },
                         "uwFormOrder": 106,
                         "statusUw": "attention RDA",
@@ -27144,7 +27144,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"]
                         },
                         "uwFormOrder": 105,
                         "statusUw": "attention RDA",
@@ -27160,7 +27160,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAproductionMethod/1017"},
                                 {"defaultLiteral": "stamping"}
@@ -27305,7 +27305,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1060"},
                                 {"defaultLiteral": "videodisc"}
@@ -27325,7 +27325,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1018"},
                                 {"defaultLiteral": "online resource"}
@@ -27345,7 +27345,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1048"},
                                 {"defaultLiteral": "sheet"}
@@ -27994,7 +27994,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1008"},
                                 {"defaultLiteral": "video"}
@@ -28014,7 +28014,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1003"},
                                 {"defaultLiteral": "computer"}
@@ -29855,7 +29855,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/configPlayback"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/configPlayback"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/configPlayback/1002"},
                                 {"defaultLiteral": "stereo"}
@@ -29897,7 +29897,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAPolarity"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAPolarity"]
                         },
                         "uwFormOrder": 109.5,
                         "statusUw": "attention RDA",
@@ -29978,7 +29978,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/presFormat"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/presFormat"]
                         },
                         "uwFormOrder": 109.6,
                         "statusUw": "attention RDA",
@@ -30424,7 +30424,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDARegionalEncoding"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDARegionalEncoding"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDARegionalEncoding/1002"},
                                 {"defaultLiteral": "region 1"}
@@ -30607,7 +30607,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/recMedium"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/recMedium"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/recMedium/1003"},
                                 {"defaultLiteral": "optical"}
@@ -30797,7 +30797,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/specPlayback"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/specPlayback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
@@ -30851,7 +30851,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/broadcastStand"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/broadcastStand"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/broadcastStand/1002"},
                                 {"defaultLiteral": "NTSC"}
@@ -31124,7 +31124,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierEU"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -31289,7 +31289,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/layout"]
                         },
                         "uwFormOrder": 107,
                         "statusUw": "attention RDA",
@@ -31408,7 +31408,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/videoFormat"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/videoFormat"]
                         },
                         "uwFormOrder": 109.7,
                         "statusUw": "attention RDA",
