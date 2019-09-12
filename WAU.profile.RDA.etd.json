@@ -165,7 +165,7 @@
                         "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         }
                     },
                     {

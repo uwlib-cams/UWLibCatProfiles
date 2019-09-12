@@ -6965,7 +6965,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         },
                         "uwFormOrder": 26,
                         "statusUw": "",
