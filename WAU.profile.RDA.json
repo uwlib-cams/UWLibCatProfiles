@@ -23679,7 +23679,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
                                 {"defaultLiteral": "paper"}
@@ -23687,7 +23687,7 @@
                         },
                         "uwFormOrder": 102,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://www.rdaregistry.info/termList/RDAMaterial"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.6.html"
@@ -23721,7 +23721,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
                                 {"defaultLiteral": "Ink"}
@@ -23729,7 +23729,7 @@
                             },
                         "uwFormOrder": 103,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://www.rdaregistry.info/termList/RDAMaterial"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.7.html"
@@ -27285,7 +27285,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
                                 {"defaultLiteral": "volume"}
@@ -27293,7 +27293,7 @@
                         },
                         "uwFormOrder": 99,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
@@ -27305,7 +27305,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1060"},
                                 {"defaultLiteral": "videodisc"}
@@ -27313,7 +27313,7 @@
                         },
                         "uwFormOrder": 99,
                         "statusUw": "attention RDA",
-                        "noteUw": ["https://www.rdaregistry.info/termList/RDACarrierType"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
@@ -27325,7 +27325,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1018"},
                                 {"defaultLiteral": "online resource"}
@@ -27333,7 +27333,7 @@
                         },
                         "uwFormOrder": 99,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://rdaregistry.info/termList/RDACarrierType"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["etd"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
@@ -27345,7 +27345,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1048"},
                                 {"defaultLiteral": "sheet"}
@@ -27353,7 +27353,7 @@
                         },
                         "uwFormOrder": 99,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://rdaregistry.info/termList/RDACarrierType"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["map"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
@@ -27840,7 +27840,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"
+                            "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"
                                 
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -27853,7 +27853,7 @@
                         },
                         "uwFormOrder": 83,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://rdaregistry.info/termList/ModeIssue"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/2.13.html"
@@ -27974,7 +27974,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
                                 {"defaultLiteral": "unmediated"}
@@ -27982,7 +27982,7 @@
                         },
                         "uwFormOrder": 98,
                         "statusUw": "attention RDA",
-                        "noteUw": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.2.html"
