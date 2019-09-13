@@ -1,8 +1,8 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-12",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for electronic theses and dissertations",
+        "date": "2019-09-13",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan electronic theses and dissertations",
         "id": "WAU:profile:RDA:etd",
         "title": "WAU Profile RDA for describing electronic theses and dissertations",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
@@ -10,7 +10,7 @@
             {
                 "id": "WAU:RT:RDA:Work:etd",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "WAU RT RDA Work for electronic theses and dissertations",
+                "resourceLabel": "WAU RT RDA Work electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -328,7 +328,7 @@
             {
                 "id": "WAU:RT:RDA:Expression:etd",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "WAU RT RDA Expression for electronic theses and dissertations",
+                "resourceLabel": "WAU RT RDA Expression electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -554,7 +554,7 @@
             {
                 "id": "WAU:RT:RDA:Manifestation:etd",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "WAU RT RDA Manifestation for electronic theses and dissertations",
+                "resourceLabel": "WAU RT RDA Manifestation electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -942,7 +942,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
+                            "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
                                 {"defaultLiteral": "single unit"}
@@ -1226,7 +1226,7 @@
             {
                 "id": "WAU:RT:RDA:Item:etd",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item for electronic theses and dissertations",
+                "resourceLabel": "WAU RT RDA Item electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",

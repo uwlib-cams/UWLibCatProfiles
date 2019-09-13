@@ -9,11 +9,11 @@
         A DIFFERENT FORMAT-SPECIFIC JSON-IN-XML PROFILE -->
     
     <!-- Variables here to facilitate use for all formats /
-        *EDIT FOR EACH format to output -->
-    <xsl:variable name="formatID" select="':map'"/>
-    <xsl:variable name="formatTitle" select="' for describing maps'"/>
-    <xsl:variable name="formatLabel" select="' for maps'"/>
-    <xsl:variable name="formatEnum" select="'map'"/>
+        *EDIT EACH for each format to output -->
+    <xsl:variable name="formatID" select="':monograph'"/>
+    <xsl:variable name="formatTitle" select="' for describing monographs'"/>
+    <xsl:variable name="formatLabel" select="' monographs'"/>
+    <xsl:variable name="formatEnum" select="'monograph'"/>
     
     <xsl:template match="/">
         <map xmlns="http://www.w3.org/2005/xpath-functions">
@@ -157,7 +157,6 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="j:array[@key = 'valueTemplateRefs']">
-        <xsl:for-each select=".">
             <xsl:if test="../../j:string[@key = 'type'] != 'literal'">
                 <array key="valueTemplateRefs">
                     <xsl:for-each select="j:string">
@@ -175,6 +174,5 @@
                     </xsl:for-each>
                 </array>
             </xsl:if>
-        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>

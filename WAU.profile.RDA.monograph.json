@@ -1,8 +1,8 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-12",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
+        "date": "2019-09-13",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan monographs",
         "id": "WAU:profile:RDA:monograph",
         "title": "WAU Profile RDA for describing monographs",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
@@ -10,7 +10,7 @@
             {
                 "id": "WAU:RT:RDA:Work:monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "WAU RT RDA Work for monographs",
+                "resourceLabel": "WAU RT RDA Work monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -161,7 +161,7 @@
                         "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         }
                     },
                     {
@@ -990,7 +990,7 @@
             {
                 "id": "WAU:RT:RDA:Expression:monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "WAU RT RDA Expression for monographs",
+                "resourceLabel": "WAU RT RDA Expression monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -1745,7 +1745,7 @@
             {
                 "id": "WAU:RT:RDA:Manifestation:monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "WAU RT RDA Manifestation for monographs",
+                "resourceLabel": "WAU RT RDA Manifestation monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -2123,7 +2123,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
+                            "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
                                 {"defaultLiteral": "single unit"}
@@ -2250,7 +2250,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007"},
                                 {"defaultLiteral": "unmediated"}
@@ -2265,7 +2265,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
                                 {"defaultLiteral": "volume"}
@@ -2299,7 +2299,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.6.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025"},
                                 {"defaultLiteral": "paper"}
@@ -2314,7 +2314,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.7.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"],
+                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017"},
                                 {"defaultLiteral": "Ink"}
@@ -2688,7 +2688,7 @@
             {
                 "id": "WAU:RT:RDA:Item:monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item for monographs",
+                "resourceLabel": "WAU RT RDA Item monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",

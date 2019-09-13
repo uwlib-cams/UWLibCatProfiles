@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "uwProperty-template.json",
-  "title": "UW Property Template Schema, adapted from Sinopia schema 0.1.0",
-  "description": "Property template for properties associated with the entity described by a resource template.",
-  "version": "X",
+  "$id": "https://ld4p.github.io/sinopia/schemas/0.2.1/property-template.json",
+  "title": "Sinopia Property Template Schema",
+  "description": "Property template for property associated with the entity described by a resource template.",
+  "version": "0.2.1",
   "type": "object",
   "required": [
     "propertyURI",
@@ -12,21 +12,6 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "uwFormOrder": {
-        
-    },
-    "statusUw": {
-        
-    },
-    "noteUw": {
-        
-    },
-    "qUw": {
-        
-    },
-    "usedInProfile": {
-        
-    },
     "mandatory": {
       "type": ["boolean", "string"],
       "enum": ["true", "false"],
@@ -81,9 +66,15 @@
       "description": "This is not currently used, but should/could replace valueConstraint.valueTemplateRefs",
       "maxItems": 0
     },
+    "subtype": {
+      "type": "string",
+      "title": "A subtype of the property",
+      "description": "Used for supporting extended context in QA",
+      "maxItems": 0
+    },
     "type": {
       "type": "string",
-      "enum": ["literal", "lookup", "resource"],
+      "enum": ["literal", "literal-lang", "target", "list", "lookup", "resource"],
       "title": "Type",
       "description": "Type of value (literal / resource / lookup) that is allowed by this property."
     },
@@ -146,7 +137,10 @@
             "type": "object",
             "title": "default Literal + URI",
             "description": "a default value is specified with a literal and a URI",
-            "required": ["defaultURI", "defaultLiteral"],
+            "anyOf": [
+              { "required": ["defaultURI"] },
+              { "required": [ "defaultLiteral"] }
+            ],
             "additionalProperties": false,
             "properties": {
               "defaultURI": {

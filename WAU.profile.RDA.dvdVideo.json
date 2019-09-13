@@ -1,8 +1,8 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-12",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for DVD videos",
+        "date": "2019-09-13",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan dvd videos",
         "id": "WAU:profile:RDA:dvdVideo",
         "title": "WAU Profile RDA for describing DVD videos",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
@@ -10,7 +10,7 @@
             {
                 "id": "WAU:RT:RDA:Work:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "WAU RT RDA Work for DVD videos",
+                "resourceLabel": "WAU RT RDA Work dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -814,7 +814,7 @@
             {
                 "id": "WAU:RT:RDA:Expression:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "WAU RT RDA Expression for DVD videos",
+                "resourceLabel": "WAU RT RDA Expression dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -1706,7 +1706,7 @@
             {
                 "id": "WAU:RT:RDA:Manifestation:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "WAU RT RDA Manifestation for DVD videos",
+                "resourceLabel": "WAU RT RDA Manifestation dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -2084,7 +2084,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
+                            "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
                                 {"defaultLiteral": "single unit"}
@@ -2643,7 +2643,7 @@
             {
                 "id": "WAU:RT:RDA:Item:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item for DVD videos",
+                "resourceLabel": "WAU RT RDA Item dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
