@@ -31985,16 +31985,21 @@
                     {
                         "propertyLabel": "has curator agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40017",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
                         },
-                        "uwFormOrder": 328,
+                        "uwFormOrder": -1,
                         "statusUw": "",
-                        "noteUw": [""],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -32192,24 +32197,22 @@
                     {
                         "propertyLabel": "has custodian agent (RDA 22.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40020",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
                             ]
                         },
-                        "uwFormOrder": 323,
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
-                        "qUw": [""],
+                        "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/22.3.html"
                     },
@@ -32300,14 +32303,19 @@
                     {
                         "propertyLabel": "has dedicatee agent of item (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40025",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
                         },
-                        "uwFormOrder": 329,
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -32828,14 +32836,19 @@
                     {
                         "propertyLabel": "has honouree agent of item (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40022",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
                         },
-                        "uwFormOrder": 330,
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -33280,10 +33293,19 @@
                     {
                         "propertyLabel": "has note on dimensions of item (RDA 3.22.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40010",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "uwFormOrder": 158,
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
+                        },
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -33306,10 +33328,19 @@
                     {
                         "propertyLabel": "has note on extent of item (RDA 3.22.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40011",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "uwFormOrder": 157,
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
+                        },
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -33446,6 +33477,23 @@
                     {
                         "propertyLabel": "is bound with (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40032",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        },
+                        "uwFormOrder": 157,
+                        "statusUw": "done",
+                        "noteUw": ["dbpedia lookup just facilitates plugging in a URI for another Sinopia item"],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "map"],
+                        "remark": "http://access.rdatoolkit.org/24.5.html"
+                    },
+                    {
+                        "propertyLabel": "has owner agent (RDA 22.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40021",
                         "mandatory": "",
                         "repeatable": "",
                         "type": "",
@@ -33459,30 +33507,6 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "attention",
-                        "noteUw": ["Oh, but this is useful. Maybe we should stick with RDA items after all?"],
-                        "qUw": [],
-                        "usedInProfile": [],
-                        "remark": "http://access.rdatoolkit.org/24.5.html"
-                    },
-                    {
-                        "propertyLabel": "has owner agent (RDA 22.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40021",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
-                            ]
-                        },
-                        "uwFormOrder": 317,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -33598,23 +33622,18 @@
                     {
                         "propertyLabel": "is accompanied by item (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40029",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 157.1,
+                        "statusUw": "done",
+                        "noteUw": ["dbpedia lookup just facilitates plugging in a URI for another Sinopia item"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "map", "dvdVideo", "etd"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -33789,21 +33808,15 @@
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 176,
-                        "statusUw": "attention",
-                        "noteUw": ["related item of item P40046"],
-                        "qUw": ["literal for URI might be an issue"],
-                        "usedInProfile": ["monograph", "etd"],
+                        "uwFormOrder": 157.12,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "etd", "dvdVideo", "map"],
                         "remark": ""
                     },
                     {
@@ -33813,7 +33826,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 156,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
@@ -33822,10 +33835,19 @@
                     {
                         "propertyLabel": "has custodial history of item (RDA 2.18)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40026",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "uwFormOrder": 155,
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {"defaultURI": ""},
+                                {"defaultLiteral": ""}
+                            ]
+                        },
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -33856,45 +33878,33 @@
                     {
                         "propertyLabel": "is container of item (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40034",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 157.13,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "is contained in item (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40009",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 157.14,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -34228,23 +34238,17 @@
                     {
                         "propertyLabel": "has manifestation exemplified (RDA 17.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40049",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
+                        "uwFormOrder": 157.15,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.12.html"
                     },
                     {
