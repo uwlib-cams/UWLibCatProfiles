@@ -1063,8 +1063,8 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
-                                {"defaultLiteral": "text"}
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020",
+                                "defaultLiteral": "text"}
                             ]
                         }
                     },
