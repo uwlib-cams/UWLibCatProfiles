@@ -372,10 +372,14 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        },
                         "uwFormOrder": 75,
-                        "statusUw": "attention",
-                        "noteUw": ["This needs to be an RDA Work lookup within Sinopia"],
+                        "statusUw": "done",
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -385,10 +389,14 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        },
                         "uwFormOrder": 76,
-                        "statusUw": "attention",
-                        "noteUw": ["This needs to be an RDA Work lookup within Sinopia"],
+                        "statusUw": "done",
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -7434,15 +7442,11 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 747,
-                        "statusUw": "attention WEMI",
-                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.",
-                        "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet.",
-                        "Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
+                        "uwFormOrder": 160.1,
+                        "statusUw": "done",
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
@@ -17426,13 +17430,11 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 748,
-                        "statusUw": "attention WEMI",
-                        "noteUw": ["We need to add a lookup to the manifestation RT that will look for manifestations somewhere. Wherever they get stored.","Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
+                        "uwFormOrder": 160.3,
+                        "statusUw": "done",
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.9.html"
@@ -18161,23 +18163,18 @@
                     {
                         "propertyLabel": "has work expressed (RDA 17.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20231",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "attention",
-                        "noteUw": [],
+                        "uwFormOrder": 160.2,
+                        "statusUw": "done",
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.6.html"
                     },
                     {
@@ -22377,7 +22374,7 @@
                         },
                         "uwFormOrder": 120,
                         "statusUw": "attention RDA",
-                        "noteUw": ["Use only for non-tactile textual materials. Has default value for text"],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["monograph", "etd"],
                         "remark": "http://access.rdatoolkit.org/6.9.html"
@@ -22397,7 +22394,7 @@
                         },
                         "uwFormOrder": 120,
                         "statusUw": "attention RDA",
-                        "noteUw": ["Use only for two-dimensional moving images. Has default value"],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/6.9.html"
@@ -27861,23 +27858,18 @@
                     {
                         "propertyLabel": "has expression manifested (RDA 17.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30139",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "attention",
-                        "noteUw": [],
+                        "uwFormOrder": 160.4,
+                        "statusUw": "done",
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.10.html"
                     },
                     {
@@ -29161,18 +29153,12 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 749,
-                        "statusUw": "attention WEMI",
-                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
-                        "qUw": ["Can we put two dataTypeURI's in?", "As with works, expressions, and manifestations, we will need to put in a lookup to find already-cataloged entities. We need a place to point those lookups though."],
+                        "uwFormOrder": 160.5,
+                        "statusUw": "done",
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
+                        "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.11.html"
                     },
@@ -34241,12 +34227,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 157.15,
-                        "statusUw": "attention",
-                        "noteUw": [],
+                        "uwFormOrder": 160.6,
+                        "statusUw": "done",
+                        "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.12.html"
