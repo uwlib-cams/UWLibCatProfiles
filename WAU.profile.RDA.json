@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-11",
+        "date": "2019-09-19",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -12429,7 +12429,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -18174,7 +18174,7 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "",
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -23641,7 +23641,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -27874,7 +27874,7 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "",
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -31511,7 +31511,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -31993,10 +31993,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 328,
-                        "statusUw": "attention",
-                        "noteUw": ["Example of the level of detail we could go to if we wanted to."],
+                        "statusUw": "",
+                        "noteUw": [""],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32207,10 +32207,10 @@
                             ]
                         },
                         "uwFormOrder": 323,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
-                        "qUw": ["Even this isn't quite right. RDA isn't as good as BIBFRAME when it comes to items. Since they are the same thing (no data modeling problems like with WEM), it might be a good idea to just go with BF items so we don't have to re-create the wheel with item properties. Eh?"],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "qUw": [""],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/22.3.html"
                     },
                     {
@@ -32308,10 +32308,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 329,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "map"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32836,10 +32836,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 330,
-                        "statusUw": "done",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "map"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -33284,10 +33284,10 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": 158,
-                        "statusUw": "done",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/3.22.3.html"
                     },
                     {
@@ -33310,10 +33310,10 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": 157,
-                        "statusUw": "done",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/3.22.2.html"
                     },
                     {
@@ -33483,10 +33483,10 @@
                             ]
                         },
                         "uwFormOrder": 317,
-                        "statusUw": "attention",
-                        "noteUw": ["This one (and others with defaults to UW that will never be anything else) doesn't need duplicate for failed lookup."],
-                        "qUw": ["Custodian? Owner? What we really need is heldBy"],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "statusUw": "",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/22.2.html"
                     },
                     {
@@ -33826,10 +33826,10 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": 155,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/2.18.html"
                     },
                     {
@@ -34241,7 +34241,7 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "",
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -34316,7 +34316,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -56632,7 +56632,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -60101,7 +60101,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -61201,7 +61201,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [{
