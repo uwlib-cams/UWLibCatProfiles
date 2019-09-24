@@ -107,7 +107,7 @@
                         }
                     },
                     {
-                        "propertyLabel": "Data creation date",
+                        "propertyLabel": "Data creation date (EDTF)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -115,7 +115,7 @@
                         
                     },
                     {
-                        "propertyLabel": "Data change date",
+                        "propertyLabel": "Data change date (EDTF)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
                         "mandatory": "false",
                         "repeatable": "false",
