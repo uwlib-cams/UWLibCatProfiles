@@ -68455,6 +68455,257 @@
                         "usedInProfile": []
                     }
                 ]
+            },
+            {
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+                "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
+                "id": "WAU:RT:BF2:BFLC:AdminMetadata",
+                "date": "2019-06-26",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Your cataloger ID (UW netid)",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerID",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal"
+                       
+                    },
+                    {
+                        "propertyLabel": "Record status",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:Status"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Encoding level",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/menclvl"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/menclvl/f",
+                                    "defaultLiteral": "full"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Description conventions",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/descriptionConventions"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+                                    "defaultLiteral": "Resource Description and Access"
+                                },
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/descriptionConventions/isbd",
+                                    "defaultLiteral": "ISBD: International Standard Bibliographic Description"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Source of cataloging",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:organization"
+                            ],
+                            "defaults": [
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
+                                    "defaultLiteral": "WAU"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Description language",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"},
+                            "defaults": [
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/languages/eng",
+                                    "defaultLiteral": "English"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Data creation date (EDTF)",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "literal"
+                        
+                    },
+                    {
+                        "propertyLabel": "Data change date (EDTF)",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Description authentication",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/marcauthen"],
+                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication"}
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
+                "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
+                "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
+                "date": "2019-05-30",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Code",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/code",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "n"}
+                            ]
+                        }
+                    }
+                ]
+            },
+                 {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
+                "resourceLabel": "WAU RT MADS RDF Complex Subject",
+                "id": "WAU:RT:MADSRDF:complexSubject",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Component List",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:list"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Pre-coordinate Subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:subjects:place",
+                                "urn:ld4p:qa:names:place"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Label",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
+                "resourceLabel": "WAU RT MADS RDF Subject",
+                "id": "WAU:RT:MADSRDF:simpleSubject",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Subject Search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:subjects:place",
+                                "urn:ld4p:qa:names:place"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+                "resourceLabel": "WAU RT RDF List",
+                "id": "WAU:RT:RDF:list",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Add another subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:list"]
+                        }
+                    }
+                ]
             }
         ]
     }
