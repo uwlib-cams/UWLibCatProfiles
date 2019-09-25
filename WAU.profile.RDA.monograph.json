@@ -2272,7 +2272,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","http://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007",
