@@ -94,7 +94,7 @@
                         "remark": "http://access.rdatoolkit.org/6.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:names:place",
+                                "urn:ld4p:qa:names:geographic",
                                 "urn:ld4p:qa:subjects:place",
                                 "urn:ld4p:qa:geonames"
                             ]
@@ -125,7 +125,7 @@
                         "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:place"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:geographic"]
                         }
                     },
                     {
