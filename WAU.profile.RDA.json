@@ -18514,7 +18514,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 174,
+                        "uwFormOrder": 335.932,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [
@@ -20904,13 +20904,9 @@
                         "type": "literal",
                         "uwFormOrder": 128,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["Note on expression is fine for this"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/7.29.2.html"
                     },
                     {
@@ -22277,7 +22273,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 124.5,
+                        "uwFormOrder": 121.5,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -24603,16 +24599,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 121.5,
+                        "uwFormOrder": [],
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has addenda expression (RDA 24.5)",
@@ -25820,7 +25811,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.402,
+                        "uwFormOrder": 10.4021,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -25982,7 +25973,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 10.4021,
+                        "uwFormOrder": 10.402,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -27009,7 +27000,7 @@
                             "valueTemplateRefs": [],
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 114.5,
+                        "uwFormOrder": 286.9,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29049,7 +29040,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
                             "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.8.html"
@@ -29520,9 +29510,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "map"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.10.html"
                     },
@@ -29939,11 +29927,7 @@
                         "statusUw": "attention",
                         "noteUw": ["Problematic for manifestations--need a way for this to only apply to UW, or need to assign it to items"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "map"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/4.3.html"
                     },
                     {
@@ -29956,7 +29940,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 114.7,
+                        "uwFormOrder": 286.8,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -32172,10 +32156,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/2.17.5.html"
                     },
                     {
@@ -34135,22 +34116,11 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30182",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://www.rdaregistry.info/termList/RDACarrierEU"],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
+                        "type": "literal",
                         "uwFormOrder": 100,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "done",
                         "noteUw": [],
-                        "qUw": ["Presents an interesting question...we need a lookup for the type of extent and also a number to indicate how many. Should we just use a literal here?"],
+                        "qUw": ["Presents an interesting question...we need a lookup for the type of extent and also a number to indicate how many. Should we just use a literal here?","Yes, until we can have a literal and URI input for the same property in Sinopia"],
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
@@ -34651,8 +34621,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
