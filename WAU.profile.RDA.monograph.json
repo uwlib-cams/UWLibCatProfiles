@@ -153,18 +153,6 @@
                         "remark": "http://access.rdatoolkit.org/7.9.4.html"
                     },
                     {
-                        "propertyLabel": "has illustrations work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10093",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has note on work (RDA 5.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10330",
                         "mandatory": "false",

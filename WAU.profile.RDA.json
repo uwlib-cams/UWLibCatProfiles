@@ -65,7 +65,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.4,
+                        "uwFormOrder": 10.41,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -846,7 +846,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 168,
+                        "uwFormOrder": 160.1,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -932,7 +932,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 10.41,
+                        "uwFormOrder": 10.4,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1331,8 +1331,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "map"
+                           "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -1541,7 +1540,7 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyLabel": "has category of work (Genre lookup)(RDA 6.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1558,7 +1557,7 @@
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
                     {
-                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyLabel": "has category of work (Genre lookup)(RDA 6.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1581,7 +1580,7 @@
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
                     {
-                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyLabel": "has category of work (Genre lookup)(RDA 6.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1604,7 +1603,7 @@
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
                     {
-                        "propertyLabel": "has category of work (RDA 6.3)",
+                        "propertyLabel": "has category of work (Genre lookup)(RDA 6.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1650,7 +1649,7 @@
                         },
                         "uwFormOrder": 18,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["Not yet implemented at UW"],
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/7.7.html"
@@ -6902,7 +6901,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 15,
+                        "uwFormOrder": 0.1,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [
@@ -7165,14 +7164,9 @@
                         "type": "literal",
                         "uwFormOrder": 10.5,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["For works, we only need preferred and variant titles...title of work doesn't have a place outside of these two types, so this less-specific property is extraneous"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/6.2.html"
                     },
                     {
@@ -7251,8 +7245,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects:place",
-                                "urn:ld4p:qa:geonames"
+                                "urn:ld4p:qa:subjects:place"
                             ]
                         },
                         "uwFormOrder": 14,
@@ -8110,7 +8103,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 160.1,
+                        "uwFormOrder": 335.9,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -11218,7 +11211,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 138,
+                        "uwFormOrder": 160.9,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12372,14 +12365,11 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:geographic"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:geographic", "urn:ld4p:qa:subjects:place"]
                         },
                         "uwFormOrder": 17,
                         "statusUw": "",
-                        "noteUw": [
-                            "needs type-ahead formatting",
-                            "Need temporal coverage from somewhere too"
-                        ],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -12390,7 +12380,7 @@
                         "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
                     {
-                        "propertyLabel": "has nature of content (RDA 7.2)",
+                        "propertyLabel": "has nature of content (This is a note)(RDA 7.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -19026,7 +19016,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 160.3,
+                        "uwFormOrder": 335.93,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -19838,7 +19828,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 160.2,
+                        "uwFormOrder": 335.92,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -30517,7 +30507,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 160.4,
+                        "uwFormOrder": 335.94,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -31936,7 +31926,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 160.5,
+                        "uwFormOrder": 335.95,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -37636,7 +37626,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 160.6,
+                        "uwFormOrder": 335.96,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
