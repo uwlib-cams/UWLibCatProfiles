@@ -33,7 +33,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -73,7 +74,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -408,7 +410,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -430,7 +433,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -940,7 +944,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -1626,6 +1631,29 @@
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     },
                     {
+                        "propertyLabel": "has category of work (Genre lookup)(RDA 6.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10004",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:genres"],
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026174",
+                                    "defaultLiteral": "Serial publications"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": 12,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["serial"],
+                        "remark": "http://access.rdatoolkit.org/6.3.html"
+                    },
+                    {
                         "propertyLabel": "has intended audience of representative expression (RDA 7.7)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10217",
                         "mandatory": "false",
@@ -1957,7 +1985,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -2319,7 +2348,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/19.2.html"
                     },
@@ -2561,7 +2591,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.4.html"
                     },
@@ -3402,7 +3433,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo"
+                            "dvdVideo",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -4151,7 +4183,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -4951,7 +4984,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -5019,7 +5053,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -5229,7 +5264,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -5315,7 +5351,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -6912,7 +6949,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.8.html"
                     },
@@ -7183,7 +7221,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.2.3.html"
                     },
@@ -7256,7 +7295,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     },
@@ -7658,7 +7698,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -8111,7 +8152,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
                     },
@@ -8177,7 +8219,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.2.2.html"
                     },
@@ -9250,7 +9293,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -10972,7 +11016,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.6.html"
                     },
@@ -11700,7 +11745,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -12169,7 +12215,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -12375,7 +12422,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
@@ -13578,7 +13626,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -13704,7 +13753,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -14440,7 +14490,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -14457,7 +14508,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.13.html"
                     },
@@ -16171,7 +16223,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo"
+                            "dvdVideo",
+                            "serial"
                         ]
                     },
                     {
@@ -16628,7 +16681,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.13.2.html"
                     },
@@ -17022,7 +17076,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.14.html"
                     },
@@ -17620,7 +17675,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -18078,7 +18134,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
@@ -18504,7 +18561,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.10.html"
                     },
@@ -18523,7 +18581,8 @@
                         ],
                         "usedInProfile": [
                             "monograph",
-                            "etd"
+                            "etd",
+                            "serial"
                         ]
                     },
                     {
@@ -19024,7 +19083,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.9.html"
                     },
@@ -19262,7 +19322,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.11.html"
                     },
@@ -19836,7 +19897,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.6.html"
                     },
@@ -20090,7 +20152,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -20199,7 +20262,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -20879,7 +20943,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.29.html"
                     },
@@ -20904,9 +20969,9 @@
                         "type": "literal",
                         "uwFormOrder": 128,
                         "statusUw": "done",
-                        "noteUw": ["Note on expression is fine for this"],
+                        "noteUw": [""],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/7.29.2.html"
                     },
                     {
@@ -22281,7 +22346,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -24349,7 +24415,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.13.4.html"
                     },
@@ -24365,7 +24432,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.13.4.4.html"
                     },
@@ -24383,7 +24451,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.10.html"
                     },
@@ -24408,7 +24477,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "etd"
+                            "etd",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/6.9.html"
                     },
@@ -25035,7 +25105,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -25802,7 +25873,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -25819,7 +25891,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -25981,7 +26054,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -26687,7 +26761,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.3.6.html"
                     },
@@ -27006,7 +27081,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo"
+                            "dvdVideo",
+                            "serial"
                         ]
                     },
                     {
@@ -27977,7 +28053,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.11.html"
                     },
@@ -28350,7 +28427,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/21.4.html"
                     },
@@ -28483,7 +28561,8 @@
                         "usedInProfile": [
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
@@ -28620,7 +28699,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.7.3.html"
                     },
@@ -28638,7 +28718,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.7.4.html"
                     },
@@ -28815,7 +28896,8 @@
                         "usedInProfile": [
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.20.html"
                     },
@@ -29402,27 +29484,16 @@
                         "remark": "http://access.rdatoolkit.org/2.6.6.html"
                     },
                     {
-                        "propertyLabel": "has first alphanumeric designation of sequence (RDA 2.6.2)",
+                        "propertyLabel": "has numeric and/or alphabetic designation of first issue or part of sequence (RDA 2.6.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30147",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 46.1,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/2.6.2.html"
                     },
                     {
@@ -29450,27 +29521,16 @@
                         "remark": "http://access.rdatoolkit.org/2.6.7.html"
                     },
                     {
-                        "propertyLabel": "has first chronological designation of sequence (RDA 2.6.3)",
+                        "propertyLabel": "has chronological designation of first issue or part of sequence (RDA 2.6.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30149",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 46.2,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/2.6.3.html"
                     },
                     {
@@ -29598,7 +29658,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.10.2.html"
                     },
@@ -29616,7 +29677,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.10.6.html"
                     },
@@ -29699,7 +29761,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.10.3.html"
                     },
@@ -29717,7 +29780,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.10.4.html"
                     },
@@ -29825,7 +29889,7 @@
                         "statusUw": "attention RDA, dummy URI",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "serial"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
                     },
                     {
@@ -29947,7 +30011,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -30033,7 +30098,8 @@
                             "monograph",
                             "etd",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -30181,7 +30247,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.7.2.html"
                     },
@@ -30199,7 +30266,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.7.6.html"
                     },
@@ -30216,7 +30284,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.2.html"
                     },
@@ -30252,7 +30321,8 @@
                             "monograph",
                             "dvdVideo",
                             "map",
-                            "etd"
+                            "etd",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.6.html"
                     },
@@ -30294,7 +30364,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.2.html"
                     },
@@ -30312,7 +30383,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.6.html"
                     },
@@ -30330,7 +30402,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.7.html"
                     },
@@ -30348,7 +30421,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.3.html"
                     },
@@ -30366,7 +30440,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.3.html"
                     },
@@ -30407,7 +30482,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.4.html"
                     },
@@ -30482,6 +30558,31 @@
                         "remark": "http://access.rdatoolkit.org/2.13.html"
                     },
                     {
+                        "propertyLabel": "has mode of issuance (RDA 2.13)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "http://rdaregistry.info/termList/ModeIssue"],
+                            "valueDataType": {"dataTypeURI": ""},
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1003",
+                                    "defaultLiteral": "serial"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": 83,
+                        "statusUw": "attention RDA, dummy URI",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/2.13.html"
+                    },
+                    {
                         "propertyLabel": "has expression manifested (RDA 17.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30139",
                         "mandatory": "false",
@@ -30499,7 +30600,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.10.html"
                     },
@@ -30596,7 +30698,8 @@
                             "monograph",
                             "etd",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -30620,7 +30723,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.2.html"
                     },
@@ -30693,27 +30797,16 @@
                         "remark": "http://access.rdatoolkit.org/2.6.8.html"
                     },
                     {
-                        "propertyLabel": "has last alphanumeric designation of sequence (RDA 2.6.4)",
+                        "propertyLabel": "has numeric and/or alphabetic designation of last issue or part of sequence (RDA 2.6.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30148",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 46.3,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/2.6.4.html"
                     },
                     {
@@ -30743,25 +30836,14 @@
                     {
                         "propertyLabel": "has last chronological designation of sequence (RDA 2.6.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30150",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 46.4,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/2.6.5.html"
                     },
                     {
@@ -31263,7 +31345,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/21.5.html"
                     },
@@ -31373,7 +31456,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.3.4.html"
                     },
@@ -31404,13 +31488,26 @@
                         "propertyLabel": "has note on title (RDA 2.17.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30063",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 86,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
+                        "remark": "http://access.rdatoolkit.org/2.17.2.html"
+                    },
+                    {
+                        "propertyLabel": "has note on frequency (RDA 2.17.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30056",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 86.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     },
                     {
@@ -31473,7 +31570,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/3.21.4.html"
                     },
                     {
@@ -31502,7 +31599,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd"
+                            "etd",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.17.13.html"
                     },
@@ -31546,7 +31644,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.17.html"
                     },
@@ -31653,6 +31752,17 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
+                        "propertyLabel": "has frequency (RDA 2.14)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30168",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 84.1,
+                        "statusUW": "done",
+                        "usedInProfile": ["serial"],
+                        "remark": "http://access.rdatoolkit.org/2.14.html"
+                    },
+                    {
                         "propertyLabel": "has identifier for manifestation (RDA 2.15)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30004",
                         "mandatory": "false",
@@ -31665,7 +31775,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.15.html"
                     },
@@ -31850,7 +31961,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["etd"]
+                        "usedInProfile": ["etd", "serial"]
                     },
                     {
                         "propertyLabel": "is reproduced as manifestation (RDA 24.5)",
@@ -31918,7 +32029,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.11.html"
                     },
@@ -32053,7 +32165,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.5.html"
                     },
@@ -32156,7 +32269,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["serial"],
                         "remark": "http://access.rdatoolkit.org/2.17.5.html"
                     },
                     {
@@ -32197,7 +32310,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
@@ -32327,7 +32441,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.3.html"
                     },
@@ -32345,9 +32460,36 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.3.5.html"
+                    },
+                    {
+                        "propertyLabel": "has earlier title proper (RDA 2.3.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30130",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 36.5,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["serial"],
+                        "remark": "http://access.rdatoolkit.org/2.3.7.html"
+                    },
+                     {
+                        "propertyLabel": "has later title proper (RDA 2.3.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30129",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 36.6,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["serial"],
+                        "remark": "http://access.rdatoolkit.org/2.3.8.html"
                     },
                     {
                         "propertyLabel": "has parallel name of producer (RDA 2.7.5)",
@@ -32363,7 +32505,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.7.5.html"
                     },
@@ -32381,7 +32524,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.10.5.html"
                     },
@@ -32398,7 +32542,7 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
+                            "serial",
                             "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.5.html"
@@ -32417,7 +32561,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.9.html"
                     },
@@ -32435,7 +32580,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.5.html"
                     },
@@ -32453,7 +32599,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.7.html"
                     },
@@ -32471,7 +32618,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.4.3.html"
                     },
@@ -32513,7 +32661,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.3.3.html"
                     },
@@ -33225,7 +33374,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/21.3.html"
                     },
@@ -33697,7 +33847,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.4.html"
                     },
@@ -33715,7 +33866,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.5.html"
                     },
@@ -33799,7 +33951,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.8.html"
                     },
@@ -34023,7 +34176,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.4.html"
                     },
@@ -34041,7 +34195,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.6.html"
                     },
@@ -34059,7 +34214,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.4.2.html"
                     },
@@ -34125,7 +34281,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.4.html"
                     },
@@ -34143,7 +34300,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.9.2.html"
                     },
@@ -34161,7 +34319,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.9.6.html"
                     },
@@ -34203,7 +34362,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.9.3.html"
                     },
@@ -34221,7 +34381,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.9.4.html"
                     },
@@ -34303,7 +34464,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.12.2.html"
                     },
@@ -34377,7 +34539,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.3.2.html"
                     },
@@ -34580,7 +34743,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -36265,7 +36429,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ]
                     },
                     {
@@ -36559,7 +36724,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.21.html"
                     },
@@ -37089,7 +37255,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd"
+                            "etd",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.4.html"
                     },
@@ -37110,7 +37277,8 @@
                             "monograph",
                             "etd",
                             "dvdVideo",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": ""
                     },
@@ -37375,7 +37543,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -37602,7 +37771,8 @@
                             "monograph",
                             "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.12.html"
                     },
