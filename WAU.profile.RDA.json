@@ -21030,10 +21030,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/scale"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:scale_designation"]
                         },
                         "uwFormOrder": 126.5,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["map"],
@@ -24317,10 +24317,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:colour_content"]
                         },
                         "uwFormOrder": 27.5,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -24337,7 +24337,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://www.rdaregistry.info/termList/RDAColourContent/"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:colour_content"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003",
@@ -24346,7 +24346,7 @@
                             ]
                         },
                         "uwFormOrder": 27.5,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["Has default for polychrome"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -24407,10 +24407,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:form_of_tactile_notation"]
                         },
                         "uwFormOrder": 124.2,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -24463,7 +24463,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:content_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020",
@@ -24472,7 +24472,7 @@
                             ]
                         },
                         "uwFormOrder": 120,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
@@ -24489,7 +24489,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:content_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1023",
@@ -24498,7 +24498,7 @@
                             ]
                         },
                         "uwFormOrder": 120,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -24511,7 +24511,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:content_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1002",
@@ -24520,7 +24520,7 @@
                             ]
                         },
                         "uwFormOrder": 120,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["map"],
@@ -25129,10 +25129,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://rdaregistry.info/termList/AspectRatio"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:aspect_ratio"]
                         },
                         "uwFormOrder": 126.2,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -25902,7 +25902,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "http://www.rdaregistry.info/termList/RDAMaterial"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:material"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025",
@@ -25911,7 +25911,7 @@
                             ]
                         },
                         "uwFormOrder": 102,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -25951,7 +25951,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "http://www.rdaregistry.info/termList/RDAMaterial"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:material"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017",
@@ -25960,7 +25960,7 @@
                             ]
                         },
                         "uwFormOrder": 103,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -26161,10 +26161,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/fontSize"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:font_size"]
                         },
                         "uwFormOrder": 109,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -26205,10 +26205,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/bookFormat"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:bibliographic_format"]
                         },
                         "uwFormOrder": 108,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -29115,10 +29115,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDAMaterial"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:material"]
                         },
                         "uwFormOrder": 104,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -29170,7 +29170,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:file_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/fileType/1006",
@@ -29179,7 +29179,7 @@
                             ]
                         },
                         "uwFormOrder": 109.9,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["default for video files"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -29192,13 +29192,13 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:file_type"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1002"}
                             ]
                         },
                         "uwFormOrder": 109.9,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["defaults for etds"],
                         "qUw": [],
                         "usedInProfile": ["etd"],
@@ -29211,10 +29211,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://rdaregistry.info/termList/fileType"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:file_type"]
                         },
                         "uwFormOrder": 109.9,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["map"],
@@ -29264,7 +29264,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://rdaregistry.info/termList/typeRec"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:type_of_recording"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/typeRec/1002",
@@ -29273,7 +29273,7 @@
                             ]
                         },
                         "uwFormOrder": 109.2,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["Has default for digital"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -29563,10 +29563,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDAGeneration"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:generation"]
                         },
                         "uwFormOrder": 106,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -29713,10 +29713,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDAproductionMethod"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:production_method"]
                         },
                         "uwFormOrder": 105,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -29732,7 +29732,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDAproductionMethod"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:production_method"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAproductionMethod/1017",
@@ -29741,7 +29741,7 @@
                             ]
                         },
                         "uwFormOrder": 105,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -29877,7 +29877,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008",
@@ -29886,7 +29886,7 @@
                             ]
                         },
                         "uwFormOrder": 99,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "serial"],
@@ -29899,7 +29899,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1060",
@@ -29908,7 +29908,7 @@
                             ]
                         },
                         "uwFormOrder": 99,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -29921,7 +29921,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1018",
@@ -29930,7 +29930,7 @@
                             ]
                         },
                         "uwFormOrder": 99,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["etd"],
@@ -29943,7 +29943,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1048",
@@ -29952,7 +29952,7 @@
                             ]
                         },
                         "uwFormOrder": 99,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["map"],
@@ -30536,7 +30536,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "http://rdaregistry.info/termList/ModeIssue"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:mode_of_issuance"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -30546,7 +30546,7 @@
                             ]
                         },
                         "uwFormOrder": 83,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -30564,7 +30564,7 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "http://rdaregistry.info/termList/ModeIssue"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:mode_of_issuance"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -30574,7 +30574,7 @@
                             ]
                         },
                         "uwFormOrder": 83,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -30709,7 +30709,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:media_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007",
@@ -30718,7 +30718,7 @@
                             ]
                         },
                         "uwFormOrder": 98,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -30735,7 +30735,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:media_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1008",
@@ -30744,7 +30744,7 @@
                             ]
                         },
                         "uwFormOrder": 98,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -30757,7 +30757,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:media_type"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1003",
@@ -30766,7 +30766,7 @@
                             ]
                         },
                         "uwFormOrder": 98,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["etd"],
@@ -32856,7 +32856,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/configPlayback"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:config_playback_channels"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/configPlayback/1002",
@@ -32865,7 +32865,7 @@
                             ]
                         },
                         "uwFormOrder": 109.4,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["has default for stereo"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -32902,10 +32902,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/RDAPolarity"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:polarity"]
                         },
                         "uwFormOrder": 109.5,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["map"],
@@ -32989,10 +32989,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/presFormat"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:presentation_format"]
                         },
                         "uwFormOrder": 109.6,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -33478,7 +33478,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/RDARegionalEncoding"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:regional_encoding"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/RDARegionalEncoding/1002",
@@ -33487,7 +33487,7 @@
                             ]
                         },
                         "uwFormOrder": 109.94,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -33685,7 +33685,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/recMedium"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:recording_medium"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/recMedium/1003",
@@ -33694,7 +33694,7 @@
                             ]
                         },
                         "uwFormOrder": 109.3,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["has default for optical"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -33901,13 +33901,13 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://www.rdaregistry.info/termList/specPlayback"],
+                            "useValuesFrom": [ "urn:ld4p:qa:rda_registry_ld4l_cache:special_playback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
                         },
                         "uwFormOrder": 109.41,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": ["has default for DVDs"],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -33963,7 +33963,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://rdaregistry.info/termList/broadcastStand"],
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:broadcast_standard"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/broadcastStand/1002",
@@ -33972,7 +33972,7 @@
                             ]
                         },
                         "uwFormOrder": 109.8,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -34476,10 +34476,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia","https://www.rdaregistry.info/termList/layout"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:layout"]
                         },
                         "uwFormOrder": 107,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -34611,10 +34611,10 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "https://rdaregistry.info/termList/videoFormat"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:video_format"]
                         },
                         "uwFormOrder": 109.7,
-                        "statusUw": "attention RDA, dummy URI",
+                        "statusUw": "attention RDA",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
