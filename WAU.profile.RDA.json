@@ -76,7 +76,8 @@
                             "etd",
                             "map",
                             "serial"
-                        ]
+                        ],
+                        "remark": "http://access.rdatoolkit.org/6.1.2.html"
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
@@ -115,7 +116,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo"
-                        ]
+                        ],
+                        "remark": "http://access.rdatoolkit.org/19.3.html"
                     },
                     {
                         "propertyLabel": "has addressee collective agent",
@@ -9295,7 +9297,8 @@
                             "etd",
                             "map",
                             "serial"
-                        ]
+                        ],
+                        "remark": "http://access.rdatoolkit.org/5.9.html"
                     },
                     {
                         "propertyLabel": "is opera adaptation of work (RDA 24.5)",
