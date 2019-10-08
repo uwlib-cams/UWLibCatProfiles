@@ -12203,17 +12203,18 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "WAU:RT:MADSRDF:complexSubject",
-                                "WAU:RT:MADSRDF:simpleSubject"
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:mesh"
                             ]
                         },
                         "uwFormOrder": 683,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
-                        "qUw": ["do our own MADS profile"],
+                        "qUw": [],
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
