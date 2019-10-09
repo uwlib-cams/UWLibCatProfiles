@@ -60,6 +60,28 @@
                         "qUw": [],
                         "usedInProfile": []
                     },
+                    { 
+                        "propertyLabel": "is same as LC NAF work",
+                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": 10.401,
+                        "statusUW": "attention",
+                        "noteUW": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ]
+                    },
                     {
                         "propertyLabel": "has access point for work (RDA 6.1.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10328",
@@ -13625,6 +13647,28 @@
                         "uwFormOrder": 0,
                         "statusUw": "done",
                         "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ]
+                    },
+                    { 
+                        "propertyLabel": "is same as LC NAF expression",
+                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": 10.401,
+                        "statusUW": "attention",
+                        "noteUW": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
