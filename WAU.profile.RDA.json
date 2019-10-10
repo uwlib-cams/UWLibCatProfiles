@@ -13789,27 +13789,19 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has category of expression",
+                        "propertyLabel": "has category of expression (Lookup for genres and LCSH applicable to expressions)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20331",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 12.1,
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has censor agent (RDA 18.5)",
@@ -25869,27 +25861,19 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has category of manifestation",
+                        "propertyLabel": "has category of manifestation (Lookup for genres and LCSH applicable to expressions)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30335",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 12.2,
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has title of manifestation (RDA 2.3)",
