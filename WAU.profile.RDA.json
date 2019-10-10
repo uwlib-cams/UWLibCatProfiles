@@ -91,13 +91,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/6.1.2.html"
                     },
                     {
@@ -12926,25 +12920,14 @@
                     {
                         "propertyLabel": "has variant access point for work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10332",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 10.41,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "etd", "dvdVideo", "map", "serial"]
                     },
                     {
                         "propertyLabel": "is adapted in verse as work (RDA 24.5)",
@@ -13452,13 +13435,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has actor agent (RDA 18.5)",
@@ -24712,25 +24689,14 @@
                     {
                         "propertyLabel": "has variant access point for expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20314",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 10.401,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has variant title of expression",
