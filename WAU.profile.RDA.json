@@ -4431,7 +4431,7 @@
                         },
                         "uwFormOrder": 401,
                         "statusUw": "attention dummy lookup",
-                        "noteUw": ["Crystal is here"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "etd", "dvdVideo", "map", "serial"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -4439,25 +4439,17 @@
                     {
                         "propertyLabel": "is inspired by (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10290",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 401.1,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "etd", "dvdVideo", "map", "serial"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -4695,7 +4687,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -5191,9 +5183,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "valueConstraint": {
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        },
                         "uwFormOrder": 336.5,
-                        "statusUw": "attention",
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5230,25 +5225,22 @@
                     {
                         "propertyLabel": "has related manifestation of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10309",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 336.51,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"]
                     },
                     {
                         "propertyLabel": "has related nomen of work",
@@ -5276,25 +5268,22 @@
                     {
                         "propertyLabel": "has related item of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10310",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 336.52,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"]
                     },
                     {
                         "propertyLabel": "has related person of work",
@@ -5345,49 +5334,38 @@
                     {
                         "propertyLabel": "has catalogue work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10110",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 431,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "is adapted as graphic novel work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10251",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 378,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -5448,222 +5426,150 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["map"]
+                        "usedInProfile": ["map", "serial"]
                     },
                     {
                         "propertyLabel": "is critique of expression (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10281",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 705,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is analysis of expression (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10278",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 703,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is evaluation of expression (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10279",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 706,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is description of expression (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10277",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 702,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is review of expression (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10280",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 707,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is commentary on expression (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10282",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 704,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is commentary on manifestation (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10276",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 716,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is commentary on item (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10270",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 728,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "has concordance work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10111",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 432,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -5693,73 +5599,49 @@
                     {
                         "propertyLabel": "is adapted as choreography work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10091",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 531.1,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "has choreography work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10247",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 440,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "is choreography for work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10248",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 441,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -5823,7 +5705,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -6101,25 +5983,17 @@
                     {
                         "propertyLabel": "has libretto work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10165",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 442,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -6236,25 +6110,17 @@
                     {
                         "propertyLabel": "is lyrics for work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10369",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 442.5,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has lyrics work",
@@ -6348,25 +6214,17 @@
                     {
                         "propertyLabel": "has commemoration (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10294",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                        "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 407,
+                        "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
