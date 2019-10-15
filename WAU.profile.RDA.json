@@ -95,6 +95,26 @@
                         "remark": "http://access.rdatoolkit.org/6.1.2.html"
                     },
                     {
+                       "propertyLabel": "work has contributor agent (RDA 18.5)",
+                       "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
+                       "mandatory": "false",
+                       "repeatable": "true",
+                       "type": "lookup",
+                       "valueConstraint": {
+                           "useValuesFrom": ["urn:ld4p:qa:names"]
+                       },
+                       "uwFormOrder": 233,
+                       "statusUW": "done",
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
                         "mandatory": "false",
@@ -1672,6 +1692,21 @@
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/7.7.html"
+                    },
+                    {
+                        "propertyLabel": "has creator characteristic",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:demographics", "urn:ld4p:qa:subjects"]
+                        },
+                        "uwFormOrder": 18.1,
+                        "statusUw": "done",
+                        "noteUw": [""],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has choreographer agent (RDA 18.5)",
@@ -8573,6 +8608,25 @@
                         "remark": "http://access.rdatoolkit.org/5.9.html"
                     },
                     {
+                        "propertyLabel": "has University of Washington-specific note on work (RDA 5.9)",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 29.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/5.9.html"
+                    },
+                    {
                         "propertyLabel": "is opera adaptation of work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10234",
                         "mandatory": "",
@@ -11480,7 +11534,7 @@
                             "map",
                             "serial"
                         ],
-                        "remark": "http://access.rdatoolkit.org/23.5.html"
+                        "remark": "http://access.rdatoolkit.org/23.4.html"
                     },
                     {
                         "propertyLabel": "has subject expression",
@@ -12843,6 +12897,54 @@
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
+                    },
+                    {
+                        "propertyLabel": "work has LC Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "work has LC Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "work has NLM Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
+                    },
+                    {
+                        "propertyLabel": "work has NLM Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
                     }
                 ]
             },
@@ -12895,6 +12997,26 @@
                             "map",
                             "serial"
                         ]
+                    },
+                    {
+                       "propertyLabel": "expression has contributor agent (RDA 18.5)",
+                       "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
+                       "mandatory": "false",
+                       "repeatable": "true",
+                       "type": "lookup",
+                       "valueConstraint": {
+                           "useValuesFrom": ["urn:ld4p:qa:names"]
+                       },
+                       "uwFormOrder": 233.1,
+                       "statusUW": "done",
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "has abridger agent (RDA 18.5)",
@@ -13792,7 +13914,7 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has category of expression (Lookup for genres and LCSH applicable to expressions)",
+                        "propertyLabel": "has category of expression (Lookup for genres applicable to expressions)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20331",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -13801,7 +13923,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"]
                         },
                         "uwFormOrder": 12.1,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"]
@@ -20166,6 +20288,25 @@
                         "remark": "http://access.rdatoolkit.org/7.29.html"
                     },
                     {
+                        "propertyLabel": "has University of Washington-specific note on expression (RDA 7.29)",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 127.2,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/7.29.html"
+                    },
+                    {
                         "propertyLabel": "has note on capture (RDA 7.11.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20309",
                         "mandatory": "false",
@@ -25012,6 +25153,76 @@
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
+                    },
+                    {
+                        "propertyLabel": "expression has subject (RDA 23.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/u/P60001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects","urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": 683.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/23.4.html"
+                    },
+                    {
+                        "propertyLabel": "expression has LC Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.2,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "expression has LC Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.3,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "expression has NLM Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.2,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
+                    },
+                    {
+                        "propertyLabel": "expression has NLM Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.3,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
                     }
                 ]
             },
@@ -25427,6 +25638,26 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
+                    },
+                    {
+                       "propertyLabel": "manifestation has contributor agent (RDA 18.5)",
+                       "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
+                       "mandatory": "false",
+                       "repeatable": "true",
+                       "type": "lookup",
+                       "valueConstraint": {
+                           "useValuesFrom": ["urn:ld4p:qa:names"]
+                       },
+                       "uwFormOrder": 233.2,
+                       "statusUW": "done",
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "has book designer agent (RDA 18.5)",
@@ -25864,7 +26095,7 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has category of manifestation (Lookup for genres and LCSH applicable to expressions)",
+                        "propertyLabel": "has category of manifestation (Lookup for genres applicable to expressions)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30335",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -25873,10 +26104,10 @@
                             "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"]
                         },
                         "uwFormOrder": 12.2,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has title of manifestation (RDA 2.3)",
@@ -30795,6 +31026,25 @@
                         "remark": "http://access.rdatoolkit.org/2.17.html"
                     },
                     {
+                        "propertyLabel": "has University of Washington-specific note on manifestation (RDA 2.17)",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 85.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/7.29.html"
+                    },
+                    {
                         "propertyLabel": "has note on extent of manifestation (RDA 3.21.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30061",
                         "mandatory": "false",
@@ -31056,8 +31306,11 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
                             "etd",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.5.html"
                     },
@@ -33852,6 +34105,129 @@
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/2.15.3.html"
+                    },
+                    {
+                        "propertyLabel": "manifestation has subject (RDA 23.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/u/P60001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects","urn:ld4p:qa:names"]
+                        },
+                        "uwFormOrder": 683.2,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/23.4.html"
+                    },
+                    {
+                        "propertyLabel": "manifestation held by",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:organization"
+                            ],
+                            "defaults": [
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
+                                    "defaultLiteral": "WAU"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": 747,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ]
+                    },
+                    {
+                        "propertyLabel": "manifestation has LC Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.4,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "manifestation has LC Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.5,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "manifestation has NLM Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.4,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
+                    },
+                    {
+                        "propertyLabel": "manifestation has NLM Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.5,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
+                    },
+                    {
+                        "propertyLabel": "manifestation has LC Geographic Classification",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.51,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["map"]
+                    }, 
+                    {
+                        "propertyLabel": "manifestation has SuDoc Classification Number",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.52,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
                     }
                 ]
             },
@@ -33906,6 +34282,26 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
+                    },
+                    {
+                       "propertyLabel": "item has contributor agent (RDA 18.5)",
+                       "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
+                       "mandatory": "false",
+                       "repeatable": "true",
+                       "type": "lookup",
+                       "valueConstraint": {
+                           "useValuesFrom": ["urn:ld4p:qa:names"]
+                       },
+                       "uwFormOrder": 233.3,
+                       "statusUW": "done",
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "has annotator (RDA 18.5)",
@@ -36347,25 +36743,20 @@
                     {
                         "propertyLabel": "has restriction on use of item (RDA 4.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40048",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 117.1,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ],
                         "remark": "http://access.rdatoolkit.org/4.5.html"
                     },
                     {
@@ -36967,6 +37358,131 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
+                    },
+                    {
+                        "propertyLabel": "item held by",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:organization"
+                            ],
+                            "defaults": [
+                                {
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
+                                    "defaultLiteral": "WAU"
+                                }
+                            ]
+                        },
+                        "uwFormOrder": 747.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "dvdVideo",
+                            "etd",
+                            "map",
+                            "serial"
+                        ]
+                    },
+                    {
+                        "propertyLabel": "item has LC Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.6,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has LC Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.7,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has NLM Classification Number Part A",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.6,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has NLM Classification Number Part B",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 119.7,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has SuDoc Classification Number",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 118.53,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has physical location",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 154,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has physical sublocation",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4# hasPhysicalSubLocation",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 154.1,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                    },
+                    {
+                        "propertyLabel": "item has barcode",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 154.2,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
                     }
                 ]
             },
