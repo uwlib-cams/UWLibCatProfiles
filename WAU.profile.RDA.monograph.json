@@ -2690,7 +2690,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
+                            "useValuesFrom": [ "urn:ld4p:qa:dbpedia"]
                         }
                     },
                     {

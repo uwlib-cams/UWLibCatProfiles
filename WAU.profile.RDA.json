@@ -15880,7 +15880,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
+                            "useValuesFrom": [ "urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 124,
                         "statusUw": "done",
