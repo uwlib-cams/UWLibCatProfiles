@@ -22,7 +22,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:monograph"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
@@ -2523,7 +2523,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:monograph"]
                         }
                     },
                     {
@@ -3355,7 +3355,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:monograph"]
                         }
                     },
                     {
@@ -4238,7 +4238,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:monograph"]
                         }
                     },
                     {
@@ -4554,7 +4554,7 @@
                         "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:Status"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata:Status:monograph"]
                         }
                     },
                     {
@@ -4652,7 +4652,7 @@
                 ]
             },
             {
-                "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status:monograph",
+                "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status:monograph:monograph",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
