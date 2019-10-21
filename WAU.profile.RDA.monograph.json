@@ -4652,7 +4652,7 @@
                 ]
             },
             {
-                "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status:monograph:monograph",
+                "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status:monograph",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
