@@ -4301,7 +4301,7 @@
                     },
                     {
                         "propertyLabel": "item has physical sublocation",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4# hasPhysicalSubLocation",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
