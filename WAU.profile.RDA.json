@@ -2542,10 +2542,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "etd",
-                            "dvdVideo",
-                            "serial"
+                            
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -2852,10 +2849,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "etd",
-                            "dvdVideo",
-                            "serial"
+                            
                         ]
                     },
                     {
@@ -2918,9 +2912,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "etd",
-                            "dvdVideo"
+                            
                         ]
                     },
                     {
@@ -2937,10 +2929,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "etd",
-                            "dvdVideo",
-                            "serial"
+                            
                         ]
                     },
                     {
@@ -5587,8 +5576,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo"
+                            
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -6443,8 +6431,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo"
+                            
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -7895,11 +7882,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial"
+                            
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -9007,7 +8990,7 @@
                         "statusUw": "attention dummy lookup",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -11229,9 +11212,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd"
+                            
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -18349,7 +18330,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 335.92,
+                        "uwFormOrder": 0.01,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -28782,7 +28763,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 335.94,
+                        "uwFormOrder": 0.02,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
@@ -36113,7 +36094,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": 335.96,
+                        "uwFormOrder": 0.03,
                         "statusUw": "done",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia"],
                         "qUw": [],
