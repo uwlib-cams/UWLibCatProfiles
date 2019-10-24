@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-10-22",
+        "date": "2019-10-24",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -12798,7 +12798,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -24086,7 +24086,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -32890,7 +32890,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -34161,96 +34161,64 @@
                     {
                         "propertyLabel": "has equivalent item (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40031",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 664,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "map", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "is on disc with item (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40035",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 682,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "has electronic reproduction of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40088",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 673,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has facsimile of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40089",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 674,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "map", "dvdVideo", "serial"]
                     },
                     {
                         "propertyLabel": "has former owner agent (RDA 18.5)",
@@ -35085,7 +35053,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -35277,97 +35246,65 @@
                     {
                         "propertyLabel": "is item reviewed in (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40067",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 725,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is item critiqued in (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40065",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 723,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is item analysed in (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40063",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 721,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
                         "propertyLabel": "is item evaluated in (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40066",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 724,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -35586,25 +35523,17 @@
                     {
                         "propertyLabel": "has preservation facsimile of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40090",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 669,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "map", "serial", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related entity of item",
@@ -35655,48 +35584,32 @@
                     {
                         "propertyLabel": "is reprinted as item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40091",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 670,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "map", "serial"]
                     },
                     {
                         "propertyLabel": "is reproduced as item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40092",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 665,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has restorationist agent of item (RDA 18.5)",
@@ -36180,7 +36093,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -60571,7 +60484,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -64368,7 +64281,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -65570,7 +65483,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -66912,7 +66825,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67121,7 +67034,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67153,7 +67066,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
                 "resourceLabel": "WAU RT MADS RDF Complex Subject",
                 "id": "WAU:RT:MADSRDF:complexSubject",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67194,7 +67107,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
                 "resourceLabel": "WAU RT MADS RDF Subject",
                 "id": "WAU:RT:MADSRDF:simpleSubject",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67225,7 +67138,7 @@
                 "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
                 "resourceLabel": "WAU RT RDF List",
                 "id": "WAU:RT:RDF:list",
-                "date": "2019-10-22",
+                "date": "2019-10-24",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
