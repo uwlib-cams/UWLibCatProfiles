@@ -70,7 +70,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 10.401,
-                        "statusUW": "attention",
+                        "statusUW": "done",
                         "noteUW": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -2538,7 +2538,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 735,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -2845,7 +2845,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 734.9,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -2908,7 +2908,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 737.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -2925,7 +2925,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 734.8,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -3566,7 +3566,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 734.7,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -3804,7 +3804,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 388,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -3823,7 +3823,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 387.9,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -4055,7 +4055,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 388.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -4074,7 +4074,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 388.2,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -4090,7 +4090,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 387.91,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -4242,7 +4242,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 417.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -4466,7 +4466,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 425.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -4486,7 +4486,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 401,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -4508,7 +4508,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 401.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5256,7 +5256,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 336.5,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5300,7 +5300,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 336.51,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5344,7 +5344,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 336.52,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5411,7 +5411,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 431,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5433,7 +5433,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 378,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5515,7 +5515,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 705,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5534,7 +5534,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 703,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5553,7 +5553,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 706,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5572,7 +5572,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 702,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5590,7 +5590,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 707,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5609,7 +5609,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 704,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5628,7 +5628,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 716,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5647,7 +5647,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 728,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5666,7 +5666,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 432,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -5706,7 +5706,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 531.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5725,7 +5725,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 440,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -5744,7 +5744,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 441,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6099,7 +6099,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 442,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -6226,7 +6226,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 442.5,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
@@ -6330,7 +6330,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 407,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6350,7 +6350,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 408,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6370,7 +6370,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 717,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6389,7 +6389,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 715,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6408,7 +6408,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 718,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6427,7 +6427,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 714,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6445,7 +6445,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 719,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6465,7 +6465,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 380,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6484,7 +6484,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 446,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -6500,7 +6500,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 341,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6520,7 +6520,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 427,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6542,7 +6542,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 477,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6562,7 +6562,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 480,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6582,7 +6582,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 439,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6604,7 +6604,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 478,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6626,7 +6626,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 466,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6646,7 +6646,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 479,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6668,7 +6668,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 369,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -6682,11 +6682,8 @@
                         "type": "literal",
                         "uwFormOrder": 0.1,
                         "statusUw": "attention",
-                        "noteUw": [],
-                        "qUw": [
-                            "Need to be able to assign a source (CEC)",
-                            "Will be able to mint in Sinopia. In development. Don't know how to format lookup yet/where to point it"
-                        ],
+                        "noteUw": ["This is not sufficient due to lack of typing. Need properties for each kind of identifier"],
+                        "qUw": [],
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
@@ -6706,7 +6703,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 687,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6728,7 +6725,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 400,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6748,7 +6745,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 688,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6770,7 +6767,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 376,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6790,7 +6787,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 686,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6812,7 +6809,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 684,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6834,7 +6831,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 689,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6856,7 +6853,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 468,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6878,7 +6875,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 693,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6897,7 +6894,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 362,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6949,7 +6946,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 343,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -6968,7 +6965,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 691,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7013,7 +7010,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 470,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7033,7 +7030,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 461,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7049,7 +7046,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 474,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7065,7 +7062,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 484,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7081,7 +7078,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 433,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7102,7 +7099,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 417,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7121,7 +7118,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 421,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7137,7 +7134,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 423,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7153,7 +7150,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 692,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7172,7 +7169,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 425,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7188,7 +7185,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 426,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7209,7 +7206,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 416,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7324,7 +7321,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 336,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": ["Under development currently as of 2019-07-16. We will know where to point this as a lookup soon."],
                         "qUw": [],
                         "usedInProfile": [
@@ -7345,7 +7342,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 419,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7361,7 +7358,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 377,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7380,7 +7377,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 403,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7396,7 +7393,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 397,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7417,7 +7414,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 395,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7436,7 +7433,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 375,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7456,7 +7453,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 396,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7475,7 +7472,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 374,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7539,7 +7536,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 406,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7559,7 +7556,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 554.5,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7578,7 +7575,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 398,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7594,7 +7591,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 404,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7637,7 +7634,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 344,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7653,7 +7650,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 415,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7675,7 +7672,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 694,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7786,7 +7783,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 339,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7805,7 +7802,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 361,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7824,7 +7821,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 340,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7843,7 +7840,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 420,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7859,7 +7856,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 342,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7878,7 +7875,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 690,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7896,7 +7893,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 443,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -7912,7 +7909,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 379,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -7955,7 +7952,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 346,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -7971,7 +7968,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 350,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -7987,7 +7984,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 371,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8009,7 +8006,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 471,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8031,7 +8028,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 365,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8050,7 +8047,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 351,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -8066,7 +8063,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 348,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8082,7 +8079,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 487,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8104,7 +8101,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 485,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8126,7 +8123,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 467,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8148,7 +8145,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 473,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8170,7 +8167,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 338,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8189,7 +8186,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 363,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8205,7 +8202,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 695,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8244,7 +8241,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 357,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -8260,7 +8257,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 475,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8304,7 +8301,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 370,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8323,7 +8320,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 364,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8344,7 +8341,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 358,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8360,7 +8357,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 359,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -8400,7 +8397,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 337,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8422,7 +8419,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 354,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8438,7 +8435,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 353,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8454,7 +8451,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 345,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8470,7 +8467,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 352,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8486,7 +8483,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 355,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8526,7 +8523,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 356,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -8566,7 +8563,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 347,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8671,7 +8668,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 349,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8690,7 +8687,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 383,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8733,7 +8730,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 384,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8864,7 +8861,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 482,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8886,7 +8883,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 748,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8908,7 +8905,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 749,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8930,7 +8927,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 729,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8949,7 +8946,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 727,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8968,7 +8965,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 730,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -8987,7 +8984,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 726,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -9003,7 +9000,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 731,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -9153,7 +9150,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 428,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -9174,7 +9171,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 472,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -9586,7 +9583,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 385,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -9738,7 +9735,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 386,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -9915,7 +9912,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 382,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -9934,7 +9931,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 750,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"]
@@ -9949,7 +9946,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 751,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"]
@@ -10650,7 +10647,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 476.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -10876,7 +10873,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 658,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["serial"]
@@ -10891,7 +10888,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 654,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -11162,7 +11159,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 373,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -11208,7 +11205,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 733,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -11250,7 +11247,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 463.1,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -11266,7 +11263,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 463,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -11282,7 +11279,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 464,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
@@ -11298,7 +11295,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 438,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -11881,7 +11878,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 752,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -11955,7 +11952,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 753,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -11995,7 +11992,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 754,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12394,7 +12391,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 435,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12448,7 +12445,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 394,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12467,7 +12464,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 390,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12486,7 +12483,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 393,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12505,7 +12502,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 392,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12524,7 +12521,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 460,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -12540,7 +12537,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 449,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
@@ -12556,7 +12553,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 685,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12602,7 +12599,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 444,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12669,7 +12666,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 381,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -12833,7 +12830,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 10.401,
-                        "statusUW": "attention",
+                        "statusUW": "done",
                         "noteUW": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -13525,7 +13522,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 522,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -13546,7 +13543,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 559,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -13567,7 +13564,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 701,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -13734,7 +13731,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 578,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -15266,7 +15263,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 548,
-                        "statusUw": "attention dummy lookup",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
@@ -27200,7 +27197,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["do we use this? ask adam? wait for someone to need it?"],
                         "usedInProfile": []
@@ -27215,7 +27212,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["do we use this? ask adam? wait for someone to need it?"],
                         "usedInProfile": [],
@@ -28122,8 +28119,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 116,
-                        "statusUw": "attention",
+                        "uwFormOrder": -1,
+                        "statusUw": "",
                         "noteUw": ["Problematic for manifestations--need a way for this to only apply to UW, or need to assign it to items"],
                         "qUw": [],
                         "usedInProfile": [],
@@ -39542,11 +39539,11 @@
                     {
                         "propertyLabel": "has category of family (RDA 10.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50051",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:subjects"],
+                            "useValuesFrom": [""],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
@@ -39555,8 +39552,8 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 138,
-                        "statusUw": "attention",
+                        "uwFormOrder": -1,
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -43471,7 +43468,7 @@
                             ]
                         },
                         "uwFormOrder": 141,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [""],
@@ -46998,7 +46995,7 @@
                             ]
                         },
                         "uwFormOrder": 136,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -58609,7 +58606,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 133,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [""],
@@ -58663,7 +58660,7 @@
                             "valueDataType": {"dataTypeURI": ""}
                         },
                         "uwFormOrder": 129,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -58727,7 +58724,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:subjects"]
                         },
                         "uwFormOrder": 135,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": ["Maybe a relator lookup? https://id.loc.gov/vocabulary/relators CEC: this one is counterintuitive, but we use LCDGT occ terms for this, or LCSH as an alternative"],
                         "usedInProfile": [],
@@ -59283,7 +59280,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 150,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [],
@@ -66801,20 +66798,20 @@
                     {
                         "propertyLabel": "has owner",
                         "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
+                            "useValuesFrom": [],
                             "defaults": [
                                 {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
+                                    "defaultURI": "",
+                                    "defaultLiteral": ""
                                 }
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "attention",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
