@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-10-28",
+        "date": "2019-10-29",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan, Administrative Metadata, Status, Complex Subject, Simple Type, RDF List",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -12748,7 +12748,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -17080,7 +17080,7 @@
                         },
                         "uwFormOrder": 493,
                         "statusUw": "done",
-                        "noteUw": ["Crystal is here"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -17570,7 +17570,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -17736,7 +17736,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"],
+                        "usedInProfile": ["monograph", "etd", "dvdVideo", "map", "serial"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -17752,7 +17752,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -17926,7 +17926,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -17982,7 +17982,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -18014,7 +18014,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "serial"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -18799,7 +18799,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 299.5,
                         "statusUw": "done",
@@ -18948,7 +18948,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -18958,7 +18958,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 254,
                         "statusUw": "done",
@@ -19066,7 +19066,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 255,
                         "statusUw": "done",
@@ -19260,25 +19260,17 @@
                     {
                         "propertyLabel": "is set to music as expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20087",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 560,
-                        "statusUw": "",
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -19302,11 +19294,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20228",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:scale_designation"]
-                        },
+                        "type": "literal",
                         "uwFormOrder": 126.5,
                         "statusUw": "done",
                         "noteUw": [],
@@ -19317,25 +19305,17 @@
                     {
                         "propertyLabel": "has scale designation (RDA 7.25.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20291",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:scale_designation"]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "uwFormOrder": 126.6,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["map"],
                         "remark": "http://access.rdatoolkit.org/7.25.6.html"
                     },
                     {
@@ -19345,15 +19325,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:names"],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 256,
                         "statusUw": "done",
@@ -19577,7 +19549,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 270,
                         "statusUw": "done",
@@ -19688,7 +19660,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 258,
                         "statusUw": "done",
@@ -19796,21 +19768,13 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:names"],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 257,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -19912,7 +19876,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 271,
                         "statusUw": "done",
@@ -20023,7 +19987,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 259,
                         "statusUw": "done",
@@ -20131,7 +20095,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 272,
                         "statusUw": "done",
@@ -20311,7 +20275,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 273,
                         "statusUw": "done",
@@ -20454,7 +20418,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 260,
                         "statusUw": "done",
@@ -20606,7 +20570,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 279,
                         "statusUw": "done",
@@ -20713,25 +20677,23 @@
                     {
                         "propertyLabel": "has prime meridian",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20317",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
+                            "useValuesFrom": ["urn:ld4p:qa:names:geographic"],
                             "defaults": [
                                 {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
+                                    "defaultURI": "http://id.loc.gov/authorities/names/n80002421",
+                                    "defaultLiteral": "Greenwich (London, England)"
                                 }
                             ]
                         },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
-                        "noteUw": [],
+                        "uwFormOrder": 126.7,
+                        "statusUw": "done",
+                        "noteUw": ["This is usually a note in MARC, but it would be pretty cool to turn it into linked data instead, so here it is (CEC)"],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["map"]
                     },
                     {
                         "propertyLabel": "has production designer agent (RDA 18.5)",
@@ -20740,7 +20702,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 280,
                         "statusUw": "done",
@@ -20851,7 +20813,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 274,
                         "statusUw": "done",
@@ -20992,7 +20954,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -21018,7 +20980,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 251,
                         "statusUW": "done",
@@ -21153,7 +21115,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 281,
                         "statusUw": "done",
@@ -21345,7 +21307,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 282,
                         "statusUw": "done",
@@ -21453,7 +21415,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 299.7,
                         "statusUw": "done",
@@ -21619,7 +21581,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 275,
                         "statusUw": "done",
@@ -21727,7 +21689,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 283,
                         "statusUw": "done",
@@ -21835,7 +21797,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 284,
                         "statusUw": "done",
@@ -21943,7 +21905,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 276,
                         "statusUw": "done",
@@ -22054,7 +22016,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 285,
                         "statusUw": "done",
@@ -22186,7 +22148,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 286,
                         "statusUw": "done",
@@ -22297,7 +22259,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 277,
                         "statusUw": "done",
@@ -22811,11 +22773,11 @@
                     {
                         "propertyLabel": "has title of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20312",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "uwFormOrder": [],
-                        "statusUw": "done",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
@@ -22883,7 +22845,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 288,
                         "statusUw": "done",
@@ -22994,7 +22956,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 289,
                         "statusUw": "done",
@@ -23331,7 +23293,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 291,
                         "statusUw": "done",
@@ -23350,7 +23312,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 292,
                         "statusUw": "done",
@@ -23368,7 +23330,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 293,
                         "statusUw": "done",
@@ -23386,7 +23348,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 294,
                         "statusUw": "done",
@@ -23401,7 +23363,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 295,
                         "statusUw": "done",
@@ -23416,7 +23378,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 296,
                         "statusUw": "done",
@@ -23431,7 +23393,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 297,
                         "statusUw": "done",
@@ -23446,7 +23408,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 298,
                         "statusUw": "done",
@@ -23461,7 +23423,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 299,
                         "statusUw": "done",
@@ -23476,7 +23438,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 290,
                         "statusUw": "done",
@@ -23584,7 +23546,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 262,
                         "statusUw": "done",
@@ -24014,7 +23976,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -24029,7 +23991,7 @@
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["Crystal is here"],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -32818,7 +32780,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -36021,7 +35983,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -60412,7 +60374,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -64209,7 +64171,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -65411,7 +65373,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -66753,7 +66715,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -66935,7 +66897,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -66964,7 +66926,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
                 "resourceLabel": "WAU RT MADS RDF Complex Subject",
                 "id": "WAU:RT:MADSRDF:complexSubject",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67005,7 +66967,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
                 "resourceLabel": "WAU RT MADS RDF Subject",
                 "id": "WAU:RT:MADSRDF:simpleSubject",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67036,7 +66998,7 @@
                 "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
                 "resourceLabel": "WAU RT RDF List",
                 "id": "WAU:RT:RDF:list",
-                "date": "2019-10-28",
+                "date": "2019-10-29",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
