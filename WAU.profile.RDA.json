@@ -23991,7 +23991,7 @@
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
-                        "noteUw": ["Crystal is here"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -24004,9 +24004,9 @@
                     {
                         "propertyLabel": "has access point for manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30276",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
+                        "mandatory": "",
+                        "repeatable": "",
+                        "type": "",
                         "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": ["Not needed"],
@@ -24315,7 +24315,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/3.12.html"
                     },
                     {
@@ -24381,7 +24381,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 306,
                         "statusUw": "done",
@@ -24489,7 +24489,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 307,
                         "statusUw": "done",
@@ -24600,7 +24600,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:organization", "urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 302,
                         "statusUw": "done",
@@ -24712,7 +24712,7 @@
                         },
                         "uwFormOrder": 308,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["Crystal is here"],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
