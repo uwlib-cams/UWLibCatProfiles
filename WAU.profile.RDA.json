@@ -4,7 +4,7 @@
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-10-28",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan, Administrative Metadata, Status, Complex Subject, Simple Type, RDF List",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
             {
@@ -17334,7 +17334,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "valueConstratint": {
+                        "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 335.932,
@@ -26684,7 +26684,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30154",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "uwFormOrder": 160,
                         "statusUw": "attention",
                         "noteUw": [],
@@ -66768,10 +66768,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66788,10 +66785,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66815,10 +66809,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66842,10 +66833,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": ["Removed defaultURI-->https://id.loc.gov/vocabulary/descriptionConventions/isbd, defaultLiteral-->ISBD: International Standard Bibliographic Description: Q1 that doesn't seem correct given we have useValuesFrom-->https://id.loc.gov/vocabulary/descriptionConventions; the correct thing seems to change useValuesFrom IF the needed RDA vocab is available; otherwise we should restore the removed default then remove defaultURI-->https://id.loc.gov/vocabulary/descriptionConventions/rda, right?"],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66868,10 +66856,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66895,10 +66880,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66912,10 +66894,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66929,10 +66908,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     },
                     {
@@ -66950,10 +66926,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     }
                 ]
@@ -66982,10 +66955,7 @@
                         "noteUw": ["uwFormOrder=-2, representing this is a property in an RT invoked by another RT."],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map"
+                            "adminMetadata"
                         ]
                     }
                 ]
