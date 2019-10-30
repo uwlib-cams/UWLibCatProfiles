@@ -24195,7 +24195,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ]
                     },
                     {
@@ -24372,7 +24373,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ]
                     },
                     {
@@ -24512,7 +24514,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map"],
+                        "usedInProfile": ["monograph", "map", "eBook"],
                         "remark": "http://access.rdatoolkit.org/3.12.html"
                     },
                     {
@@ -24567,7 +24569,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24584,7 +24587,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "eBook"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -25063,7 +25066,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.3.6.html"
                     },
@@ -25381,7 +25385,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ]
                     },
                     {
@@ -26349,7 +26354,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.11.html"
                     },
@@ -26722,7 +26728,8 @@
                         "usedInProfile": [
                             "monograph",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/21.4.html"
                     },
@@ -26831,7 +26838,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map", "serial", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -26849,7 +26856,8 @@
                             "monograph",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
@@ -26866,7 +26874,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["etd", "map", "serial"]
+                        "usedInProfile": ["etd", "map", "serial", "eBook"]
                     },
                     {
                         "propertyLabel": "is electronic reproduction of manifestation of (RDA 24.5)",
@@ -26881,7 +26889,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["etd", "map", "serial"],
+                        "usedInProfile": ["etd", "map", "serial", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -26897,7 +26905,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "etd", "map", "serial"],
+                        "usedInProfile": ["monograph", "etd", "map", "serial", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -27159,7 +27167,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.20.html"
                     },
@@ -27318,7 +27327,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "serial", "map"],
+                        "usedInProfile": ["monograph", "serial", "map", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -27334,7 +27343,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "serial", "map"],
+                        "usedInProfile": ["monograph", "serial", "map", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -27387,7 +27396,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo", "etd"],
+                        "usedInProfile": ["dvdVideo", "etd", "eBook"],
                         "remark": "http://access.rdatoolkit.org/3.19.4.html"
                     },
                     {
@@ -27430,7 +27439,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["etd"],
+                        "usedInProfile": ["etd", "eBook"],
                         "remark": "http://access.rdatoolkit.org/3.19.2.html"
                     },
                     {
@@ -28085,7 +28094,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "serial"],
+                        "usedInProfile": ["monograph", "map", "serial", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -28154,7 +28163,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["etd"],
+                        "usedInProfile": ["etd", "eBook"],
                         "remark": "http://access.rdatoolkit.org/3.3.html"
                     },
                     {
@@ -28232,7 +28241,8 @@
                             "monograph",
                             "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ]
                     },
                     {
@@ -28322,7 +28332,8 @@
                             "etd",
                             "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ]
                     },
                     {
@@ -28452,7 +28463,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "etd",
-                            "map"
+                            "map",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/3.19.8.4.html"
                     },
@@ -28508,7 +28520,8 @@
                             "monograph",
                             "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.2.html"
                     },
@@ -28545,7 +28558,8 @@
                             "dvdVideo",
                             "map",
                             "etd",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.8.6.html"
                     },
@@ -28588,7 +28602,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.2.html"
                     },
@@ -28607,7 +28622,8 @@
                             "dvdVideo",
                             "etd",
                             "map",
-                            "serial"
+                            "serial",
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.5.6.html"
                     },
@@ -28619,7 +28635,7 @@
                         "type": "literal",
                         "uwFormOrder": 44,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["Crystal is here"],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
