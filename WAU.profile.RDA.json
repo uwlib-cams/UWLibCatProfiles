@@ -32848,7 +32848,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 325,
                         "statusUw": "done",
@@ -32910,7 +32910,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 332,
                         "statusUw": "done",
@@ -32929,7 +32929,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 327,
                         "statusUw": "done",
@@ -33782,7 +33782,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 326,
                         "statusUw": "done",
@@ -33936,7 +33936,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization", "urn:ld4p:qa:names:family"]
                         },
                         "uwFormOrder": 321,
                         "statusUw": "done",
@@ -34338,7 +34338,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 331,
                         "statusUw": "done",
@@ -34932,7 +34932,7 @@
                         },
                         "uwFormOrder": 157,
                         "statusUw": "done",
-                        "noteUw": ["dbpedia lookup just facilitates plugging in a URI for another Sinopia item"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -35092,7 +35092,7 @@
                         },
                         "uwFormOrder": 157.1,
                         "statusUw": "done",
-                        "noteUw": ["dbpedia lookup just facilitates plugging in a URI for another Sinopia item"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -35501,7 +35501,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person", "urn:ld4p:qa:names:organization"]
                         },
                         "uwFormOrder": 333,
                         "statusUw": "done",
