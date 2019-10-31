@@ -33123,10 +33123,9 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
-                            "serial", 
-                            "eBook"
+                            "serial" 
+                            
                         ]
                     },
                     {
@@ -33166,7 +33165,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "serial"
                         ],
@@ -33185,7 +33183,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -34385,7 +34383,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "dvdVideo", "eBook"],
+                        "usedInProfile": ["monograph", "map", "dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -34417,7 +34415,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "serial", "eBook"]
+                        "usedInProfile": ["monograph", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has facsimile of item",
@@ -34432,7 +34430,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "dvdVideo", "serial", "eBook"]
+                        "usedInProfile": ["monograph", "map", "dvdVideo", "serial"]
                     },
                     {
                         "propertyLabel": "has former owner agent (RDA 18.5)",
@@ -35428,9 +35426,7 @@
                         "usedInProfile": [
                             "monograph",
                             "map",
-                            "dvdVideo",
-                            "etd", 
-                            "eBook"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -35559,7 +35555,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "serial"
                         ],
@@ -35578,7 +35573,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.4.html"
@@ -35598,11 +35592,9 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "etd",
                             "dvdVideo",
                             "map",
-                            "serial", 
-                            "eBook"
+                            "serial"
                         ],
                         "remark": ""
                     },
@@ -35619,7 +35611,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.19.html"
@@ -35687,9 +35678,7 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
-                            "map", 
-                            "eBook"
+                            "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -35709,9 +35698,7 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
-                            "map", 
-                            "eBook"
+                            "map"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -35751,7 +35738,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "serial", "dvdVideo", "eBook"]
+                        "usedInProfile": ["monograph", "map", "serial", "dvdVideo"]
                     },
                     {
                         "propertyLabel": "has related entity of item",
@@ -35827,7 +35814,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial", "eBook"]
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
                     },
                     {
                         "propertyLabel": "has restorationist agent of item (RDA 18.5)",
@@ -36069,10 +36056,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
-                            "serial", 
-                            "eBook"
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.12.html"
                     },
@@ -36167,10 +36152,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
-                            "serial", 
-                            "eBook"
+                            "serial"
                         ]
                     },
                     {
