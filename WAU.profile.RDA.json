@@ -33846,10 +33846,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial" 
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                             
                         ]
                     },
@@ -33888,10 +33890,12 @@
                         "uwFormOrder": 233.3,
                         "statusUW": "done",
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -33908,7 +33912,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map", "serial"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -33972,7 +33976,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -33991,7 +33996,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -34844,7 +34850,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -34862,9 +34869,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -34997,9 +35007,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -35108,7 +35121,14 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "dvdVideo"],
+                        "usedInProfile": [
+                            "map",
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                            ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -35124,7 +35144,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo"],
+                        "usedInProfile": ["dvdVideo", "soundRecording"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -35140,7 +35160,14 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "serial"]
+                        "usedInProfile": [
+                            "map",
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                        ]
                     },
                     {
                         "propertyLabel": "has facsimile of item",
@@ -35155,7 +35182,14 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "dvdVideo", "serial"]
+                        "usedInProfile": [
+                            "map",
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                        ]
                     },
                     {
                         "propertyLabel": "has former owner agent (RDA 18.5)",
@@ -35171,9 +35205,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -35400,7 +35437,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "map"
+                            "map",
+                            "serial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -35510,10 +35548,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ]
                     },
                     {
@@ -35805,10 +35845,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.21.html"
                     },
@@ -36149,9 +36191,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
                             "map",
-                            "dvdVideo"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -36278,10 +36323,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.5.html"
                     },
@@ -36296,9 +36343,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "serial"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/4.4.html"
                     },
@@ -36316,10 +36366,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": ""
                     },
@@ -36334,9 +36386,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/2.19.html"
                     },
@@ -36401,9 +36456,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -36421,9 +36479,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -36463,7 +36524,14 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "serial", "dvdVideo"]
+                        "usedInProfile": [
+                            "map",
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                        ]
                     },
                     {
                         "propertyLabel": "has related entity of item",
@@ -36539,7 +36607,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial"]
+                        "usedInProfile": ["monograph", "dvdVideo", "map", "serial", "soundRecording"]
                     },
                     {
                         "propertyLabel": "has restorationist agent of item (RDA 18.5)",
@@ -36555,9 +36623,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -36667,9 +36738,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
+                            "map",
+                            "serial",
+                            "graphic",
                             "dvdVideo",
-                            "map"
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -36779,10 +36853,12 @@
                         "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/17.12.html"
                     },
@@ -36875,10 +36951,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ]
                     },
                     {
@@ -36893,9 +36971,9 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic"
                         ]
                     },
                     {
@@ -36910,9 +36988,9 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic"
                         ]
                     },
                     {
@@ -36927,8 +37005,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "serial"
+                            "serial",
+                            "graphic"
                         ]
                     },
                     {
@@ -36943,8 +37021,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "serial"
+                            "serial",
+                            "graphic"
                         ]
                     },
                     {
@@ -36958,11 +37036,25 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ]
+                    },
+                    {
+                        "propertyLabel": "item has call number",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasCallNumber",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "uwFormOrder": 118.54,
+                        "statusUW": "attention",
+                        "noteUW": ["Needs to be added to extension ontology...not a real property"],
+                        "qUw": [],
+                        "usedInProfile": ["dvdVideo", "soundRecording"]
                     },
                     {
                         "propertyLabel": "item has physical location",
@@ -36975,10 +37067,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ]
                     },
                     {
@@ -36992,10 +37086,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ]
                     },
                     {
@@ -37009,10 +37105,12 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "map",
-                            "serial"
+                            "serial",
+                            "graphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
                         ]
                     }
                 ]
