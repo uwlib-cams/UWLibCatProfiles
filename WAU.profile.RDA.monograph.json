@@ -5019,7 +5019,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30154",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
                     {

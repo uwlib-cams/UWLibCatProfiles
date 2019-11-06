@@ -2,15 +2,15 @@
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-11-05",
-        "description": "Resource templates forerror",
+        "description": "Resource templates for electronic serial",
         "id": "WAU:profile:RDA:eSerial",
-        "title": "WAU Profile RDAerror",
+        "title": "WAU Profile RDA electronic serial",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
         "resourceTemplates": [
             {
                 "id": "WAU:RT:RDA:Work:eSerial",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "WAU RT RDA Workerror",
+                "resourceLabel": "WAU RT RDA Work electronic serial",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -951,7 +951,7 @@
             {
                 "id": "WAU:RT:RDA:Expression:eSerial",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "WAU RT RDA Expressionerror",
+                "resourceLabel": "WAU RT RDA Expression electronic serial",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -1929,7 +1929,7 @@
             {
                 "id": "WAU:RT:RDA:Manifestation:eSerial",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "WAU RT RDA Manifestationerror",
+                "resourceLabel": "WAU RT RDA Manifestation electronic serial",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -2605,7 +2605,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30154",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
                     {
@@ -2910,7 +2910,7 @@
             {
                 "id": "WAU:RT:RDA:Item:eSerial",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Itemerror",
+                "resourceLabel": "WAU RT RDA Item electronic serial",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",

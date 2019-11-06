@@ -27100,10 +27100,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30154",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "uwFormOrder": 160,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["type should be resource, as we're looking for an IRI, but this broke Sinopia. Crystal asked Michelle about it on 2019-11-05"],
                         "qUw": [],
                         "usedInProfile": [
                             "etd",
