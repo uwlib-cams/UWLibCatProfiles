@@ -221,7 +221,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -232,7 +232,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -496,7 +496,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/17.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -506,7 +506,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -516,7 +516,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -526,7 +526,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -536,7 +536,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -547,7 +547,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -558,7 +558,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -569,7 +569,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -580,7 +580,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -591,7 +591,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -602,7 +602,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -613,7 +613,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -624,7 +624,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -635,7 +635,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -646,7 +646,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -657,7 +657,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -668,7 +668,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -679,7 +679,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -690,7 +690,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -701,7 +701,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -712,7 +712,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -723,7 +723,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -734,7 +734,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -745,7 +745,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -756,7 +756,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -767,7 +767,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -778,7 +778,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -789,7 +789,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -800,7 +800,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -811,7 +811,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -822,7 +822,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -833,7 +833,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -844,7 +844,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -855,7 +855,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -866,7 +866,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -877,7 +877,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -888,7 +888,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -899,7 +899,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -910,7 +910,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -921,7 +921,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -932,7 +932,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -943,7 +943,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -954,7 +954,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -965,7 +965,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -976,7 +976,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -987,7 +987,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -998,7 +998,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1009,7 +1009,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1020,7 +1020,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1046,7 +1046,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1057,7 +1057,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1068,7 +1068,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1079,7 +1079,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1090,7 +1090,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1101,7 +1101,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1112,7 +1112,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     }
                 ]
@@ -1143,7 +1143,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/17.6.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1306,7 +1306,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1346,7 +1346,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.16.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1569,7 +1569,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/17.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1579,7 +1579,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1589,7 +1589,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1599,7 +1599,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1609,7 +1609,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1620,7 +1620,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1631,7 +1631,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1642,7 +1642,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1653,7 +1653,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1664,7 +1664,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1675,7 +1675,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1686,7 +1686,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1697,7 +1697,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1708,7 +1708,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1719,7 +1719,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1730,7 +1730,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1741,7 +1741,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1752,7 +1752,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1763,7 +1763,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1774,7 +1774,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1785,7 +1785,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1796,7 +1796,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1807,7 +1807,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1818,7 +1818,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1829,7 +1829,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1840,7 +1840,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1851,7 +1851,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1862,7 +1862,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1873,7 +1873,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1884,7 +1884,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1895,7 +1895,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1906,7 +1906,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1917,7 +1917,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1928,7 +1928,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1939,7 +1939,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1950,7 +1950,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1961,7 +1961,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1972,7 +1972,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1983,7 +1983,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -1994,7 +1994,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2005,7 +2005,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2016,7 +2016,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2027,7 +2027,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2038,7 +2038,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2049,7 +2049,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2060,7 +2060,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2071,7 +2071,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2082,7 +2082,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2093,7 +2093,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2104,7 +2104,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2115,7 +2115,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2126,7 +2126,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2137,7 +2137,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2148,7 +2148,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2173,7 +2173,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2184,7 +2184,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2195,7 +2195,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2206,7 +2206,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2217,7 +2217,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     }
                 ]
@@ -2248,7 +2248,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/17.10.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2938,7 +2938,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2948,7 +2948,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2958,7 +2958,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2969,7 +2969,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2980,7 +2980,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -2991,7 +2991,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3001,7 +3001,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3012,7 +3012,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3023,7 +3023,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3034,7 +3034,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3045,7 +3045,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3056,7 +3056,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3067,7 +3067,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3078,7 +3078,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3089,7 +3089,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3099,7 +3099,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3109,7 +3109,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
@@ -3134,7 +3134,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/23.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
                     },
                     {
