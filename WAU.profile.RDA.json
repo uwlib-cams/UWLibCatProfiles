@@ -11255,6 +11255,7 @@
                     },
                     {
                         "propertyLabel": "has special issue",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",

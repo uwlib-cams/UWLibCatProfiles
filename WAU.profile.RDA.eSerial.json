@@ -835,7 +835,7 @@
                     },
                     {
                         "propertyLabel": "has special issue",
-                        "propertyURI": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10410",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2906,15 +2906,6 @@
                         }
                     }
                 ]
-            },
-            {
-                "id": "WAU:RT:RDA:Item:eSerial",
-                "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item electronic serial",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
-                "propertyTemplates": []
             }
         ]
     }
