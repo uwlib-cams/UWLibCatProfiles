@@ -835,7 +835,7 @@
                     },
                     {
                         "propertyLabel": "has special issue",
-                        "propertyURI": "",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10410",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
