@@ -3017,6 +3017,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        },
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
