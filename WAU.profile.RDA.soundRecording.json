@@ -2180,8 +2180,8 @@
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:content_type"],
                             "defaults": [
                                 {
-                                    "defaultURI": ["http://rdaregistry.info/termList/RDAContentType/1012"],
-                                    "defaultLiteral": ["sounds"]
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1012",
+                                    "defaultLiteral": "sounds"
                                 }
                             ]
                         }
