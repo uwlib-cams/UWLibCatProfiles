@@ -68124,7 +68124,6 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:subjects",
                                 "urn:ld4p:qa:names:place"
                             ]
                         }
