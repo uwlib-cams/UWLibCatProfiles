@@ -15873,7 +15873,7 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has editor agent of text",
+                        "propertyLabel": "has editor agent",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20330",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -15887,10 +15887,14 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "map",
+                            "eMap",
                             "serial",
-                            "eBook"
+                            "eSerial",
+                            "eBook",
+                            "graphic",
+                            "eGraphic",
+                            "soundRecording"
                         ]
                     },
                     {
