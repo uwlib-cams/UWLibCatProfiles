@@ -5004,16 +5004,8 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "map",
-                            "eMap",
                             "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "eSerial"
                         ]
                     },
                     {
