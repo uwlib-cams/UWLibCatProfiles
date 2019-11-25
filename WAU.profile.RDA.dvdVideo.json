@@ -4680,7 +4680,7 @@
                     {
                         "propertyLabel": "has type of recording (RDA 3.16.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
-                        "mandatory": "true",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.2.html",
@@ -4733,10 +4733,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.16.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:special_playback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
