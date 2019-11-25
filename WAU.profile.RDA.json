@@ -32713,9 +32713,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:special_playback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
