@@ -16263,10 +16263,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        },
+                        "type": "literal",
                         "uwFormOrder": 124,
                         "statusUw": "done",
                         "noteUw": [],

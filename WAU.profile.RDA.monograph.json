@@ -2521,11 +2521,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.13.2.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html"
                     },
                     {
                         "propertyLabel": "has form of tactile notation (RDA 7.13.4)",
