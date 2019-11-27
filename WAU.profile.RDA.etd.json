@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-22",
+        "date": "2019-11-26",
         "description": "Resource templates for electronic theses and dissertations",
         "id": "WAU:profile:RDA:etd",
         "title": "WAU Profile RDA for electronic theses and dissertations",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -126,14 +126,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.3.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects"
-                            ]
-                        }
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
                     {
                         "propertyLabel": "has creator characteristic",
@@ -855,7 +849,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -876,7 +870,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1043,10 +1037,12 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                            "defaults": [
+                                {"defaultLiteral": "Latin"}
+                            ]
                         }
                     },
                     {
@@ -1730,7 +1726,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
