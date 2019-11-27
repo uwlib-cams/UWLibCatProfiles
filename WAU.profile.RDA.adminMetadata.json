@@ -77,7 +77,7 @@
                             "defaults": [
                                 {
                                     "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
-                                    "defaultLiteral": "WAU"
+                                    "defaultLiteral": "WaU"
                                 }
                             ]
                         }
