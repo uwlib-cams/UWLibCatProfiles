@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-22",
+        "date": "2019-11-26",
         "description": "Resource templates for maps",
         "id": "WAU:profile:RDA:map",
         "title": "WAU Profile RDA for maps",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -136,14 +136,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.3.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects"
-                            ]
-                        }
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
                     {
                         "propertyLabel": "has coordinates of cartographic content (RDA 7.4)",
@@ -1093,7 +1087,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1275,7 +1269,12 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.13.2.html"
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "Latin"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has form of tactile notation (RDA 7.13.4)",
@@ -1442,6 +1441,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
@@ -2238,7 +2238,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -3461,7 +3461,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-26",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
