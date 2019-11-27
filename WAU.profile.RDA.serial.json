@@ -829,7 +829,7 @@
                     },
                     {
                         "propertyLabel": "has special issue",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10410",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
