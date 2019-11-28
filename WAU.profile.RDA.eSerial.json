@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-26",
+        "date": "2019-11-27",
         "description": "Resource templates for electronic serials",
         "id": "WAU:profile:RDA:eSerial",
         "title": "WAU Profile RDA for electronic serials",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic serials",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-26",
+                "date": "2019-11-27",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -156,6 +156,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/5.9.html"
+                    },
+                    {
+                        "propertyLabel": "has history of work (RDA 6.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10210",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.7.html"
                     },
                     {
                         "propertyLabel": "has ISSN",
@@ -947,7 +955,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic serials",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-26",
+                "date": "2019-11-27",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1165,6 +1173,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/7.29.html"
+                    },
+                    {
+                        "propertyLabel": "has other distinguishing characteristic of expression (RDA 6.12)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.12.html"
                     },
                     {
                         "propertyLabel": "has University of Washington-specific note on expression (RDA 7.29)",
@@ -1927,7 +1943,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic serials",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-26",
+                "date": "2019-11-27",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
