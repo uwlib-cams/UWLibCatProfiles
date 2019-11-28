@@ -4603,7 +4603,7 @@
                         "remark": "http://access.rdatoolkit.org/2.12.7.html"
                     },
                     {
-                        "propertyLabel": "has numbering within sequence (RDA 2.12.9)",
+                        "propertyLabel": "has numbering within series (RDA 2.12.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30014",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -4655,7 +4655,7 @@
                         "propertyLabel": "has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30050",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.17.13.html"
                     },
@@ -5141,7 +5141,7 @@
                             "defaults": [
                                 {
                                     "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
-                                    "defaultLiteral": "WAU"
+                                    "defaultLiteral": "WaU"
                                 }
                             ]
                         }
