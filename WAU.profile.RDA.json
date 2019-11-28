@@ -1596,7 +1596,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:gettyaat"]
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:gettyaat", "urn:ld4p:qa:subjects"]
                         },
                         "uwFormOrder": 12,
                         "statusUw": "done",
@@ -1612,7 +1612,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres"],
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2011026406",
@@ -1634,7 +1634,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres"],
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026039",
@@ -1656,7 +1656,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:gettyaat"],
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:gettyaat", "urn:ld4p:qa:subjects"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2011026387",
@@ -1678,7 +1678,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres"],
+                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026174",
@@ -15245,23 +15245,11 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 233,
+                        "uwFormOrder": ,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["New RDA"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/20.2.html"
                     },
                     {
