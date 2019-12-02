@@ -972,6 +972,17 @@
                         }
                     },
                     {
+                        "propertyLabel": "has colour content (RDA 7.17)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/7.17.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:colour_content"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has details of colour content (RDA 7.17.1.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20261",
                         "mandatory": "false",

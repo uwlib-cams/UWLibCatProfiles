@@ -22813,10 +22813,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "graphic",
-                            "eGraphic"
-                        ],
+                        "usedInProfile": ["monograph", "etd", "map", "eBook", "graphic", "eMap", "eGraphic"],
                         "remark": "http://access.rdatoolkit.org/7.17.html"
                     },
                     {
