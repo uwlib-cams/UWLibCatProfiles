@@ -4701,30 +4701,7 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    {
-                        "propertyLabel": "has creator agent of manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30329",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "manifestation has contributor agent (RDA 18.5)",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
+                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",

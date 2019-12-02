@@ -24740,20 +24740,7 @@
                         },
                         "uwFormOrder": 233.2,
                         "statusUW": "done",
-                        "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                            
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26560,21 +26547,9 @@
                         },
                         "uwFormOrder": 161.1,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["New RDA"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has creator collective agent of manifestation",
