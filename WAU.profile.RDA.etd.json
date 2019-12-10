@@ -1878,6 +1878,14 @@
                         "remark": "http://access.rdatoolkit.org/2.7.6.html"
                     },
                     {
+                        "propertyLabel": "has publication statement (RDA 2.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30111",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.html"
+                    },
+                    {
                         "propertyLabel": "has place of publication (RDA 2.8.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30088",
                         "mandatory": "false",
