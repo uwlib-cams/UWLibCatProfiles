@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-04",
+        "date": "2019-12-12",
         "description": "Resource templates for DVD Videos",
         "id": "WAU:profile:RDA:dvdVideo",
         "title": "WAU Profile RDA for DVD Videos",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-04",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -42,8 +42,8 @@
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "is same as LC NAF work",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF work authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -2032,7 +2032,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-04",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2057,8 +2057,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is same as LC NAF expression",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF expression authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -4141,7 +4141,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-04",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -5259,7 +5259,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-04",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
