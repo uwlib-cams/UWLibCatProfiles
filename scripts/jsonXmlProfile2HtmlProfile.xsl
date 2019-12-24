@@ -215,7 +215,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td/>
                     <td>
                         <xsl:choose>
                             <xsl:when test="j:string[@key = 'repeatable'] = 'true'">
