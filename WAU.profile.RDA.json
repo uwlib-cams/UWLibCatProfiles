@@ -75,7 +75,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 10.401,
+                        "uwFormOrder": 10.4,
                         "statusUW": "done",
                         "noteUW": [],
                         "qUw": [],
@@ -1003,7 +1003,7 @@
                         "mandatory": "true",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 10.4,
+                        "uwFormOrder": 10.41,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12104,7 +12104,7 @@
                                 "urn:ld4p:qa:mesh"
                             ]
                         },
-                        "uwFormOrder": 683,
+                        "uwFormOrder": 159.1,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12308,7 +12308,7 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has coverage of content (RDA 7.3)",
+                        "propertyLabel": "has coverage of content (This is a note)(RDA 7.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -13171,7 +13171,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.41,
+                        "uwFormOrder": 10.42,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -13511,7 +13511,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 10.401,
+                        "uwFormOrder": 10.4,
                         "statusUW": "done",
                         "noteUW": [],
                         "qUw": [],
@@ -14427,7 +14427,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.4011,
+                        "uwFormOrder": 10.41,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -25059,7 +25059,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.401,
+                        "uwFormOrder": 10.42,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -25835,7 +25835,7 @@
                                 "urn:ld4p:qa:names"
                             ]
                         },
-                        "uwFormOrder": 683.1,
+                        "uwFormOrder": 128.1,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -35187,7 +35187,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.4021,
+                        "uwFormOrder": ,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -35354,7 +35354,7 @@
                                 "urn:ld4p:qa:names"
                             ]
                         },
-                        "uwFormOrder": 683.2,
+                        "uwFormOrder": 286.7,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
