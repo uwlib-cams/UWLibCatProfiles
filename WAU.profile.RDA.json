@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Ben Riesenberg (ries07@uw.edu)",
-        "date": "2020-01-07",
+        "date": "2020-01-15",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan, Administrative Metadata, Status, Complex Subject, Simple Type, RDF List",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,15 +11,15 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "mandatory": "false",
-                        "repeatable": "true",
+                        "mandatory": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
@@ -82,7 +82,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "eMap",
                             "serial",
@@ -120,11 +119,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "eMap",
-                            "serial",
-                            "eSerial",
                             "eBook",
                             "graphic",
                             "eGraphic",
@@ -666,11 +662,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
                             "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "eGraphic"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -803,7 +796,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -1150,9 +1142,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
+                            "graphic"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -1541,8 +1531,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -1697,8 +1686,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:genres",
-                                "urn:ld4p:qa:subjects"
+                                "urn:ld4p:qa:genres"
                             ],
                             "defaults": [
                                 {
@@ -1751,8 +1739,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:genres",
-                                "urn:ld4p:qa:subjects"
+                                "urn:ld4p:qa:genres"
                             ],
                             "defaults": [
                                 {
@@ -2015,9 +2002,6 @@
                             "dvdVideo",
                             "map",
                             "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
                             "graphic",
                             "eGraphic",
                             "soundRecording"
@@ -2137,8 +2121,6 @@
                             "dvdVideo",
                             "map",
                             "eMap",
-                            "serial",
-                            "eSerial",
                             "eBook",
                             "graphic",
                             "eGraphic",
@@ -2365,17 +2347,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -2509,11 +2481,8 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "eMap",
-                            "serial",
-                            "eSerial",
                             "eBook",
                             "graphic",
                             "eGraphic",
@@ -3070,9 +3039,9 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                            "useValuesFrom": []
                         },
-                        "uwFormOrder": 734.8,
+                        "uwFormOrder": -1,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -3118,10 +3087,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "map",
-                            "eMap",
                             "graphic",
                             "eGraphic"
                         ],
@@ -3226,30 +3191,6 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-                        },
-                        "uwFormOrder": 205,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "map",
-                            "eMap",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
-                        "propertyLabel": "has degree granting institution (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10006",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:organization"],
                             "defaults": [
                                 {
@@ -3292,14 +3233,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "etd"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.9.4.html"
                     },
@@ -3539,14 +3473,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "etd"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.9.html"
                     },
@@ -3590,13 +3517,8 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
                             "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "eSerial"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -4290,7 +4212,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -4306,16 +4228,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -4638,13 +4551,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "map",
-                            "eMap",
-                            "eBook",
                             "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "eGraphic"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -5201,14 +5109,11 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "map",
                             "eMap",
                             "serial",
                             "eSerial",
                             "eBook",
-                            "graphic",
-                            "eGraphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -5401,7 +5306,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "eMap",
                             "serial",
@@ -5764,8 +5668,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "map",
-                            "eMap",
                             "serial",
                             "eSerial"
                         ]
@@ -13471,7 +13373,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -25860,7 +25762,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -35187,7 +35089,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": ,
+                        "uwFormOrder": -1,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -35495,7 +35397,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -38827,7 +38729,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -63218,7 +63120,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -67015,7 +66917,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -68217,7 +68119,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -69559,7 +69461,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -69723,7 +69625,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -69750,7 +69652,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
                 "resourceLabel": "WAU RT MADS RDF Complex Subject",
                 "id": "WAU:RT:MADSRDF:complexSubject",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -69791,7 +69693,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
                 "resourceLabel": "WAU RT MADS RDF Subject",
                 "id": "WAU:RT:MADSRDF:simpleSubject",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -69821,7 +69723,7 @@
                 "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
                 "resourceLabel": "WAU RT RDF List",
                 "id": "WAU:RT:RDF:list",
-                "date": "2020-01-07",
+                "date": "2020-01-15",
                 "author": "Ben Riesenberg (ries07@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
