@@ -24230,7 +24230,7 @@
                         },
                         "uwFormOrder": 586,
                         "statusUw": "done",
-                        "noteUw": ["Crystal is here"],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -24259,8 +24259,7 @@
                         "usedInProfile": [
                             "monograph",
                             "eBook",
-                            "soundRecording",
-                            "dvdVideo"
+                            "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -24309,7 +24308,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "serial",
                             "eBook",
@@ -24428,7 +24426,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "eBook",
                             "soundRecording"
                         ],
@@ -24464,13 +24461,11 @@
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "map",
                             "eBook",
                             "graphic",
                             "eMap",
-                            "eGraphic",
-                            "soundRecording"
+                            "eGraphic"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24488,13 +24483,11 @@
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "eBook",
                             "graphic",
                             "eGraphic",
                             "map",
-                            "eMap",
-                            "soundRecording"
+                            "eMap"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24516,9 +24509,7 @@
                             "eBook",
                             "graphic",
                             "eGraphic",
-                            "eMap",
-                            "dvdVideo",
-                            "soundRecording"
+                            "eMap"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24536,8 +24527,7 @@
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24555,12 +24545,7 @@
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording",
-                            "map",
-                            "eMap"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24578,12 +24563,7 @@
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording",
-                            "map",
-                            "eMap"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24602,9 +24582,6 @@
                         "usedInProfile": [
                             "monograph",
                             "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording",
                             "map",
                             "eMap"
                         ],
@@ -24624,9 +24601,7 @@
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -24645,8 +24620,6 @@
                         "usedInProfile": [
                             "monograph",
                             "eBook",
-                            "graphic",
-                            "eGraphic",
                             "map",
                             "eMap"
                         ],
@@ -24928,13 +24901,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
-                            "eBook",
-                            "etd",
-                            "dvdVideo",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -25010,7 +24977,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["soundRecording"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -25026,12 +24993,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -25047,7 +25009,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["soundRecording"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -25063,7 +25025,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["soundrecording"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -25085,7 +25047,6 @@
                         "usedInProfile": [
                             "monograph",
                             "dvdVideo",
-                            "etd",
                             "map",
                             "eMap",
                             "eSerial",
