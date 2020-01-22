@@ -5687,9 +5687,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5708,9 +5706,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5729,9 +5725,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5766,9 +5760,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5787,9 +5779,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5808,9 +5798,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5829,9 +5817,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -5907,7 +5893,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo"],
+                        "usedInProfile": ["dvdVideo", "soundRecording"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -6175,7 +6161,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "eBook",
                             "soundRecording"
                         ],
@@ -6310,7 +6295,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
                             "eBook",
                             "soundRecording"
                         ],
@@ -6423,8 +6407,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ]
                     },
                     {
@@ -6573,9 +6556,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -6594,9 +6575,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -6615,9 +6594,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -6652,9 +6629,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
@@ -6974,19 +6949,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -7002,17 +6965,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -7028,19 +6981,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -7056,13 +6997,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "etd",
-                            "serial",
-                            "eSerial",
-                            "eBook"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -7078,19 +7013,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -7122,19 +7045,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -7205,8 +7116,6 @@
                             "map",
                             "eMap",
                             "eBook",
-                            "graphic",
-                            "eGraphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -7388,8 +7297,6 @@
                             "map",
                             "eMap",
                             "eBook",
-                            "graphic",
-                            "eGraphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -7411,9 +7318,7 @@
                             "monograph",
                             "map",
                             "eBook",
-                            "graphic",
                             "eMap",
-                            "eGraphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -7892,7 +7797,6 @@
                         "usedInProfile": [
                             "monograph",
                             "eBook",
-                            "etd",
                             "dvdVideo",
                             "soundRecording"
                         ],
@@ -7973,8 +7877,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -8131,7 +8034,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["soundRecording"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -8147,10 +8050,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["monograph", "eBook"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -8231,14 +8131,9 @@
                         },
                         "uwFormOrder": 340,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": ["Difference between this property and 'is abstract of work' is very unclear...we'll wait on this one until we need it (CEC)"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "serial",
-                            "eSerial",
-                            "eBook"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -8307,7 +8202,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "soundRecording",
                             "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8407,10 +8301,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "serial",
-                            "eSerial",
                             "eBook",
                             "soundRecording"
                         ],
@@ -8430,14 +8320,11 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
                             "serial",
                             "eSerial",
-                            "graphic",
-                            "eGraphic",
                             "dvdVideo",
                             "monograph",
                             "soundRecording"
@@ -8481,7 +8368,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8520,14 +8406,11 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
                             "serial",
                             "eSerial",
-                            "graphic",
-                            "eGraphic",
                             "dvdVideo",
                             "monograph",
                             "soundRecording"
@@ -8548,14 +8431,11 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
                             "serial",
                             "eSerial",
-                            "graphic",
-                            "eGraphic",
                             "dvdVideo",
                             "monograph",
                             "soundRecording"
@@ -8582,8 +8462,6 @@
                             "eBook",
                             "serial",
                             "eSerial",
-                            "graphic",
-                            "eGraphic",
                             "dvdVideo",
                             "monograph",
                             "soundRecording"
@@ -8604,14 +8482,11 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
                             "serial",
                             "eSerial",
-                            "graphic",
-                            "eGraphic",
                             "dvdVideo",
                             "monograph",
                             "soundRecording"
@@ -8732,7 +8607,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
@@ -8755,7 +8629,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
@@ -8786,8 +8659,6 @@
                             "dvdVideo",
                             "map",
                             "eMap",
-                            "eGraphic",
-                            "graphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8960,7 +8831,7 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "soundRecording"
+                            "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -9050,10 +8921,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "eBook"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -9160,7 +9028,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
@@ -9208,12 +9075,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -9242,12 +9104,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -9380,19 +9237,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -9743,8 +9588,7 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
+                                "urn:ld4p:qa:names:person"
                             ]
                         },
                         "uwFormOrder": 225,
@@ -9753,8 +9597,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "dvdVideo",
-                            "graphic",
-                            "eGraphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -9866,8 +9708,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "dvdVideo",
-                            "graphic",
-                            "eGraphic",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -9888,10 +9728,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "eBook"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10049,7 +9886,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -10159,14 +9995,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -10183,7 +10012,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -10205,7 +10033,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -10315,12 +10142,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -10337,7 +10159,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -10490,12 +10311,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -10588,7 +10404,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
                             "soundRecording"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -10856,7 +10671,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
@@ -10885,9 +10699,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "dvdVideo",
-                            "map",
-                            "eMap",
                             "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -11222,19 +11033,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -11419,21 +11218,10 @@
                     {
                         "propertyLabel": "has source consulted",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10406",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 29.13,
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
@@ -11452,10 +11240,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "serial",
-                            "eSerial"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "is special issue of",
@@ -11474,8 +11259,7 @@
                             "monograph",
                             "serial",
                             "eSerial",
-                            "eBook",
-                            "soundRecording"
+                            "eBook"
                         ]
                     },
                     {
@@ -11533,7 +11317,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has sponsoring agent of work (RDA 18.5)",
@@ -12274,8 +12058,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -12388,8 +12171,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -12499,8 +12281,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -12517,16 +12298,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "graphic",
-                            "eMap",
-                            "eGraphic",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["etd"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12582,14 +12354,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo",
-                            "monograph",
-                            "serial",
-                            "eBook",
-                            "eSerial",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -12606,8 +12371,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
@@ -12624,12 +12388,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13011,15 +12770,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
+                            "etd"
                         ],
                         "remark": "http://access.rdatoolkit.org/7.9.2.html"
                     },
@@ -13062,7 +12813,6 @@
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
-                            "etd",
                             "eBook"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -13078,7 +12828,6 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "etd",
                             "map",
                             "eMap",
                             "eBook",
@@ -13104,12 +12853,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13125,12 +12869,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13146,12 +12885,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13167,12 +12901,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo",
-                            "monograph",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13220,19 +12949,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd",
-                            "map",
-                            "eMap",
-                            "eBook",
-                            "serial",
-                            "eSerial",
-                            "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -13312,12 +13029,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo",
-                            "monograph",
-                            "eBook",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13353,7 +13065,7 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "work has LC Geographic Classification",
+                        "propertyLabel": "work has Library of Congress Geographic Classification",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
                         "mandatory": "false",
                         "repeatable": "true",
