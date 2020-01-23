@@ -34599,14 +34599,8 @@
                         },
                         "uwFormOrder": 233.3,
                         "statusUW": "done",
-                        "usedInProfile": [
-                            "map",
-                            "serial",
-                            "graphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "noteUw": ["Wait for  use case to include (CEC)"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -35842,14 +35836,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "map",
-                            "serial",
-                            "graphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -36269,16 +36256,9 @@
                         },
                         "uwFormOrder": 324,
                         "statusUw": "",
-                        "noteUw": [],
+                        "noteUw": ["wait for use case to add (CEC)"],
                         "qUw": [],
-                        "usedInProfile": [
-                            "map",
-                            "serial",
-                            "graphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has related family of item",
@@ -36961,10 +36941,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -36980,10 +36957,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -36999,10 +36973,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -37018,10 +36989,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -37101,14 +37069,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "map",
-                            "serial",
-                            "graphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": ""
                     },
                     {
@@ -37486,14 +37447,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "map",
-                            "serial",
-                            "graphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -37709,7 +37663,7 @@
                         ]
                     },
                     {
-                        "propertyLabel": "item has LC Classification Number Part A",
+                        "propertyLabel": "item has Library of Congress Classification Number Part A",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -37726,7 +37680,7 @@
                         ]
                     },
                     {
-                        "propertyLabel": "item has LC Classification Number Part B",
+                        "propertyLabel": "item has Library of Congress Classification Number Part B",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -37743,7 +37697,7 @@
                         ]
                     },
                     {
-                        "propertyLabel": "item has NLM Classification Number Part A",
+                        "propertyLabel": "item has National Library of Medicine Classification Number Part A",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -37759,7 +37713,7 @@
                         ]
                     },
                     {
-                        "propertyLabel": "item has NLM Classification Number Part B",
+                        "propertyLabel": "item has National Library of Medicine Classification Number Part B",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -37885,7 +37839,7 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
-                        "statusUw": "test CEC 2019-05-09",
+                        "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": []
