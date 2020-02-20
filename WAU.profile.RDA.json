@@ -21574,19 +21574,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial",
-                            "eBook",
-                            "graphic",
-                            "soundRecording",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has prequel expression",
@@ -24350,19 +24338,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial",
-                            "eBook",
-                            "graphic",
-                            "soundRecording",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has aspect ratio (RDA 7.19)",
