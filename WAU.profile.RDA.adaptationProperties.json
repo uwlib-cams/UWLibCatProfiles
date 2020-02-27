@@ -1,7 +1,7 @@
 {
   "Profile": {
     "author": "Melissa Morgan (mcm104@uw.edu)",
-    "date": "2020-02-27"
+    "date": "2020-02-27",
     "description": "Resource templates for adaptation properties for works",
     "id": "WAU:profile:RDA:adaptationProperties",
     "title": "WAU Profile RDA for adaptation properties for works",
@@ -48,7 +48,7 @@
         ]
       },
       {
-        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:Literature"
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:Literature",
         "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
         "resourceLabel": "Literature",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:FTV"
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:FTV",
         "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
         "resourceLabel": "Film, TV, and video",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -278,7 +278,7 @@
         ]
       },
       {
-        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:MusicAudio"
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:MusicAudio",
         "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
         "resourceLabel": "Music and audio",
         "author": "Melissa Morgan (mcm104@uw.edu)",
