@@ -1,0 +1,442 @@
+{
+  "Profile": {
+    "author": "Melissa Morgan (mcm104@uw.edu)",
+    "date": "2020-02-27"
+    "description": "Resource templates for adaptation properties for works",
+    "id": "WAU:profile:RDA:adaptationProperties",
+    "title": "WAU Profile RDA for adaptation properties for works",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
+    "resourceTemplates": [
+      {
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:General",
+        "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
+        "resourceLabel": "General",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-2-27",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10142",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+              "propertyLabel": "is adapted as work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10155",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          },
+          {
+              "propertyLabel": "is based on work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10190",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:Literature"
+        "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
+        "resourceLabel": "Literature",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-2-27",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+              "propertyLabel": "is novelization of work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10130",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          },
+          {
+              "propertyLabel": "is adapted as novel work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10034",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          },
+          {
+              "propertyLabel": "is verse adaptation of work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10128",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          },
+          {
+            "propertyLabel": "is graphic novelization of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10252",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as graphic novel work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10251",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+        ]
+      },
+      {
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:FTV"
+        "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
+        "resourceLabel": "Film, TV, and video",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-2-27",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+              "propertyLabel": "is screenplay based on work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10133",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          },
+          {
+              "propertyLabel": "is adapted as screenplay work (RDA 24.5)",
+              "propertyURI": "http://rdaregistry.info/Elements/w/P10095",
+              "mandatory": "false",
+              "repeatable": "true",
+              "type": "lookup",
+              "valueConstraint": {
+                  "useValuesFrom": ["urn:ld4p:sinopia"]
+              }
+          },
+          {
+            "propertyLabel": "is motion picture adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10129",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as motion picture work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10025",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is motion picture screenplay based on work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10134",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as motion picture screenplay work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10094",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is television adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10132",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as television program work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10085",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            },
+          },
+          {
+            "propertyLabel": "is television screenplay based on work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10135",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as television screenplay work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10096",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is video adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10138",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as video work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10087",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is video screenplay based on work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10136",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as video screenplay work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10097",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is video game adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10250",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as video game work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10249",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:FBP4RDAP:AdaptationProperties:MusicAudio"
+        "resourceURI": "http://fakeyBogusProperty4RDAprofile.org/adaptationProperties",
+        "resourceLabel": "Music and audio",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-2-27",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is choreographic adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10183",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as choreography work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10091",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is variations based on work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10027",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is musical theatre adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10233",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as musical theatre work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10235",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is opera adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10234",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as opera work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10236",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is libretto based on work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10189",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as libretto work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10113",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is oratorio adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10288",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as oratorio work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10289",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is radio adaptation of work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10131",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as radio program work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10076",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is radio script based on work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10137",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adapted as radio script work (RDA 24.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10098",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
