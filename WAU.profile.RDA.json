@@ -3913,7 +3913,7 @@
                         },
                         "uwFormOrder": 388,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -4171,7 +4171,7 @@
                         },
                         "uwFormOrder": 388.1,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -5597,7 +5597,7 @@
                         },
                         "uwFormOrder": 378,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -5875,7 +5875,7 @@
                         },
                         "uwFormOrder": 531.1,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -6644,7 +6644,7 @@
                         },
                         "uwFormOrder": 380,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -6681,7 +6681,7 @@
                         },
                         "uwFormOrder": 341,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -7637,7 +7637,7 @@
                         },
                         "uwFormOrder": 377,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -7935,7 +7935,7 @@
                         },
                         "uwFormOrder": 344,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph"
@@ -8165,7 +8165,7 @@
                         },
                         "uwFormOrder": 342,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8216,7 +8216,7 @@
                         },
                         "uwFormOrder": 379,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -8261,7 +8261,7 @@
                         },
                         "uwFormOrder": 346,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8277,7 +8277,7 @@
                         },
                         "uwFormOrder": 350,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "dvdVideo",
@@ -8364,7 +8364,7 @@
                         },
                         "uwFormOrder": 351,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "soundRecording"
@@ -8382,7 +8382,7 @@
                         },
                         "uwFormOrder": 348,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -8587,7 +8587,7 @@
                         },
                         "uwFormOrder": 357,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8700,7 +8700,7 @@
                         },
                         "uwFormOrder": 358,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -8720,7 +8720,7 @@
                         },
                         "uwFormOrder": 359,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8728,23 +8728,15 @@
                     {
                         "propertyLabel": "is video game adaptation of work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10250",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
                         "uwFormOrder": -1,
                         "statusUw": "",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -18489,7 +18481,7 @@
                         },
                         "uwFormOrder": 335.93,
                         "statusUw": "done",
-                        "noteUw": [""],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
