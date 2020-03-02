@@ -4,7 +4,7 @@
         "id": "WAU:profile:RDA",
         "author": "Ben Riesenberg (ries07@uw.edu)",
         "date": "2020-01-22",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan, Administrative Metadata, Status, Complex Subject, Simple Type, RDF List",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, and Timespan; BFLC Administrative Metadata and Status; MADS RDF Complex Subject and Subject; RDF List",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
             {
