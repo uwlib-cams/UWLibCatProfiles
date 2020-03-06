@@ -81,13 +81,13 @@
       {
         "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
-        "resourceLabel": "RDA Derivative Work Relationships (RDA 24.5)",
+        "resourceLabel": "RDA Derivative Work Relationships",
         "author": "Melissa Morgan (mcm104@uw.edu)",
         "date": "2020-03-04",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is based on work (RDA 24.5)",
+            "propertyLabel": "is based on work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10190",
             "mandatory": "false",
             "repeatable": "true",
@@ -97,7 +97,7 @@
             }
           },
           {
-            "propertyLabel": "has derivative work (RDA 24.5)",
+            "propertyLabel": "has derivative work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10148",
             "mandatory": "false",
             "repeatable": "true",
@@ -117,7 +117,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is based on expression (RDA 24.5)",
+            "propertyLabel": "is based on expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20204",
             "mandatory": "false",
             "repeatable": "true",
@@ -127,7 +127,7 @@
             }
           },
           {
-            "propertyLabel": "has derivative expression (RDA 24.5)",
+            "propertyLabel": "has derivative expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20203",
             "mandatory": "false",
             "repeatable": "true",
@@ -147,7 +147,17 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is abridgement of work (RDA 24.5)",
+            "propertyLabel": "is based on work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10190",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abridgement of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10125",
             "mandatory": "false",
             "repeatable": "true",
@@ -157,7 +167,7 @@
             }
           },
           {
-            "propertyLabel": "is abstract of work (RDA 24.5)",
+            "propertyLabel": "is abstract of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10126",
             "mandatory": "false",
             "repeatable": "true",
@@ -177,7 +187,7 @@
             }
           },
           {
-            "propertyLabel": "is digest of work (RDA 24.5)",
+            "propertyLabel": "is digest of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10139",
             "mandatory": "false",
             "repeatable": "true",
@@ -187,7 +197,7 @@
             }
           },
           {
-            "propertyLabel": "is expanded version of work (RDA 24.5)",
+            "propertyLabel": "is expanded version of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10184",
             "mandatory": "false",
             "repeatable": "true",
@@ -197,7 +207,7 @@
             }
           },
           {
-            "propertyLabel": "is free translation of work (RDA 24.5)",
+            "propertyLabel": "is free translation of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10143",
             "mandatory": "false",
             "repeatable": "true",
@@ -207,7 +217,7 @@
             }
           },
           {
-            "propertyLabel": "is imitation of work (RDA 24.5)",
+            "propertyLabel": "is imitation of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10196",
             "mandatory": "false",
             "repeatable": "true",
@@ -217,7 +227,7 @@
             }
           },
           {
-            "propertyLabel": "is inspired by work (RDA 24.5)",
+            "propertyLabel": "is inspired by work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10290",
             "mandatory": "false",
             "repeatable": "true",
@@ -227,7 +237,7 @@
             }
           },
           {
-            "propertyLabel": "is musical setting of work (RDA 24.5)",
+            "propertyLabel": "is musical setting of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10161",
             "mandatory": "false",
             "repeatable": "true",
@@ -237,7 +247,7 @@
             }
           },
           {
-            "propertyLabel": "is paraphrase of work (RDA 24.5)",
+            "propertyLabel": "is paraphrase of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10186",
             "mandatory": "false",
             "repeatable": "true",
@@ -247,7 +257,7 @@
             }
           },
           {
-            "propertyLabel": "is remake of work (RDA 24.5)",
+            "propertyLabel": "is remake of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10185",
             "mandatory": "false",
             "repeatable": "true",
@@ -257,7 +267,7 @@
             }
           },
           {
-            "propertyLabel": "is summary of work (RDA 24.5)",
+            "propertyLabel": "is summary of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10179",
             "mandatory": "false",
             "repeatable": "true",
@@ -267,7 +277,7 @@
             }
           },
           {
-            "propertyLabel": "is variations based on work (RDA 24.5)",
+            "propertyLabel": "is variations based on work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10027",
             "mandatory": "false",
             "repeatable": "true",
@@ -287,7 +297,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is based on expression (RDA 24.5)",
+            "propertyLabel": "is based on expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20204",
             "mandatory": "false",
             "repeatable": "true",
@@ -297,7 +307,7 @@
             }
           },
           {
-            "propertyLabel": "is abridgement of expression (RDA 24.5)",
+            "propertyLabel": "is abridgement of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20121",
             "mandatory": "false",
             "repeatable": "true",
@@ -307,7 +317,7 @@
             }
           },
           {
-            "propertyLabel": "is abstract of expression (RDA 24.5)",
+            "propertyLabel": "is abstract of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20122",
             "mandatory": "false",
             "repeatable": "true",
@@ -327,7 +337,7 @@
             }
           },
           {
-            "propertyLabel": "is digest of expression (RDA 24.5)",
+            "propertyLabel": "is digest of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20135",
             "mandatory": "false",
             "repeatable": "true",
@@ -337,7 +347,7 @@
             }
           },
           {
-            "propertyLabel": "is expanded version of expression (RDA 24.5)",
+            "propertyLabel": "is expanded version of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20184",
             "mandatory": "false",
             "repeatable": "true",
@@ -347,7 +357,7 @@
             }
           },
           {
-            "propertyLabel": "is free translation of expression (RDA 24.5)",
+            "propertyLabel": "is free translation of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20140",
             "mandatory": "false",
             "repeatable": "true",
@@ -357,7 +367,7 @@
             }
           },
           {
-            "propertyLabel": "is imitation of expression (RDA 24.5)",
+            "propertyLabel": "is imitation of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20195",
             "mandatory": "false",
             "repeatable": "true",
@@ -367,7 +377,7 @@
             }
           },
           {
-            "propertyLabel": "is indexing for expression (RDA 24.5)",
+            "propertyLabel": "is indexing for expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20194",
             "mandatory": "false",
             "repeatable": "true",
@@ -377,7 +387,7 @@
             }
           },
           {
-            "propertyLabel": "is musical setting of expression (RDA 24.5)",
+            "propertyLabel": "is musical setting of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20159",
             "mandatory": "false",
             "repeatable": "true",
@@ -387,7 +397,7 @@
             }
           },
           {
-            "propertyLabel": "is paraphrase of expression (RDA 24.5)",
+            "propertyLabel": "is paraphrase of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20186",
             "mandatory": "false",
             "repeatable": "true",
@@ -397,7 +407,7 @@
             }
           },
           {
-            "propertyLabel": "is remake of expression (RDA 24.5)",
+            "propertyLabel": "is remake of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20185",
             "mandatory": "false",
             "repeatable": "true",
@@ -407,7 +417,7 @@
             }
           },
           {
-            "propertyLabel": "is revision of (RDA 24.5)",
+            "propertyLabel": "is revision of",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20189",
             "mandatory": "false",
             "repeatable": "true",
@@ -417,7 +427,7 @@
             }
           },
           {
-            "propertyLabel": "is summary of expression (RDA 24.5)",
+            "propertyLabel": "is summary of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20179",
             "mandatory": "false",
             "repeatable": "true",
@@ -427,7 +437,7 @@
             }
           },
           {
-            "propertyLabel": "is translation of (RDA 24.5)",
+            "propertyLabel": "is translation of",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20141",
             "mandatory": "false",
             "repeatable": "true",
@@ -437,7 +447,7 @@
             }
           },
           {
-            "propertyLabel": "is variations based on expression (RDA 24.5)",
+            "propertyLabel": "is variations based on expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20081",
             "mandatory": "false",
             "repeatable": "true",
@@ -457,7 +467,17 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is abridged as work (RDA 24.5)",
+            "propertyLabel": "has derivative work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10148",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abridged as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10167",
             "mandatory": "false",
             "repeatable": "true",
@@ -467,7 +487,7 @@
             }
           },
           {
-            "propertyLabel": "is abstracted as work (RDA 24.5)",
+            "propertyLabel": "is abstracted as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10107",
             "mandatory": "false",
             "repeatable": "true",
@@ -477,7 +497,7 @@
             }
           },
           {
-            "propertyLabel": "is abstracted in work (RDA 24.5)",
+            "propertyLabel": "is abstracted in work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10089",
             "mandatory": "false",
             "repeatable": "true",
@@ -497,7 +517,7 @@
             }
           },
           {
-            "propertyLabel": "is digested as work (RDA 24.5)",
+            "propertyLabel": "is digested as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10171",
             "mandatory": "false",
             "repeatable": "true",
@@ -507,7 +527,7 @@
             }
           },
           {
-            "propertyLabel": "is expanded as work (RDA 24.5)",
+            "propertyLabel": "is expanded as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10119",
             "mandatory": "false",
             "repeatable": "true",
@@ -517,7 +537,7 @@
             }
           },
           {
-            "propertyLabel": "is freely translated as work (RDA 24.5)",
+            "propertyLabel": "is freely translated as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10099",
             "mandatory": "false",
             "repeatable": "true",
@@ -527,7 +547,7 @@
             }
           },
           {
-            "propertyLabel": "is imitated as work (RDA 24.5)",
+            "propertyLabel": "is imitated as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10117",
             "mandatory": "false",
             "repeatable": "true",
@@ -537,7 +557,7 @@
             }
           },
           {
-            "propertyLabel": "is indexed in work (RDA 24.5)",
+            "propertyLabel": "is indexed in work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10090",
             "mandatory": "false",
             "repeatable": "true",
@@ -547,7 +567,7 @@
             }
           },
           {
-            "propertyLabel": "is inspiration for work (RDA 24.5)",
+            "propertyLabel": "is inspiration for work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10291",
             "mandatory": "false",
             "repeatable": "true",
@@ -557,7 +577,7 @@
             }
           },
           {
-            "propertyLabel": "is modified by variation as work (RDA 24.5)",
+            "propertyLabel": "is modified by variation as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10028",
             "mandatory": "false",
             "repeatable": "true",
@@ -567,7 +587,7 @@
             }
           },
           {
-            "propertyLabel": "is paraphrased as work (RDA 24.5)",
+            "propertyLabel": "is paraphrased as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10166",
             "mandatory": "false",
             "repeatable": "true",
@@ -577,7 +597,7 @@
             }
           },
           {
-            "propertyLabel": "is remade as work (RDA 24.5)",
+            "propertyLabel": "is remade as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10032",
             "mandatory": "false",
             "repeatable": "true",
@@ -587,7 +607,7 @@
             }
           },
           {
-            "propertyLabel": "is set to music as work (RDA 24.5)",
+            "propertyLabel": "is set to music as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10033",
             "mandatory": "false",
             "repeatable": "true",
@@ -597,7 +617,7 @@
             }
           },
           {
-            "propertyLabel": "is summarized as work (RDA 24.5)",
+            "propertyLabel": "is summarized as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10109",
             "mandatory": "false",
             "repeatable": "true",
@@ -617,7 +637,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "has derivative expression (RDA 24.5)",
+            "propertyLabel": "has derivative expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20203",
             "mandatory": "false",
             "repeatable": "true",
@@ -627,7 +647,7 @@
             }
           },
           {
-            "propertyLabel": "is abridged as expression (RDA 24.5)",
+            "propertyLabel": "is abridged as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20166",
             "mandatory": "false",
             "repeatable": "true",
@@ -637,7 +657,7 @@
             }
           },
           {
-            "propertyLabel": "is abstracted as expression (RDA 24.5)",
+            "propertyLabel": "is abstracted as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20104",
             "mandatory": "false",
             "repeatable": "true",
@@ -647,7 +667,7 @@
             }
           },
           {
-            "propertyLabel": "is abstracted in expression (RDA 24.5)",
+            "propertyLabel": "is abstracted in expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20090",
             "mandatory": "false",
             "repeatable": "true",
@@ -667,7 +687,7 @@
             }
           },
           {
-            "propertyLabel": "is arranged as (RDA 24.5)",
+            "propertyLabel": "is arranged as",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20165",
             "mandatory": "false",
             "repeatable": "true",
@@ -677,7 +697,7 @@
             }
           },
           {
-            "propertyLabel": "is digested as expression (RDA 24.5)",
+            "propertyLabel": "is digested as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20170",
             "mandatory": "false",
             "repeatable": "true",
@@ -687,7 +707,7 @@
             }
           },
           {
-            "propertyLabel": "is expanded as expression (RDA 24.5)",
+            "propertyLabel": "is expanded as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20115",
             "mandatory": "false",
             "repeatable": "true",
@@ -697,7 +717,7 @@
             }
           },
           {
-            "propertyLabel": "is freely translated as expression (RDA 24.5)",
+            "propertyLabel": "is freely translated as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20119",
             "mandatory": "false",
             "repeatable": "true",
@@ -707,7 +727,7 @@
             }
           },
           {
-            "propertyLabel": "is imitated as expression (RDA 24.5)",
+            "propertyLabel": "is imitated as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20114",
             "mandatory": "false",
             "repeatable": "true",
@@ -717,7 +737,7 @@
             }
           },
           {
-            "propertyLabel": "is indexed in expression (RDA 24.5)",
+            "propertyLabel": "is indexed in expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20091",
             "mandatory": "false",
             "repeatable": "true",
@@ -727,7 +747,7 @@
             }
           },
           {
-            "propertyLabel": "is modified by variation as expression (RDA 24.5)",
+            "propertyLabel": "is modified by variation as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20082",
             "mandatory": "false",
             "repeatable": "true",
@@ -737,7 +757,7 @@
             }
           },
           {
-            "propertyLabel": "is paraphrased as expression (RDA 24.5)",
+            "propertyLabel": "is paraphrased as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20164",
             "mandatory": "false",
             "repeatable": "true",
@@ -747,7 +767,7 @@
             }
           },
           {
-            "propertyLabel": "is remade as expression (RDA 24.5)",
+            "propertyLabel": "is remade as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20086",
             "mandatory": "false",
             "repeatable": "true",
@@ -757,7 +777,7 @@
             }
           },
           {
-            "propertyLabel": "is revised as (RDA 24.5)",
+            "propertyLabel": "is revised as",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20211",
             "mandatory": "false",
             "repeatable": "true",
@@ -767,7 +787,7 @@
             }
           },
           {
-            "propertyLabel": "is set to music as expression (RDA 24.5)",
+            "propertyLabel": "is set to music as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20087",
             "mandatory": "false",
             "repeatable": "true",
@@ -777,7 +797,7 @@
             }
           },
           {
-            "propertyLabel": "is summarized as expression (RDA 24.5)",
+            "propertyLabel": "is summarized as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20106",
             "mandatory": "false",
             "repeatable": "true",
@@ -787,7 +807,7 @@
             }
           },
           {
-            "propertyLabel": "is translated as (RDA 24.5)",
+            "propertyLabel": "is translated as",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20171",
             "mandatory": "false",
             "repeatable": "true",
@@ -977,7 +997,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is imitation of work (RDA 24.5)",
+            "propertyLabel": "is imitation of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10196",
             "mandatory": "false",
             "repeatable": "true",
@@ -987,7 +1007,7 @@
             }
           },
           {
-            "propertyLabel": "is parody of work (RDA 24.5)",
+            "propertyLabel": "is parody of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10197",
             "mandatory": "false",
             "repeatable": "true",
@@ -1137,7 +1157,7 @@
             }
           },
           {
-            "propertyLabel": "is television adaptation of expression (RDA 24.5)",
+            "propertyLabel": "is television adaptation of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20128",
             "mandatory": "false",
             "repeatable": "true",
@@ -1177,7 +1197,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is imitation of expression (RDA 24.5)",
+            "propertyLabel": "is imitation of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20195",
             "mandatory": "false",
             "repeatable": "true",
@@ -1187,7 +1207,7 @@
             }
           },
           {
-            "propertyLabel": "is parody of expression (RDA 24.5)",
+            "propertyLabel": "is parody of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20196",
             "mandatory": "false",
             "repeatable": "true",
@@ -1207,7 +1227,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is translation of (RDA 24.5)",
+            "propertyLabel": "is translation of",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20141",
             "mandatory": "false",
             "repeatable": "true",
@@ -1217,7 +1237,7 @@
             }
           },
           {
-            "propertyLabel": "is dubbed version of (RDA 24.5)",
+            "propertyLabel": "is dubbed version of",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20078",
             "mandatory": "false",
             "repeatable": "true",
@@ -1237,14 +1257,14 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-              "propertyLabel": "is adapted as work",
-              "propertyURI": "http://rdaregistry.info/Elements/w/P10155",
-              "mandatory": "false",
-              "repeatable": "true",
-              "type": "lookup",
-              "valueConstraint": {
-                  "useValuesFrom": ["urn:ld4p:sinopia"]
-              }
+            "propertyLabel": "is adapted as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10155",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
           },
           {
             "propertyLabel": "is adapted as choreography work",
@@ -1397,7 +1417,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is imitated as work (RDA 24.5)",
+            "propertyLabel": "is imitated as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10117",
             "mandatory": "false",
             "repeatable": "true",
@@ -1407,7 +1427,7 @@
             }
           },
           {
-            "propertyLabel": "is parodied as work (RDA 24.5)",
+            "propertyLabel": "is parodied as work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10144",
             "mandatory": "false",
             "repeatable": "true",
@@ -1597,7 +1617,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is imitated as expression (RDA 24.5)",
+            "propertyLabel": "is imitated as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20114",
             "mandatory": "false",
             "repeatable": "true",
@@ -1607,7 +1627,7 @@
             }
           },
           {
-            "propertyLabel": "is parodied as expression (RDA 24.5)",
+            "propertyLabel": "is parodied as expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20142",
             "mandatory": "false",
             "repeatable": "true",
@@ -1627,7 +1647,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is translated as (RDA 24.5)",
+            "propertyLabel": "is translated as",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20171",
             "mandatory": "false",
             "repeatable": "true",
@@ -1637,7 +1657,7 @@
             }
           },
           {
-            "propertyLabel": "has dubbed version (RDA 24.5)",
+            "propertyLabel": "has dubbed version",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20079",
             "mandatory": "false",
             "repeatable": "true",
@@ -1837,7 +1857,7 @@
             }
           },
           {
-            "propertyLabel": "is adapted as video screenplay expression (RDA 24.5)",
+            "propertyLabel": "is adapted as video screenplay expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20098",
             "mandatory": "false",
             "repeatable": "true",
