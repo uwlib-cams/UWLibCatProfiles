@@ -656,7 +656,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 0.009,
+                        "uwFormOrder": 0.012,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -995,7 +995,7 @@
                         "mandatory": "true",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 0.006,
+                        "uwFormOrder": 0.002,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1412,7 +1412,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 0.019,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1640,7 +1640,7 @@
                                 "urn:ld4p:qa:subjects"
                             ]
                         },
-                        "uwFormOrder": 0.005,
+                        "uwFormOrder": 0.007,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1794,7 +1794,7 @@
                                 "urn:ld4p:qa:subjects"
                             ]
                         },
-                        "uwFormOrder": 0.010,
+                        "uwFormOrder": 0.009,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -2112,7 +2112,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 0.020,
+                        "uwFormOrder": 0.017,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -2731,7 +2731,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.011,
+                        "uwFormOrder": 0.010,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -3287,13 +3287,14 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 211,
+                        "uwFormOrder": 0.020,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "graphic",
-                            "eGraphic"
+                            "eGraphic",
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -4080,7 +4081,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 0.015,
+                        "uwFormOrder": 0.018,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -7158,7 +7159,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.004,
+                        "uwFormOrder": 0.005,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -7232,7 +7233,7 @@
                                 "urn:ld4p:qa:subjects"
                             ]
                         },
-                        "uwFormOrder": 0.012,
+                        "uwFormOrder": 0.011,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -8077,7 +8078,7 @@
                         "mandatory": "true",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.003,
+                        "uwFormOrder": 0.004,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -11811,7 +11812,7 @@
                                 "urn:ld4p:qa:mesh"
                             ]
                         },
-                        "uwFormOrder": 0.002,
+                        "uwFormOrder": 0.006,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12187,28 +12188,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 0.017,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
-                        "propertyLabel": "has director agent of photography (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10068",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        },
-                        "uwFormOrder": 0.018,
+                        "uwFormOrder": 0.019,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12865,7 +12845,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.007,
+                        "uwFormOrder": 0.003,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31822,7 +31802,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.021,
+                        "uwFormOrder": 0.020,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31985,7 +31965,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.024,
+                        "uwFormOrder": 0.022,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -32229,7 +32209,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.023,
+                        "uwFormOrder": 0.021,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -32979,7 +32959,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 0.025,
+                        "uwFormOrder": 0.023,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -33436,7 +33416,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.022,
+                        "uwFormOrder": 0.024,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -33460,7 +33440,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 0.020,
+                        "uwFormOrder": 0.025,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
