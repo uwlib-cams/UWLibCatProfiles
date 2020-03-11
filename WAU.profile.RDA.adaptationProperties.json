@@ -37,7 +37,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships"]
             },
             "remark": "http://access.rdatoolkit.org/24.5.html"
           }
@@ -66,20 +66,71 @@
             "type": "literal"
           },
           {
+            "propertyLabel": "has work expressed (*) (RDA 17.6)",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20231",
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            },
+            "remark": "http://access.rdatoolkit.org/17.6.html"
+          },
+          {
             "propertyLabel": "RDA Derivative Expression Relationships (RDA 24.5)",
             "propertyURI": "http://uw.edu/ResourceWithAdaptationProperties",
             "mandatory": "false",
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships"]
             },
             "remark": "http://access.rdatoolkit.org/24.5.html"
           }
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships",
+        "id": "WAU:RT:RDA:experimentalProfile:Manifestation",
+        "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
+        "resourceLabel": "WAU RT RDA Manifestation (Experimental Profile)",
+        "date": "2020-03-10",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "has title proper (*) (RDA 2.3.2)",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30156",
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "remark": "http://access.rdatoolkit.org/2.3.2.html"
+          },
+          {
+            "propertyLabel": "has expression manifested (*) (RDA 17.10)",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30139",
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            },
+            "remark": "http://access.rdatoolkit.org/17.10.html"
+          },
+          {
+            "propertyLabel": "Equivalent Manifestation Relationships (RDA 24.5)",
+            "propertyURI": "http://uw.edu/ResourceWithAdaptationProperties",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships"]
+            },
+            "remark": "http://access.rdatoolkit.org/24.5.html"
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "RDA Derivative Work Relationships",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -93,7 +144,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork"]
             }
           },
           {
@@ -101,15 +152,15 @@
             "propertyURI": "http://rdaregistry.info/Elements/w/P10148",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork"]
             }
           }
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "RDA Derivative Expression Relationships",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -123,7 +174,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression"]
             }
           },
           {
@@ -131,15 +182,55 @@
             "propertyURI": "http://rdaregistry.info/Elements/e/P20203",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression"]
             }
           }
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "RDA Equivalent Manifestation Relationships",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-10",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is also issued as",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30026",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is reproduced as manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30039",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships:reproducedAsManifestation"]
+            }
+          },
+          {
+            "propertyLabel": "is reproduction of manifestation of",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30043",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships:reproductionOfManifestation"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is based on work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -183,7 +274,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork"]
             }
           },
           {
@@ -221,9 +312,9 @@
             "propertyURI": "http://rdaregistry.info/Elements/w/P10196",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork"]
             }
           },
           {
@@ -289,7 +380,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is based on expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -333,7 +424,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression"]
             }
           },
           {
@@ -373,7 +464,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:imitationOfExpression"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:imitationOfExpression"]
             }
           },
           {
@@ -443,7 +534,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:translationOf"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:translationOf"]
             }
           },
           {
@@ -459,7 +550,37 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships:reproducedAsManifestation",
+        "resourceURI": "http://rdaregistry.info/Elements/m/P30039",
+        "resourceLabel": "is reproduced as manifestation",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-10",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is electronic reproduction of manifestation of",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30136",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is reprinted as manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30038",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "has derivative work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -513,7 +634,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork"]
             }
           },
           {
@@ -553,7 +674,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:imitatedAsWork"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:imitatedAsWork"]
             }
           },
           {
@@ -629,7 +750,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "has derivative expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -683,7 +804,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression"]
             }
           },
           {
@@ -733,7 +854,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:imitatedAsExpression"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:imitatedAsExpression"]
             }
           },
           {
@@ -813,13 +934,43 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:translatedAs"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:translatedAs"]
             }
           }
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships:reproductionOfManifestation",
+        "resourceURI": "http://rdaregistry.info/Elements/m/P30039",
+        "resourceLabel": "is reproduction of manifestation",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-10",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is electronic reproduction of manifestation of",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30136",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is facsimile of manifestation of",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30047",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships:reproductionOfManifestation:facsimileOfManifestation"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adaptation of work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -943,7 +1094,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork:screenplayAdaptationOfWork"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork:screenplayAdaptationOfWork"]
             }
           },
           {
@@ -989,7 +1140,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is imitation of work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1019,7 +1170,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adaptation of expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1153,7 +1304,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression:screenplayAdaptationOfExpression"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression:screenplayAdaptationOfExpression"]
             }
           },
           {
@@ -1189,7 +1340,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:imitationOfExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:imitationOfExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is imitation of expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1219,7 +1370,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:translationOf",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:translationOf",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is translation of",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1249,7 +1400,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1373,7 +1524,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork:adaptedAsScreenplayWork"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork:adaptedAsScreenplayWork"]
             }
           },
           {
@@ -1409,7 +1560,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:imitatedAsWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:imitatedAsWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is imitated as work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1439,7 +1590,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1563,7 +1714,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression:adaptedAsScreenplayExpression"]
+                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression:adaptedAsScreenplayExpression"]
             }
           },
           {
@@ -1609,7 +1760,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:imitatedAsExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:imitatedAsExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is imitated as expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1639,7 +1790,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:translatedAs",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:translatedAs",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is translated as",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1669,7 +1820,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork:screenplayAdaptationOfWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork:screenplayAdaptationOfWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is screenplay adaptation of work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1719,7 +1870,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression:screenplayAdaptationOfExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression:screenplayAdaptationOfExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is screenplay adaptation of expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1769,7 +1920,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork:adaptedAsScreenplayWork",
+        "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork:adaptedAsScreenplayWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as screenplay work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1819,7 +1970,7 @@
         ]
       },
       {
-        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression:adaptedAsScreenplayExpression",
+        "id": "WAU:RT:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression:adaptedAsScreenplayExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as screenplay expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -1859,6 +2010,36 @@
           {
             "propertyLabel": "is adapted as video screenplay expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20098",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Manifestation:equivalentManifestationRelationships:reproductionOfManifestation:facsimileOfManifestation",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is facsimile of manifestation",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-10",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is facsimile of manifestation of",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30047",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is preservation facsimile of manifestation of",
+            "propertyURI": "http://rdaregistry.info/Elements/m/P30045",
             "mandatory": "false",
             "repeatable": "true",
             "type": "lookup",
