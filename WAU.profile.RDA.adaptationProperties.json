@@ -37,7 +37,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties"]
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships"]
             },
             "remark": "http://access.rdatoolkit.org/24.5.html"
           }
@@ -72,20 +72,110 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties"]
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships"]
             },
             "remark": "http://access.rdatoolkit.org/24.5.html"
           }
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties",
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
-        "resourceLabel": "RDA Derivative Work Relationships (RDA 24.5)",
+        "resourceLabel": "RDA Derivative Work Relationships",
         "author": "Melissa Morgan (mcm104@uw.edu)",
         "date": "2020-03-04",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
+          {
+            "propertyLabel": "is based on work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10190",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork"]
+            }
+          },
+          {
+            "propertyLabel": "has derivative work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10148",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "RDA Derivative Expression Relationships",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-04",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is based on expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20204",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression"]
+            }
+          },
+          {
+            "propertyLabel": "has derivative expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20203",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is based on work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is based on work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10190",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abridgement of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10125",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abstract of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10126",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
           {
             "propertyLabel": "is adaptation of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10142",
@@ -93,7 +183,327 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptationOfWork"]
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork"]
+            }
+          },
+          {
+            "propertyLabel": "is digest of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10139",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is expanded version of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10184",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is free translation of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10143",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is imitation of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10196",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork"]
+            }
+          },
+          {
+            "propertyLabel": "is inspired by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10290",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is musical setting of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10161",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is paraphrase of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10186",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is remake of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10185",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is summary of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10179",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is variations based on work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10027",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is based on expression",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is based on expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20204",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abridgement of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20121",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abstract of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20122",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is adaptation of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20204",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression"]
+            }
+          },
+          {
+            "propertyLabel": "is digest of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20135",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is expanded version of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20184",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is free translation of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20140",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is imitation of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20195",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:imitationOfExpression"]
+            }
+          },
+          {
+            "propertyLabel": "is indexing for expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20194",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is musical setting of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20159",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is paraphrase of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20186",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is remake of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20185",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is revision of",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20189",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is summary of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20179",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is translation of",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20141",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:translationOf"]
+            }
+          },
+          {
+            "propertyLabel": "is variations based on expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20081",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "has derivative work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "has derivative work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10148",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abridged as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10167",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abstracted as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10107",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abstracted in work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10089",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
             }
           },
           {
@@ -103,27 +513,167 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptedAsWork"]
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork"]
+            }
+          },
+          {
+            "propertyLabel": "is digested as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10171",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is expanded as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10119",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is freely translated as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10099",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is imitated as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10117",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+                "useValuesFrom": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:imitatedAsWork"]
+            }
+          },
+          {
+            "propertyLabel": "is indexed in work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10090",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is inspiration for work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10291",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is modified by variation as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10028",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is paraphrased as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10166",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is remade as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10032",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is set to music as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10033",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is summarized as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10109",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
             }
           }
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties",
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
-        "resourceLabel": "RDA Derivative Expression Relationships",
+        "resourceLabel": "has derivative expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
-        "date": "2020-03-04",
+        "date": "2020-03-06",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-            "propertyLabel": "is adaptation of expression",
-            "propertyURI": "http://rdaregistry.info/Elements/e/P20204",
+            "propertyLabel": "has derivative expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20203",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
+            "type": "lookup",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptationOfExpression"]
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abridged as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20166",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abstracted as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20104",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is abstracted in expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20090",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
             }
           },
           {
@@ -133,13 +683,143 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptedAsExpression"]
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression"]
+            }
+          },
+          {
+            "propertyLabel": "is arranged as",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20165",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is digested as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20170",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is expanded as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20115",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is freely translated as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20119",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is imitated as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20114",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:imitatedAsExpression"]
+            }
+          },
+          {
+            "propertyLabel": "is indexed in expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20091",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is modified by variation as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20082",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is paraphrased as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20164",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is remade as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20086",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is revised as",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20211",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is set to music as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20087",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is summarized as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20106",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is translated as",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20171",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:translatedAs"]
             }
           }
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptationOfWork",
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adaptation of work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -263,7 +943,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptationOfWork:screenplayAdaptationOfWork"]
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork:screenplayAdaptationOfWork"]
             }
           },
           {
@@ -309,7 +989,37 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptationOfExpression",
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is imitation of work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is imitation of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10196",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is parody of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10197",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adaptation of expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -437,17 +1147,17 @@
             }
           },
           {
-            "propertyLabel": "is screenplay adaptation of expression",
+            "propertyLabel": "is screenplay based on expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20129",
             "mandatory": "false",
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptationOfExpression:screenplayAdaptationOfExpression"]
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression:screenplayAdaptationOfExpression"]
             }
           },
           {
-            "propertyLabel": "is television adaptation of expression (RDA 24.5)",
+            "propertyLabel": "is television adaptation of expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20128",
             "mandatory": "false",
             "repeatable": "true",
@@ -479,7 +1189,67 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptedAsWork",
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:imitationOfExpression",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is imitation of expression",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is imitation of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20195",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is parody of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20196",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:translationOf",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is translation of",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is translation of",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20141",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is dubbed version of",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20078",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -487,14 +1257,14 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "propertyTemplates": [
           {
-              "propertyLabel": "is adapted as work",
-              "propertyURI": "http://rdaregistry.info/Elements/w/P10155",
-              "mandatory": "false",
-              "repeatable": "true",
-              "type": "lookup",
-              "valueConstraint": {
-                  "useValuesFrom": ["urn:ld4p:sinopia"]
-              }
+            "propertyLabel": "is adapted as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10155",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
           },
           {
             "propertyLabel": "is adapted as choreography work",
@@ -603,7 +1373,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptedAsWork:adaptedAsScreenplayWork"]
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork:adaptedAsScreenplayWork"]
             }
           },
           {
@@ -639,7 +1409,37 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptedAsExpression",
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:imitatedAsWork",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is imitated as work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is imitated as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10117",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is parodied as work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10144",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -763,7 +1563,7 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-                "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptedAsExpression:adaptedasScreenplayExpression"]
+                "valueTemplateRefs": ["WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression:adaptedAsScreenplayExpression"]
             }
           },
           {
@@ -809,7 +1609,67 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptationOfWork:screenplayAdaptationOfWork",
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:imitatedAsExpression",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is imitated as expression",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is imitated as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20114",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is parodied as expression",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20142",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:translatedAs",
+        "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
+        "resourceLabel": "is translated as",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is translated as",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20171",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "has dubbed version",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20079",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:adaptationOfWork:screenplayAdaptationOfWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is screenplay adaptation of work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -859,7 +1719,7 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptationOfExpression:screenplayAdaptationOfExpression",
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:basedOnExpression:adaptationOfExpression:screenplayAdaptationOfExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is screenplay adaptation of expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -909,7 +1769,7 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Work:uwAdaptationProperties:adaptedAsWork:adaptedAsScreenplayWork",
+        "id": "WAU:profile:RDA:experimentalProfile:Work:derivativeWorkRelationships:derivativeWork:adaptedAsWork:adaptedAsScreenplayWork",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as screenplay work",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -959,7 +1819,7 @@
         ]
       },
       {
-        "id": "WAU:RT:RDA:experimentalProfile:Expression:uwAdaptationProperties:adaptedAsExpression:adaptedasScreenplayExpression",
+        "id": "WAU:profile:RDA:experimentalProfile:Expression:derivativeExpressionRelationships:derivativeExpression:adaptedAsExpression:adaptedAsScreenplayExpression",
         "resourceURI": "http://uw.edu/ResourceWithAdaptationProperties",
         "resourceLabel": "is adapted as screenplay expression",
         "author": "Melissa Morgan (mcm104@uw.edu)",
@@ -997,7 +1857,7 @@
             }
           },
           {
-            "propertyLabel": "is adapted as video screenplay expression (RDA 24.5)",
+            "propertyLabel": "is adapted as video screenplay expression",
             "propertyURI": "http://rdaregistry.info/Elements/e/P20098",
             "mandatory": "false",
             "repeatable": "true",
