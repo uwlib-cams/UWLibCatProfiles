@@ -2240,25 +2240,6 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has composer of expression (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20026",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        },
-                        "uwFormOrder": 0.020,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
-                        ],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
                         "propertyLabel": "has composer collective agent of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10489",
                         "mandatory": "",
@@ -13150,6 +13131,25 @@
                         ]
                     },
                     {
+                        "propertyLabel": "has composer of expression (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20026",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        },
+                        "uwFormOrder": 0.020,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "dvdVideo",
+                            "soundRecording"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
                         "propertyLabel": "is identified by Library of Congress Name Authority File expression authority",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
@@ -21586,7 +21586,9 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": [
+                            "dvdVideo"
+                        ]
                     },
                     {
                         "propertyLabel": "has prequel expression",
@@ -24350,7 +24352,9 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": [
+                            "dvdVideo"
+                        ]
                     },
                     {
                         "propertyLabel": "has aspect ratio (RDA 7.19)",
