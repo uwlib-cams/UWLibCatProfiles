@@ -998,6 +998,16 @@
             }
           },
           {
+            "propertyLabel": "is dramatization of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10127",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
             "propertyLabel": "is graphic novelization of work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10252",
             "mandatory": "false",
