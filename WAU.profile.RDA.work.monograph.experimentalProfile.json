@@ -87,13 +87,24 @@
             "remark": "http://access.rdatoolkit.org/6.3.html"
           },
           {
-            "propertyLabel": "has author agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10061",
+            "propertyLabel": "has relationship designator for creator (RDA 18.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/relationshipDesignatorCreator",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:relationshipDesignatorsForAgents:relationshipDesignatorsForCreator"]
+            },
+            "remark": "http://access.rdatoolkit.org/18.5.html"
+          },
+          {
+            "propertyLabel": "has relationship designator for other agent associated with work (RDA 18.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/relationshipDesignatorOther",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:relationshipDesignatorsForAgents:relationshipDesignatorsForOther"]
             },
             "remark": "http://access.rdatoolkit.org/18.5.html"
           },
@@ -104,10 +115,10 @@
             "repeatable": "true",
             "type": "lookup",
             "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:demographics",
-                    "urn:ld4p:qa:subjects"
-                ]
+              "useValuesFrom": [
+                  "urn:ld4p:qa:demographics",
+                  "urn:ld4p:qa:subjects"
+              ]
             }
           },
           {
@@ -131,42 +142,6 @@
                 ]
             },
             "remark": "http://access.rdatoolkit.org/6.5.html"
-          },
-          {
-            "propertyLabel": "has artist agent (RDA 18.5) ",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10058",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has screenwriter agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10203",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has compiler agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10055",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:person",
-                    "urn:ld4p:qa:names:organization"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
           },
           {
             "propertyLabel": "has part work (RDA 24.5)",
@@ -238,426 +213,13 @@
             "remark": "http://access.rdatoolkit.org/6.7.html"
           },
           {
-            "propertyLabel": "has sculptor agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10202",
+            "propertyLabel": "has relationship designator for contributor (RDA 18.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/relationshipDesignatorContributor",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has creator agent of work (RDA 19.2)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10065",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/19.2.html"
-          },
-          {
-            "propertyLabel": "has architect agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10062",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has book artist agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10254",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:person",
-                    "urn:ld4p:qa:names:organization"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has calligrapher agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10253",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:person",
-                    "urn:ld4p:qa:names:organization"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has librettist agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10205",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:person",
-                    "urn:ld4p:qa:names:organization"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has lyricist agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10204",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:person",
-                    "urn:ld4p:qa:names:organization"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has rapporteur agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10255",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has enacting jurisdiction (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10017",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:organization",
-                    "urn:ld4p:qa:names:geographic"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has interviewee agent of work (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10059",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has interviewer agent of work (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10057",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has photographer agent of work (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10056",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": [
-                    "urn:ld4p:qa:names:person",
-                    "urn:ld4p:qa:names:organization"
-                ]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has respondent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10001",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has addressee agent (RDA 19.3)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10070",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/19.3.html"
-          },
-          {
-            "propertyLabel": "has appellant corporate body (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10009",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has appellant person (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10042",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has appellee person (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10035",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has appellee corporate body (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10005",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has commissioning body agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10287",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has court governed (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10011",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has dedicatee agent of work (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10069",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has defendant corporate body (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10285",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has defendant person (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10286",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has honouree agent of work (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10049",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has hosting institution (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10007",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has issuing body agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10046",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has judge (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10044",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has jurisdiction governed (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10018",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:geographic"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has organizer agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has participant in treaty (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has plaintiff person (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has plaintiff corporate body (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10010",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has researcher agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10293",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names:person"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has related agent of work ",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10311",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            }
-          },
-          {
-            "propertyLabel": "has sponsoring agent of work (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10067",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "work has contributor agent (RDA 18.5)",
-            "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
-            },
-            "remark": "http://access.rdatoolkit.org/18.5.html"
-          },
-          {
-            "propertyLabel": "has abridger agent (RDA 18.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:qa:names"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:relationshipDesignatorsForAgents:relationshipDesignatorsForContributor"]
             },
             "remark": "http://access.rdatoolkit.org/18.5.html"
           },
@@ -775,222 +337,46 @@
             }
           },
           {
-            "propertyLabel": "is analysis of work (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10140",
+            "propertyLabel": "is description of work (RDA 23.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/descriptionOfItem",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:descriptionOfWork"]
             },
             "remark": "http://access.rdatoolkit.org/23.5.html"
           },
           {
-            "propertyLabel": "is commentary on work (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10187",
+            "propertyLabel": "is description of expression (RDA 23.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/descriptionOfItem",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:descriptionOfExpression"]
             },
             "remark": "http://access.rdatoolkit.org/23.5.html"
           },
           {
-            "propertyLabel": "is critique of work (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10182",
+            "propertyLabel": "is description of manifestation (RDA 23.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/descriptionOfItem",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:descriptionOfManifestation"]
             },
             "remark": "http://access.rdatoolkit.org/23.5.html"
           },
           {
-            "propertyLabel": "is evaluation of work (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10153",
+            "propertyLabel": "is description of item (RDA 23.5)",
+            "propertyURI": "http://uw.edu/adaptationProperties/p/w/descriptionOfItem",
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "resource",
             "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is review of work (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10178",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is analysis of expression (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10278",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is commentary on expression (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10282",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is critique of expression (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10281",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is evaluation of expression (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10279",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is review of expression (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10280",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is analysis of manifestation (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10272",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is commentary on manifestation (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10276",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is critique of manifestation (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10275",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is evaluation of manifestation (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10273",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is review of manifestation (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10274",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is analysis of item (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10266",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is commentary on item (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10270",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is critique of item (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10269",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is evaluation of item (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10267",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
-            },
-            "remark": "http://access.rdatoolkit.org/23.5.html"
-          },
-          {
-            "propertyLabel": "is review of item (RDA 23.5)",
-            "propertyURI": "http://rdaregistry.info/Elements/w/P10268",
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-                "useValuesFrom": ["urn:ld4p:sinopia"]
+              "valueTemplateRefs": ["WAU:RT:RDA:experimentalProfile:Work:descriptionOfItem"]
             },
             "remark": "http://access.rdatoolkit.org/23.5.html"
           },
@@ -1012,7 +398,7 @@
       },
       {
         "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships",
-        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w/",
         "resourceLabel": "RDA Derivative Work Relationships",
         "author": "Melissa Morgan (mcm104@uw.edu)",
         "date": "2020-03-04",
@@ -2182,95 +1568,95 @@
         ]
       },
       {
-      "id": "WAU:RT:RDA:experimentalProfile:Work:sequentialWorkRelationships:succeededBy",
-      "resourceURI": "http://uw.edu/adaptationProperties/c/w",
-      "resourceLabel": "is succeeded by work",
-      "author": "Melissa Morgan (mcm104@uw.edu)",
-      "date": "2020-03-18",
-      "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
-      "propertyTemplates": [
-        {
-          "propertyLabel": "is succeeded by work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10170",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
+        "id": "WAU:RT:RDA:experimentalProfile:Work:sequentialWorkRelationships:succeededBy",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "is succeeded by work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-18",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is succeeded by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10170",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is absorbed by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10145",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is absorbed in part by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10146",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is continued by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10191",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is replaced by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10022",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is replaced in part by work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10021",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "has sequel work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10020",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is split into work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10211",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
           }
-        },
-        {
-          "propertyLabel": "is absorbed by work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10145",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        },
-        {
-          "propertyLabel": "is absorbed in part by work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10146",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        },
-        {
-          "propertyLabel": "is continued by work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10191",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        },
-        {
-          "propertyLabel": "is replaced by work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10022",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        },
-        {
-          "propertyLabel": "is replaced in part by work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10021",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        },
-        {
-          "propertyLabel": "has sequel work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10020",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        },
-        {
-          "propertyLabel": "is split into work",
-          "propertyURI": "http://rdaregistry.info/Elements/w/P10211",
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "lookup",
-          "valueConstraint": {
-              "useValuesFrom": ["urn:ld4p:sinopia"]
-          }
-        }
-      ]
-    },
+        ]
+      },
       {
         "id": "WAU:RT:RDA:experimentalProfile:Work:derivativeWorkRelationships:basedOnWork:imitationOfWork",
         "resourceURI": "http://uw.edu/adaptationProperties/c/w",
@@ -2462,6 +1848,711 @@
           {
             "propertyLabel": "is screenplay for video work",
             "propertyURI": "http://rdaregistry.info/Elements/w/P10175",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:relationshipDesignatorsForAgents:relationshipDesignatorsForCreator",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "has relationship designator for creator",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "has architect agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10062",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has artist agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10058",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has book artist agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10254",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:person",
+                    "urn:ld4p:qa:names:organization"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has calligrapher agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10253",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:person",
+                    "urn:ld4p:qa:names:organization"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has sculptor agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10202",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has author agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10061",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has librettist agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10205",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:person",
+                    "urn:ld4p:qa:names:organization"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has lyricist agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10204",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:person",
+                    "urn:ld4p:qa:names:organization"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has rapporteur agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10255",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has screenwriter agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10203",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has compiler agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10055",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:person",
+                    "urn:ld4p:qa:names:organization"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has creator agent of work (RDA 19.2)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10065",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            },
+            "remark": "http://access.rdatoolkit.org/19.2.html"
+          },
+          {
+            "propertyLabel": "has enacting jurisdiction",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10017",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:organization",
+                    "urn:ld4p:qa:names:geographic"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has interviewee agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10059",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has interviewer agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10057",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has photographer agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10056",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": [
+                    "urn:ld4p:qa:names:person",
+                    "urn:ld4p:qa:names:organization"
+                ]
+            }
+          },
+          {
+            "propertyLabel": "has respondent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10001",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:relationshipDesignatorsForAgents:relationshipDesignatorsForOther",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "has relationship designator for other agent associated with work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "has addressee agent (RDA 19.3)",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10070",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            },
+            "remark": "http://access.rdatoolkit.org/19.3.html"
+          },
+          {
+            "propertyLabel": "has appellant corporate body",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10009",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+            }
+          },
+          {
+            "propertyLabel": "has appellant person",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10042",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has appellee corporate body",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10005",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+            }
+          },
+          {
+            "propertyLabel": "has appellee person",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10035",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has commissioning body agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10287",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has court governed",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10011",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+            }
+          },
+          {
+            "propertyLabel": "has dedicatee agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10069",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has defendant corporate body",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10285",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+            }
+          },
+          {
+            "propertyLabel": "has defendant person",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10286",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has honouree agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10049",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has host institution",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10007",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+            }
+          },
+          {
+            "propertyLabel": "has issuing body agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10046",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has judge",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10044",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has jurisdiction governed",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10018",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:geographic"]
+            }
+          },
+          {
+            "propertyLabel": "has organizer agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has participant in treaty",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has plaintiff corporate body",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10010",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+            }
+          },
+          {
+            "propertyLabel": "has plaintiff person",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has researcher agent",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10293",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names:person"]
+            }
+          },
+          {
+            "propertyLabel": "has related agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10311",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          },
+          {
+            "propertyLabel": "has sponsoring agent of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10067",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:relationshipDesignatorsForAgents:relationshipDesignatorsForContributor",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "has relationship designator for contributor",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "has abridger agent (RDA 18.5)",
+            "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            },
+            "remark": "http://access.rdatoolkit.org/18.5.html"
+          },
+          {
+            "propertyLabel": "work has contributor agent (RDA 18.5)",
+            "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:qa:names"]
+            },
+            "remark": "http://access.rdatoolkit.org/18.5.html"
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:descriptionOfWork",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "is description of work",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is analysis of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10140",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is commentary on work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10187",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is critique of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10182",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is evaluation of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10153",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is review of work",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10178",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:descriptionOfExpression",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "is description of expression",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is analysis of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10278",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is commentary on expression",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10282",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is critique of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10281",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is evaluation of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10279",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is review of expression",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10280",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:descriptionOfManifestation",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "is description of manifestation",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is analysis of manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10272",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is commentary on manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10276",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is critique of manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10275",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is evaluation of manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10273",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is review of manifestation",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10274",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "WAU:RT:RDA:experimentalProfile:Work:descriptionOfItem",
+        "resourceURI": "http://uw.edu/adaptationProperties/c/w",
+        "resourceLabel": "is description of item",
+        "author": "Melissa Morgan (mcm104@uw.edu)",
+        "date": "2020-03-26",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "is analysis of item",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10266",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is commentary on item",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10270",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is critique of item",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10269",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is evaluation of item",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10267",
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+                "useValuesFrom": ["urn:ld4p:sinopia"]
+            }
+          },
+          {
+            "propertyLabel": "is review of item",
+            "propertyURI": "http://rdaregistry.info/Elements/w/P10268",
             "mandatory": "false",
             "repeatable": "true",
             "type": "lookup",
