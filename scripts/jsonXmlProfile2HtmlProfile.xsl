@@ -383,9 +383,9 @@
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
-        <xsl:apply-templates select="../j:array[@key = 'usedInProfile']"/>
+        <!-- <xsl:apply-templates select="../j:array[@key = 'usedInProfile']"/> -->
     </xsl:template>
-    <xsl:template match="j:array[@key = 'usedInProfile']">
+    <!-- <xsl:template match="j:array[@key = 'usedInProfile']">
         <tr>
             <th scope="row">
                 <xsl:text>Used in format profiles: </xsl:text>
@@ -396,5 +396,5 @@
                 <td>TEST HERE</td>
             </xsl:for-each>
         </tr>
-    </xsl:template>
+    </xsl:template> -->
 </xsl:stylesheet>

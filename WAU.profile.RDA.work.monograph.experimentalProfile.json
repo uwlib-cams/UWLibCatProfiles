@@ -283,7 +283,7 @@
             }
           },
           {
-            "propertyLabel": "has derivative work relationships (RDA 24.5)",
+            "propertyLabel": "has derivative work relationship (RDA 24.5)",
             "propertyURI": "http://uw.edu/adaptationProperties/p/w/derivativeWorkRelationships",
             "mandatory": "false",
             "repeatable": "true",

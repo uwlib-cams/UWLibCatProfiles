@@ -61,7 +61,7 @@
             <!-- result document 1 stores the xml version of the format-specific profile:
                      note the $fmat var, the value of the context string established by the original for-each instruction-->
             <xsl:result-document href="../xml/WAU.profile.RDA.{$fmat}.xml">
-                <xsl:sequence select="$create-json.xml-profile"/>
+                <xsl:value-of select="$create-json.xml-profile"/>
             </xsl:result-document>
             <!-- result document 2 stores the json version of the format-specific profile:
                      note the $fmat var, the value of the context string established by the original for-each instruction.
@@ -69,7 +69,7 @@
                          the formatting retained all escaping; use oXygen indent-->
             <xsl:result-document href="../WAU.profile.RDA.{$fmat}.json"
                 omit-xml-declaration="yes">
-                <xsl:sequence select="xml-to-json($create-json.xml-profile)"/>
+                <xsl:value-of select="xml-to-json($create-json.xml-profile, map {'indent': true()})"/>
             </xsl:result-document>
             <!-- all result documents should be manually validated, and the json should be indented using oXygen-->
         </xsl:for-each>
