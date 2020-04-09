@@ -29229,7 +29229,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
                             "defaults": [
                                 {
-                                    "defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008",
+                                    "defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1049",
                                     "defaultLiteral": "volume"
                                 }
                             ]
