@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-04-03",
+      "date" : "2020-04-13",
       "description" : "Resource templates for serials",
       "id" : "WAU:profile:RDA:serial",
       "title" : "WAU Profile RDA for serials",
@@ -42,7 +42,7 @@
             { "propertyLabel" : "has preferred title of work (*) (RDA 6.2.2)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/w\/P10223",
               "mandatory" : "true",
-              "repeatable" : "true",
+              "repeatable" : "false",
               "type" : "literal",
               "remark" : "http:\/\/access.rdatoolkit.org\/6.2.2.html" },
             
@@ -1604,7 +1604,7 @@
                 [ "urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type" ],
                 "defaults" : 
                 [ 
-                  { "defaultURI" : "http:\/\/www.rdaregistry.info\/termList\/RDACarrierType\/1008",
+                  { "defaultURI" : "http:\/\/www.rdaregistry.info\/termList\/RDACarrierType\/1049",
                     "defaultLiteral" : "volume" } ] } },
             
             { "propertyLabel" : "has category of manifestation (Lookup for genres applicable to manifestations)",

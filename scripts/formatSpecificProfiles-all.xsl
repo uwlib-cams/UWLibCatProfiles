@@ -61,7 +61,7 @@
             <!-- result document 1 stores the xml version of the format-specific profile:
                      note the $fmat var, the value of the context string established by the original for-each instruction-->
             <xsl:result-document href="../xml/WAU.profile.RDA.{$fmat}.xml">
-                <xsl:value-of select="$create-json.xml-profile"/>
+                <xsl:sequence select="$create-json.xml-profile"/>
             </xsl:result-document>
             <!-- result document 2 stores the json version of the format-specific profile:
                      note the $fmat var, the value of the context string established by the original for-each instruction.
