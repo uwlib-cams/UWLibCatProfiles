@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Why does the same namespace occur twice, once as xmlns and once as xmlns:j ? (As in jsonxml2formats.xsl) -->
+<!-- Q: Why does the same namespace occur twice, once as xmlns and once as xmlns:j ? (As in jsonxml2formats.xsl) -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:j="http://www.w3.org/2005/xpath-functions" xmlns="http://www.w3.org/2005/xpath-functions"
     exclude-result-prefixes="j" version="3.0">
@@ -20,7 +20,12 @@
         </map>
     </xsl:template>
     <xsl:template match="j:map[@key = 'Profile']" mode="profile">
-        <!-- HTML element attrs. taken from rdf2rdfa-sourceResource.xsl / "version" attr. OK (removed "+RDFa 1.1")? / Also, removed http://www.w3.org/MarkUp/SCHEMA/xhtml-rdfa-2.xsd from xsi:schemaLocation -->
+        <!--
+        HTML element attrs. taken from rdf2rdfa-sourceResource.xsl 
+        / "version" attr. OK (removed "+RDFa 1.1")?
+        / Also, removed http://www.w3.org/MarkUp/SCHEMA/xhtml-rdfa-2.xsd from xsi:schemaLocation
+        Q: Why xml:lang attribute?
+        -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
