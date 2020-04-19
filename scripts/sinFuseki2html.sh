@@ -5,15 +5,15 @@
 #directions
 #    1. enter path to fuseki below
 #    2. enter path tp saxon jar file below
-#    3. enter path to 
+#    3. run script
+#    4. manually move html file to Google Drive
 
 #enter path to fuseki below below, in $fus
 fus=http://localhost:8008/fuseki0
 #enter path to saxon jar file below, in $sax
 sax=/Applications/SaxonHE9-9-1-5J
-#enter path to sinFuseki-2-html.xsl, in $xsl
+
 xsl=https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/scripts
-#xsl=/Users/theodore/Desktop/ld4p2/profiles/uwprofiles-14/UWLibCatProfiles/scripts
 
 file=fuseki-html-$(date +"%F").html
 
