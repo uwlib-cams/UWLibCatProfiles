@@ -16147,6 +16147,24 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
+                      "propertyLabel": "has photographer of expression",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20288",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                      },
+                      "uwFormOrder": 279.1,
+                      "statusUw": "",
+                      "noteUw": "Deprecated property",
+                      "qUw": [],
+                      "usedInProfile": [
+                        "monograph",
+                        "eBook"
+                      ]
+                    },
+                    {
                         "propertyLabel": "is translated as (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20171",
                         "mandatory": "false",
@@ -19762,7 +19780,12 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                          "eBook",
+                          "eGraphic",
+                          "graphic",
+                          "monograph"
+                        ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
