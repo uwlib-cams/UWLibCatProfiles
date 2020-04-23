@@ -16161,7 +16161,10 @@
                       "qUw": [],
                       "usedInProfile": [
                         "monograph",
-                        "eBook"
+                        "eBook",
+                        "graphic",
+                        "eGraphic",
+                        "etd"
                       ]
                     },
                     {
