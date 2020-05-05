@@ -3473,9 +3473,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/7.9.html"
                     },
                     {
