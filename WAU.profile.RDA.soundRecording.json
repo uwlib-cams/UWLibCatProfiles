@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-05-01",
+      "date" : "2020-05-06",
       "description" : "Resource templates for sound recordings",
       "id" : "WAU:profile:RDA:soundRecording",
       "title" : "WAU Profile RDA for sound recordings",
