@@ -38650,9 +38650,9 @@
                         "type": "literal",
                         "uwFormOrder": 145,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.3.html"
                     },
                     {
@@ -45143,9 +45143,9 @@
                         },
                         "uwFormOrder": 137,
                         "statusUw": "AM 2019-5-13",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/10.2.2.html"
                     },
                     {
@@ -45858,9 +45858,9 @@
                         "type": "literal",
                         "uwFormOrder": 144,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.2.html"
                     },
                     {
@@ -53700,9 +53700,9 @@
                         "type": "literal",
                         "uwFormOrder": 146,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.4.html"
                     },
                     {
@@ -54773,9 +54773,9 @@
                         "type": "literal",
                         "uwFormOrder": 149,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.6.html"
                     },
                     {
@@ -55959,9 +55959,9 @@
                         },
                         "uwFormOrder": 143,
                         "statusUw": "AM 2019-05-13",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.3.2.html"
                     },
                     {
@@ -60437,9 +60437,9 @@
                         "type": "literal",
                         "uwFormOrder": 131,
                         "statusUw": "CEC 2019-05-10",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/9.4.html"
                     },
                     {
@@ -61279,9 +61279,9 @@
                         "type": "literal",
                         "uwFormOrder": 147,
                         "statusUw": "CEC 2019-05-10",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.5.html"
                     },
                     {
@@ -61303,9 +61303,9 @@
                         },
                         "uwFormOrder": 142,
                         "statusUw": "AM 2019-05-13",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.2.2.html"
                     },
                     {
