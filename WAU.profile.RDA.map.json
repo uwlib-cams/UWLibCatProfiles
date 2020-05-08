@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-05-06",
+      "date" : "2020-05-07",
       "description" : "Resource templates for maps",
       "id" : "WAU:profile:RDA:map",
       "title" : "WAU Profile RDA for maps",
@@ -144,7 +144,6 @@
               "valueConstraint" : 
               { "useValuesFrom" : 
                 [ "urn:ld4p:qa:dbpedia",
-                  "urn:ld4p:qa:isni",
                   "urn:ld4p:qa:names",
                   "urn:ld4p:qa:fast:work",
                   "urn:wikidata" ] } },

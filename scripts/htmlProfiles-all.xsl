@@ -22,8 +22,9 @@
                 <xsl:sequence select="$html-transform"/>
             </xsl:result-document>
             <!-- TO DO:
-                Change to xsl:result-document to publish to profiles directory; use param so that filepath is not in code in GitHub
-                (had trouble doing this -->
+                Publish directly to profiles directory,
+                use param for filepath
+                (Why isn't this working?) -->
         </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>

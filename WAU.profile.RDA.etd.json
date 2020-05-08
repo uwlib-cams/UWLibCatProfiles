@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-05-06",
+      "date" : "2020-05-07",
       "description" : "Resource templates for electronic theses and dissertations",
       "id" : "WAU:profile:RDA:etd",
       "title" : "WAU Profile RDA for electronic theses and dissertations",
@@ -116,7 +116,6 @@
               "valueConstraint" : 
               { "useValuesFrom" : 
                 [ "urn:ld4p:qa:dbpedia",
-                  "urn:ld4p:qa:isni",
                   "urn:ld4p:qa:names",
                   "urn:ld4p:qa:fast:work",
                   "urn:wikidata" ] } },
@@ -1173,6 +1172,17 @@
                 [ 
                   { "defaultURI" : "http:\/\/rdaregistry.info\/termList\/fileType\/1002",
                     "defaultLiteral" : "text file" } ] } },
+            
+            { "propertyLabel" : "has encoding format (RDA 3.19.3)",
+              "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/m\/P30096",
+              "mandatory" : "false",
+              "repeatable" : "true",
+              "type" : "literal",
+              "remark" : "http:\/\/access.rdatoolkit.org\/3.19.3.html",
+              "valueConstraint" : 
+              { "defaults" : 
+                [ 
+                  { "defaultLiteral" : "PDF" } ] } },
             
             { "propertyLabel" : "has file size (RDA 3.19.4)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/m\/P30183",

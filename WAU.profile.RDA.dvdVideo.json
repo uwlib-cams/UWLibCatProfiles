@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-05-06",
+      "date" : "2020-05-07",
       "description" : "Resource templates for DVD Videos",
       "id" : "WAU:profile:RDA:dvdVideo",
       "title" : "WAU Profile RDA for DVD Videos",
@@ -218,7 +218,6 @@
               "valueConstraint" : 
               { "useValuesFrom" : 
                 [ "urn:ld4p:qa:dbpedia",
-                  "urn:ld4p:qa:isni",
                   "urn:ld4p:qa:names",
                   "urn:ld4p:qa:fast:work",
                   "urn:wikidata" ] } },

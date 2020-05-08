@@ -6919,7 +6919,6 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                               "urn:ld4p:qa:dbpedia",
-                              "urn:ld4p:qa:isni",
                               "urn:ld4p:qa:names",
                               "urn:ld4p:qa:fast:work",
                               "urn:wikidata"
@@ -8035,7 +8034,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:qa:ld4p:dbpedia"]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         },
                         "uwFormOrder": 451,
                         "statusUw": "done",
@@ -30120,11 +30119,20 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "valueConstraint": {
+                            "defaults": [
+                                {
+                                    "defaultLiteral": "PDF"
+                                }
+                            ]
+                        },
                         "uwFormOrder": 109.91,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["soundRecording"],
+                        "usedInProfile": [
+                          "soundRecording",
+                          "etd"],
                         "remark": "http://access.rdatoolkit.org/3.19.3.html"
                     },
                     {
@@ -68830,7 +68838,8 @@
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
                                 "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:names:place"
+                                "urn:ld4p:qa:geonames:place",
+                                "urn:ld4p:qa:geonames:area_and_place"
                             ]
                         }
                     },
@@ -68867,7 +68876,8 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:names:place"
+                                "urn:ld4p:qa:geonames:place",
+                                "urn:ld4p:qa:geonames:area_and_place"
                             ]
                         }
                     }
