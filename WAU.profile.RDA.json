@@ -22,8 +22,7 @@
                         "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
-                            "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0.001,
                         "statusUw": "done",

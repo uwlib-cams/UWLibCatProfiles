@@ -14,7 +14,12 @@
     <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="html"/>
   </xsl:template>
   <xsl:template match="j:map/j:map[@key = 'Profile']" mode="html">
-    <!-- Would there be any advantages to outputting HTML5 over XHTML? Is this possible/advisable? -->
+    <!-- Would there be any advantages to outputting HTML5 over XHTML? Is this possible/advisable? 
+      Also:
+        Seeing namespaces in output:
+          section elements: xmlns=""
+          a elements: xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            Why? How to exclude? -->
     <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
