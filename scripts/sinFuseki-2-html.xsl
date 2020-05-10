@@ -45,7 +45,8 @@
               <xsl:when test="@rdf:resource">
                 <xsl:value-of select="@rdf:resource"/>
               </xsl:when>
-              <!-- Some way to make the bnode values even just a little shorter in the output? -->
+              <!-- Some way to make the bnode values even just a little shorter in the output?
+                Or, if bnodes are grouped with above triples, nodeIDs not needed for html display -->
               <xsl:when test="@rdf:nodeID">
                 <xsl:value-of select="@rdf:nodeID"/>
               </xsl:when>
@@ -58,7 +59,7 @@
         </xsl:for-each>
         <br/>
       </xsl:for-each-group>
-      <!-- Okay, need to collect these nodes in the above grouping
+      <!-- Need to collect these nodes in the above grouping
             Lots to think about for grouping -->
       <xsl:for-each-group select="rdf:Description" group-by="@rdf:nodeID">
         <h2>Thing being described: <xsl:value-of select="current-grouping-key()"/>
@@ -70,6 +71,7 @@
           </i>
           <xsl:text>: </xsl:text>
           <xsl:choose>
+            <!-- Hyperlink IRIs -->
             <xsl:when test="@rdf:resource">
               <xsl:value-of select="@rdf:resource"/>
             </xsl:when>
@@ -77,6 +79,7 @@
               <xsl:value-of select="@rdf:nodeID"/>
             </xsl:when>
             <xsl:otherwise>
+              <!-- Literals output here? Get lang tags -->
               <xsl:value-of select="."/>
             </xsl:otherwise>
           </xsl:choose>
