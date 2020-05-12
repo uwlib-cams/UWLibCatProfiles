@@ -344,6 +344,7 @@
         <ul>
           <xsl:for-each select="j:array[@key = 'useValuesFrom']/j:string/text()">
             <li>
+              <!-- Add output of URNs as well; sometimes I need to know these when looking at profiles -->
               <xsl:call-template name="qaLinks">
                 <xsl:with-param name="node" select="."/>
               </xsl:call-template>
