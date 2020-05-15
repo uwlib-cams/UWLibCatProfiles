@@ -20,9 +20,10 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:xpf="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="xs math"
     version="3.0">
+    <!-- New thing here; outputting HTML5 and not XHTML -->
     <xsl:output method="html" version="5"/>
     <xsl:key name="rdaProKey" match="xpf:array[@key = 'propertyTemplates']/xpf:map"
-        use="xpf:string[@key = 'propertyURI']"/>
+        use="tokenize(xpf:string[@key = 'propertyURI'], '/')[last()]"/>
     <!-- I still want to try using the JSON profile
         Try:
         fn:json-to-xml
@@ -30,8 +31,7 @@
     <xsl:variable name="rdaPro"
         select="document('https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/xml/WAU.profile.RDA.xml')"/>
     <xsl:template match="/">
-        <!-- New thing here; outputting HTML5 and not XHTML -->
-        <html xmlns="http://www.w3.org/1999/xhtml" version="5">
+        <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <title>TEST</title>
                 <link href="htmlData.css" rel="stylesheet" type="text/css"/>
@@ -59,13 +59,13 @@
             <xsl:if test="rdaw:P10223/node()">
                 <xsl:choose>
                     <xsl:when
-                        test="key('rdaProKey', document-uri(rdaw:P10223[position() = 1]), $rdaPro)">
+                        test="key('rdaProKey', local-name(rdaw:P10223[position() = 1]), $rdaPro)">
                         <xsl:value-of
-                            select="key('rdaProKey', document-uri(rdaw:P10223[position() = 1]), $rdaPro)/xpf:string[@key = 'propertyLabel']"
+                            select="key('rdaProKey', local-name(rdaw:P10223[position() = 1]), $rdaPro)/xpf:string[@key = 'propertyLabel']"
                         />
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="name(.)"/>
+                        <xsl:value-of select="name(rdaw:P10223[position() = 1])"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:if>
