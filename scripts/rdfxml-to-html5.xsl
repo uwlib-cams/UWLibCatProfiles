@@ -45,38 +45,55 @@
         <!-- This + the below xsl:template element essentially act like a for-each correct? -->
         <xsl:apply-templates
             select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
-        />
+            mode="wemiTop"/>
     </xsl:template>
     <xsl:template
-        match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]">
+        match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
+        mode="wemiTop">
         <h1>
-            <xsl:text>RDA WORK &gt; </xsl:text>
-            <!-- TO TO 2020-05-14:
-                Fix fn:key
-                ...currently returning "rdf:Description" (?)
-                Using [position() = 1] because if I don't, error message says that
-                sequence of more than one item is not allowed as first arg of fn:document-uri -->
-            <xsl:if test="rdaw:P10223/node()">
-                <xsl:choose>
-                    <xsl:when
-                        test="key('rdaProKey', local-name(rdaw:P10223[position() = 1]), $rdaPro)">
-                        <xsl:value-of
-                            select="key('rdaProKey', local-name(rdaw:P10223[position() = 1]), $rdaPro)/xpf:string[@key = 'propertyLabel']"
-                        />
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="name(rdaw:P10223[position() = 1])"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:if>
-            <xsl:text> &gt; </xsl:text>
-            <!-- Ok this is returning prefTitle value, so now need to output lang tag -->
-            <xsl:value-of select="rdaw:P10223"/>
+            <xsl:text>RDA WORK: </xsl:text>
+            <xsl:value-of select="rdaw:P10331"/>
         </h1>
-        <!-- Up next is cycle through all props at the Work level,
-            then jump down to the Expression level and cycle through, 
-            then M and I,
-            and at some point bnodes,
-            and at some point resources with labels, etc. which were used in the WEMI -->
+        <ul>
+            <xsl:apply-templates
+                select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
+                mode="wProps"/>
+        </ul>
+    </xsl:template>
+    <xsl:template
+        match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
+        mode="wProps">
+        <!-- First, properties with IRI values -->
+        <!-- Why for-each-group?
+            Because I need to account for repeatable props; this will allow me to count group members and output multiple/single values accordingly
+            Is there a better way? -->
+        <!-- *Attempting* to group by elements with rdf:resource attrs with the same name -->
+        <xsl:for-each-group select="*[@rdf:resource]" group-by="*[@rdf:resource]">
+            <xsl:for-each select="current-group()">
+                <li>
+                    <xsl:text>TEST: PROP(s) WITH IRI VAL HERE</xsl:text>
+                </li>
+                <!-- Attempting to work with non-repeating props
+                    but am I using count correctly here?
+                <xsl:if test="count(current-group()) = 1">
+                    <li>
+                        <xsl:choose>
+                            <xsl:when
+                                test="key('rdaProKey', local-name(.), $rdaPro)">
+                                <xsl:value-of
+                                    select="key('rdaProKey', local-name(.), $rdaPro)/xpf:string[@key = 'propertyLabel']"
+                                />
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="local-name(.)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>: </xsl:text>
+                        <xsl:value-of select="."/>
+                        output lang tag or datatype here
+                    </li>
+                </xsl:if> -->
+            </xsl:for-each>
+        </xsl:for-each-group>
     </xsl:template>
 </xsl:stylesheet>
