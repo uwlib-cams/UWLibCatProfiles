@@ -20,16 +20,12 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:xpf="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="xs math"
     version="3.0">
-    <!-- New thing here; outputting HTML5 and not XHTML -->
+    <!-- Output HTML5 -->
     <xsl:output method="html" version="5"/>
-    <xsl:key name="rdaProKey" match="xpf:array[@key = 'propertyTemplates']/xpf:map"
-        use="tokenize(xpf:string[@key = 'propertyURI'], '/')[last()]"/>
-    <!-- I still want to try using the JSON profile
-        Try:
-        fn:json-to-xml
-        => to chain functions -->
-    <xsl:variable name="rdaPro"
-        select="document('https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/xml/WAU.profile.RDA.xml')"/>
+    <!-- Include external stylesheets and templates -->
+    <xsl:include href="propertyValues.xsl"/>
+    <!-- TO DO:
+        Output to separate format docs based on sinvoc:hasResourceTemplate -->
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -42,7 +38,6 @@
         </html>
     </xsl:template>
     <xsl:template match="rdf:RDF">
-        <!-- This + the below xsl:template element essentially act like a for-each correct? -->
         <xsl:apply-templates
             select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
             mode="wemiTop"/>
@@ -50,50 +45,39 @@
     <xsl:template
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
         mode="wemiTop">
-        <h1>
-            <xsl:text>RDA WORK: </xsl:text>
-            <xsl:value-of select="rdaw:P10331"/>
-        </h1>
-        <ul>
-            <xsl:apply-templates
-                select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
-                mode="wProps"/>
-        </ul>
+        <xsl:choose>
+            <!-- This seems a clumsy way to do this but we don't want certain sets -->
+            <xsl:when test="rdaw:P10331[text()!='' and text()!='test' and text()!='void']">
+                <h1>
+                    <xsl:text>Description Set: </xsl:text>
+                    <xsl:value-of select="rdaw:P10331"/>
+                </h1>
+                <xsl:apply-templates select="." mode="wProps"/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xsl:template
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
         mode="wProps">
-        <!-- First, properties with IRI values -->
-        <!-- Why for-each-group?
-            Because I need to account for repeatable props; this will allow me to count group members and output multiple/single values accordingly
-            Is there a better way? -->
-        <!-- *Attempting* to group by elements with rdf:resource attrs with the same name -->
-        <xsl:for-each-group select="*[@rdf:resource]" group-by="*[@rdf:resource]">
-            <xsl:for-each select="current-group()">
-                <li>
-                    <xsl:text>TEST: PROP(s) WITH IRI VAL HERE</xsl:text>
-                </li>
-                <!-- Attempting to work with non-repeating props
-                    but am I using count correctly here?
-                <xsl:if test="count(current-group()) = 1">
-                    <li>
-                        <xsl:choose>
-                            <xsl:when
-                                test="key('rdaProKey', local-name(.), $rdaPro)">
-                                <xsl:value-of
-                                    select="key('rdaProKey', local-name(.), $rdaPro)/xpf:string[@key = 'propertyLabel']"
-                                />
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="local-name(.)"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                        <xsl:text>: </xsl:text>
-                        <xsl:value-of select="."/>
-                        output lang tag or datatype here
-                    </li>
-                </xsl:if> -->
+        <h2>
+            <xsl:text>Properties for </xsl:text>
+            <a href="http://rdaregistry.info/Elements/c/C10001">
+                <xsl:text>RDA Work</xsl:text>
+            </a>
+            <xsl:text> Resource</xsl:text>
+        </h2>
+        <ul>
+            <xsl:for-each select="*[@rdf:resource]">
+                <xsl:call-template name="resourceValue">
+                    <xsl:with-param name="resource" select="."/>
+                </xsl:call-template>
             </xsl:for-each>
-        </xsl:for-each-group>
+            <!-- Next up select *[without an rdf:resource attr.]: AM I DOING IT RIGHT?? -->
+            <xsl:for-each select="*[not(sinvoc:hasResourceTemplate)][not(@rdf:resource|@rdf:nodeID)]">
+                <xsl:call-template name="literalValue">
+                    <xsl:with-param name="literal" select="."/>
+                </xsl:call-template>
+            </xsl:for-each>
+        </ul>
     </xsl:template>
 </xsl:stylesheet>
