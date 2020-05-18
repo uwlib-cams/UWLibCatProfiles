@@ -15,23 +15,15 @@
     <xsl:variable name="uwRdaExtXml"
         select="document('https://www.lib.washington.edu/static/public/cams/data/localResources/rdaApplicationProfileExtension-1-0-1.rdf')"/>
 
-    <xsl:template name="resourceValue">
-        <xsl:param name="resource"/>
-        <li>
+    <xsl:template name="property">
+        <xsl:param name="p"/>
+        <!-- TO DO add additional namespace keys, source document vars (above) choose > fn:keys (here) -->
             <xsl:choose>
                 <xsl:when test="key('rdaW', local-name(.), $rdaWXml)">
                     <a href="{key('rdaW', local-name(.), $rdaWXml)/@rdf:about}">
                         <xsl:value-of
                             select="key('rdaW', local-name(.), $rdaWXml)/rdfs:label[@xml:lang = 'en']"
                         />
-                    </a>
-                    <strong>
-                        <xsl:text>  |  </xsl:text>
-                    </strong>
-                    <!-- Get any associated rdfs:label values for hot text, to do this 
-                        Call template resourceLabel here and below once it works -->
-                    <a href="{@rdf:resource}">
-                        <xsl:value-of select="@rdf:resource"/>
                     </a>
                 </xsl:when>
                 <xsl:when test="key('uwRdaExt', local-name(.), $uwRdaExtXml)">
@@ -40,29 +32,17 @@
                             select="key('uwRdaExt', local-name(.), $uwRdaExtXml)/rdfs:label[@xml:lang = 'en']"
                         />
                     </a>
-                    <strong>
-                        <xsl:text>  |  </xsl:text>
-                    </strong>
-                    <!-- resourceLabel -->
-                    <a href="{@rdf:resource}">
-                        <xsl:value-of select="@rdf:resource"/>
-                    </a>
                 </xsl:when>
                 <xsl:otherwise>
                     <a href=".">
                         <xsl:value-of select="local-name(.)"/>
                     </a>
-                    <strong>
-                        <xsl:text>  |  </xsl:text>
-                    </strong>
-                    <!-- resourceLabel -->
-                    <a href="{@rdf:resource}">
-                        <xsl:value-of select="@rdf:resource"/>
-                    </a>
                 </xsl:otherwise>
             </xsl:choose>
-        </li>
     </xsl:template>
+    <xsl:template name="val_resource"/>
+    <xsl:template name="val_literal"/>
+    <xsl:template name="val_bnode"/>
     <!-- TO DO: resourceLabel
     <xsl:template name="resourceLabel">
         <xsl:param name="resource"/>

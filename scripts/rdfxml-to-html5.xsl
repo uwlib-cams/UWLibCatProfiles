@@ -23,7 +23,7 @@
     <!-- Output HTML5 -->
     <xsl:output method="html" version="5"/>
     <!-- Include external stylesheets and templates -->
-    <xsl:include href="propertyValues.xsl"/>
+    <xsl:include href="props_values.xsl"/>
     <!-- TO DO:
         Output to separate format docs based on sinvoc:hasResourceTemplate -->
     <xsl:template match="/">
@@ -47,7 +47,7 @@
         mode="wemiTop">
         <xsl:choose>
             <!-- This seems a clumsy way to do this but we don't want certain sets -->
-            <xsl:when test="rdaw:P10331[text()!='' and text()!='test' and text()!='void']">
+            <xsl:when test="rdaw:P10331[text() != '' and text() != 'test' and text() != 'void']">
                 <h1>
                     <xsl:text>Description Set: </xsl:text>
                     <xsl:value-of select="rdaw:P10331"/>
@@ -60,7 +60,7 @@
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
         mode="wProps">
         <h2>
-            <xsl:text>Properties for </xsl:text>
+            <xsl:text>Statements on the  </xsl:text>
             <a href="http://rdaregistry.info/Elements/c/C10001">
                 <xsl:text>RDA Work</xsl:text>
             </a>
@@ -68,16 +68,85 @@
         </h2>
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
-                <xsl:call-template name="resourceValue">
-                    <xsl:with-param name="resource" select="."/>
-                </xsl:call-template>
+                <li>
+                    <xsl:call-template name="property">
+                        <xsl:with-param name="p" select="."/>
+                    </xsl:call-template>
+                    <strong>
+                        <xsl:text>  |  </xsl:text>
+                    </strong>
+                    <!-- BIG QUESTION / TO DO:
+                        Get any associated rdfs:label values for hot text, to do this 
+                        [Call template resourceLabel here and below?] -->
+                    <a href="{@rdf:resource}">
+                        <xsl:value-of select="@rdf:resource"/>
+                    </a>
+                </li>
             </xsl:for-each>
-            <!-- Next up select *[without an rdf:resource attr.]: AM I DOING IT RIGHT?? -->
-            <xsl:for-each select="*[not(sinvoc:hasResourceTemplate)][not(@rdf:resource|@rdf:nodeID)]">
-                <xsl:call-template name="literalValue">
-                    <xsl:with-param name="literal" select="."/>
-                </xsl:call-template>
+            <!-- Excluding sinvoc:hasResourceTemplate doesn't seem to be working here -->
+            <xsl:for-each
+                select="*[not(sinvoc:hasResourceTemplate)][not(@rdf:resource | @rdf:nodeID)]">
+                <li>
+                    <xsl:call-template name="property">
+                        <xsl:with-param name="p" select="."/>
+                    </xsl:call-template>
+                    <strong>
+                        <xsl:text>  |  </xsl:text>
+                    </strong>
+                    <xsl:value-of select="."/>
+                    <xsl:choose>
+                        <!-- QUESTION:
+                            Are their ever empty xml:lang attributes? If so this needs changing -->
+                        <xsl:when test=".[@xml:lang]">
+                            <!-- QUESTION:
+                                Here and elsewhere using strong, em tags; better to use CSS?
+                                Is em tag html5 compliant? Etc. -->
+                            <strong>
+                                <xsl:text>  |  </xsl:text>
+                            </strong>
+                            <em>
+                                <xsl:text>Language tag value: "</xsl:text>
+                                <xsl:value-of select="@xml:lang"/>
+                                <xsl:text>"</xsl:text>
+                            </em>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <strong>
+                                <xsl:text>  |  </xsl:text>
+                            </strong>
+                            <em>
+                                <xsl:text>No language tag</xsl:text>
+                            </em>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </li>
             </xsl:for-each>
+            <!-- TO DO:
+                Output bnodes here and/or in named template-->
         </ul>
+        <!-- BIG QUESTION + TO DO:
+            Get to the E (and so, later, get to the M and I -->
+        <xsl:apply-templates
+            select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']]"
+            mode="eProps">
+            <!-- This param won't give me the correct @about value because it is getting it's context from the apply-templates > select above
+                But how to pass our work IRI (@about) to the next template? -->
+            <xsl:with-param name="wIri" select="@rdf:about"/>
+        </xsl:apply-templates>
+    </xsl:template>
+    <!-- SEE BIG QUESTION ABOVE -->
+    <xsl:template
+        match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']]"
+        mode="eProps">
+        <xsl:param name="wIri"/>
+        <xsl:for-each select=".[rdae:P20231/@rdf:resource = $wIri]">
+            <h2>
+                <xsl:text>Statements on the  </xsl:text>
+                <a href="http://rdaregistry.info/Elements/c/C10006">
+                    <xsl:text>RDA Expression</xsl:text>
+                </a>
+                <xsl:text> Resource</xsl:text>
+            </h2>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
