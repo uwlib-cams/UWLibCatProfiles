@@ -64,12 +64,13 @@
         <xsl:choose>
             <!-- This seems a clumsy way to do this but we don't want certain sets -->
             <xsl:when test="rdaw:P10331[text() != '' and text() != 'test' and text() != 'void']">
-                <span class="descSet">
-                    <h1>
+
+                <h1>
+                    <span class="descSet">
                         <xsl:text>Description Set: </xsl:text>
                         <xsl:value-of select="rdaw:P10331"/>
-                    </h1>
-                </span>
+                    </span>
+                </h1>
                 <xsl:apply-templates select="." mode="wProps"/>
             </xsl:when>
         </xsl:choose>
@@ -78,15 +79,15 @@
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']]"
         mode="wProps">
         <xsl:param name="wIri" select="@rdf:about"/>
-        <span class="work">
-            <h2>
+        <h2>
+            <span class="work">
                 <xsl:text>Statements on the  </xsl:text>
                 <a href="http://rdaregistry.info/Elements/c/C10001">
                     <xsl:text>RDA Work</xsl:text>
                 </a>
                 <xsl:text> Resource</xsl:text>
-            </h2>
-        </span>
+            </span>
+        </h2>
         <!-- ul to ul code block identical for W, E, M, and I
             *So probably could further improve code to avoid repetition -->
         <ul>
@@ -130,15 +131,15 @@
         <xsl:param name="eIri" select="@rdf:about"/>
         <!-- TO DO:
             Connect or otherwise make apparent multiple EM(I) sets per W -->
-        <span class="expression">
-            <h2>
+        <h2>
+            <span class="expression">
                 <xsl:text>Statements on an </xsl:text>
                 <a href="http://rdaregistry.info/Elements/c/C10006">
                     <xsl:text>RDA Expression</xsl:text>
                 </a>
                 <xsl:text> Resource</xsl:text>
-            </h2>
-        </span>
+            </span>
+        </h2>
         <!-- ul to ul code block identical for W, E, M, and I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
@@ -178,15 +179,15 @@
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10007']]"
         mode="mProps">
         <xsl:param name="mIri" select="@rdf:about"/>
-        <span class="manifestation">
-            <h2>
+        <h2>
+            <span class="manifestation">
                 <xsl:text>Statements on an </xsl:text>
                 <a href="http://rdaregistry.info/Elements/c/C10007">
                     <xsl:text>RDA Manifestation</xsl:text>
                 </a>
                 <xsl:text> Resource</xsl:text>
-            </h2>
-        </span>
+            </span>
+        </h2>
         <!-- ul to ul code block identical for W, E, M, and I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
@@ -224,15 +225,15 @@
     <xsl:template
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10003']]"
         mode="iProps">
-        <span class="item">
-            <h2>
+        <h2>
+            <span class="item">
                 <xsl:text>Statements on an </xsl:text>
                 <a href="http://rdaregistry.info/Elements/c/C10003">
                     <xsl:text>RDA Item</xsl:text>
                 </a>
                 <xsl:text> Resource</xsl:text>
-            </h2>
-        </span>
+            </span>
+        </h2>
         <!-- ul to ul code block identical for W, E, M, and I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
