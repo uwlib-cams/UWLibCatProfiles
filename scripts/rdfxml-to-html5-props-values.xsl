@@ -84,12 +84,15 @@
     </xsl:template>
     <xsl:template name="val_resource">
         <!-- BIG QUESTION / TO DO:
-                        Get any associated rdfs:label values for hot text, to do this 
-                        [Call template resourceLabel here and below?] -->
+                        Get any associated rdfs:label values for resources -->
         <xsl:param name="r"/>
         <a href="{$r}">
             <xsl:value-of select="$r"/>
         </a>
+        <!-- <xsl:value-of select="$break2"/>
+        <span name="resourceLabel">
+            <xsl:value-of select="rdf:Description[@rdf:about = $r]/rdfs:label"/>
+        </span> -->
     </xsl:template>
     <xsl:template name="val_literal">
         <xsl:param name="l"/>
