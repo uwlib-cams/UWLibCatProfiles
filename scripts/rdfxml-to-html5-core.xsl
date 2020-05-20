@@ -18,32 +18,50 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:xpf="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="xs math"
+    xmlns:xpf="http://www.w3.org/2005/xpath-functions"
+    xmlns:brgh="https://github.com/briesenberg07/bmrLIS/" exclude-result-prefixes="xs math"
     version="3.0">
     <!-- Output HTML5 -->
     <xsl:output method="html" version="5"/>
     <!-- Include external stylesheets and templates -->
-    <xsl:include href="props_values.xsl"/>
-    <!-- Params -->
-    <xsl:param name="format"/>
-    <xsl:param name="formatTemplate"/>
+    <xsl:include href="rdfxml-to-html5-props-values.xsl"/>
+    <!-- Parameters -->
+    <xsl:param name="brgh:format"/>
     <!-- Vars -->
     <xsl:variable name="break">
         <strong>
             <xsl:text>  |  </xsl:text>
         </strong>
     </xsl:variable>
+    <xsl:variable name="templateId">
+        <xsl:choose>
+            <xsl:when test="$brgh:format = 'dvdVideo'">WAU:RT:RDA:Work:dvdVideo</xsl:when>
+            <xsl:when test="$brgh:format = 'eBook'">WAU:RT:RDA:Work:eBook</xsl:when>
+            <xsl:when test="$brgh:format = 'etd'">WAU:RT:RDA:Work:etd</xsl:when>
+            <xsl:when test="$brgh:format = 'graphic'">WAU:RT:RDA:Work:graphic</xsl:when>
+            <xsl:when test="$brgh:format = 'eGraphic'">WAU:RT:RDA:Work:eGraphic</xsl:when>
+            <xsl:when test="$brgh:format = 'map'">WAU:RT:RDA:Work:map</xsl:when>
+            <xsl:when test="$brgh:format = 'eMap'">WAU:RT:RDA:Work:eMap</xsl:when>
+            <xsl:when test="$brgh:format = 'monograph'">WAU:RT:RDA:Work:monograph</xsl:when>
+            <xsl:when test="$brgh:format = 'serial'">WAU:RT:RDA:Work:serial</xsl:when>
+            <xsl:when test="$brgh:format = 'sSerial'">WAU:RT:RDA:Work:eSerial</xsl:when>
+            <xsl:when test="$brgh:format = 'soundRecording'"
+                >WAU:RT:RDA:Work:soundRecording</xsl:when>
+            <!-- Not sure how I can make this otherwise serve a purpose -->
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:variable>
     <!-- TO DO:
         *Currently using xsl:result-doc + oXygen scenario params
         to output separate docs
         BUT this is a serious pain when input docs change-->
     <xsl:template match="/">
-        <xsl:result-document href="../html/Sinopia{$format}.html">
+        <xsl:result-document href="../../docs/review_{$brgh:format}.html">
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
                     <title>
-                        <xsl:text>Review </xsl:text>
-                        <xsl:value-of select="$format"/>
+                        <xsl:text>review_</xsl:text>
+                        <xsl:value-of select="$brgh:format"/>
                     </title>
                     <link href="htmlData.css" rel="stylesheet" type="text/css"/>
                 </head>
@@ -55,7 +73,7 @@
     </xsl:template>
     <xsl:template match="rdf:RDF">
         <xsl:apply-templates
-            select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']][sinvoc:hasResourceTemplate = $formatTemplate]"
+            select="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10001']][sinvoc:hasResourceTemplate = $templateId]"
             mode="wemiTop"/>
     </xsl:template>
     <xsl:template
@@ -88,6 +106,13 @@
                 <xsl:text> Resource</xsl:text>
             </span>
         </h2>
+        <span class="sinopiaUrl">
+            <xsl:text>Copy </xsl:text>
+            <a href="{@rdf:about}">
+                <xsl:text>this URL</xsl:text>
+            </a>
+            <xsl:text> to search for and edit this resource in Sinopia</xsl:text>
+        </span>
         <!-- ul to ul code block identical for W, E, M, and I
             *So probably could further improve code to avoid repetition -->
         <ul>
@@ -140,6 +165,13 @@
                 <xsl:text> Resource</xsl:text>
             </span>
         </h2>
+        <span class="sinopiaUrl">
+            <xsl:text>Copy </xsl:text>
+            <a href="{@rdf:about}">
+                <xsl:text>this URL</xsl:text>
+            </a>
+            <xsl:text> to search for and edit this resource in Sinopia</xsl:text>
+        </span>
         <!-- ul to ul code block identical for W, E, M, and I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
@@ -188,6 +220,13 @@
                 <xsl:text> Resource</xsl:text>
             </span>
         </h2>
+        <span class="sinopiaUrl">
+            <xsl:text>Copy </xsl:text>
+            <a href="{@rdf:about}">
+                <xsl:text>this URL</xsl:text>
+            </a>
+            <xsl:text> to search for and edit this resource in Sinopia</xsl:text>
+        </span>
         <!-- ul to ul code block identical for W, E, M, and I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
@@ -234,6 +273,13 @@
                 <xsl:text> Resource</xsl:text>
             </span>
         </h2>
+        <span class="sinopiaUrl">
+            <xsl:text>Copy </xsl:text>
+            <a href="{@rdf:about}">
+                <xsl:text>this URL</xsl:text>
+            </a>
+            <xsl:text> to search for and edit this resource in Sinopia</xsl:text>
+        </span>
         <!-- ul to ul code block identical for W, E, M, and I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
