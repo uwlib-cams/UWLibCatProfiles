@@ -114,17 +114,18 @@
             <xsl:text> to search for and edit this resource in Sinopia</xsl:text>
         </span>
         <!-- ul to ul code block identical for W, E, M, and I
-            *So probably could further improve code to avoid repetition -->
+            *So probably could further improve code to avoid repetition
+            (How to? Put code in var, but then use what? Copy-of?)
+            TO DO:
+                Apply changes here to E, M, I -->
         <ul>
             <xsl:for-each select="*[@rdf:resource]">
+                <xsl:variable name="rForLabel" select="@rdf:resource"/>
                 <li>
                     <xsl:call-template name="property">
                         <xsl:with-param name="p" select="."/>
                     </xsl:call-template>
                     <xsl:value-of select="$break"/>
-                    <!-- BIG QUESTION / TO DO:
-                        Get any associated rdfs:label values for hot text, to do this 
-                        [Call template resourceLabel here and below?] -->
                     <xsl:call-template name="val_resource">
                         <xsl:with-param name="r" select="@rdf:resource"/>
                     </xsl:call-template>
@@ -141,12 +142,19 @@
                     </xsl:call-template>
                 </li>
             </xsl:for-each>
-            <!-- TO DO:
-                Output bnodes here and/or in named template-->
+            <xsl:for-each select="*[@rdf:nodeID]">
+                <xsl:call-template name="property">
+                    <xsl:with-param name="p" select="."/>
+                </xsl:call-template>
+                <xsl:value-of select="$break"/>
+                <xsl:call-template name="val_bnode">
+                    <xsl:with-param name="id" select="@rdf:nodeID"/>
+                </xsl:call-template>
+            </xsl:for-each>
         </ul>
         <xsl:apply-templates
             select="../rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']][rdae:P20231/@rdf:resource = $wIri]"
-            mode="eProps"/> 
+            mode="eProps"/>
     </xsl:template>
     <xsl:template
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']]"

@@ -35,68 +35,83 @@
 
     <xsl:template name="property">
         <xsl:param name="p"/>
-        <!-- Using keys here to output property labels as hot text for most-commonly-used, otherwise local name is hot text -->
-        <xsl:choose>
-            <xsl:when test="key('rdaW', local-name(.), $rdaWXml)">
-                <a href="{key('rdaW', local-name(.), $rdaWXml)/@rdf:about}">
-                    <xsl:value-of
-                        select="key('rdaW', local-name(.), $rdaWXml)/rdfs:label[@xml:lang = 'en']"/>
-                </a>
-            </xsl:when>
-            <xsl:when test="key('rdaE', local-name(.), $rdaEXml)">
-                <a href="{key('rdaE', local-name(.), $rdaEXml)/@rdf:about}">
-                    <xsl:value-of
-                        select="key('rdaE', local-name(.), $rdaEXml)/rdfs:label[@xml:lang = 'en']"/>
-                </a>
-            </xsl:when>
-            <xsl:when test="key('rdaM', local-name(.), $rdaMXml)">
-                <a href="{key('rdaM', local-name(.), $rdaMXml)/@rdf:about}">
-                    <xsl:value-of
-                        select="key('rdaM', local-name(.), $rdaMXml)/rdfs:label[@xml:lang = 'en']"/>
-                </a>
-            </xsl:when>
-            <xsl:when test="key('rdaMDt', local-name(.), $rdaMDtXml)">
-                <a href="{key('rdaMDt', local-name(.), $rdaMDtXml)/@rdf:about}">
-                    <xsl:value-of
-                        select="key('rdaMDt', local-name(.), $rdaMDtXml)/rdfs:label[@xml:lang = 'en']"
-                    />
-                </a>
-            </xsl:when>
-            <xsl:when test="key('rdaI', local-name(.), $rdaIXml)">
-                <a href="{key('rdaI', local-name(.), $rdaIXml)/@rdf:about}">
-                    <xsl:value-of
-                        select="key('rdaI', local-name(.), $rdaIXml)/rdfs:label[@xml:lang = 'en']"/>
-                </a>
-            </xsl:when>
-            <xsl:when test="key('uwRdaExt', local-name(.), $uwRdaExtXml)">
-                <a href="{key('uwRdaExt', local-name(.), $uwRdaExtXml)/@rdf:about}">
-                    <xsl:value-of
-                        select="key('uwRdaExt', local-name(.), $uwRdaExtXml)/rdfs:label[@xml:lang = 'en']"
-                    />
-                </a>
-            </xsl:when>
-            <xsl:otherwise>
-                <a href=".">
-                    <xsl:value-of select="local-name(.)"/>
-                </a>
-            </xsl:otherwise>
-        </xsl:choose>
+        <span class="property">
+            <!-- Using keys here to output property labels as hot text for most-commonly-used, otherwise local name is hot text -->
+            <xsl:choose>
+                <xsl:when test="key('rdaW', local-name(.), $rdaWXml)">
+                    <a href="{key('rdaW', local-name(.), $rdaWXml)/@rdf:about}">
+                        <xsl:value-of
+                            select="key('rdaW', local-name(.), $rdaWXml)/rdfs:label[@xml:lang = 'en']"
+                        />
+                    </a>
+                </xsl:when>
+                <xsl:when test="key('rdaE', local-name(.), $rdaEXml)">
+                    <a href="{key('rdaE', local-name(.), $rdaEXml)/@rdf:about}">
+                        <xsl:value-of
+                            select="key('rdaE', local-name(.), $rdaEXml)/rdfs:label[@xml:lang = 'en']"
+                        />
+                    </a>
+                </xsl:when>
+                <xsl:when test="key('rdaM', local-name(.), $rdaMXml)">
+                    <a href="{key('rdaM', local-name(.), $rdaMXml)/@rdf:about}">
+                        <xsl:value-of
+                            select="key('rdaM', local-name(.), $rdaMXml)/rdfs:label[@xml:lang = 'en']"
+                        />
+                    </a>
+                </xsl:when>
+                <xsl:when test="key('rdaMDt', local-name(.), $rdaMDtXml)">
+                    <a href="{key('rdaMDt', local-name(.), $rdaMDtXml)/@rdf:about}">
+                        <xsl:value-of
+                            select="key('rdaMDt', local-name(.), $rdaMDtXml)/rdfs:label[@xml:lang = 'en']"
+                        />
+                    </a>
+                </xsl:when>
+                <xsl:when test="key('rdaI', local-name(.), $rdaIXml)">
+                    <a href="{key('rdaI', local-name(.), $rdaIXml)/@rdf:about}">
+                        <xsl:value-of
+                            select="key('rdaI', local-name(.), $rdaIXml)/rdfs:label[@xml:lang = 'en']"
+                        />
+                    </a>
+                </xsl:when>
+                <xsl:when test="key('uwRdaExt', local-name(.), $uwRdaExtXml)">
+                    <a href="{key('uwRdaExt', local-name(.), $uwRdaExtXml)/@rdf:about}">
+                        <xsl:value-of
+                            select="key('uwRdaExt', local-name(.), $uwRdaExtXml)/rdfs:label[@xml:lang = 'en']"
+                        />
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <a href=".">
+                        <xsl:value-of select="local-name(.)"/>
+                    </a>
+                </xsl:otherwise>
+            </xsl:choose>
+        </span>
     </xsl:template>
     <xsl:template name="val_resource">
-        <!-- BIG QUESTION / TO DO:
-                        Get any associated rdfs:label values for resources -->
         <xsl:param name="r"/>
-        <a href="{$r}">
-            <xsl:value-of select="$r"/>
-        </a>
-        <!-- <xsl:value-of select="$break2"/>
-        <span name="resourceLabel">
-            <xsl:value-of select="rdf:Description[@rdf:about = $r]/rdfs:label"/>
-        </span> -->
+        <span class="value">
+            <a href="{$r}">
+                <xsl:value-of select="$r"/>
+            </a>
+        </span>
+        <xsl:value-of select="$break2"/>
+        <span class="label">
+            <xsl:choose>
+                <xsl:when test="//rdf:Description[@rdf:about = $r]">
+                    <xsl:text>"</xsl:text>
+                    <xsl:value-of select="//rdf:Description[@rdf:about = $r]/rdfs:label"/>
+                    <xsl:text>"</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>No resource label available</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </span>
     </xsl:template>
     <xsl:template name="val_literal">
         <xsl:param name="l"/>
-        <span class="literals">
+        <span class="value">
             <xsl:value-of select="."/>
         </span>
         <xsl:value-of select="$break2"/>
@@ -110,11 +125,13 @@
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <span class="langTags">
+                <span class="langTag">
                     <xsl:text>No language tag</xsl:text>
                 </span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template name="val_bnode"/>
+    <xsl:template name="val_bnode">
+        <xsl:param name="id"/>
+    </xsl:template>
 </xsl:stylesheet>
