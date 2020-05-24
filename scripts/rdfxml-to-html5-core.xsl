@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- *CURRENTLY MUST CONFIRM MATCHING NAMESPACES IN SOURCE DATA BEFORE EACH TRANSFORM*
-    TO DO:
-        How can I reassign namespaces when serializing so I don't have to manually edit source XML? -->
+<!-- *REASSIGN MATCHING NAMESPACES IN SOURCE DATA BEFORE EACH TRANSFORM*
+    TO DO: Change rdfLibSer.py to eassign namespaces when serializing -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
