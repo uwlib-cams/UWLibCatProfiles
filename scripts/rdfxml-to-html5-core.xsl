@@ -56,6 +56,7 @@
         to output separate docs
         BUT this is a serious pain when input docs change-->
     <xsl:template match="/">
+        <!-- *NOTE* output filepath here -->
         <xsl:result-document href="../../docs/review_{$brgh:format}.html">
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
@@ -146,16 +147,14 @@
         </ul>
         <xsl:apply-templates
             select="../rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']][rdae:P20231/@rdf:resource = $wIri]"
-            mode="eProps"> </xsl:apply-templates>
+            mode="eProps"/> 
     </xsl:template>
-    <!-- Why does this work? Line 129 is the innovation.
-        "You don't need the second predicate in the called template, it wouldn't make sense." -TG -->
     <xsl:template
         match="rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']]"
         mode="eProps">
         <xsl:param name="eIri" select="@rdf:about"/>
-        <!-- TO DO:
-            Connect or otherwise make apparent multiple EM(I) sets per W -->
+        <!-- Possible improvement:
+            Visually connect or otherwise make apparent when multiple EM(I) sets per W exist? -->
         <h2>
             <span class="expression">
                 <xsl:text>Statements on an </xsl:text>

@@ -35,7 +35,7 @@
 
     <xsl:template name="property">
         <xsl:param name="p"/>
-        <!-- TO DO add additional namespace keys, source document vars (above) choose > fn:keys (here) -->
+        <!-- Using keys here to output property labels as hot text for most-commonly-used, otherwise local name is hot text -->
         <xsl:choose>
             <xsl:when test="key('rdaW', local-name(.), $rdaWXml)">
                 <a href="{key('rdaW', local-name(.), $rdaWXml)/@rdf:about}">
