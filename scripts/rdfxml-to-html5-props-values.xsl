@@ -3,7 +3,9 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" exclude-result-prefixes="xs math"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    exclude-result-prefixes="xs math"
     version="3.0">
 
     <!-- Keys -->
@@ -13,6 +15,7 @@
     <xsl:key name="rdaMDt" match="rdf:Description" use="tokenize(@rdf:about, '/')[last()]"/>
     <xsl:key name="rdaI" match="rdf:Description" use="tokenize(@rdf:about, '/')[last()]"/>
     <xsl:key name="uwRdaExt" match="rdf:Description" use="tokenize(@rdf:about, '#')[last()]"/>
+    <xsl:key name="bfObjProp" match="owl:ObjectProperty" use="tokenize(@rdf:about, '/')[last()]"/>
     <!-- Key variables -->
     <xsl:variable name="rdaWXml"
         select="document('https://raw.githubusercontent.com/RDARegistry/RDA-Vocabularies/master/xml/Elements/w.xml')"/>
@@ -26,6 +29,10 @@
         select="document('https://raw.githubusercontent.com/RDARegistry/RDA-Vocabularies/master/xml/Elements/i.xml')"/>
     <xsl:variable name="uwRdaExtXml"
         select="document('https://www.lib.washington.edu/static/public/cams/data/localResources/rdaApplicationProfileExtension-1-0-1.rdf')"/>
+    <xsl:variable name="bf2"
+        select="document('https://github.com/lcnetdev/bibframe-ontology/raw/master/bibframe.rdf')"/>
+    <xsl:variable name="bflc"
+        select="document('https://github.com/lcnetdev/bibframe-ontology/raw/master/bflc.rdf')"/>
     <!-- Other var -->
     <xsl:variable name="break2">
         <strong>
@@ -80,6 +87,11 @@
                         />
                     </a>
                 </xsl:when>
+                <xsl:when test="key('bfObjProp', local-name(.), $bf2)">
+                    <a href="{key('bfObjProp', local-name(.), $bf2)/@rdf:about}">
+                        <xsl:value-of select="normalize-space(key('bfObjProp', local-name(.), $bf2)/rdfs:label)"/>
+                    </a>
+                </xsl:when>
                 <xsl:otherwise>
                     <a href=".">
                         <xsl:value-of select="local-name(.)"/>
@@ -115,23 +127,24 @@
             <xsl:value-of select="."/>
         </span>
         <xsl:value-of select="$break2"/>
-        <xsl:choose>
-            <!-- This assumes NO EMPTY LANG ATTRIBUTES -->
-            <xsl:when test=".[@xml:lang]">
-                <span class="langTags">
+        <span class="langTag">
+            <xsl:choose>
+                <!-- This assumes NO EMPTY LANG ATTRIBUTES -->
+                <xsl:when test=".[@xml:lang]">
                     <xsl:text>"</xsl:text>
                     <xsl:value-of select="@xml:lang"/>
                     <xsl:text>"</xsl:text>
-                </span>
-            </xsl:when>
-            <xsl:otherwise>
-                <span class="langTag">
+                </xsl:when>
+                <xsl:otherwise>
                     <xsl:text>No language tag</xsl:text>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
+        </span>
     </xsl:template>
-    <xsl:template name="val_bnode">
-        <xsl:param name="id"/>
+    <xsl:template name="bnode_prop">
+        <xsl:param name="p"/>
+        <span class="property">
+            
+        </span>
     </xsl:template>
 </xsl:stylesheet>

@@ -142,15 +142,18 @@
                     </xsl:call-template>
                 </li>
             </xsl:for-each>
-            <xsl:for-each select="*[@rdf:nodeID]">
-                <xsl:call-template name="property">
-                    <xsl:with-param name="p" select="."/>
-                </xsl:call-template>
-                <xsl:value-of select="$break"/>
-                <xsl:call-template name="val_bnode">
-                    <xsl:with-param name="id" select="@rdf:nodeID"/>
-                </xsl:call-template>
-            </xsl:for-each>
+            <!-- COMMENTING OUT THIS TEMPLATE CALL FOR NOW, BECAUSE IT ISN'T FULLY WORKING
+                (see below)
+                
+                TO DO:
+                    * Fix
+                    * Add adminMetadata template calls, etc. to templates for E, M, and I below
+                    
+            <xsl:apply-templates select="bf:adminMetadata" mode="toBnode">
+                <xsl:with-param name="id" select="@rdf:nodeID"/>
+            </xsl:apply-templates>
+            
+            -->
         </ul>
         <xsl:apply-templates
             select="../rdf:Description[rdf:type[@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006']][rdae:P20231/@rdf:resource = $wIri]"
@@ -315,6 +318,32 @@
             </xsl:for-each>
             <!-- TO DO:
                 Output bnodes here and/or in named template-->
+        </ul>
+    </xsl:template>
+    <xsl:template match="bf:adminMetadata" mode="toBnode">
+        <!-- CONTINUED FROM ABOVE:
+            When template bf:adminMetadata template is called above, the call to named template "property"
+            below functions just fine... -->
+        <!-- Add css classes for adminMetadata later? -->
+        <xsl:param name="id"/>
+        <li>
+            <xsl:call-template name="property">
+                <xsl:with-param name="p" select="."/>
+            </xsl:call-template>
+            <xsl:text>:</xsl:text>
+            <!-- ...but failure to work begins here... -->
+            <xsl:apply-templates select="../rdf:Description[@rdf:nodeID = $id]" mode="inBnode"/>
+        </li>
+    </xsl:template>
+    <!-- This template produces no output whatsoever. 
+        What is the problem? -->
+    <xsl:template match="rdf:Description" mode="inBnode">
+        <ul>
+            <xsl:for-each select="./*">
+                <li>
+                    <xsl:text>TEST PLEASE</xsl:text>
+                </li>
+            </xsl:for-each>
         </ul>
     </xsl:template>
 </xsl:stylesheet>
