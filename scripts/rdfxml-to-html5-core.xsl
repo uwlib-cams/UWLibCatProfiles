@@ -44,9 +44,8 @@
             <xsl:when test="$brgh:format = 'monograph'">WAU:RT:RDA:Work:monograph</xsl:when>
             <xsl:when test="$brgh:format = 'serial'">WAU:RT:RDA:Work:serial</xsl:when>
             <xsl:when test="$brgh:format = 'sSerial'">WAU:RT:RDA:Work:eSerial</xsl:when>
-            <xsl:when test="$brgh:format = 'soundRecording'"
-                >WAU:RT:RDA:Work:soundRecording</xsl:when>
-            <!-- Not sure how I can make this otherwise serve a purpose -->
+            <xsl:when test="$brgh:format = 'soundRecording'">WAU:RT:RDA:Work:soundRecording</xsl:when>
+            <!-- Not sure if I could make an otherwise serve a purpose here -->
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:variable>
