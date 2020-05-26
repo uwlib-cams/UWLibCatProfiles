@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTES:
+    https://hackmd.io/@ries07/r1W0h6coI
+    -->
 <!-- *REASSIGN MATCHING NAMESPACES IN SOURCE DATA BEFORE EACH TRANSFORM*
     TO DO: Change rdfLibSer.py to eassign namespaces when serializing -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

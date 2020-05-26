@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTES:
+  https://hackmd.io/@ries07/S1h-Yae9L
+  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
     <xsl:param name="sourceURL"/>
     <xsl:template match="/">

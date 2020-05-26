@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTES:
+  https://hackmd.io/@ries07/S1h-Yae9L
+  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:j="http://www.w3.org/2005/xpath-functions"
   xmlns:brgh="https://github.com/briesenberg07/bmrLIS/" exclude-result-prefixes="j" version="3.0">
@@ -7,8 +10,8 @@
   <xsl:param name="brgh:format"/>
   <xsl:variable name="id" select="concat(':', $brgh:format)"/>
 
-  <xsl:include href="qaSources.xsl"/>
-  <xsl:include href="formatStrings.xsl"/>
+  <xsl:include href="htmlProfiles-qaSources.xsl"/>
+  <xsl:include href="htmlProfiles-formatStrings.xsl"/>
 
   <xsl:template match="/">
     <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="html"/>
