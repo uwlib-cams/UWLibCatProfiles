@@ -14132,6 +14132,27 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
+                      "propertyLabel": "has cartographer of expression",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20042",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                      },
+                      "uwFormOrder": 578.1,
+                      "statusUw": "",
+                      "noteUw": "Deprecated property",
+                      "qUw": [],
+                      "usedInProfile": [
+                        "monograph",
+                        "eBook",
+                        "graphic",
+                        "eGraphic",
+                        "etd"
+                      ]
+                    },
+                    {
                         "propertyLabel": "has category of expression (Lookup for genres applicable to expressions)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20331",
                         "mandatory": "false",
