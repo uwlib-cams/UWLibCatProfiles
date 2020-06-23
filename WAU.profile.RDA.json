@@ -794,9 +794,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -899,10 +897,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                              "urn:ld4p:qa:names:person",
-                              "urn:ld4p:qa:names:organization",
-                              "urn:ld4p:qa:names:family",
-                              "urn:ld4p:qa:names:conference"
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization",
+                                "urn:ld4p:qa:names:family",
+                                "urn:ld4p:qa:names:conference"
                             ]
                         },
                         "uwFormOrder": 0.008,
@@ -1534,9 +1532,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -1689,9 +1685,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:genres"
-                            ],
+                            "useValuesFrom": ["urn:ld4p:qa:genres"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026039",
@@ -1742,9 +1736,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:genres"
-                            ],
+                            "useValuesFrom": ["urn:ld4p:qa:genres"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026174",
@@ -3236,9 +3228,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd"
-                        ],
+                        "usedInProfile": ["etd"],
                         "remark": "http://access.rdatoolkit.org/7.9.4.html"
                     },
                     {
@@ -5896,7 +5886,10 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo", "soundRecording"],
+                        "usedInProfile": [
+                            "dvdVideo",
+                            "soundRecording"
+                        ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -6922,10 +6915,10 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                              "urn:ld4p:qa:dbpedia",
-                              "urn:ld4p:qa:names",
-                              "urn:ld4p:qa:fast:work",
-                              "urn:wikidata"
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:fast:work",
+                                "urn:wikidata"
                             ]
                         },
                         "uwFormOrder": 0.1,
@@ -7948,9 +7941,7 @@
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph"
-                        ],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -8060,7 +8051,10 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "eBook"],
+                        "usedInProfile": [
+                            "monograph",
+                            "eBook"
+                        ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -8377,9 +8371,7 @@
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -9600,9 +9592,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 225,
                         "statusUw": "done",
@@ -9898,9 +9888,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10024,9 +10012,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -10045,9 +10031,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -10171,9 +10155,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -10416,9 +10398,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12070,9 +12050,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12183,9 +12161,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -12293,9 +12269,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -12383,9 +12357,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -12782,9 +12754,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd"
-                        ],
+                        "usedInProfile": ["etd"],
                         "remark": "http://access.rdatoolkit.org/7.9.2.html"
                     },
                     {
@@ -13667,9 +13637,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -14083,11 +14051,11 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                              "urn:ld4p:qa:dbpedia",
-                              "urn:ld4p:qa:isni",
-                              "urn:ld4p:qa:names",
-                              "urn:ld4p:qa:fast:work",
-                              "urn:wikidata"
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:isni",
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:fast:work",
+                                "urn:wikidata"
                             ]
                         },
                         "uwFormOrder": 0.1,
@@ -14137,25 +14105,25 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                      "propertyLabel": "has cartographer of expression",
-                      "propertyURI": "http://rdaregistry.info/Elements/e/P20042",
-                      "mandatory": "false",
-                      "repeatable": "true",
-                      "type": "lookup",
-                      "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                      },
-                      "uwFormOrder": 578.1,
-                      "statusUw": "",
-                      "noteUw": "Deprecated property",
-                      "qUw": [],
-                      "usedInProfile": [
-                        "monograph",
-                        "eBook",
-                        "graphic",
-                        "eGraphic",
-                        "etd"
-                      ]
+                        "propertyLabel": "has cartographer of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20042",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        },
+                        "uwFormOrder": 578.1,
+                        "statusUw": "",
+                        "noteUw": "Deprecated property",
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "eBook",
+                            "graphic",
+                            "eGraphic",
+                            "etd"
+                        ]
                     },
                     {
                         "propertyLabel": "has category of expression (Lookup for genres applicable to expressions)",
@@ -14992,9 +14960,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -15468,9 +15434,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -16187,25 +16151,25 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                      "propertyLabel": "has photographer of expression",
-                      "propertyURI": "http://rdaregistry.info/Elements/e/P20288",
-                      "mandatory": "false",
-                      "repeatable": "true",
-                      "type": "lookup",
-                      "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                      },
-                      "uwFormOrder": 279.1,
-                      "statusUw": "",
-                      "noteUw": "Deprecated property",
-                      "qUw": [],
-                      "usedInProfile": [
-                        "monograph",
-                        "eBook",
-                        "graphic",
-                        "eGraphic",
-                        "etd"
-                      ]
+                        "propertyLabel": "has photographer of expression",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20288",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        },
+                        "uwFormOrder": 279.1,
+                        "statusUw": "",
+                        "noteUw": "Deprecated property",
+                        "qUw": [],
+                        "usedInProfile": [
+                            "monograph",
+                            "eBook",
+                            "graphic",
+                            "eGraphic",
+                            "etd"
+                        ]
                     },
                     {
                         "propertyLabel": "is translated as (RDA 24.5)",
@@ -16743,7 +16707,7 @@
                             "eBook",
                             "graphic",
                             "eGraphic"
-                            ],
+                        ],
                         "remark": "http://access.rdatoolkit.org/7.15.1.4.html"
                     },
                     {
@@ -18434,9 +18398,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph"
-                        ],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -19438,7 +19400,11 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["dvdVideo", "monograph", "eBook"],
+                        "usedInProfile": [
+                            "dvdVideo",
+                            "monograph",
+                            "eBook"
+                        ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -19824,10 +19790,10 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                          "eBook",
-                          "eGraphic",
-                          "graphic",
-                          "monograph"
+                            "eBook",
+                            "eGraphic",
+                            "graphic",
+                            "monograph"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -21652,9 +21618,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ]
+                        "usedInProfile": ["dvdVideo"]
                     },
                     {
                         "propertyLabel": "has prequel expression",
@@ -21938,9 +21902,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -22080,9 +22042,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -22953,9 +22913,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -23063,9 +23021,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "soundRecording"
-                        ],
+                        "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -24418,9 +24374,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ]
+                        "usedInProfile": ["dvdVideo"]
                     },
                     {
                         "propertyLabel": "has aspect ratio (RDA 7.19)",
@@ -24980,9 +24934,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo"
-                        ],
+                        "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -25576,7 +25528,10 @@
                         },
                         "uwFormOrder": 233.2,
                         "statusUW": "done",
-                        "usedInProfile": ["monograph", "graphic"],
+                        "usedInProfile": [
+                            "monograph",
+                            "graphic"
+                        ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -25592,9 +25547,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph"
-                        ],
+                        "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26048,7 +26001,11 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "map", "serial"]
+                        "usedInProfile": [
+                            "monograph",
+                            "map",
+                            "serial"
+                        ]
                     },
                     {
                         "propertyLabel": "has title of manifestation (RDA 2.3)",
@@ -30146,9 +30103,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "defaults": [
-                                {
-                                    "defaultLiteral": "PDF"
-                                }
+                                {"defaultLiteral": "PDF"}
                             ]
                         },
                         "uwFormOrder": 109.91,
@@ -30156,8 +30111,9 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                          "soundRecording",
-                          "etd"],
+                            "soundRecording",
+                            "etd"
+                        ],
                         "remark": "http://access.rdatoolkit.org/3.19.3.html"
                     },
                     {
@@ -31384,11 +31340,11 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                              "urn:ld4p:qa:dbpedia",
-                              "urn:ld4p:qa:isni",
-                              "urn:ld4p:qa:names",
-                              "urn:ld4p:qa:fast:work",
-                              "urn:wikidata"
+                                "urn:ld4p:qa:dbpedia",
+                                "urn:ld4p:qa:isni",
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:qa:fast:work",
+                                "urn:wikidata"
                             ]
                         },
                         "uwFormOrder": 0.009,
