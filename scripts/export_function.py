@@ -8,6 +8,8 @@ Created on Mon Nov 25 12:19:43 2019
 # 2020-05-27 changes needed; see note at:
     # https://hackmd.io/@ries07/B1HLNF2s8
 
+# 2020-07-20 AKM recommendation implemented; still needs provenance statements
+
 import os
 import rdflib
 from rdflib import *
@@ -57,10 +59,10 @@ for uri in URIS:
 
 
 
-"""concatenates individual records into singular graph"""
-g = Graph()
-for uri in URIS:
-    g.parse(uri)
+# """concatenates individual records into singular graph"""
+# g = Graph()
+# for uri in URIS:
+#     g.parse(uri)
 
 """asks for endpoint, creates a SPARQLwrapper client"""
 
@@ -85,16 +87,20 @@ if endpoint != '':
     if 'succeeded' in results.response.read().decode():
         print('...\nupdate succeeded', flush=True)
 
+    """ Updates fuseki graph with new graphs"""
 
-    """ Updates fuseki graph with new concatenated graph"""
+    for uri in URIS:
+        i = Graph()
+        i.load(uri, format='turtle') # advice from AKM was to use guess_format() but it was resulting in errors, switched to turtle
+        sparql.setQuery("""
+        INSERT DATA {
+        """+i.serialize(format='nt').decode()+"""
+        }
+        """)
+        sparql.method
+        results = sparql.query().convert()
+
     print("...\nupdating fuseki", flush=True)
-    sparql.setQuery("""
-    INSERT DATA {
-    """+g.serialize(format='nt').decode()+"""
-    }
-    """)
-    sparql.method
-    results = sparql.query().convert()
 
     results = sparql.query()
     if 'succeeded' in results.response.read().decode():
