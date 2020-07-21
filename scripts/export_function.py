@@ -14,6 +14,7 @@ import os
 import rdflib
 from rdflib import *
 from SPARQLWrapper import SPARQLWrapper, JSON, POST, DIGEST, N3
+from datetime import now
 #import requests
 #import random
 
@@ -92,6 +93,12 @@ if endpoint != '':
     for uri in URIS:
         i = Graph()
         i.load(uri, format='turtle') # advice from AKM was to use guess_format() but it was resulting in errors, switched to turtle
+        #prov = Namespace('http://www.w3.org/ns/prov#')
+        #xsd = Namespace('http://www.w3.org/2001/XMLSchema#')
+        #i.bind('prov', prov)
+        #i.bind('xsd', xsd)
+        #currentTime = datetime.now()
+        #i.add((URIRef(uri), prov.generatedAtTime, Literal(currentTime, datatype=XSD.datetime)))
         sparql.setQuery("""
         INSERT DATA {
         """+i.serialize(format='nt').decode()+"""
