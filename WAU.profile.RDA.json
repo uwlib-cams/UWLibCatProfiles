@@ -31334,7 +31334,7 @@
                     },
                     {
                         "propertyLabel": "has identifier for manifestation (RDA 2.15)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30004",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30004",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
